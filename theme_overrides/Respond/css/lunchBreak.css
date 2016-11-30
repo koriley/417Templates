@@ -28,4 +28,18 @@ html {
   padding: 10px;
   font-weight: bolder; }
 
+.lunchMaster {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  text-align: center; }
+  .lunchMaster .lunchLogo {
+    padding: 10px; }
+    @media screen and (max-width: 500px) {
+      .lunchMaster .lunchLogo {
+        width: 135px; } }
+
 /*# sourceMappingURL=lunchBreak.css.map */

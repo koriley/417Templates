@@ -38,4 +38,22 @@ html{
     
 }
 
+.lunchMaster{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom:10px;
+    text-align:center;
+    //border:1px solid red;
+    .lunchLogo{
+        padding:10px;
+        @media screen and (max-width: 500px){
+                width:135px;
+
+            }
+    }
+}
+
 
