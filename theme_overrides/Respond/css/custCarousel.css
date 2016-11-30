@@ -1,0 +1,117 @@
+/* 
+    Document   : custCarousel
+    Created on : Feb 18, 2014, 2:18:38 PM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+.touchcarousel{
+   
+}
+
+.big{
+     width:100%;
+    height:auto;
+}
+
+.small{
+    width:100%;
+    height:350px;
+}
+
+
+.carousel-image{
+       //width:399px;
+        margin-right:10px;
+       width:250px;
+    } 
+    
+    .carousel-image img{
+      //   object-fit: fill; /* Do not scale the image */
+ // object-position: center; /* Center the image within the element */
+  //height:208px;
+    }
+    
+/*******************This is for the GTXL slide show*********************************/
+
+
+
+
+
+
+    
+     /* portrait devices */
+    /*ipad */
+    @media (min-width:376px)and(max-width: 800px)and (orientation : portrait){
+       .fullCarousel{
+            display:none; width:465px !important; height:auto;
+        }
+        .longer{
+            width:720px !important;
+        }
+        .small{
+            width:240px !important;
+        }
+    }
+    /*medium phone*/
+    @media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+        .fullCarousel{
+            display:none; width:365px !important; height:auto;
+        }
+        .longer{
+            width:365px !important;
+        }
+    }
+    /*small phone*/
+    @media (max-width:320px)and (orientation : portrait){
+        .fullCarousel{
+            display:none; width:310px !important; height:auto;
+        }
+        .longer{
+            width:310px !important;
+        }
+    }
+    
+    /*Landscape devices*/
+    /*desktop*/
+    @media (min-width:1200px)and (orientation : landscape){
+        .fullCarousel{
+            display:none; width:790px; height:auto;
+        }
+        .longer{
+            width:1200px;
+        }
+    }
+    /*ipad*/
+    @media (min-width:668px)and(max-width:1024px)and (orientation : landscape){
+        .fullCarousel{
+            display:none; width:645px !important; height:auto;
+        }
+        .longer{
+            width:980px !important;
+        }
+    }
+    /*Medium Phone*/
+    @media (max-width:667px)and (orientation : landscape){
+         .fullCarousel{
+            display:none; width:657px !important; height:auto;
+        }
+        .longer{
+            width:657px !important;
+        }
+    }
+    /*small phone*/
+    @media(max-width:568px)and (orientation : landscape){
+        .fullCarousel{
+            display:none; width:465px !important; height:auto;
+        }
+        .longer{
+            width:465px !important;
+        }
+    }

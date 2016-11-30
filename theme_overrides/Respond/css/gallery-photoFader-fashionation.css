@@ -1,0 +1,47 @@
+.show{
+    display:block !important;
+}
+
+
+
+.koPhotoFader ul
+{
+    list-style-type: none;
+    margin:0 !important;
+}
+
+.koPhotoFader ul li div{
+    display:none;
+}
+
+.koPhotoFader{
+    margin-top:5px !important;
+}
+
+.imageRespond {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+.surrondButton{
+    height:20px;
+   width:15%;
+    
+    display:inline-block;
+    margin-left:10px;
+}
+.grey{
+      
+     
+     display: inline-block;
+     background-color:grey;
+     height:5px; width:100%;
+}
+
+.black{
+     
+     
+     display: inline-block;
+     background-color:black;
+     height:5px; width:100%;
+}

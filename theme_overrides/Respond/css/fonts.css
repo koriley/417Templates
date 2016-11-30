@@ -1,0 +1,94 @@
+/* 
+    Document   : fonts
+    Created on : Feb 19, 2014, 1:09:02 PM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+        font-family: DIN;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/DIN.otf');
+}
+
+@font-face {
+        font-family: AB;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/AB.ttf');
+}
+@font-face {
+        font-family: AL;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/AL.ttf');
+}
+@font-face {
+        font-family: BauerBI;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/BauerBI.otf');
+}
+@font-face {
+        font-family: chrisHand;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/ChristopherHand.ttf');
+}
+@font-face {
+        font-family: DINBoldCond;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/DINBoldCond.otf');
+}
+@font-face {
+        font-family: DINLight;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/DINLight.otf');
+}
+@font-face {
+        font-family: DINStd;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/DINStd.otf');
+}
+@font-face {
+        font-family: Dots;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/FortunaDots.TTF');
+}
+@font-face {
+        font-family: GroLC;
+        src: url('http://www.417mag.com/theme_overrides/Respond/fonts/GroLC.otf');
+}
+
+.din{
+    font-family: "DIN", sans-serif;
+    
+}
+.BauerBI{
+    font-family: "BauerBI", serif;
+    
+}
+
+.ab{
+    font-family:"AB";
+}
+
+.al{
+    font-family:"AL";
+}
+
+.chrisHand{
+    font-family:"chrisHand";
+}
+.dinBold{
+    font-family:"DINBoldCond";
+}
+.dinLight{
+    font-family:"DINLight";
+}
+.dinStd{
+    font-family:"DINStd";
+}
+.dot{
+    font-family:"Dots";
+}
+
+.fs20{
+    font-size: 20px;
+}
+
+.textCenter{
+    text-align: center;
+}
+.GroLC{
+    font-family: "GroLC", sans-serif;
+    
+}

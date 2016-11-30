@@ -1,0 +1,75 @@
+/* 
+    Document   : homePageSubscribe
+    Created on : Feb 21, 2014, 2:45:27 PM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.subContainer{
+   
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    width:100%;
+    border-bottom: 1px solid gray;
+}
+
+.subCurCover{
+    text-align: center;
+    
+}
+
+.subCurCover img{
+    max-width:150px;
+}
+
+.widget {
+    
+   
+        
+}
+
+.subMenu li {
+    
+border-bottom: 1px solid gray;
+line-height: 18px;
+list-style: none;
+vertical-align: baseline;
+font: inherit;
+font-size: 100%;
+display: block;
+padding: 0 5px;
+color: #000;
+text-decoration: none;
+font-size: 15px;
+
+
+}
+.lead {
+    font-size: 10px;
+}
+.redText{
+    color: red;
+    font-size: 10px;
+    font-style: italic;
+}
+.subText{
+    text-transform: uppercase;
+    
+}
+
+.subText a{
+ text-decoration: none;
+ 
+    
+}
+
+.subText a:hover {color:red;}
+
+.pushOver {
+ margin-left: 30px;   
+}

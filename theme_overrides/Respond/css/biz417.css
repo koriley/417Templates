@@ -1,0 +1,412 @@
+/* 
+    Document   : 2014Styles
+    Created on : Jan 28, 2014, 10:56:54 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+footer .askQuestion{
+    float:left;
+    width:350px !important;
+    padding:0px !important;
+}
+.helv .summary{
+    font-size: 16px;
+    line-height: 1.4 !important;
+}
+.helv .item-date{
+    color: gray;
+    font-style: italic; 
+    
+}
+
+ 
+ 
+
+.helv h3{
+    font-size:20px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+    margin:0;
+    font-weight: 700;
+    text-transform: uppercase;
+        margin-bottom: 0px !important;
+}
+.helv h3 a{
+   
+    text-decoration: none;
+    font-size:20px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+   font-weight: 700 !important;
+}
+
+
+@media (min-width: 980px) {
+
+    div.branding{
+        height:100px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    /* this fixes the right scroll on mobile */
+    html, body { width:100%;  overflow-x:hidden; }
+    .headSpace{
+        margin-top:50px !important;
+    }
+}    
+@media only screen and (max-width: 320px) {
+
+    html .article h1.article-title{ font-size:250% !important;}
+    .galHead { font-size:200% !important;}
+    .headSpace{
+        margin-top:50px !important;
+    }
+    
+}
+
+.galHead{
+    font-size:250% !important;
+}
+.navbar{
+    box-shadow: 0 0 0 0;
+
+}
+
+.nav-container{
+    background-image:none;
+    background-color:transparent;
+}
+
+.navbar .navbar-inner, .navbar .branding {
+    background-color:#000;
+    background-image: none;
+
+}
+
+.logo img{
+    margin-top:30px;
+    width:300px;
+}
+
+.navButton{
+    color:#ffffff;
+
+    text-shadow: 0 0 0;
+}
+
+.navbar .nav{
+
+}
+
+.adPlacement{
+    position:absolute;
+    top:100px;
+    left:auto;
+    right:0px;
+}
+
+.radiant_scroller .scroller-el {
+    width: 250px;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px; /* This is optional but recommended - otherwise your images will have no horizontal spacing */
+}
+
+nav.eyebrow #eyebrow-list.nav > li > a{
+    color:#ffffff;
+    text-shadow: none;
+
+}
+
+.navbar .nav > li > a:hover{
+    background-color:#fff;
+    color:red;
+}
+
+.logo-wrapper{
+    top:-25px; /* This raises the logo up*/
+}
+
+.adPlacement{
+    top:65px; /* this raises the ad up */
+}
+.nav-container .nav-wrapper{
+    margin-top:30px; /* this brings the main nave bar up*/
+    width:600px;
+    float:right;
+}
+/* this changes the color of the main menu */
+.navbar .nav li > div.menu-item-wrapper > a:hover{
+    color:red;
+    background-color:#000;
+    border:0px #000 solid;
+}
+
+/*Subscribe link*/
+.subLink{
+    text-align:center;
+    border:5px ridge black;
+}
+
+/*////Dropdown menu stuff /// */
+.navbar .nav > li.dropdown:hover > div.menu-item-wrapper > a:hover {
+    color:red;
+    background-color:#000;
+    text-shadow:0px 0px 0px;
+    border:0px;
+}
+
+.navbar .nav > li.dropdown:hover > div.menu-item-wrapper > a {
+    color:red;
+    background-color:#000;
+    text-shadow:0px 0px 0px;
+    border:0px;
+}
+
+.navbar .nav > li > div.menu-item-wrapper > .dropdown-menu {
+    background-color:#000;
+    /*display:block; /* remove this to hide the dropdowns */
+}
+/*facebook image stuff */
+.faceBookImage{
+    display:none;
+}
+/* lower menu items in dropdown */
+.navbar .nav >li > div.menu-item-wrapper > .dropdown-menu{
+    opacity:1 ;
+}
+.navbar .nav > li ul.dropdown-menu li a{
+    color:#fff;
+    background-color:transparent;
+    border:0px;
+    text-shadow:0px 0px 0px;
+    font-size:75%;
+    text-align:center;
+    opacity:1;
+    font-family:"AL";
+
+}
+
+.navbar .nav > li ul.dropdown-menu li a:hover{
+    color:black;
+    background-color:#fff;
+    border:0px;
+    text-shadow:0px 0px 0px;
+    opacity:1;
+}
+
+/*the border around the lower menu item words*/
+.nav-container ul.nav > li ul.dropdown-menu li{
+    border:0px;
+    border-bottom: 1px #999 solid;
+}
+
+/*last child botom border*/
+.nav-container ul.nav > li ul.dropdown-menu li:last-child{
+    border-bottom:0px;
+}
+
+.nav-container ul.nav > li > div.menu-item-wrapper > ul.dropdown-menu > li a{
+    text-align:center;
+}
+/*//////////////////////////////////////////*/
+
+/* This is the caret */
+.navbar .nav > li >div.menu-item-wrapper >a span.caret{
+    opacity:0;
+}
+
+.sg-splash-bottom-menu .galleryMenu .galleryMenuItem .galleryMenuItemInner{
+    background-color:#000;
+    border-radius:10px 10px 10px 10px;
+    content: "";
+    width:10px; height:10px;
+}
+
+.sg-splash-bottom-menu .galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner, .sg-splash-bottom-menu .galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner:hover, .sg-splash-bottom-menu .galleryMenu .galleryMenuItem.selected .galleryMenuItemInner, .sg-splash-bottom-menu .galleryMenu .galleryMenuItem.selected .galleryMenuItemInner:hover{
+    background-color:red;
+    box-shadow: 1px 1px 1px #4D0006 inset;
+}
+
+.sg-splash-bottom-menu.sg-option-menu .galleryMenu .galleryMenuItem .galleryMenuItemInner{
+    width:10px; height:10px;
+}
+
+.sg-splash-bottom-menu .galleryMenuSpace{
+    background-color:transparent;
+    text-align:center;
+}
+
+.sg-splash-bottom-menu .pagination ul{
+    display:inline-block;
+}
+
+.calendar-view-search-form ul li:last-child a{
+    /* background-color:red;
+     background-image:none;*/
+}
+.monthly-calendar{
+    margin-top:10px;
+}
+
+/* read now module */
+.ReadNow{
+    text-align:center;
+    color:red;
+}
+
+/* make video iframes responsive, has jquery wrapper component */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*bact to top css */
+.back-to-top {
+
+    float:right;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(215, 25, 33, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+label{
+    text-align: left;
+}
+
+a.thumbnail div.data-picture-block img{
+    width: auto !important;
+}
+
+
+/*carousel bar div */
+//carosel
+ .bizCar{
+     text-align: center !important;
+     width:100% !important;
+ }
+#carDivBar{
+    border-top:28px solid #2F2262;
+    width:auto; 
+    
+    margin-left:10px;
+}
+
+
+/*bootstrap fixes */
+.respond-container{
+    border:0px !important;
+
+}
+
+/*subscribe */
+.store-subscribe img{
+    float:left;
+    width:300px;
+    height:154px;
+}
+.store-subscribe p img{
+    display:none;
+}
+.store-subscribe ul{
+    float:left;
+    margin-top:5%;
+    font-size: 25px;
+
+}
+.store-subscribe ul li{
+    list-style-type: none;
+    font-size:30px;
+    line-height: 30px;
+}
+.store-subscribe ul li:last-child{
+    display: none;
+}
+
+.feed-article:nth-child(even){
+    background-color:#efefef;
+}
+.feed-article{
+    margin:0px;
+    padding:5px;
+    color:black;
+    border:0px;
+    font-size:75%;
+    padding-left:5px;
+    
+}
+.feed-article-date{
+    text-align:right;
+    margin-top:-15px;
+    color:#d42525;
+}
+.feed {
+    border:1px solid #cccccc;
+    border-top:0px;
+    background-color:#fff;
+    margin-top:-10px;
+}
+.module > h2{
+    
+    
+}
+.feed h2{
+    border-bottom:1px solid black;
+    display: none;
+    margin:0px !important;
+}
+.page-container .respond-container div.module:last-of-type{
+    border-bottom:1px solid #cccccc;
+}
+
+.bizBlogMother{
+    border:1px solid #cccccc;
+    margin-top:15px;
+}
+.bizBlogroll .content{
+    padding:15px;
+}
+
+.bizBlogroll .content table tr{
+    border-bottom:1px solid #cccccc;
+}
+.bizBlogRollDate{
+    font-size:x-small;
+}
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:1200px)and (orientation : landscape){
+    .production .data-picture-block img{
+        width:600px !important;
+        height:300px !important;
+    }
+    .production .article-item{
+        height:auto !important;
+    }
+    .calCenter{
+        width:1200px;
+        margin:auto;
+    }
+    //ask a question
+
+}
+

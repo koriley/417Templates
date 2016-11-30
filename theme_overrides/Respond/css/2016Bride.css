@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 14, 2016, 3:49:24 PM
+    Author     : koriley
+*/
+/* vars */
+/* style trees */
+body {
+  background-color: #fff; }
+
+.tanBar {
+  width: 100%;
+  height: 10px;
+  background-color: tan; }
+
+.brandBar {
+  width: 100%;
+  background-color: #ccc;
+  height: 82px; }
+  .brandBar .brideLogo {
+    display: inline-block;
+    text-align: left;
+    margin-top: 5px; }
+  .brandBar .socialStuff {
+    text-align: right;
+    margin-top: -43px; }
+    .brandBar .socialStuff div {
+      display: inline-block; }
+    .brandBar .socialStuff .fb {
+      display: inline-block; }
+
+.galleryMenu {
+  padding-left: 40%; }
+  .galleryMenu .galleryMenuItem .galleryMenuItemInner {
+    background: url("/images/bride/2016/Splash_Heart1.png"); }
+  .galleryMenu .selected .galleryMenuItemInner {
+    background: url("/images/bride/2016/Splash_Heart2.png"); }
+
+.innerMenu {
+  width: 100%;
+  text-align: center; }
+  .innerMenu ul {
+    list-style: none; }
+    .innerMenu ul li {
+      display: inline-block;
+      color: #B69E6D;
+      margin: 20px;
+      margin-left: 0px;
+      font-size: 25px; }
+
+ul, ol {
+  padding: 0px;
+  margin: 0 0 0 0; }
+
+.gsc-search-box {
+  display: none; }
+
+#___gcse_0 {
+  height: 0px; }
+
+/*# sourceMappingURL=2016Bride.css.map */

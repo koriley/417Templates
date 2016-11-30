@@ -1,0 +1,309 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 17, 2016, 1:54:13 PM
+    Author     : koriley
+*/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+p {
+  margin: 0px !important; }
+
+.menuBox {
+  overflow: hidden;
+  margin-top: 25px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  display: none;
+  z-index: 1000; }
+  .menuBox .menuItemBox {
+    width: 600px;
+    margin: 125px auto;
+    display: none;
+    font-family: "Oswald", sans-serif; }
+    .menuBox .menuItemBox ul {
+      list-style: none; }
+      .menuBox .menuItemBox ul li {
+        line-height: 100px;
+        font-size: 5em; }
+        .menuBox .menuItemBox ul li a:link {
+          color: #fff;
+          text-decoration: none; }
+        .menuBox .menuItemBox ul li a:active {
+          color: #fff;
+          text-decoration: none; }
+        .menuBox .menuItemBox ul li a:visited {
+          color: #fff;
+          text-decoration: none; }
+        .menuBox .menuItemBox ul li a:hover {
+          color: #fff;
+          text-decoration: none; }
+        @media screen and (max-width: 700px) {
+          .menuBox .menuItemBox ul li {
+            font-size: 3em;
+            line-height: 65px; } }
+
+.sectionSubTitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold; }
+
+.sectionTitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px; }
+  @media screen and (max-width: 700px) {
+    .sectionTitle {
+      font-size: 20px; } }
+
+/* -----------------------------------------------------------------------------
+  HAMBURGER ICONS COMPONENT
+  http://callmenick.com/post/animating-css-only-hamburger-menu-icons
+----------------------------------------------------------------------------- */
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.3s; }
+  @media screen and (max-width: 700px) {
+    .c-hamburger {
+      width: 80px;
+      height: 80px; } }
+  .c-hamburger :focus {
+    outline: none;
+    box-sizing: none; }
+  .c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 18px;
+    right: 18px;
+    height: 8px;
+    background: #434243; }
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #434243;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -20px; }
+
+.c-hamburger span::after {
+  bottom: -20px; }
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.c-hamburger--htx {
+  background-color: transparent; }
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s; }
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: transparent; }
+
+.c-hamburger--htx.is-active span {
+  background: none; }
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg); }
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg); }
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s; }
+
+/*
+*   This is for photoPhader
+*/
+.show {
+  display: block !important;
+  transition: 1s;
+  left: 0; }
+
+.photoPhade {
+  width: 100%;
+  position: absolute;
+  top: 40px; }
+  .photoPhade div {
+    display: none; }
+    .photoPhade div img {
+      width: 100%; }
+
+.deckOfCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  text-align: center; }
+  .deckOfCards .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    height: 200px;
+    cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .deckOfCards .card {
+        width: 150px !important;
+        height: 150px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        margin-left: 5px !important; } }
+    @media screen and (max-width: 500px) {
+      .deckOfCards .card img {
+        width: 150px;
+        height: 150px; } }
+
+.heroTop {
+  /* width:100%;
+   position:absolute;
+   top:40px;*/ }
+
+.carouselLabel {
+  line-height: 2;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white; }
+
+.carousel-image {
+  width: 250px;
+  margin-bottom: 20px !important; }
+  @media screen and (max-width: 700px) {
+    .carousel-image {
+      width: 150px !important;
+      height: 150px !important;
+      margin-left: 3px !important; } }
+  .carousel-image img {
+    width: 250px; }
+    @media screen and (max-width: 700px) {
+      .carousel-image img {
+        width: 150px !important; } }
+
+.jobList {
+  list-style: none;
+  margin: 10px; }
+  .jobList li {
+    margin: 5px; }
+
+.staffFlex {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 10px; }
+  .staffFlex .staffMember {
+    margin-bottom: 15px; }
+    @media screen and (max-width: 500px) {
+      .staffFlex .staffMember {
+        width: 180px; } }
+    @media screen and (max-width: 320px) {
+      .staffFlex .staffMember {
+        width: 140px; } }
+
+.logoFlex {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 10px; }
+  .logoFlex .staffMember {
+    width: 145.9px;
+    margin-bottom: 15px; }
+    @media screen and (max-width: 500px) {
+      .logoFlex .staffMember {
+        width: 180px;
+        margin-bottom: 25px; } }
+    @media screen and (max-width: 320px) {
+      .logoFlex .staffMember {
+        width: 140px;
+        margin-bottom: 25px; } }
+
+.address {
+  font-family: "Oswald", sans-serif;
+  line-height: 15px;
+  font-size: 1em;
+  color: #fff; }
+  .address .text {
+    margin-left: 20px;
+    margin-bottom: 10px; }
+  .address .fRight {
+    float: right; }
+
+@media screen and (max-width: 500px) {
+  .textBox {
+    margin: 5px; } }
+
+.hamburgerBlock {
+  position: absolute;
+  z-index: 2000;
+  right: 0; }
+
+body, html {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=aboutUs.css.map */

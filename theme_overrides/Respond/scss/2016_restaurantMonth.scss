@@ -1,0 +1,196 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 19, 2016, 1:48:03 PM
+    Author     : koriley
+*/
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+$backgroundBlack:#000000;
+$backgroundWhite:#ffffff;
+$googleFont: 'Hind', sans-serif;
+
+.headerBlack{
+    width:100%;
+    background:$backgroundBlack;
+}
+
+.whiteRow{
+
+    background:$backgroundWhite;
+    text-align: center;
+    padding:25px;
+
+}
+
+.blackRow{
+    width:100%;
+    background:$backgroundBlack;
+    text-align: center;
+    img{
+        padding:25px;
+    }
+}
+
+
+
+.hind{
+    font-family: $googleFont;
+}
+
+//this is the participent logos
+.restaurantGrid{
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    @media screen and (max-width: 375px){
+        margin-bottom:-170px;
+    }
+    .restaurantLogo{
+        // background-color: cornflowerblue;
+        width: 230px;
+        height: 200px;
+        margin-right:5px;
+        margin-bottom:5px;
+        position:relative;
+        //border:1px solid black;
+
+
+        @media screen and (max-width: 700px){
+            width: 210px;
+            height: 210px;
+        }
+        @media screen and (max-width: 375px){
+            width: 120px;
+            height: 115px;
+
+        }
+    }
+}
+.restaurantImageContainer{
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    .imageBox{
+        width:300px;
+        margin-right:5px;
+        margin-bottom:5px;
+        .greyBox{
+            h2{
+                margin:0;
+            }
+            background:gray;
+            margin-top:-10px;
+        }
+    }
+}
+
+.beefSticker{
+    position: absolute;
+    width:95px;
+    height:90px;
+    // border:1px solid red;
+    right:225px;
+    top:60px;
+    @media screen and (max-width: 375px){
+        width:15px;
+        height:25px;
+        //border:1px solid red;
+        right:65px;
+        top:15px;
+    }
+}
+
+.reinhartSticker{
+    position: absolute;
+    width:140px;
+    height:60px;
+    // border:1px solid blue;
+    right:50px;
+    top:75px;
+    @media screen and (max-width: 375px){
+        width:25px;
+        height:25px;
+        // border:1px solid blue;
+        right:25px;
+        top:15px;
+    }
+}
+
+.backpackSticker{
+    position: absolute;
+    width:140px;
+    height:160px;
+    //border:1px solid green;
+    right:240px;
+    top:9px;
+    @media screen and (max-width: 375px){
+        width:25px;
+        height:25px;
+        //border:1px solid green;
+        right:70px;
+        top:5px;
+    }
+}
+
+.restaurantHeader{
+    @media screen and (max-width: 375px){
+        margin-top:-5px !important;
+    }
+}
+
+.restaurantMenuItemsMother{
+    text-align: center;
+    font-family: $googleFont;
+
+
+    @media screen and (min-width:1200px){
+        width:1200px;
+        margin-left:-60px;
+    }
+    .restaurantMenuItems{
+        display:flex;
+        flex-wrap: wrap;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+
+        .item{
+            width:290px;
+            @media screen and (max-width: 500px){
+                width:345px;
+
+
+            }
+            margin-bottom:5px;
+            border:1px solid grey;
+            strong{
+                font-weight: bold;
+            }
+            .menuItems{
+                text-align: left;
+                list-style: none;
+            }
+            h3{
+                background:#eeeeee;
+                color:black;
+                font-family: $googleFont;
+                margin-top:0px;
+            }
+        }
+    }
+}
+
+.restaurantLogoCollection{
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    .restaurantLogoItem{
+        width:110px;
+    }
+}

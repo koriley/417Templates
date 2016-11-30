@@ -1,0 +1,354 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 7, 2015, 10:59:30 AM
+    Author     : koriley
+*/
+
+/* portrait devices */
+/*small phone*/
+
+.nominations{
+    color:white !important;
+    text-align:right !important;
+    background-color:#000 !important;
+    display:block !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+    font-weight: 200;           
+    text-transform: uppercase;
+       letter-spacing: 2px;
+}
+
+.events{
+    color:white !important;
+    text-align:right !important;
+    background-color:gray !important;
+    display:block !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+    font-weight: 200;         
+    text-transform: uppercase;
+       letter-spacing: 2px;
+}
+
+.start{
+
+        color:white !important;
+        text-align:right !important;
+        background-color:#FCAF17 !important;
+        display:block !important;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+       font-weight: 200;           
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+
+    .know{
+
+        color:white !important;
+        text-align:right !important;
+        background-color:#148889 !important;
+        display:block !important;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+        font-weight: 200;       
+        text-transform: uppercase;
+           letter-spacing: 2px;
+
+    }
+    .link{
+
+        color:white !important;
+        text-align:right !important;
+        background-color:#2E1363 !important;
+        display:block !important;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+        font-weight: 200;        
+        text-transform: uppercase;
+           letter-spacing: 2px;
+
+    }
+    .features{
+
+        color:white !important;
+        text-align:right !important;
+        background-color:#ED1C24 !important;
+        display:block !important;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif !important;
+       font-weight: 200 !important;        
+        text-transform: uppercase !important;
+           letter-spacing: 2px !important;
+
+    }
+
+
+@media (max-width:320px)and (orientation : portrait){
+
+    .myBigContent{
+        display:none;
+    }
+    
+
+
+}
+/*medium phone*/
+@media (min-width:321px)and (orientation : portrait){
+    .myBigContent{
+        display:none;
+    }
+   
+
+}
+
+
+/*ipad */
+@media (min-width:376px)and (orientation : portrait){
+  .myBigContent{
+        display:none;
+    }
+    .mySmallContent {
+        width:700px !important;
+        height:auto;
+        border:0px solid red;
+        
+    }
+}
+@media (width:414px)and (orientation : portrait){
+  .myBigContent{
+        display:none;
+    }
+    .mySmallContent {
+        width:370px !important;
+        height:auto;
+        border:0px solid red;
+        
+    }
+}
+
+
+@media all and (min-width:500px)and (orientation : landscape){
+    .myBigContent{
+        display:none;
+    }
+    .mySmallContent{
+        width:600px;
+        
+    }
+     .mySmallContent img{
+        width:75px;
+    }
+}
+@media all and (min-width:737px)and (orientation : landscape){
+    .noAd{
+        width:1024px;
+        margin:auto;
+    }
+ .mySmallContent{
+        width:100%;
+    }
+     .mySmallContent img{
+        width:100%;
+    }
+    .withAd{
+        width:1024px;
+        margin:auto;
+    }
+    .noAd .bigStory{
+        width:100% !important;
+        height:465px !important;
+        border:0px !important;
+        padding:0px !important;
+    }
+    .withAd .bigStory{
+        width:100% !important;
+        height:625px !important;
+        border:0px !important;
+        padding:0px !important;
+    }
+    .bigStory .myBigContent img{
+        width:100% !important;
+        height:auto !important;
+        float:left;
+    }
+    .bigStory .myBigContent{
+        display:block;
+    }
+    .bigStory .mySmallContent{
+        display:none;
+    }
+    .bigStory .article-content .article-title{
+        font-size:25px !important;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+    }
+    .bigStory .article-content{
+        margin-top:60px !important;
+        padding:20px !important;
+    }
+    .bigStory .article-content .summary{
+        font-size:20px !important;
+        line-height: 1.2 !important;
+    }
+    .smallStory{
+        width:32% !important;
+        height:435px !important;
+        margin:3px !important;
+        border-radius: 0px !important;
+
+    }
+    .smallStory .myBigContent{
+        display:none;
+    }
+    .smallStory .mySmallContent{
+        display:block !important;
+    }
+
+    
+    .motherAd{
+        background-color:#eaeaea;
+        width:90%;  
+        text-align: center;
+        padding:20px;
+        margin-bottom:30px;
+    }
+
+    .item-byline{
+        font-weight: bolder;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+
+    }
+    .mySmallContent .article-tag{
+        z-index: 9000;
+        position:relative;
+        top:-35px;
+        left:155px;
+        width:50% !important;
+    }
+
+    .myBigContent .article-tag{
+
+        width:100% !important;
+    }
+
+   
+    .article-content .article-title{
+        font-size:25px !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+@media (min-width:1200px)and (orientation : landscape){
+    .noAd{
+        width:1200px;
+        margin:auto;
+    }
+
+    .withAd{
+        width:1200px;
+        margin:auto;
+    }
+    .noAd .bigStory{
+        width:100% !important;
+        height:465px !important;
+        border:0px !important;
+        padding:0px !important;
+    }
+    .withAd .bigStory{
+        width:100% !important;
+        height:625px !important;
+        border:0px !important;
+        padding:0px !important;
+    }
+    .bigStory .myBigContent img{
+        width:100% !important;
+        height:470px !important;
+        float:left;
+    }
+    
+    .bizLink .bigStory .myBigContent img{
+        width:600px !important;
+        height:100% !important;
+        float:left;
+    }
+    .bizLink .bigStory{
+        height:350px !important;
+    }
+    .bigStory .myBigContent{
+        display:block;
+    }
+    .bigStory .mySmallContent{
+        display:none;
+    }
+    .bigStory .article-content .article-title{
+        font-size:25px !important;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+
+    }
+    .bigStory .article-content{
+        margin-top:60px !important;
+        padding:20px !important;
+    }
+    .bigStory .article-content .summary{
+        font-size:20px !important;
+        line-height: 1.2 !important;
+    }
+    .smallStory{
+        width:32.7777777777778% !important;
+        height:435px !important;
+        margin:3px !important;
+        border-radius: 0px !important;
+
+    }
+    .eventStory{
+        width:32.7777777777778% !important;
+        height:477px !important;
+        margin:3px !important;
+        border-radius: 0px !important;
+
+    }
+    .smallStory .myBigContent{
+        display:none;
+    }
+    .smallStory .mySmallContent{
+        display:block !important;
+    }
+
+    .motherAd{
+        background-color:#eaeaea;
+        width:100%;  
+        text-align: center;
+        padding:20px;
+        margin-bottom:30px;
+    }
+
+    .item-byline{
+        font-weight: bolder;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+        font-weight: 200;
+        color: gray;
+    }
+    .mySmallContent .article-tag{
+        z-index: 9000;
+        position:relative;
+        top:-35px;
+        left:180px;
+        width:50% !important;
+    }
+
+    .myBigContent .article-tag{
+
+        width:100% !important;
+    }
+
+    
+    .article-content .article-title{
+        font-size:25px !important;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+        font-weight: 500;
+    }
+    
+}
+
+
+
+

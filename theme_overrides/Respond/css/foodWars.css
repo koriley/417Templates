@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 12, 2014, 9:09:32 AM
+    Author     : koriley
+*/
+
+html{
+    background:url(http://www.417mag.com/images/foodWars/steaks/table_web.jpg) no-repeat center center fixed;
+    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+    background-color:transparent;
+}
+
+.column-left{
+    /*background-color:#fff;*/
+}
+
+#companyTable{
+    
+    background-color:white;
+    padding:10px;
+   /* margin-bottom:10px;*/
+}
+
+.coImage{
+    margin-right:5px;
+}
+
+.subButton{
+    background-image:url(/images/foodWars/2015/button.jpg) !important;
+    font-size:0 !important;
+    width:200px !important;
+    height:70px !important;
+}
+
+.subButton:hover{
+    background-position:0 0px !important;
+}
+
+/*legacy */
+.foodWarClient{
+    /*width:660px;*/
+    background-color:#fff;
+    /*margin-top:5px;
+    margin-bottom:5px;*/
+    
+    
+    
+}

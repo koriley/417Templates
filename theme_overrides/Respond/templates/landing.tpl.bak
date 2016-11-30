@@ -1,0 +1,230 @@
+{addjs file="pageLayout.js" position="footer"}
+{assign var="activeModulePositions" value=$Page->determineActiveModulePositions()}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{include file="head.tpl"}
+</head>
+<body id="{$Page->pagehtmlid}" class="{$Page->pageobject->params.pagehtmlclass}">
+{include file="top.tpl"}
+<div id="landing-container" class="page-container container-fluid">
+	{include file="breadcrumb.tpl"}
+    {* TOP ROW *}
+    {if in_array("top",$activeModulePositions)}
+    <div class="respond-container row-fluid top-row">
+			{assign var="respond_containers" value="12"}
+			{loadModules position="top"}
+	</div>
+    {/if}
+    {* PAGE CONTENT AND TITLE*}
+    {assign var="showpagetools" value=false}
+	{pagetools}
+	{if ($Page->hasfeeds && isset($article)) || istrue($addthis_toolbar) || istrue($email_icon) || istrue($print_icon) || istrue($comments_icon)}
+		{assign var="showpagetools" value=true}
+	{/if}
+    {if (!isset($Page->pageobject->params.showpagetitle) || istrue($Page->pageobject->params.showpagetitle)) || !empty($pagecontent) || istrue($showpagetools)}
+    <div class="row-fluid">
+        <div class="page-content respond-container span12">
+        	{include file="pagetools.tpl"}
+        	{if !isset($Page->pageobject->params.showpagetitle) || istrue($Page->pageobject->params.showpagetitle)}<h1 class="page-title">{$Page->title}</h1>{/if}
+        	{if $pagecontent<>''}{$pagecontent}{/if}    	
+        </div>
+    </div>
+	{/if}
+    {* UPPER ROW *}
+    {if in_array("upper-left",$activeModulePositions) || in_array("upper-middle",$activeModulePositions) || in_array("upper-right",$activeModulePositions)}
+    <div class="row-fluid landing-columns-container upper-row">
+    	{* UPPER LEFT MODULE POSITION *}
+		{if in_array("upper-left",$activeModulePositions)}
+			{if !in_array("upper-middle",$activeModulePositions) && !in_array("upper-right",$activeModulePositions)}
+				<div class="column-left respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="upper-left"}
+                </div>
+			{elseif !in_array("upper-middle",$activeModulePositions)}
+    			<div class="column-left respond-container span6">
+                    {assign var="respond_containers" value="12,6"}
+                    {loadModules position="upper-left"}
+                </div>
+			{else}
+                <div class="column-left respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="upper-left"}
+                </div>
+            {/if}
+		{/if}
+		{* UPPER MIDDLE MODULE POSITION *}
+		{if in_array("upper-middle",$activeModulePositions)}
+			{if !in_array("upper-left",$activeModulePositions) && !in_array("upper-right",$activeModulePositions)}
+				<div class="column-middle respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="upper-middle"}
+                </div>
+			{elseif !in_array("upper-left",$activeModulePositions) || !in_array("upper-right",$activeModulePositions)}
+    			<div class="column-middle respond-container span8">
+                    {assign var="respond_containers" value="12,8"}
+                    {loadModules position="upper-middle"}
+                </div>
+			{else}
+                <div class="column-middle respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="upper-middle"}
+                </div>
+            {/if}
+		{/if}
+		{* UPPER RIGHT MODULE POSITION *}
+		{if in_array("upper-right",$activeModulePositions)}
+			{if !in_array("upper-middle",$activeModulePositions) && !in_array("upper-left",$activeModulePositions)}
+				<div class="column-right respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="upper-right"}
+                </div>
+			{elseif !in_array("upper-middle",$activeModulePositions)}
+    			<div class="column-right respond-container span6">
+                    {assign var="respond_containers" value="12,6"}
+                    {loadModules position="upper-right"}
+                </div>
+			{else}
+                <div class="column-right respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="upper-right"}
+                </div>
+            {/if}
+		{/if}
+	</div>
+	{/if}
+	{* MIDDLE ROW *}
+    {if in_array("left",$activeModulePositions) || in_array("middle",$activeModulePositions) || in_array("right",$activeModulePositions)}
+    <div class="row-fluid landing-columns-container middle-row">
+    	{* MIDDLE LEFT MODULE POSITION *}
+		{if in_array("left",$activeModulePositions)}
+			{if !in_array("middle",$activeModulePositions) && !in_array("right",$activeModulePositions)}
+				<div class="column-left respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="left"}
+                </div>
+			{elseif !in_array("middle",$activeModulePositions)}
+    			<div class="column-left respond-container span6">
+                    {assign var="respond_containers" value="12,6"}
+                    {loadModules position="left"}
+                </div>
+			{else}
+                <div class="column-left respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="left"}
+                </div>
+            {/if}
+		{/if}
+		{* MIDDLE MIDDLE MODULE POSITION *}
+		{if in_array("middle",$activeModulePositions)}
+			{if !in_array("left",$activeModulePositions) && !in_array("right",$activeModulePositions)}
+				<div class="column-middle respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="middle"}
+                </div>
+			{elseif !in_array("left",$activeModulePositions) || !in_array("right",$activeModulePositions)}
+    			<div class="column-middle respond-container span8">
+                    {assign var="respond_containers" value="12,8"}
+                    {loadModules position="middle"}
+                </div>
+			{else}
+                <div class="column-middle respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="middle"}
+                </div>
+            {/if}
+		{/if}
+		{* MIDDLE RIGHT MODULE POSITION *}
+		{if in_array("right",$activeModulePositions)}
+			{if !in_array("middle",$activeModulePositions) && !in_array("left",$activeModulePositions)}
+				<div class="column-right respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="right"}
+                </div>
+			{elseif !in_array("middle",$activeModulePositions)}
+    			<div class="column-right respond-container span6">
+                    {assign var="respond_containers" value="12,6"}
+                    {loadModules position="right"}
+                </div>
+			{else}
+                <div class="column-right respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="right"}
+                </div>
+            {/if}
+		{/if}
+	</div>
+	{/if}
+	{* LOWER ROW *}
+    {if in_array("lower-left",$activeModulePositions) || in_array("lower-middle",$activeModulePositions) || in_array("lower-right",$activeModulePositions)}
+    <div class="row-fluid landing-columns-container lower-row">
+    	{* LOWER LEFT MODULE POSITION *}
+		{if in_array("lower-left",$activeModulePositions)}
+			{if !in_array("lower-middle",$activeModulePositions) && !in_array("lower-right",$activeModulePositions)}
+				<div class="column-left respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="lower-left"}
+                </div>
+			{elseif !in_array("lower-middle",$activeModulePositions)}
+    			<div class="column-left respond-container span6">
+                    {assign var="respond_containers" value="12,6"}
+                    {loadModules position="lower-left"}
+                </div>
+			{else}
+                <div class="column-left respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="lower-left"}
+                </div>
+            {/if}
+		{/if}
+		{* LOWER MIDDLE MODULE POSITION *}
+		{if in_array("lower-middle",$activeModulePositions)}
+			{if !in_array("lower-left",$activeModulePositions) && !in_array("lower-right",$activeModulePositions)}
+				<div class="column-middle respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="lower-middle"}
+                </div>
+			{elseif !in_array("lower-left",$activeModulePositions) || !in_array("lower-right",$activeModulePositions)}
+    			<div class="column-middle respond-container span8">
+                    {assign var="respond_containers" value="12,8"}
+                    {loadModules position="lower-middle"}
+                </div>
+			{else}
+                <div class="column-middle respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="lower-middle"}
+                </div>
+            {/if}
+		{/if}
+		{* LOWER RIGHT MODULE POSITION *}
+		{if in_array("lower-right",$activeModulePositions)}
+			{if !in_array("lower-middle",$activeModulePositions) && !in_array("lower-left",$activeModulePositions)}
+				<div class="column-right respond-container span12">
+                    {assign var="respond_containers" value="12,12"}
+                    {loadModules position="lower-right"}
+                </div>
+			{elseif !in_array("lower-middle",$activeModulePositions)}
+    			<div class="column-right respond-container span6">
+                    {assign var="respond_containers" value="12,6"}
+                    {loadModules position="lower-right"}
+                </div>
+			{else}
+                <div class="column-right respond-container span4">
+                    {assign var="respond_containers" value="12,4"}
+                    {loadModules position="lower-right"}
+                </div>
+            {/if}
+		{/if}
+	</div>
+	{/if}
+	{* BOTTOM ROW *}
+	{if in_array("bottom",$activeModulePositions)}
+    <div class="respond-container row-fluid bottom-row">
+			{assign var="respond_containers" value="12"}
+			{loadModules position="bottom"}
+	</div>
+    {/if}
+</div>
+{include file="bottom.tpl"}
+</body>
+</html>

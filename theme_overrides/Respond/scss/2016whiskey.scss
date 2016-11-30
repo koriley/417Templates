@@ -1,0 +1,307 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 14, 2016, 9:11:15 AM
+    Author     : koriley
+*/
+@import 'https://fonts.googleapis.com/css?family=Oswald|PT+Sans';
+$fontOswald: 'Oswald', sans-serif;
+$headerHeight:170px;
+$Black: #000000; 
+$Grey: #4c4d4f;
+$Gold: #D8933D;
+
+
+//****** helper classes******
+.inline{
+    display:inline;
+}
+.left{
+    float:left;
+    @media screen and (max-width: 500px){
+        float:none;
+    }
+}
+.right{
+    float:right;
+    @media screen and (max-width: 500px){
+        float:none;
+    }
+}
+.spacer{
+    height:$headerHeight;
+    @media screen and (max-width: 500px){
+        height:auto;
+    }
+}
+.italics{
+    font-style:italic;
+}
+//end helper
+
+//menu items
+.menuItems{
+    text-transform: capitalize;
+    position:absolute;
+    right:0px;
+    top:120px;
+    background:white;
+    width:300px;
+    text-align:right;
+    padding-right:5px;
+    border:1px solid black;
+    display:none;
+    z-index:1000;
+    @media screen and (max-width: 500px){
+        top:155px;
+    }
+    .item{
+        border-bottom:1px solid black;
+        width:100%;
+        font-size:1.5em;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-right:10px;
+        cursor:pointer;
+        a:link {color: $Black; text-decoration: none; }
+        a:active {color: $Black; text-decoration: none; }
+        a:visited {color: $Black; text-decoration: none; }
+        a:hover {color: $Black; text-decoration: none; }
+    }
+    :last-child{
+        border:0px;
+    }
+}
+//end menu
+
+
+body{
+    background:white;
+    font-family:$fontOswald;
+    color:black;
+}
+
+.whiskeyHeader{
+    height:$headerHeight;
+    position:fixed;
+    z-index:1000;
+    width:100%;
+    background:white;
+    @media screen and (max-width: 500px){
+        text-align:center;
+        height:auto !important;
+    }
+    .whiskeyHeaderLogo{
+        position:relative;
+        height:$headerHeight;
+        img{
+            height:$headerHeight;
+
+        }
+        .dapperLink{
+            position: absolute;
+            top:20px;
+            right:15px;
+           // border:1px solid red;
+            width:95px;
+            height:100px;
+        }
+    }
+    .whiskeyHeaderMenu{
+        div{
+            margin-right: 10px;
+            img{
+                margin-top:55px;
+
+            }
+        }
+        .whiskeyHeaderTickets{
+            img{
+
+            }
+        }
+        .whiskeyHeaderHamburger{
+            margin-top:5px;
+
+        }
+    }
+}
+
+.whiskeyHero{
+    width:100%;
+    img{
+        width:100%;
+    }
+}
+
+.mainTitle{
+    text-align:center;
+    font-size:2em;
+    font-weight:bold;
+    margin-top:25px;
+    @media screen and (max-width: 500px){
+        font-size:1.5em;
+        font-weight:bold;
+        margin-top:25px;
+    }
+}
+.whiskeyDek{
+    text-align: center;
+    font-size:1.5em;
+    margin-top:5px;
+    line-height:25px;
+    @media screen and (max-width: 500px){
+        font-size:1em;
+        margin:5px;
+
+
+    }
+}
+
+.whiskeyActivitysMother{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom:10px;
+    text-align:center;
+    margin-top:10px;
+    .whiskeyActivity{
+        width:300px;
+        @media screen and (max-width: 500px){
+            width:150px;
+        }
+        .whiskeyActivityText{
+            margin-bottom:15px;
+            .whiskeyActivityTextTitle{
+                font-size:1.5em;
+                font-weight:bold;
+                text-transform: capitalize;
+                margin-top:5px;
+            }
+            .whiskeyActivityTextDesc{
+                font-size:1em;
+                margin-top:5px;
+            }
+        }
+    }
+}
+
+.whiskeySponsors{
+    text-align:center;
+
+    .whiskeySponsersList{
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+        margin-bottom:10px;
+        text-align:center;
+        margin-top:10px;
+        margin-left:-50px;
+        @media screen and (max-width: 500px){
+            margin-left:0px;   
+        }
+        .whiskeySponsor{
+            width:180px;
+            margin:-10px;
+            @media screen and (max-width: 500px){
+                width:150px;
+            }
+        }
+    }
+}
+
+.whiskeySpiritsLogo{
+    text-align:center;
+}
+.whiskeySpirits{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom:10px;
+    text-align:center;
+    margin-top:10px;
+    .spiritListLeft, .spiritListRight{
+        width:300px;
+    }
+    .whiskeyBrand{
+       
+        ul{
+            list-style: none;
+            li{
+                text-align: left;
+            }
+        }
+        .brandTitle{
+            font-size: 1.5em;
+            font-weight:bold;
+            text-align: left;
+            margin-bottom:5px;
+        }
+        @media screen and (max-width: 500px){
+            width:300px;
+        }
+    }
+}
+
+.tasting{
+    margin-bottom:15px;
+    div{
+        display:inline-block;
+
+    }
+    .gold{
+        color:$Gold;
+    }
+    .tastingDescription{
+        margin-left:10px;
+        font-size:1.5em;
+        line-height:30px;
+        vertical-align:top;
+        width:913px;
+        @media screen and (max-width: 500px){
+            font-size:1em;
+            width:300px;
+        }
+    }
+}
+
+.footer{
+    background:$Black;
+    width:100%;
+
+    margin-top:5px;
+    div{
+        text-align:center
+    }
+}
+
+.socialShare{
+    border:1px solid white;
+    background:#000;
+    //width:650px;
+    display:none;
+    text-align:center;
+    div{
+        padding:50px;
+        display:inline-block;
+        @media screen and (max-width:400){
+            padding:5px;   
+        }
+        
+        img{
+            width:200px;
+            @media screen and (max-width:400){
+            width:95px;   
+        }
+        }
+    }
+}

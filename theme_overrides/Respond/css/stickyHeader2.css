@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 17, 2015, 9:58:23 AM
+    Author     : koriley
+*/
+
+.blackBar{
+    width:100%;
+   height:auto;
+    background-color:#000;
+    position:fixed;
+        top:0px;
+        z-index:99999999;
+}
+.socialShareBar{
+    
+}
+.socialShareBarChild{
+    text-align:right;
+    display:inline;
+    position: relative;
+	top: 25%;
+	transform:translateY(-50%);
+}
+
+.hashTag{
+    text-transform: uppercase;
+}

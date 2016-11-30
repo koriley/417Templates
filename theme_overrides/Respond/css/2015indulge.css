@@ -1,0 +1,157 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 4, 2015, 3:11:45 PM
+    Author     : julirose
+*/
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400,700';
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.mother {
+    margin-top: -26px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.childParallax h3{
+    color: white;
+    
+}
+
+.childParallax{
+    padding: 50px;
+}
+
+.allModules{
+    padding: 20px;
+    
+  
+}
+
+.microHeaderSpaceFix{
+    margin-bottom: 65px;
+}
+
+textarea{
+    width:100%;
+}
+
+/* Large desktop */
+    @media (min-width: 1200px) { 
+        .fbShare{
+            
+            width:51px;
+            position:absolute;
+            left:536px;
+            bottom:18px;
+        }
+        .tweet{
+             
+            width:60px;
+            position:absolute;
+            left:600px;
+            bottom:18px;
+        }
+        .instagram{
+            
+            width:60px;
+            position:absolute;
+            left:671px;
+            bottom:20px;
+        }
+        .instagram img{
+            width:45px;
+        }
+    }
+     
+    @media (min-width: 980px) and (max-width:1199px){
+      
+       .fbShare{
+            
+            width:51px;
+            position:absolute;
+            left:536px;
+            bottom:18px;
+        }
+        .tweet{
+             
+            width:60px;
+            position:absolute;
+            left:600px;
+            bottom:18px;
+        }
+        .instagram{
+            
+            width:60px;
+            position:absolute;
+            left:671px;
+            bottom:20px;
+        }
+        .instagram img{
+            width:45px;
+        }
+    }
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) { 
+    .fbShare{
+            
+            width:51px;
+            position:absolute;
+            left:536px;
+            bottom:18px;
+        }
+        .tweet{
+             
+            width:60px;
+            position:absolute;
+            left:600px;
+            bottom:18px;
+        }
+        .instagram{
+            
+            width:60px;
+            position:absolute;
+            left:671px;
+            bottom:20px;
+        }
+        .instagram img{
+            width:45px;
+        }
+     }
+    
+     /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) { 
+   .fbShare{
+            
+            width:30px;
+            position:absolute;
+            left:120px;
+            bottom:13px;
+        }
+        .tweet{
+             
+            width:30px;
+            position:absolute;
+            left:160px;
+            bottom:13px;
+        }
+        .instagram{
+            
+            width:30px;
+            position:absolute;
+            left:200px;
+            bottom:15px;
+        }
+        .instagram img{
+            width:45px;
+        }
+      
+    }
+    
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) {  } 

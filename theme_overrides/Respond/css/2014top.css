@@ -1,0 +1,348 @@
+/*
+    Document   : 2014Styles
+    Created on : Jan 28, 2014, 10:56:54 AM
+    Author     : koriley
+    Description: 
+        Purpose of the stylesheet follows.
+*/
+//google search stuff
+
+    .gsc-control-cse-en{
+
+        width: 200px !important;
+        background-color: transparent !important;
+        border: 0px !important;
+        float: right !important;
+        margin: 0px !important;
+        padding: 0px !important;
+
+    }
+    
+    iframe, object, embed {
+        max-width: 100%;
+    }
+
+@media (min-width: 980px) {
+
+    div.branding{
+        height:170px;
+    }
+
+    
+}
+@media only screen and (max-width: 780px) {
+    /* this fixes the right scroll on mobile */
+    html, body { width:100%;  overflow-x:hidden; }
+
+}
+@media only screen and (max-width: 320px) {
+
+    html .article h1.article-title{ font-size:250% !important;}
+    .galHead { font-size:200% !important;}
+}
+
+.galHead{
+    font-size:250% !important;
+}
+.navbar{
+    box-shadow: 0 0 0 0;
+    margin-bottom:0px !important;
+
+}
+#topLeftandRight{
+    margin-top:20px;
+}
+.nav-container{
+    background-image:none;
+    background-color:transparent;
+}
+
+.navbar .navbar-inner, .navbar .branding {
+    background-color:#000;
+    background-image: none;
+
+}
+
+.logo img{
+    margin-top:75px;
+    width:300px;
+}
+
+.navButton{
+    color:#ffffff;
+
+    text-shadow: 0 0 0;
+}
+
+.navbar .nav{
+
+}
+
+.adPlacement{
+    position:absolute;
+    top:100px;
+    left:auto;
+    right:0px;
+}
+
+.radiant_scroller .scroller-el {
+    width: 250px;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px; /* This is optional but recommended - otherwise your images will have no horizontal spacing */
+}
+
+nav.eyebrow #eyebrow-list.nav > li > a{
+    color:#ffffff;
+    text-shadow: none;
+
+}
+
+.navbar .nav > li > a:hover{
+    background-color:#fff;
+    color:red;
+}
+
+.logo-wrapper{
+    top:-65px; /* This raises the logo up*/
+}
+
+.adPlacement{
+    top:10px; /* this raises the ad up */
+}
+.nav-container .nav-wrapper{
+    margin-top:-40px; /* this brings the main nave bar up*/
+}
+/* this changes the color of the main menu */
+.navbar .nav li > div.menu-item-wrapper > a:hover{
+    color:red;
+    background-color:#000;
+    border:0px #000 solid;
+}
+
+/*////Dropdown menu stuff /// */
+.navbar .nav > li.dropdown:hover > div.menu-item-wrapper > a:hover {
+    color:red;
+    background-color:#000;
+    text-shadow:0px 0px 0px;
+    border:0px;
+}
+
+.navbar .nav > li.dropdown:hover > div.menu-item-wrapper > a {
+    color:red;
+    background-color:#000;
+    text-shadow:0px 0px 0px;
+    border:0px;
+}
+
+.navbar .nav > li > div.menu-item-wrapper > .dropdown-menu {
+    background-color:#000;
+    /*display:block; /* remove this to hide the dropdowns */
+}
+/*facebook image stuff */
+.faceBookImage{
+    display:none;
+}
+/* lower menu items in dropdown */
+.navbar .nav >li > div.menu-item-wrapper > .dropdown-menu{
+    opacity:1 ;
+}
+.navbar .nav > li ul.dropdown-menu li a{
+    color:#fff;
+    background-color:transparent;
+    border:0px;
+    text-shadow:0px 0px 0px;
+    font-size:75%;
+    text-align:center;
+    opacity:1;
+    font-family:"AL";
+
+}
+
+.navbar .nav > li ul.dropdown-menu li a:hover{
+    color:black;
+    background-color:#fff;
+    border:0px;
+    text-shadow:0px 0px 0px;
+    opacity:1;
+}
+
+/*the border around the lower menu item words*/
+.nav-container ul.nav > li ul.dropdown-menu li{
+    border:0px;
+    border-bottom: 1px #999 solid;
+}
+
+/*last child botom border*/
+.nav-container ul.nav > li ul.dropdown-menu li:last-child{
+    border-bottom:0px;
+}
+
+.nav-container ul.nav > li > div.menu-item-wrapper > ul.dropdown-menu > li a{
+    text-align:center;
+}
+/*//////////////////////////////////////////*/
+
+/* This is the caret */
+.navbar .nav > li >div.menu-item-wrapper >a span.caret{
+    opacity:0;
+}
+
+.sg-splash-bottom-menu .galleryMenu .galleryMenuItem .galleryMenuItemInner{
+    background-color:#000;
+    border-radius:10px 10px 10px 10px;
+    content: "";
+    width:10px; height:10px;
+}
+
+.sg-splash-bottom-menu .galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner, .sg-splash-bottom-menu .galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner:hover, .sg-splash-bottom-menu .galleryMenu .galleryMenuItem.selected .galleryMenuItemInner, .sg-splash-bottom-menu .galleryMenu .galleryMenuItem.selected .galleryMenuItemInner:hover{
+    background-color:red;
+    box-shadow: 1px 1px 1px #4D0006 inset;
+}
+
+.sg-splash-bottom-menu.sg-option-menu .galleryMenu .galleryMenuItem .galleryMenuItemInner{
+    width:10px; height:10px;
+}
+
+.sg-splash-bottom-menu .galleryMenuSpace{
+    background-color:transparent;
+    text-align:center;
+}
+
+.sg-splash-bottom-menu .pagination ul{
+    display:inline-block;
+}
+
+.calendar-view-search-form ul li:last-child a{
+    /* background-color:red;
+     background-image:none;*/
+}
+.monthly-calendar{
+    margin-top:10px;
+}
+
+/* read now module */
+.ReadNow{
+    text-align:center;
+    color:red;
+}
+
+/* make video iframes responsive, has jquery wrapper component */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*bact to top css */
+.back-to-top {
+
+    float:right;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(215, 25, 33, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+label{
+    text-align: left;
+}
+
+a.thumbnail div.data-picture-block img{
+    width: auto !important;
+}
+
+
+/*carousel bar div */
+
+#carDivBar{
+    border-top:7px solid black;
+    width:auto;
+    margin-top:17px;
+    margin-left:10px;
+}
+
+
+/* microsite header */
+
+.microHeader{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index:1000000;
+}
+
+
+
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+    .microHeader img{
+        height:40px;
+
+    }
+}
+
+@media (min-width:1025px)and (orientation : landscape){
+    .microHeader img{
+        height:40px;
+        margin-left:12%;
+    }
+}
+
+@media only screen and (min-width:668px) and (max-width:1024px) and (orientation : landscape){
+    .microHeader{
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        top: 0;
+        background-color: black;
+        z-index:1000000;
+    }
+    .microHeader img{
+        height:40px;
+        margin-left:12%;
+    }
+}
+
+@media all and (max-width: 800px)and (orientation : portrait){
+    .microHeader{
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        top: 0;
+        background-color: black;
+        z-index:1000000;
+    }
+    .microHeader img{
+        height:40px;
+        margin-left:12%;
+    }
+}
+
+
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}

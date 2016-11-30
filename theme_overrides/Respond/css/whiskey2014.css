@@ -1,0 +1,205 @@
+/* 
+    Document   : whiskey2014
+    Created on : Oct 3, 2013, 9:51:12 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face {
+	font-family: frutiger;
+	src: url('/fonts/FrutigerLTStd-BlackCn.otf');
+}
+@font-face {
+	font-family: agaramondPro;
+	src: url('/fonts/AGaramondPro-Regular.otf');
+}
+
+@font-face {
+	font-family: agaramondProBold;
+	src: url('/fonts/AGaramondPro-Bold.otf');
+}
+
+root { 
+    display: block;
+    
+}
+
+body {
+    background-color:#E7D2AD;
+    background-image:url('/images/whisky/2014/backgroundWF.jpg');
+    
+}
+ #mainBody a:link {color:#8D1B17 !important; }      /* unvisited link */
+ #mainBody a:visited {color:#8D1B17 !important; }  /* visited link */
+ #mainBody a:hover {color:#8D1B17 !important; text-decoration: none;}  /* mouse over link */
+ #mainBody a:active {color:#8D1B17 !important; }  /* selected link */ 
+ #mainBody table.tr.td{
+     padding:0px;
+     vertical-align: central;
+ }
+#mainBody{
+    font-family: agaramondPro !important;
+    color:black;
+    font-size: 15pt;
+    position:static;
+    top:100px;
+}
+.shadow{
+   -webkit-box-shadow: 
+        0px 0px 0px 0px #A3A3A3;
+    -moz-box-shadow: 
+        0px 0px 0px 0px #A3A3A3; 
+    box-shadow: 
+        0px 0px 0px 0px #A3A3A3;
+    background-color:transparent; 
+}
+.sticky{
+    text-align:center;
+    padding-left:25%;
+}
+#blackBar{
+    height:64px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color:#020202;
+    z-index:1010;
+    display:none;
+    text-align: center;
+    border-top:2px solid #817660;
+}
+#gallery td.image{
+    background-color:transparent;
+    width:0% !important;
+    
+}
+
+#gallery{
+   margin:auto; 
+}
+.jumps{
+    padding-top: 40px; margin-top: -40px;
+}
+.centerNav{
+    width:940px;
+    margin:auto;
+}
+.custAdSize{
+    background-color:transparent;
+}
+h1{
+    font-family: frutiger !important;
+    color:#8D1B17;
+    font-size: 35pt;
+    margin-top:-10px;
+}
+h2{
+    font-family: frutiger !important;
+    color:#572700;
+    font-size: 24pt;
+}
+h3{
+    font-family: agaramondProBold !important;
+    color:#000;
+    font-size: 14pt;
+    padding:0px;
+    margin:0px;
+    
+}
+hr{
+    background-color:#8d1b17;
+     color:#8d1b17;
+     height:3px;
+     border:0px;
+     margin-top:3px;
+     margin-bottom:3px;
+}
+
+.headImage{
+    
+}
+
+.navBar{
+    
+    background-color:black !important;
+    color:white !important;
+    
+    font-family: frutiger, impact !important;
+    font-size: 20pt !important;
+    
+    
+    border:0px !important;
+    border-radius: 0px !important;
+}
+.navBar a:link {color:#FFf !important; }      /* unvisited link */
+.navBar a:visited {color:#fff !important; }  /* visited link */
+.navBar a:hover {color:#f2bc67 !important; text-decoration: none;}  /* mouse over link */
+.navBar a:active {color:#fff !important; }  /* selected link */ 
+
+.footer{
+    background-color:black;
+    position:static;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:100px;
+    margin-top:75px;
+    text-align:center;
+    color:#E1D1AD;
+}
+.topFullBar{
+    background-color:#020202;
+    position:absolute;
+    left:0px;
+    right:0px;
+    height:284px;
+    top:36px;
+}
+
+/*bootstrap fixes */
+.noPad{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #DDCFBA;
+}
+.navbar{
+    background-color:transparent;
+    
+}
+
+.navbar-inner{
+    background-color:transparent;
+    background-image:none;
+    border:0px;
+}
+
+.thumbnail{
+    background-color:transparent;
+    border:0px;
+}
+.navbar-collapse{
+    padding-left:0px;
+}
+
+.popover{
+    max-width:400px;
+}
+
+.col-md-2{
+    padding-right:0px;
+    border:1px solid red;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .mobileRight{
+        padding-left:200px;
+    }
+    .navbar-nav{
+        margin:0px !important;
+    }
+}

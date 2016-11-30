@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 11, 2016, 9:29:28 AM
+    Author     : koriley
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+.industryMother {
+  font-family: "Roboto Condensed", sans-serif; }
+  .industryMother .industryName {
+    color: #cba200;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 25px;
+    line-height: 1; }
+  .industryMother .person {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around; }
+    .industryMother .person .personInfo {
+      line-height: 2em;
+      width: 860px;
+      margin-top: 20px; }
+      @media screen and (max-width: 500px) {
+        .industryMother .person .personInfo {
+          width: 300px; } }
+      .industryMother .person .personInfo .personName {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 25px; }
+      .industryMother .person .personInfo .personTitle {
+        font-weight: 200;
+        font-size: 18px;
+        text-transform: uppercase; }
+      .industryMother .person .personInfo .personEducation {
+        font-family: "Times New Roman", Georgia, Serif !important;
+        font-style: italic;
+        font-size: 16px; }
+      .industryMother .person .personInfo .personBio {
+        font-family: "Times New Roman", Georgia, Serif;
+        font-size: 18px; }
+    .industryMother .person .personImage {
+      width: 175px; }
+      .industryMother .person .personImage img {
+        width: 175px;
+        filter: grayscale(100%); }
+      .industryMother .person .personImage .photoCredit {
+        text-align: center;
+        font-size: 12px; }
+
+.nf {
+  text-align: right;
+  background-color: #00133d;
+  color: white;
+  font-size: 18 !important;
+  padding: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100; }
+  .nf img {
+    width: 700px; }
+
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #000b3d url("http://www.417mag.com/Biz417/upAarow.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+
+/*# sourceMappingURL=biz100.css.map */

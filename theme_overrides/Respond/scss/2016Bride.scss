@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 14, 2016, 3:49:24 PM
+    Author     : koriley
+*/
+
+/* vars */
+$menuColor : #9F9D9D;
+$backgroundColor: #fff;
+$tanBar: tan;
+$brandBar:#ccc;
+$menuTextColor:#B69E6D;
+/* style trees */
+
+body{
+    background-color:$backgroundColor;
+
+}
+
+.tanBar{
+    width:100%;
+    height:10px;
+    background-color:$tanBar;
+}
+
+.brandBar{
+    width:100%;
+    background-color:$brandBar;
+    height:82px;
+    .brideLogo{
+        display:inline-block;
+
+        text-align:left;
+        margin-top:5px;
+    }
+    .socialStuff{
+
+        text-align:right;
+
+        margin-top:-43px;
+        div{
+            display:inline-block;
+
+        }
+        .fb{
+
+            display:inline-block;
+        }
+    }
+
+}
+
+.galleryMenu{
+    padding-left:40%;
+    .galleryMenuItem{
+        .galleryMenuItemInner{
+            background:url('/images/bride/2016/Splash_Heart1.png');
+
+        }
+
+    }
+    .selected{
+        .galleryMenuItemInner{
+            background:url('/images/bride/2016/Splash_Heart2.png');
+        }
+    }
+}
+
+.innerMenu{
+    width:100%;
+    text-align:center;
+    ul{
+        list-style: none;
+
+        li{
+            display:inline-block;
+            color:$menuTextColor;
+            margin:20px;
+            margin-left:0px;
+            font-size:25px;
+        }
+    }
+}
+
+ul,ol{
+    padding:0px;
+    margin:0 0 0 0;
+}
+
+.gsc-search-box{
+    display:none;
+}
+#___gcse_0{
+    height:0px;
+
+}

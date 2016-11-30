@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2016, 11:10:07 AM
+    Author     : koriley
+*/
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
+.bodyText {
+  color: #D62027;
+  font-family: "Nunito", sans-serif;
+  text-align: center; }
+
+.bestOfHeader {
+  position: relative; }
+  .bestOfHeader .corperateBusinessSticker {
+    position: absolute;
+    width: 400px;
+    height: 70px;
+    right: 170px;
+    top: 200px; }
+
+/*# sourceMappingURL=bestOf.css.map */

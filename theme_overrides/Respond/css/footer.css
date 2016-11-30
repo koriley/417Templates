@@ -1,0 +1,15 @@
+/* 
+    Document   : footer
+    Created on : Feb 26, 2014, 8:52:55 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+footer{
+    background-color:#000;
+    background-image:none;
+}

@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 13, 2014, 9:30:57 AM
+    Author     : koriley
+*/
+
+.htmlClass1{
+    background:url(http://www.417mag.com/images/fashionation/2015/Fashionation-backgroundBLACK.jpg) no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html{
+    background:url(http://www.417mag.com/images/fashionation/2015/Fashionation-backgroundGOLD.jpg) no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    background-color:transparent;
+}
+
+#mainBody{
+    background-color:white;
+    padding:5px;
+    max-width:769px;   
+}
+
+.goldRibbon{
+
+}
+
+.bottom5{
+    margin-bottom:5px;
+}
+
+.top10{
+    margin-top:10px;
+}
+
+.top5{
+    margin-top:5px;
+}
+
+bottom10{
+    margin-bottom:10px;
+}
+
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+    .carousel-image{
+        width:750px !important;
+        //margin-right:10px;
+    } 
+    #fashonCarousel{
+        width:779px; 
+        height:auto; 
+        background-color:#fff;
+    }
+}
+
+@media (min-width: 980px) and (max-width:1199px){
+    
+
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .carousel-image{
+        width:530px !important;
+        //margin-right:10px;
+    }
+    #fashonCarousel{
+        width:554px; 
+        height:auto; 
+        background-color:#fff;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {  } 

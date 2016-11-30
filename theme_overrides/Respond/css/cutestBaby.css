@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 29, 2014, 10:42:36 AM
+    Author     : koriley
+*/
+
+body{
+    background-color:#fff;
+}
+
+#mainBody{
+    background-color:white;
+}
+
+input[type="submit"]:hover{
+    background-position: 0 !important;
+}
+
+/* Large desktop */
+    @media (min-width: 1200px) { 
+        .fbShare{
+            width:30px; position:absolute; right:38px; top:260px;
+        }
+        .tweet{
+            width:30px; position:absolute; right:5px; top:260px
+        }
+    }
+     
+    @media (min-width: 980px) and (max-width:1199px){
+      
+         .fbShare{
+            width:20px; position:absolute; right:38px; top:210px;
+        }
+        .tweet{
+            width:20px; position:absolute; right:5px; top:210px
+        }
+    }
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) { 
+    .fbShare{
+            width:15px; position:absolute; right:28px; top:153px;
+        }
+        .tweet{
+            width:15px; position:absolute; right:5px; top:150px
+        }
+     }
+    
+     /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) { 
+   /* .fbShare{
+            width:15px; position:absolute; right:28px; top:153px;
+        }
+        .tweet{
+            width:15px; position:absolute; right:5px; top:150px
+        }*/
+      
+    }
+    
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) {  } 

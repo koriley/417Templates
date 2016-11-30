@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 13, 2016, 12:50:05 PM
+    Author     : koriley
+*/
+.carouselLabel {
+  line-height: 2;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; }
+
+.carousel-image {
+  width: 400px !important; }
+
+.jlsSponsors {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  background: #e51937; }
+  .jlsSponsors .jlsSponsorsHeader {
+    width: 100%;
+    text-align: center; }
+    .jlsSponsors .jlsSponsorsHeader em {
+      color: white;
+      font-size: 12px;
+      line-height: 20.4px;
+      text-align: center;
+      background-color: #e51937; }
+  .jlsSponsors .jlsSponsorsItemPartners {
+    color: white;
+    margin-top: 3%;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 20.4px;
+    font-style: italic; }
+    @media screen and (max-width: 700px) {
+      .jlsSponsors .jlsSponsorsItemPartners {
+        margin-top: 8%; } }
+  .jlsSponsors .jlsSponsorsItem {
+    width: 100px; }
+    .jlsSponsors .jlsSponsorsItem em {
+      color: white;
+      width: 100px;
+      height: 100px; }
+
+/*# sourceMappingURL=tourOfKitchens.css.map */

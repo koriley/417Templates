@@ -1,0 +1,400 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Aug 31, 2016, 9:42:30 AM
+    Author     : koriley
+*/
+@import "https://fonts.googleapis.com/css?family=Oswald|PT+Sans";
+body {
+  font-family: "Oswald", sans-serif;
+  background: #fff;
+  color: #000; }
+  body a:link {
+    color: #000;
+    text-decoration: none; }
+  body a:active {
+    color: #000;
+    text-decoration: none; }
+  body a:visited {
+    color: #000;
+    text-decoration: none; }
+  body a:hover {
+    color: #000;
+    text-decoration: none; }
+
+.inline {
+  display: inline-block !important; }
+
+.hamburgerNav {
+  position: fixed;
+  top: 0;
+  right: 200px;
+  z-index: 100;
+  width: 100px;
+  cursor: pointer; }
+  @media screen and (max-width: 500px) {
+    .hamburgerNav {
+      right: 0;
+      width: 50px;
+      height: 50px; } }
+  @media screen and (max-width: 667px) {
+    .hamburgerNav {
+      right: 10px;
+      width: 50px;
+      height: 50px; } }
+  .hamburgerNav div {
+    border: 5px solid black;
+    width: 50px;
+    margin: 10px;
+    background: black; }
+    @media screen and (max-width: 500px) {
+      .hamburgerNav div {
+        width: 25px;
+        border: 3px solid black; } }
+
+.tsHeader {
+  width: 100%; }
+  .tsHeader .tsHeaderLogo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 25%; }
+    .tsHeader .tsHeaderLogo img {
+      width: 75% !important; }
+  .tsHeader .videoHeader {
+    position: relative; }
+    .tsHeader .videoHeader .peopleCentricLogo {
+      position: absolute;
+      width: 320px;
+      height: 45px;
+      top: 275px;
+      left: 725px;
+      z-index: 4200; }
+  .tsHeader .notVideoHeader {
+    position: relative; }
+    .tsHeader .notVideoHeader .mobilePeopleCentricLogo {
+      position: absolute;
+      width: 165px;
+      height: 25px;
+      top: 95px;
+      left: 25px;
+      z-index: 4200; }
+
+.hedDek {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px; }
+  @media screen and (max-width: 500px) {
+    .hedDek {
+      margin-top: 15px; } }
+  @media screen and (max-width: 667px) {
+    .hedDek {
+      margin-top: 10px; } }
+  .hedDek .head {
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    margin-top: 5px; }
+    @media screen and (max-width: 500px) {
+      .hedDek .head {
+        font-size: 17px;
+        margin-top: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: bold; } }
+    @media screen and (max-width: 670px) {
+      .hedDek .head {
+        line-height: 35px;
+        margin-left: 10px;
+        font-size: 1.5em; } }
+  .hedDek .dek {
+    line-height: 35px;
+    font-size: 1.5em;
+    margin-top: 20px; }
+    @media screen and (max-width: 500px) {
+      .hedDek .dek {
+        font-size: 18px;
+        margin-left: 5px;
+        margin-right: 5px;
+        line-height: 25px; } }
+    @media screen and (max-width: 670px) {
+      .hedDek .dek {
+        margin-left: 10px;
+        font-size: 1em;
+        line-height: 25px; } }
+
+.getTickets {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 25px;
+  letter-spacing: 5px;
+  font-weight: bolder; }
+  @media screen and (max-width: 500px) {
+    .getTickets {
+      line-height: 55px;
+      margin-top: 25px;
+      font-size: 2em; } }
+
+.corpRate {
+  width: 100%;
+  text-align: center;
+  line-height: 55px;
+  font-size: 1.5em; }
+  @media screen and (max-width: 500px) {
+    .corpRate {
+      line-height: 25px; } }
+
+.yellowBarLeft {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: -11;
+  margin-top: 35px;
+  padding-right: 100px; }
+  @media screen and (max-width: 500px) {
+    .yellowBarLeft {
+      margin-top: 5px; } }
+  .yellowBarLeft div {
+    height: 88.993px; }
+    @media screen and (max-width: 500px) {
+      .yellowBarLeft div {
+        height: 59px; } }
+  .yellowBarLeft .barLeft {
+    width: 415.990px;
+    background: url("/images/thinkSummit/ThinkSummit16-microsite-speakers.png") no-repeat;
+    float: left; }
+    @media screen and (max-width: 500px) {
+      .yellowBarLeft .barLeft {
+        background-size: 275px; } }
+    .yellowBarLeft .barLeft .text {
+      text-align: left;
+      font-size: 3.5em;
+      line-height: 90px;
+      margin-left: 69px; }
+      @media screen and (max-width: 500px) {
+        .yellowBarLeft .barLeft .text {
+          font-size: 2.5em;
+          line-height: 55px;
+          margin-left: 15px; } }
+  .yellowBarLeft .barRight {
+    background: #EDE929;
+    margin-right: -25px; }
+
+.speakerProfiles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  text-align: center; }
+  .speakerProfiles .speaker {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    height: 200px;
+    background: #f8d2a6;
+    width: 200px; }
+    @media screen and (max-width: 500px) {
+      .speakerProfiles .speaker {
+        width: 150px !important;
+        height: 150px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        margin-left: 5px !important; } }
+    .speakerProfiles .speaker .img {
+      width: inherit;
+      height: inherit;
+      background: #f8d2a6;
+      position: relative; }
+      .speakerProfiles .speaker .img .speakerName {
+        display: none;
+        width: inherit;
+        height: inherit;
+        background: rgba(237, 233, 41, 0.9);
+        position: absolute;
+        top: 0; }
+        .speakerProfiles .speaker .img .speakerName .innerText {
+          position: relative; }
+          .speakerProfiles .speaker .img .speakerName .innerText .theSpeakerName {
+            padding-top: 10px;
+            font-size: 24px;
+            line-height: 25px; }
+          .speakerProfiles .speaker .img .speakerName .innerText .speakerCompany {
+            font-size: 20px;
+            font-style: italic;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            line-height: 25px; }
+            @media screen and (max-width: 500px) {
+              .speakerProfiles .speaker .img .speakerName .innerText .speakerCompany {
+                font-size: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px; } }
+          .speakerProfiles .speaker .img .speakerName .innerText .speakerDesc {
+            font-size: 16px; }
+            @media screen and (max-width: 500px) {
+              .speakerProfiles .speaker .img .speakerName .innerText .speakerDesc {
+                font-size: 10px;
+                line-height: 15px; } }
+
+.yellowBarRight {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: -11;
+  padding-right: 100px; }
+  .yellowBarRight div {
+    height: 88.993px; }
+    @media screen and (max-width: 500px) {
+      .yellowBarRight div {
+        height: 59px; } }
+  .yellowBarRight .barRight {
+    width: 415.990px;
+    background: url("/images/thinkSummit/ThinkSummit16-microsite-agenda.png") no-repeat;
+    float: right; }
+    @media screen and (max-width: 500px) {
+      .yellowBarRight .barRight {
+        background-size: 275px;
+        width: 300px; } }
+    .yellowBarRight .barRight .text {
+      text-align: right;
+      font-size: 3.5em;
+      line-height: 90px;
+      margin-right: 70px; }
+      @media screen and (max-width: 500px) {
+        .yellowBarRight .barRight .text {
+          font-size: 2.5em;
+          line-height: 55px;
+          margin-right: 80px; } }
+  .yellowBarRight .barLeft {
+    background: #EDE929;
+    width: 1226px; }
+
+.agendaContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
+  .agendaContainer .agendaBoth {
+    border: 0px solid gray;
+    width: 510px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px; }
+    @media screen and (max-width: 500px) {
+      .agendaContainer .agendaBoth {
+        width: 295px; } }
+    .agendaContainer .agendaBoth .agendaEvent {
+      vertical-align: middle;
+      padding-top: 15px;
+      color: #000;
+      font-family: "PT Sans", sans-serif; }
+      .agendaContainer .agendaBoth .agendaEvent div {
+        margin-right: 5px; }
+      .agendaContainer .agendaBoth .agendaEvent .agendaMarker {
+        width: 28px;
+        height: 30px;
+        background: url("/images/thinkSummit/ThinkSummit16-microsite-agenda-arrow.png") no-repeat; }
+      .agendaContainer .agendaBoth .agendaEvent .time {
+        vertical-align: top; }
+      .agendaContainer .agendaBoth .agendaEvent .agendaDesc {
+        vertical-align: top;
+        border-bottom: 1px solid #EDE929;
+        width: 500px; }
+        @media screen and (max-width: 500px) {
+          .agendaContainer .agendaBoth .agendaEvent .agendaDesc {
+            width: 290px; } }
+        .agendaContainer .agendaBoth .agendaEvent .agendaDesc .eventTitle {
+          word-wrap: break-word;
+          font-weight: bold; }
+  @media screen and (max-width: 500px) {
+    .agendaContainer .agendaRight {
+      margin-top: -50px !important; } }
+  @media screen and (max-width: 670px) {
+    .agendaContainer .agendaRight {
+      margin-top: -50px !important; } }
+
+.presentedBy {
+  text-align: center;
+  margin-top: 25px; }
+  .presentedBy .presentedByText {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-right: 5px; }
+
+.sponsors .hostedText {
+  font-size: 1.5em; }
+.sponsors .sponsorText {
+  font-size: 1em; }
+.sponsors img {
+  margin: 25px; }
+
+.footContainer {
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center; }
+  .footContainer .footText {
+    font-size: 1.5em;
+    margin: 5px;
+    margin-top: 45px;
+    margin-bottom: 15px; }
+  .footContainer .footTextForm, .footContainer .footText {
+    letter-spacing: 2px; }
+
+.navMenu {
+  background: black;
+  width: 290px;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  display: none; }
+  .navMenu .menuItems {
+    color: white; }
+    .navMenu .menuItems .item {
+      cursor: pointer;
+      border-bottom: 1px solid white;
+      width: 100%;
+      font-size: 1.5em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 10px;
+      text-transform: capitalize; }
+      .navMenu .menuItems .item a:link {
+        color: white;
+        text-decoration: none; }
+      .navMenu .menuItems .item a:active {
+        color: white;
+        text-decoration: none; }
+      .navMenu .menuItems .item a:visited {
+        color: white;
+        text-decoration: none; }
+      .navMenu .menuItems .item a:hover {
+        color: white;
+        text-decoration: none; }
+      .navMenu .menuItems .item a {
+        margin-left: 5px; }
+
+.socialShare {
+  border: 1px solid #fff;
+  background: #fff;
+  display: none;
+  text-align: center; }
+  .socialShare div {
+    padding: 50px;
+    display: inline-block; }
+    @media screen and (max-width: 500px) {
+      .socialShare div {
+        padding: 5px; } }
+    .socialShare div img {
+      width: 200px; }
+      @media screen and (max-width: 500px) {
+        .socialShare div img {
+          width: 70px; } }
+
+/*# sourceMappingURL=thinkSummit.css.map */

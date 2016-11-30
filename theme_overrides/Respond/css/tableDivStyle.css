@@ -1,0 +1,37 @@
+/* 
+    Document   : tableDivStyle
+    Created on : Jun 24, 2014, 10:00:01 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet is to define divs so they can act like tables.
+*/
+
+/*root { 
+    display: block;
+}
+
+.table{
+    display:table;
+}
+.tableRow{
+    display:table-row;
+}
+.tableCell{
+    display:table-cell;
+}
+#dayContainer{
+    display:table-cell; 
+    margin-bottom:5px; 
+    float:left; 
+    margin-left:5px; 
+   
+    position: relative;
+}
+.innerCell{
+    display:table-cell; 
+    margin-bottom:5px; 
+    float:left; 
+    margin-left:5px; 
+    
+    position: relative;
+}*/

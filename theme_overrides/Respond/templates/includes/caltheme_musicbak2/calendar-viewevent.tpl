@@ -1,0 +1,1 @@
+{include file="calendar-viewevent.base.tpl"}

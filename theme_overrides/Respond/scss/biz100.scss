@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 11, 2016, 9:29:28 AM
+    Author     : koriley
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+
+$robato: 'Roboto Condensed', sans-serif;
+$serif: "Times New Roman", Georgia, Serif;
+$primaryColor:#00133d;
+$secondaryColor: blue;
+.industries{
+   
+}
+
+.industryMother{
+    font-family: $robato;
+    
+    
+    .industryName{color: #cba200;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 25px;
+    line-height: 1;
+
+    }
+    .person{
+        margin-top: 30px;
+    margin-bottom: 30px; 
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+        .personInfo{
+            
+            line-height: 2em;
+            width:860px;
+            
+            margin-top: 20px;
+            @media screen and (max-width: 500px){
+                width:300px;
+            }
+            .personName{
+                
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 25px;
+
+            }
+            .personTitle{
+                font-weight: 200;
+    font-size: 18px;
+    text-transform: uppercase;
+            }
+            .personEducation{
+                font-family: $serif !important;
+                font-style: italic;
+                font-size: 16px;
+            }
+            .personBio {
+                font-family: $serif;
+                font-size: 18px;
+            }
+        }
+        .personImage{
+
+            width:175px;
+            img{
+                width:175px;
+                filter: grayscale(100%);
+            }
+            .photoCredit
+            {text-align: center;
+            font-size: 12px;}
+        }
+        .personDetail{
+
+
+
+        }
+        
+    }
+}
+.nf{
+    text-align: right;
+    background-color: $primaryColor;
+    img { width: 700px; }
+    color: white;
+    font-size: 18 !important;
+    padding: 5px;
+    font-family: $robato;
+    font-weight: 100;
+    
+}
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #000b3d url("http://www.417mag.com/Biz417/upAarow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}

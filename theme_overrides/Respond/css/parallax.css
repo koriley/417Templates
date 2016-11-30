@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 26, 2015, 12:19:24 PM
+    Author     : koriley
+*/
+
+
+
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+  background:none;
+   background-color:black !important;
+   color:#fff;
+
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    
+   
+}
+
+.center{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.container{
+    color:#fff ;
+}
+
+html{
+  /*  background:url(http://417mag.com/images/whisky/test/wood.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+*/
+color:white;}
+
+.container-custom{
+    text-align:center;
+    color:white;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th{
+    color:#000;
+}
+
+.tbg{
+   
+    background-color:rgba(25, 25, 25, .5);
+    
+    padding:15px;
+}
+
+.quote{
+    color:white;
+    font-weight:bold;
+    font-size:45px;
+   vertical-align: middle;
+    width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    line-height:100px;
+    font-family: 'Special Elite', cursive;
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+    
+}
+
+.dim{
+    width:100%;
+    height:auto;
+    background-color:rgba(25,25,25,.5);
+    
+}
+
+.topFix{
+    position:fixed;
+    top:0;
+    z-index:1000;
+    width:100%;
+    color: white;
+   background-color:#000;
+    background-image:url(http://417mag.com/images/whisky/test/wood.jpg);
+   box-shadow:1px 1px 5px #000;
+}
+
+.headStyle{
+    color:white;
+    
+}
+.navSpace{
+    height:60px;
+}

@@ -1,0 +1,142 @@
+/* 
+    Document   : 2014Article
+    Created on : Apr 7, 2014, 4:58:09 PM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@media only screen and (max-width: 320px) {
+
+   html .article h1.article-title{ font-size:250% !important;}
+   galHead { font-size:2% !important;}
+}
+
+
+root { 
+    display: block !important;
+    line-height: 1.9em !important;
+}
+h3.deck{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+      line-height: 1.3em !important;
+    color: #333 !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    font-size: 115% !important;  
+    font-weight: 200 !important;
+    
+   
+}
+
+.article-title{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-weight: bolder;
+     font-size: 230% !important;    
+      line-height: 1.3em !important;
+}
+
+h3.article-title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-weight: bold !important;
+    
+          
+}
+
+.image-container{
+    text-align: center !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
+.page-content{
+    line-height: 1.9 !important;
+}
+
+.pullQuote{
+width: 300px !important;
+float: right !important;
+border-left: 1px dotted black !important;
+font-size: 150% !important;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+line-height: normal !important;
+padding-left: 10px !important;
+padding-bottom: 10px !important;
+padding-top: 10px !important;
+   font-weight: 700 !important;
+    
+}
+.smHead h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-size: 16px !important;
+    color: black !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+       
+}
+
+.smHead h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-size: 16px !important;
+    color: black !important;
+    font-weight: bold !important;
+    line-height: 1em !important;
+}
+
+.smHead h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-size: 16px !important;
+    color: black !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+   line-height: 1em !important;
+}
+
+
+article .by-line {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    color: black !important;
+    margin-bottom: 20px !important;
+    
+    
+    
+}
+.photo-description {
+    font-size: 12px !important;
+font-style: italic !important;
+}
+
+.article p {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+
+.sidebar  {
+width: 300px !important;
+float: right !important;
+background-color: rgba(233, 233, 234, 1) !important;
+padding: 15px !important; 
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+font-size: 14px !important;
+margin-left: 10px !important;
+font-weight: 200 !important;
+
+
+}
+.sidebar h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-size: 200% !important;
+     font-weight: bold !important;
+    
+}
+.sidebar h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    font-size: 200% !important;
+    text-transform: Uppercase !important;   
+    font-weight: bold !important;
+    
+}

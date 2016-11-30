@@ -1,0 +1,360 @@
+/* 
+    Document   : 30dayGiveAway
+    Created on : May 8, 2014, 11:26:41 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+body{
+    background:transparent;
+   
+}
+header{
+    margin-bottom:0px !important;
+}
+.microHeaderSpaceFix{
+    margin-bottom:35px;
+}
+
+.dayOff{
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+}
+.dayOn{
+    -webkit-filter:opacity(1);
+    filter: opacity(1);
+}
+.dayPast{
+    background-color:black;
+}
+.headImage{
+    margin-top:0px;
+}
+/* prize grid*/
+
+#dayListing{
+    width:165px;
+    max-height:50px;
+    margin-bottom:10px;
+    color:white;
+    background-color:black;
+    display:table-cell;
+    float:left;
+    text-align:center;
+    margin-left:5px;
+}
+#desc{
+    opacity: 0.5;
+    background-color:grey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:0;
+    z-index:1000;
+    display:none;
+}
+
+#descText{
+    opacity: 1;
+    color:#fff;
+    width:100%;
+    position: absolute;
+    bottom:5px;
+    z-index:1001;
+    max-height:240px;
+    display:none;
+    text-align:center;
+}
+
+#descText a:link {text-decoration:none; color:white;}
+#descText a:visited {text-decoration:none; color:white;}
+#descText a:hover {text-decoration:none; color:white;}
+#descText a:active {text-decoration:none; color:white;}
+
+.browserLink a:link {text-decoration:none; color:white;}
+.browserLink a:visited {text-decoration:none; color:white;}
+.browserLink a:hover {text-decoration:none; color:white;}
+.browserLink a:active {text-decoration:none; color:white;}
+
+
+.hidden{visibility: hidden;}
+
+/* reliable car */
+.reliable{
+    position:relative;
+}
+
+.likeAppear{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1000;
+}
+
+
+/* child page */
+#mainChildText{
+
+}
+#mainChildImg{
+    margin-bottom:10px;
+}
+
+.rightSide{
+    text-align:center; 
+    margin-bottom:5px;
+}
+
+
+
+/* portrait devices */
+/*ipad */
+
+@media all and (max-width: 768px) and (orientation : portrait){
+    .dayOfTheWeek{
+        display:none;
+    }
+    body{
+    background:transparent;
+    background: linear-gradient(white,grey,black);
+}
+}
+@media all and (max-width: 800px) and (orientation : portrait){
+    .prize{
+        margin:5px;
+    }
+body{
+    background:transparent;
+    background: linear-gradient(#AAD4F2 , #125EA8);
+}
+    .prize img{
+        width:100% !important;
+    }
+    .winSweet{
+        margin:1px;
+        width:100%;
+        height:45px;
+
+    }
+    .mobileHead{
+        display:block;
+    }
+    .desktopHead{
+        display:none;
+    }
+}
+
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:801px){
+    .drop50{
+        margin-top:50px;
+    }
+    .ipadCenter{
+        margin-left:13px;
+    }
+    .headMother{
+        /*  border:2px solid red;
+          margin-top:25px;
+          margin-bottom:75px;
+          background:#fff;*/
+    }
+
+    .mobileHead{
+        display:none;
+    }
+    .desktopHead{
+        display:block;
+    }
+
+    .backGround{
+        background:url(http://www.417mag.com/images/30Days/2016/31Days_Background2.png) no-repeat center center fixed;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width:100%;
+        height:100%;
+    }
+
+    #dayContainer{
+        /* display:table-cell; 
+         
+         
+          padding: 0px;
+         max-height:289px; 
+         min-height:139px;
+         max-width:160px;
+         min-width:160px;
+         position: relative;
+         background-color:white;
+         border:1px solid black;*/
+        position:relative;
+        width:166px;
+        height:166px;
+        background-color:white;
+        margin:2px;
+        float:left;
+    }
+    .first #dayContainer{
+        margin-left:0px;
+    }
+    .last #dayContainer{
+        margin-right:0px;
+    }
+
+    .dayOfTheWeek{
+        display:inline-block;
+
+
+
+
+    }
+
+    .winSweet{
+
+        margin:2px 2px 2px 0 !important;
+        width:846px;
+        height:166px;
+        float:left;
+        text-align:center;
+        background:#fff;
+    }
+    .winSweet img{
+        margin-top:50px;
+    }
+}
+/*ipad*/
+@media only screen and (min-width:781px) and (max-width:1024px) and (orientation : landscape){
+    #dayContainer{
+        /* display:table-cell; 
+         
+         
+          padding: 0px;
+         max-height:289px; 
+         min-height:139px;
+         max-width:160px;
+         min-width:160px;
+         position: relative;
+         background-color:white;
+         border:1px solid black;*/
+        position:relative;
+        width:126px;
+        height:126px;
+        background-color:white;
+        margin:1px;
+        float:left;
+    }
+
+    .dayOfTheWeek{
+        float:left;
+        width:126px;
+        margin:1px;
+        background-color:white;
+    }
+
+    .winSweet{
+       /* margin:1px; 
+        width:382px;
+        height:126px;
+        float:left;*/
+
+    }
+    .winSweet{
+
+        margin:2px 2px 2px 0 !important;
+        width:638px;
+        height:126px;
+        float:left;
+        text-align:center;
+        background:#fff;
+    }
+    .winSweet img{
+        margin-top:25px;
+    }
+    .ipadCenter{
+        width:900px;
+        margin:auto;
+    }
+}
+
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+    .prize{
+        margin:5px;
+    }
+
+    .prize img{
+        width:100% !important;
+    }
+    .winSweet{
+        margin:1px;
+        width:100%;
+        height:45px;
+
+    }
+    .mobileHead{
+        display:block;
+    }
+    .desktopHead{
+        display:none;
+    }
+}
+/*large Phone*/
+@media (min-width:667px)and (max-width:780px)and (orientation : landscape){
+    .prize{
+        margin:5px;
+    }
+
+    .prize img{
+        width:100% !important;
+    }
+    .winSweet{
+        margin:1px;
+        width:100%;
+        height:45px;
+
+    }
+    .mobileHead{
+        display:block;
+    }
+    .desktopHead{
+        display:none;
+    }
+}
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+    .prize{
+        margin:5px;
+    }
+
+    .prize img{
+        width:100% !important;
+    }
+    .winSweet{
+        margin:1px;
+        width:100%;
+        height:45px;
+
+    }
+    .mobileHead{
+        display:block;
+    }
+    .desktopHead{
+        display:none;
+    }
+}
+
+/**
+**
+**line fixes
+**
+**/
+.page-container .respond-container{border-right:0px;}
+.page-container .noBorder {border-bottom:0px;}
+#topLeftandRight{border-bottom:0px;}

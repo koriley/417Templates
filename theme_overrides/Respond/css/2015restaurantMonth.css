@@ -1,0 +1,540 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jun 2, 2015, 10:00:13 AM
+    Author     : koriley 
+*/
+
+body{
+    background-color:#fff;
+}
+.microHeaderSpaceFix{
+    margin-bottom:55px;
+}
+.rmNav{
+
+    background-color:#fff !important;
+}
+.rmNav ul li a{
+    color:black !important;
+    text-transform: uppercase;
+}
+
+.liText{
+    padding-top:10px;
+    font-size:25px;
+    margin-right:7%;
+}
+.blackBar{
+    width:100%;
+    border-bottom:1px solid black;
+}
+
+.midHeader img{
+    max-width:780px;
+}
+.headerInline{
+    display:inline;
+}
+
+.aboutRM{
+    background-color:#d0d0d0;
+}
+
+.sponRM{
+    background-color: #d0d0d0;
+}
+
+/*************************************Responsive**************************************************/
+/* portrait devices */
+/*ipad */
+@media all and (max-width: 800px)and (orientation : portrait){
+    .feedImg{
+        display:none;
+    }
+    .aboutImg {
+        display:none;
+    }
+    .raceImg{
+        display:none;
+    }
+    .midHeader img{
+        width:420px;
+    }
+    .leftHeader img{
+        max-width:150px;
+    }
+    .rightHeader img{
+        max-width:150px;
+    }
+    .rmNav{
+        background-color:#fff !important;
+    }
+    .navbar .nav{
+        text-align:left;
+
+    }
+
+    .mother{
+        margin-bottom:15px;
+    }
+
+    .aboutRM{
+        padding: 30px; 
+        
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+ .feedRM{
+         padding: 30px; 
+        
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white;  
+        background-color: gray;
+    }
+    .raceRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        background-color: gray !important;
+    }
+
+    .sponRM{
+        padding: 30px; 
+         
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+}
+/*medium phone*/
+@media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+    .midHeader img{
+        width:100%;
+    }
+    .leftHeader img{
+        max-width:150px;
+    }
+    .rightHeader img{
+        max-width:150px;
+    }
+    .rmNav{
+        background-color:#fff !important;
+    }
+    .navbar .nav{
+        text-align:left;
+
+    }
+
+    .mother{
+        margin-bottom:15px;
+    }
+
+    .aboutRM{
+        padding: 30px; 
+        max-width: 300px; 
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+ .feedRM{
+        padding: 30px; 
+        max-width: 300px; 
+        
+        font-size: 16px; 
+         
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+    .raceRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        background-color: gray !important;
+    }
+
+    .sponRM{
+        padding: 30px; 
+        max-width: 300px; 
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+}
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+
+    .midHeader img{
+        width:100%;
+    }
+    .leftHeader img{
+        max-width:150px;
+    }
+    .rightHeader img{
+        max-width:150px;
+    }
+    .rmNav{
+        background-color:#fff !important;
+    }
+    .navbar .nav{
+        text-align:left;
+
+    }
+
+    .mother{
+        margin-bottom:15px;
+    }
+
+    .aboutRM{
+        padding: 30px; 
+        max-width: 300px; 
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+       
+    }
+ .feedRM{
+        padding: 30px; 
+        max-width: 300px; 
+         
+        font-size: 16px; 
+        
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+    .raceRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        background-color: gray !important;
+    }
+
+    .sponRM{
+        padding: 30px; 
+        max-width: 300px; 
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+}
+
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:1025px)and (orientation : landscape){
+
+    .popup img{
+        margin-top:25%;
+
+    }
+    .tweet img{
+        margin-left:20%;
+    }
+    .mother{
+        margin-bottom:15px;
+    }
+    .sticky{
+        position:fixed;
+        top:35px;
+        text-align:center;
+        width:100%;
+        z-index:10000;
+        border-bottom:1px solid black;
+    }
+    .aboutRM{
+        padding: 30px; 
+        width: 740px; 
+        float: left; 
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+        
+    }
+
+    .raceRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+    .feedRM{
+        padding: 30px; 
+        max-width: 740px; 
+        float: left; 
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+    .sponRM{
+        padding: 30px; 
+        max-width: 1200px; 
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+       
+    }
+    .sponRM div{
+        margin:5px;
+        display:inline;
+    }
+    .sponRM > br{
+        margin:25px;
+    }
+}
+/*ipad*/
+@media only screen and (min-width:668px) and (max-width:1024px) and (orientation : landscape){
+    .liText{
+        padding-top:10px;
+        font-size:20px;
+        margin-right:7%;
+    }
+
+    .midHeader img{
+        width:560px;
+    }
+    .popup img{
+        margin-top:25%;
+
+    }
+    .tweet img{
+        margin-left:20%;
+    }
+    .mother{
+        margin-bottom:15px;
+    }
+
+    .sticky{
+        position:fixed;
+        top:35px;
+        text-align:center;
+        width:100%;
+        z-index:10000;
+        border-bottom:1px solid black;
+    }
+    .aboutRM{
+        padding: 30px; 
+        max-width: 500px; 
+        float: left; 
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+        
+    }
+
+    .feedRM{
+        padding: 30px; 
+        max-width: 500px; 
+        float: left; 
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+
+    .raceRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+
+    .sponRM{
+        padding: 30px; 
+        max-width: 1200px; 
+        font-size: 16px; 
+        height: 340px; 
+        text-align: center; 
+        color: white; 
+       
+    }
+    .sponRM div{
+        margin:5px;
+        display:inline;
+    }
+    .sponRM > br{
+        margin:25px;
+    }
+}
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+    .midHeader img{
+        width:100%;
+    }
+    .leftHeader img{
+        max-width:150px;
+    }
+    .rightHeader img{
+        max-width:150px;
+    }
+    .rmNav{
+        background-color:#fff !important;
+    }
+    .navbar .nav{
+        text-align:left;
+
+    }
+
+    .mother{
+        margin-bottom:15px;
+    }
+
+    .aboutRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+
+    .raceRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        background-color: gray !important;
+    }
+ .feedRM{
+        padding: 30px; 
+        
+        font-size: 16px; 
+        
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+    .sponRM{
+        padding: 30px; 
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+    .sponRM div{
+        margin:5px;
+    }
+
+}
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+    .midHeader img{
+        width:100%;
+    }
+    .leftHeader img{
+        max-width:150px;
+    }
+    .rightHeader img{
+        max-width:150px;
+    }
+    .rmNav{
+        background-color:#fff !important;
+    }
+    .navbar .nav{
+        text-align:left;
+
+    }
+
+    .mother{
+        margin-bottom:15px;
+    }
+
+    .aboutRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        
+    }
+    
+     .feedRM{
+        padding: 30px; 
+         
+        font-size: 16px; 
+         
+        text-align: center; 
+        color: white; 
+        background-color: gray;
+    }
+
+    .raceRM{
+        padding: 30px; 
+
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+        background-color: gray !important;
+    }
+
+    .sponRM{
+        padding: 30px; 
+
+        font-size: 16px; 
+
+        text-align: center; 
+        color: white; 
+       
+    }
+    .sponRM div{
+        margin:5px;
+    }
+}

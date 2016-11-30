@@ -1,0 +1,258 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 19, 2015, 9:35:27 AM
+    Author     : koriley
+*/
+.heroImage{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.monthly_calendar_head li {
+    background-color:#3491a7 !important;  
+}
+
+.monthly-view table.mini_view td{
+   /*height:104px !important;*/
+}
+
+.monthly-view table.mini_view td span{
+    width:100% !important;
+    height:100% !important;
+}
+.monthly-view table.mini_view td a{
+    width:100% !important;
+    height:100% !important;
+}
+
+.eventsContainer{
+    display:none !important;
+}
+table.dayeventlist td {
+    font-size: 20px !important;
+}
+
+.monthly-view .monthly_calendar_head li:first-child{
+    border-top-left-radius:0px !important;
+}
+
+.monthly-view .monthly_calendar_head li:last-child{
+    border-top-right-radius:0px !important;
+}
+
+.menuSearch{
+    width:430px;
+    margin:auto;
+}
+
+.dayeventlist a{
+    color:#3491a7 !important;
+}
+
+/*********************nav************************/
+#primary_nav_wrap
+{
+	margin-top:15px;
+        height:35px;
+        max-width:600px;
+        margin:auto;
+        padding-left:2%;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+            z-index:9000;
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	
+	font-size:25px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+.breadTitle{
+    
+    text-align: center;
+    
+}
+
+.breadTitle .breadcrumb .active{
+    font-size: 35px !important;
+    color:black !important;
+    margin-top:5px !important;
+    font-weight: 700;
+}
+
+.hoverOverDiv{
+    width:525px !important;
+    background-color:white;
+    text-align: left;
+    border:1px solid black;
+    box-shadow: 1px 1px 1px #ddd;
+}
+.genList{
+    background-color:white;
+     
+}
+.genList a{
+    font-size:15px !important;
+}
+.genList a:hover{
+    background:#ddd !important;
+}
+/*****************event table *************************/
+.monthly-view .dayeventlist .time {
+    width: 20%;
+}
+
+.dayeventlist{
+    width:100%;
+}
+
+.dayeventlist tr{
+    padding-bottom:25px;
+    
+}
+.dayeventlist tr:nth-child(even) {
+    background: #e6e6e6;
+}
+
+/****************Rivista Fixes (bootstrap) ****************/
+.page-container .respond-container{
+    border:0px !important;
+}
+
+.input-append{
+    width:430px;
+}
+.page-container .row-fluid{
+    border:0px !important;
+}
+
+.module{
+    border:0px !important;
+}
+
+
+
+/* portrait devices */
+/*ipad */
+@media (min-width:500px)and(max-width: 800px)and (orientation : portrait){
+     .menuSearch{
+        display:none;
+    }
+}
+/**Large Phone 6+**/
+@media (min-width:376px)and(max-width: 500px)and (orientation : portrait){
+ .menuSearch{
+        display:none;
+    }
+}
+/*medium phone*/
+@media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+    .menuSearch{
+        display:block;
+    }
+}
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+    .menuSearch{
+        display:block;
+    }
+}
+
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:1200px)and (orientation : landscape){
+    .menuSearch{
+        display:none;
+    }
+}
+/*ipad*/
+@media all and (min-width:780px)and(max-width:1024px)and (orientation : landscape){
+    .menuSearch{
+        display:none;
+    }
+}
+/**Large Phone 6+**/
+@media (min-width:667px)and (max-width:780px)and (orientation : landscape){
+    .menuSearch{
+        display:none;
+    }
+}
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+    
+}
+
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+    
+}
+

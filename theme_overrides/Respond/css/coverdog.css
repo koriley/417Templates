@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 3, 2016, 11:11:14 AM
+    Author     : koriley
+*/
+
+body{
+   background-color:transparent;
+}
+
+html{
+    background:url(http://www.417mag.com/images/coverDog/2016/417CoverDog_Background2.png) no-repeat center center fixed;
+   
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.center{
+    text-align:center;
+}
+
+.left{
+    text-align:left;
+}
+
+#ticketInfo {
+   position: relative !important;
+   background-color: #2C8C7D !important;
+   color: #ffffff !important;
+}
+
+#ticket_table .ticket_table_head td {
+   border-top: 0 !important;
+   color: #2C8C7D !important;
+}
+
+#ticket_information_wrapper {
+   -moz-box-shadow: none !important;
+   -webkit-box-shadow: none !important;
+   box-shadow: none !important;
+   background-color: #ffffff !important;
+}

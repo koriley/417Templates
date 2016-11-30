@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 17, 2016, 9:49:52 AM
+    Author     : koriley
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import "https://fonts.googleapis.com/css?family=Oswald";
+body {
+  background: white; }
+
+.italics {
+  font-style: italic; }
+
+.inline {
+  display: inline-block; }
+
+.questionWords {
+  color: #0EA799;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5;
+  font-size: 85px;
+  letter-spacing: 4px; }
+
+.mother {
+  background: url(/images/digital417u/greenBlueColorblock.png);
+  background-size: 300px 902px;
+  background-repeat: repeat-y; }
+  .mother .masterContainer {
+    margin-left: 370px; }
+  .mother .title {
+    color: #0EA799;
+    font-family: "Oswald", sans-serif;
+    margin-top: 55px;
+    font-size: 85px;
+    letter-spacing: 4px; }
+  .mother .aim {
+    color: #0EA799;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 2em; }
+  .mother .subTitle {
+    color: #2B4290;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5; }
+  .mother .jobTitle {
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    line-height: 1.5; }
+  .mother .topVid {
+    margin-top: 35px; }
+  .mother .peepVids {
+    width: 1000px;
+    text-align: center;
+    margin-left: -15px; }
+    .mother .peepVids .person {
+      display: inline-block;
+      margin: 10px; }
+  .mother .peepExample {
+    width: 1000px;
+    text-align: left; }
+    .mother .peepExample .example {
+      display: inline-block;
+      margin: 10px;
+      width: 470px;
+      text-align: center; }
+    .mother .peepExample .exampleText {
+      font-size: 20px;
+      line-height: 1.5;
+      font-family: "Oswald", sans-serif; }
+  .mother .peepDeet {
+    margin-top: 400px; }
+    .mother .peepDeet .title {
+      color: #0EA799;
+      font-family: "Oswald", sans-serif;
+      margin-top: 55px;
+      font-size: 50px;
+      letter-spacing: 1px; }
+  .mother ul li {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Oswald", sans-serif; }
+
+/*# sourceMappingURL=digital417u.css.map */

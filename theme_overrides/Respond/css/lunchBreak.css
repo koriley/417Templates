@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2016, 1:37:06 PM
+    Author     : koriley
+*/
+body {
+  background-color: transparent; }
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#mainBody {
+  background-color: white;
+  padding: 10px; }
+
+.restList {
+  background: #fff;
+  /* for non-css3 browsers */ }
+
+.listText {
+  padding: 10px;
+  font-weight: bolder; }
+
+/*# sourceMappingURL=lunchBreak.css.map */

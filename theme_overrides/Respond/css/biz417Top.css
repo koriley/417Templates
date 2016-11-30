@@ -1,0 +1,658 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 26, 2015, 11:23:32 AM
+    Author     : koriley
+*/
+
+
+
+.searchClick{
+    cursor: pointer;
+}
+
+#module_htmlid_1071 h2{
+    display:none;
+}
+
+.ulInline{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:right;
+}
+
+.ulInline li{
+    display:inline;
+    color:white;
+    margin:5px;
+    letter-spacing:1px;
+}
+.gsc-control-cse-en{
+
+    width: 900px !important;
+    background-color: transparent !important;
+    border: 0px !important;
+    margin:auto;
+
+
+    padding: 0px !important;
+
+}
+.ulInline li a{
+    color:white;
+}
+.ulInline li a:hover{
+    color:white;
+}
+.ulInline li a:active{
+    color:white;
+}
+
+.ulStack{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.ulStack li{
+
+    color:white;
+
+    border-bottom:1px solid #1A1A1A;
+    padding:10px;
+}
+.ulStack li:hover{
+
+    background-color: #1A1A1A;
+
+}
+.ulStack:first-child{
+    border-top:1px solid #1A1A1A;
+
+}
+
+
+.ulStack li a{
+    color:white;
+}
+.ulStack li a:hover{
+    color:white;
+}
+.ulStack li a:active{
+    color:white;
+}
+
+
+
+.ulStack{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.ulStack li .menu-item-wrapper a span{
+
+    color:white;
+
+    border-bottom:1px solid #1A1A1A;
+    padding:10px;
+}
+.ulStack li:hover{
+
+    background-color: #1A1A1A;
+
+}
+.ulStack:first-child{
+    border-top:1px solid #1A1A1A;
+
+}
+
+
+.ulStack li .menu-item-wrapper a span{
+    color:white;
+}
+.ulStack li .menu-item-wrapper a:hover{
+    color:white;
+}
+.ulStack li .menu-item-wrapper a:active{
+    color:white;
+}
+
+
+
+
+/* portrait devices */
+
+
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+    .headerMobile{
+        height:175px; 
+        width:100%; 
+        background-color:black; 
+        border:1px solid black; 
+
+    }
+    .menuSubscribe{
+        float:left;
+        position:relative;
+        top:-35px;
+        margin-left:45px;
+    }
+    .bizEyebrow{
+        margin-left:50px;
+        float:right;
+        position:relative;
+        top:-55px;
+    }
+
+    .bizLogoMobile{
+
+        text-align: center;
+        width:175px;
+        margin:auto;
+    }
+    .dropMenuButton{
+        width:45px; 
+        height:45px;
+        margin:1px;
+        cursor: pointer;
+        margin-bottom:15px; 
+        color:white;
+
+
+    }
+    .dropMenu{
+        width:250px;
+        height:auto; 
+        background-color:black;
+        position:absolute;
+        left:0px;
+        top:99px;
+        z-index:9999999; 
+        display:none;
+    }
+    .dropSearch{
+        background-color:black;
+        position:absolute;
+        left:0px;
+        top:99px;
+        z-index:9999998; 
+        width:100%;
+        height:45px;
+        text-align: center;
+
+
+    }
+
+    .gsc-control-cse-en{
+        margin-top:7px;
+        width: 280px !important;
+}
+}
+
+/*medium phone*/
+@media (min-width:321px)and (orientation : portrait){
+    .headerMobile{
+        height:auto; 
+        width:100%; 
+        background-color:black; 
+        border:1px solid black; 
+
+    }
+    .menuSubscribe{
+        float:left;
+        position:relative;
+        top:0px;
+        margin-left:45px;
+    }
+
+    .bizEyebrow{
+        margin-left:50px;
+        float:right;
+        margin-top:-10px;
+    }
+
+    .bizLogoMobile{
+
+        text-align: center;
+        width:175px;
+        margin:auto;
+    }
+    .dropMenuButton{
+        width:45px; 
+        height:45px;
+        margin:1px;
+        cursor: pointer;
+        margin-bottom:15px; 
+        color:white;
+        position:relative; 
+        top:35px;
+    }
+    .dropMenu{
+        width:250px;
+        height:auto; 
+        background-color:black;
+        position:absolute;
+        left:0px;
+        top:99px;
+        z-index:9999999; 
+        display:none;
+    }
+    .gsc-control-cse-en{
+
+        width: 300px !important;
+
+
+    }
+}
+/*ipad */
+@media (min-width:700px)and (orientation : portrait){
+     .header{
+        height:70px; 
+        width:100%; 
+        background-color:black; 
+        border:1px solid black; 
+        position:fixed; 
+        top:0px; 
+        z-index:100000
+    }
+    .menuSubscribe{
+        float:left;
+        position:relative;
+        
+        margin-left:0px;
+        
+        margin-top:55px;
+    }
+    .menuSubscribe ul li img{
+        margin-bottom:15px;
+    }
+    .container{
+        width:100%;
+    }
+    .bizEyebrow{
+        float:right;
+        position:relative;
+        top:50px;
+        //margin-left:10px;
+        //margin-right:20px;
+    }
+    .bizLogo{
+        margin-bottom:10px;
+        float:right;
+        width:140px;
+        //margin-right:10px;
+
+    }
+    .bizLogo img{
+        height:60px;
+        margin-top:5px;
+    }
+    .dropMenuButton{
+        width:45px; 
+        height:45px;
+        margin:1px;
+        cursor: pointer;
+        float:left; 
+        margin-bottom:5px; 
+        color:white;
+        position:relative; 
+        top:5px;
+    }
+    .dropMenu{
+        width:250px;
+        height:auto; 
+        background-color:black;
+        position:fixed;
+        left:0px;
+        top:99px;
+        z-index:9999999; 
+        display:none;
+    }
+    .dropSearch{
+        background-color:black;
+        position:fixed;
+        left:0px;
+        top:99px;
+        z-index:9999998; 
+        width:100%;
+        height:45px;
+        text-align: center;
+        display:none;
+        padding-top:10px;
+    }
+    .search{
+        /* display:inline;
+         float:right; 
+         margin-top:-9px !important;*/
+    }
+    .ulInline{
+        position:relative;
+        bottom:05px;
+    }
+    .ulInline li{
+        font-size:18px;
+    }
+   
+    .gsc-control-cse-en{
+
+        width: 700px !important;
+
+
+    }
+}
+
+/*big phone*/
+@media (min-width:370px)and (orientation : portrait){
+    .headerMobile{
+        height:200px; 
+        width:100%; 
+        background-color:black; 
+        border:1px solid black; 
+
+    }
+    .menuSubscribe{
+        float:left;
+        position:relative;
+        top:-10px;
+        margin-left:60px;
+        
+    }
+
+    .bizEyebrow{
+        margin-left:50px;
+        float:right;
+    }
+
+    .bizLogoMobile{
+
+        text-align: center;
+        width:175px;
+        margin:auto;
+    }
+    .dropMenuButton{
+        width:45px; 
+        height:45px;
+        margin:1px;
+        cursor: pointer;
+        margin-bottom:15px; 
+        color:white;
+        position:relative; 
+        top:25px;
+    }
+    .dropMenu{
+        width:250px;
+        height:auto; 
+        background-color:black;
+        position:absolute;
+        left:0px;
+        top:99px;
+        z-index:9999999; 
+        display:none;
+    }
+    .gsc-control-cse-en{
+
+        width: 300px !important;
+ }
+  
+}
+
+
+/*Landscape devices*/
+
+/*ipad*/
+@media all and (min-width:668px)and (orientation : landscape){
+    .header{
+        height:70px; 
+        width:100%; 
+        background-color:black; 
+        border:1px solid black; 
+        position:fixed; 
+        top:0px; 
+        z-index:100000
+    }
+    .menuSubscribe{
+        float:left;
+        position:relative;
+        top:40px;
+        margin-left:10px;
+    }
+    .menuSubscribe ul li img{
+        margin-bottom:15px;
+    }
+    .container{
+        width:100%;
+    }
+    .bizEyebrow{
+        float:right;
+        position:relative;
+        top:50px;
+        //margin-left:10px;
+        //margin-right:20px;
+    }
+    .bizLogo{
+        margin-bottom:10px;
+        float:right;
+        width:140px;
+        //margin-right:10px;
+
+    }
+    .bizLogo img{
+        height:60px;
+        margin-top:5px;
+    }
+    .dropMenuButton{
+        width:45px; 
+        height:45px;
+        margin:1px;
+        cursor: pointer;
+        float:left; 
+        margin-bottom:5px; 
+        color:white;
+        position:relative; 
+        top:20px;
+    }
+    .dropMenu{
+        width:250px;
+        height:auto; 
+        background-color:black;
+        position:fixed;
+        left:0px;
+        top:99px;
+        z-index:9999999; 
+        display:none;
+    }
+    .dropSearch{
+        background-color:black;
+        position:fixed;
+        left:0px;
+        top:99px;
+        z-index:9999998; 
+        width:100%;
+        height:45px;
+        text-align: center;
+        display:none;
+        padding-top:10px;
+    }
+    .search{
+        /* display:inline;
+         float:right; 
+         margin-top:-9px !important;*/
+    }
+    .ulInline{
+        position:relative;
+        bottom:05px;
+    }
+    .ulInline li{
+        font-size:18px;
+    }
+     .gsc-control-cse-en{
+
+        width: 600px !important;
+
+
+    }
+}
+
+/*desktop*/
+@media (min-width:1200px)and (orientation : landscape){
+    .header{
+        height:70px; 
+        width:100%; 
+        background-color:black; 
+        border:1px solid black; 
+        position:fixed; 
+        top:0px; 
+        z-index:100000
+    }
+    .menuSubscribe{
+        float:left;
+        position:relative;
+        top:40px;
+        margin-left:10px;
+    }
+    .menuSubscribe ul li img{
+        margin-bottom:15px;
+    }
+    .container{
+        width:1200px;
+    }
+    .bizEyebrow{
+        float:right;
+        position:relative;
+        top:50px;
+        margin-left:10px;
+        margin-right:20px;
+    }
+    .bizLogo{
+        margin-bottom:10px;
+        float:right;
+        width:140px;
+        margin-right:-10px;
+
+    }
+    .bizLogo img{
+        height:60px;
+        margin-top:5px;
+    }
+    .dropMenuButton{
+        width:45px; 
+        height:45px;
+        margin:1px;
+        cursor: pointer;
+        float:left; 
+        margin-bottom:5px; 
+        color:white;
+        position:relative; 
+        top:20px;
+    }
+    .dropMenu{
+        width:250px;
+        height:auto; 
+        background-color:black;
+        position:fixed;
+        left:0px;
+        top:99px;
+        z-index:9999999; 
+        display:none;
+    }
+    .dropSearch{
+        background-color:black;
+        position:fixed;
+        left:0px;
+        top:99px;
+        z-index:9999998; 
+        width:100%;
+        height:45px;
+        text-align: center;
+        display:none;
+        padding-top:10px;
+    }
+    .search{
+        /* display:inline;
+         float:right; 
+         margin-top:-9px !important;*/
+    }
+    .ulInline{
+        position:relative;
+        bottom:05px;
+    }
+    .ulInline li{
+        font-size:18px;
+    }
+    #searchClick{
+    cursor: pointer;
+}
+}
+
+/*big phone*/
+@media (min-width:600px)and (orientation : portrait){
+    .headerMobile{
+        height:200px; 
+        width:100%; 
+        background-color:black; 
+        border:1px solid black; 
+
+    }
+    .menuSubscribe{
+        float:left;
+        position:relative;
+        top:-10px;
+        margin-left:60px;
+        
+    }
+
+    .bizEyebrow{
+        margin-left:50px;
+        float:right;
+    }
+
+    .bizLogoMobile{
+
+        text-align: center;
+        width:175px;
+        margin:auto;
+    }
+    .dropMenuButton{
+        width:45px; 
+        height:45px;
+        margin:1px;
+        cursor: pointer;
+        margin-bottom:15px; 
+        color:white;
+        position:relative; 
+        top:25px;
+    }
+    .dropMenu{
+        width:250px;
+        height:auto; 
+        background-color:black;
+        position:absolute;
+        left:0px;
+        top:99px;
+        z-index:9999999; 
+        display:none;
+    }
+    .gsc-control-cse-en{
+
+        width: 300px !important;
+ }
+  
+}
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+
+}
+
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+
+}
+

@@ -1,0 +1,152 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 3, 2015, 11:14:04 AM
+    Author     : koriley
+*/
+
+
+
+/* portrait devices */
+/*ipad */
+@media (min-width:376px)and(max-width: 800px)and (orientation : portrait){
+.blackBar{
+        width:100%;
+        height:auto;
+        position:fixed;
+        top:0px;
+        background-color:#000;
+        z-index:99999999;
+    }
+
+    .bizMicroHeader img{
+        padding:5px 0px 5px 0px;
+    }
+
+
+    .socialShareBarChild{
+        margin:0px 0px 0px 10px;
+        display:inline;
+    }
+    .socialShareBar{
+        margin-bottom:5px;
+
+    }
+}
+/*medium phone*/
+@media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+    .blackBar{
+        width:100%;
+        height:auto;
+        position:fixed;
+        top:0px;
+        background-color:#000;
+        z-index:99999999;
+    }
+
+    .bizMicroHeader img{
+        padding:5px 0px 5px 0px;
+    }
+
+
+    .socialShareBarChild{
+        margin:0px 0px 0px 10px;
+        display:inline;
+    }
+    .socialShareBar{
+        margin-bottom:5px;
+
+    }
+}
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+    .blackBar{
+        width:100%;
+        height:auto;
+        position:fixed;
+        top:0px;
+        background-color:#000;
+        z-index:99999999;
+    }
+
+    .bizMicroHeader img{
+        padding:5px 0px 5px 0px;
+    }
+
+
+    .socialShareBarChild{
+        margin:0px 0px 0px 10px;
+        display:inline;
+    }
+    .socialShareBar{
+        margin-bottom:5px;
+    }
+}
+
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:1200px)and (orientation : landscape){
+    .blackBar{
+        width:100%;
+        height:auto;
+        position:fixed;
+        top:0px;
+        background-color:#000;
+        z-index:99999999;
+    }
+
+    .bizMicroHeader img{
+        padding:5px 0px 5px 0px;
+    }
+
+    .socialShareBar:last-child{
+        margin:0px 10px 0px 10px;
+    }
+    .socialShareBarChild{
+        margin:0px 0px 0px 10px;
+        display:inline;
+    }
+    .socialShareBar{
+        display:none;
+    }
+}
+/*ipad*/
+@media all and (min-width:668px)and(max-width:1024px)and (orientation : landscape){
+    .blackBar{
+        width:100%;
+        height:auto;
+        position:fixed;
+        top:0px;
+        background-color:#000;
+        z-index:99999999;
+    }
+
+    .bizMicroHeader img{
+        padding:5px 0px 5px 0px;
+    }
+
+    .socialShareBar:last-child{
+        margin:0px 10px 0px 10px;
+    }
+    .socialShareBarChild{
+        margin:0px 0px 0px 10px;
+        display:inline;
+    }
+    .socialShareBar{
+        display:none;
+    }
+}
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+
+}
+
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+
+}
+
+

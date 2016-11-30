@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 17, 2016, 9:49:52 AM
+    Author     : koriley
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+//$font:'Open Sans', sans-serif;
+$font:'Oswald', sans-serif;
+$mainBlue : #0EA799;
+$marginRight:25px;
+body{
+    background:white;
+
+}
+.italics{
+    font-style:italic;
+}
+.inline{
+    display:inline-block;
+}
+.questionWords{
+    color:$mainBlue;
+    font-family: $font;
+
+    line-height: 1.5;
+    font-size: 85px;
+    letter-spacing: 4px;
+}
+.mother{
+    background: url(/images/digital417u/greenBlueColorblock.png);
+    background-size: 300px 902px;
+    background-repeat: repeat-y;
+    //height:2000px;
+    .masterContainer{
+        margin-left:370px;
+    }
+    .title{
+        color:$mainBlue;
+        font-family: $font;
+
+        margin-top:55px;
+        font-size: 85px;
+        letter-spacing: 4px;
+
+
+
+
+
+    }
+    .aim{
+        color:$mainBlue;
+        font-family: $font;
+        text-align: center;
+        font-size: 2em;
+
+    }
+    .subTitle{
+        color:#2B4290;
+        font-family: $font;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top:15px;
+        margin-bottom:15px;
+        line-height: 1.5;
+    }
+    .jobTitle{
+        color:black;
+        font-family: $font;
+        font-size: 30px;
+        line-height:1.5;
+
+    }
+
+    .topVid{
+        margin-top:35px;
+    }
+    .peepVids{
+        width:1000px;
+        //margin-right:$marginRight;
+        text-align:center;
+        //margin-left:300px;
+        margin-left:-15px;
+        .person{
+            display:inline-block;
+            margin:10px;
+        }
+    }
+    .peepExample{
+        width:1000px;
+        //margin-right:$marginRight;
+        text-align:left;
+
+
+        .example{
+            display:inline-block;
+            margin:10px;
+            width:470px;
+            text-align:center;
+            //border:1px solid red;
+        }
+        .exampleText{
+            font-size:20px;
+            line-height:1.5;
+            font-family: $font;
+        }
+    }
+    .peepDeet{
+        //width:600px;
+        //margin-right:$marginRight;
+        margin-top:400px;
+        .title{
+            color:$mainBlue;
+            font-family: $font;
+
+            margin-top:55px;
+            font-size: 50px;
+            letter-spacing: 1px;
+        }
+
+    }
+    ul li{
+        font-size:20px;
+        line-height:1.5;
+        font-family: $font;
+    }
+}

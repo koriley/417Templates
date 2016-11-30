@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 3, 2014, 9:12:42 AM
+    Author     : koriley
+*/
+body{
+   background-color:transparent;
+}
+
+html{
+   /* background:url(http://www.417mag.com/images/spa/2015/Spa&SalonWeek_1500x1500pxBackground_2015.png) no-repeat center center fixed;*/
+   
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mainBody{
+    background-color:white;
+    padding:10px;
+    min-height:500px;
+    width:100%;
+}
+
+.restList{
+    background: #fff; /* for non-css3 browsers */
+
+}
+
+.listText{
+    //padding:10px;
+    font-weight:bolder;
+    //border-bottom:1px solid #231f20;
+    padding-top:5px;
+}
+
+.bullet{
+    width:35px; height:33px;
+    background-image:url(http://www.417mag.com/images/spa/2015/Spa&SalonWeek_Leaf_2015.png);
+    float:left;
+    padding-right:5px;
+}
+
+#mainBody ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#mainBody ul li {
+    background-image:url(http://www.417mag.com/images/spa/2015/Spa&SalonWeek_Leaf_2015.png);
+    background-repeat: no-repeat;
+    background-position: 0px center; 
+    padding-top: 11px;
+    padding-left:40px;
+    margin-top:10px;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+
+.flex-item {
+    
+    
+    margin: 10px;
+}
+
+.spaLogo{
+    display:inline-block;
+  
+}
+
+.pull-left{
+    margin-left:45px;
+}
+
+.pull-right{
+    margin-right:25px;
+}
+
+.span4{
+    margin:0px !important;
+    padding:0px !important;
+}

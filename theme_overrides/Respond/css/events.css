@@ -1,0 +1,1170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 2, 2015, 3:40:37 PM
+    Author     : koriley
+*/
+
+body{
+    margin:0px;
+    padding:0px;
+   
+}
+ 
+/***********************med phone portrait speciffic styles**************************************/
+/*****************************************************************************************/
+@media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+    .nav-collapse{
+        box-shadow: 0 0 0;
+        margin-bottom:0px;
+
+        z-index:1000;
+    }
+
+    .navbar .navbar-inner, .navbar .branding{
+        background-color:#fff !important;
+        background-image:none !important;
+    }
+    .navbar{
+        box-shadow: 0 0 0;
+    }
+    .mobileMenu{
+        width:100%;
+        height:100%;
+        background-color:white;
+        text-align:left;
+        display:none;
+        font-size:35px;
+
+    }
+    .mobileMenu ul li{
+        line-height:110%;
+    }
+    video 
+    {
+        width: 100%;
+        /*position:relative;
+        left:0px;
+        top:0px;*/
+        margin:0 auto;
+        z-index:-1000;
+        height: auto;
+        max-height: 100%;
+    }
+    .parallax-container h1{
+        font-weight:400;
+        line-height:50px;
+        font-size:30px !important;
+        padding-top:8%;
+        padding-bottom:8%;
+    }
+    #hiddenBar{
+        display:none;
+    }
+    .clientLogos{
+        text-align: center; 
+        width: 100%;
+    }  
+    .childContainer {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .childContainer h1{
+        font-size: 10px;
+    }
+
+    .childContainer h2{
+        font-size: 35px !important;
+
+    }
+
+
+    .childQuote {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+
+
+    }
+    .childQuote h3 {
+        font-size: 18px !important;
+        margin-left: 80px !important;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    .childQuoteBG {
+        background-color: tan;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: white;
+
+    }
+
+    .childParallax  h1{
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5em;
+        font-weight: 700;
+
+    }
+
+    .center {
+        visibility: hidden;
+    }
+
+    .checkbox{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .checkbox li{
+        background-image:url(http://www.417mag.com/images/417events/checkbox.png);
+
+        background-repeat: no-repeat;
+        background-position: 0px center ; 
+        padding-top: 10px;
+        padding-left:60px;
+        margin-top:50px;
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        background-size: 40px 40px !important;
+    }
+
+
+    .team{
+        font-size: 18px !important;
+        line-height: 1.5em;
+    }
+
+    .team h3{
+        font-size: 15px !important;
+    }
+
+    .team h2 {
+
+        font-size: 35px;
+        text-transform: uppercase;
+
+    }
+    .footerStarted{
+    text-align:center;
+    border-bottom:1px solid rgba(299,299,299,.3);
+    font-size: 30px !important;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+}
+/*********************** end med phone portrait speciffic styles**************************************/
+/*****************************************************************************************/
+
+/*********************** small phone portrait speciffic styles**************************************/
+/*****************************************************************************************/
+@media (max-width:320px)and (orientation : portrait){
+    .nav-collapse{
+        box-shadow: 0 0 0;
+        margin-bottom:0px;
+
+        z-index:1000;
+    }
+
+    .navbar .navbar-inner, .navbar .branding{
+        background-color:#fff !important;
+        background-image:none !important;
+    }
+    .navbar{
+        box-shadow: 0 0 0;
+    }
+    .mobileMenu{
+        width:100%;
+        height:100%;
+        background-color:white;
+        text-align:left;
+        display:none;
+        font-size:35px;
+
+    }
+    .mobileMenu ul li{
+        line-height:110%;
+    }
+    video 
+    {
+        width: 100%;
+        /*position:relative;
+        left:0px;
+        top:0px;*/
+        margin:0 auto;
+        z-index:-1000;
+        height: auto;
+        max-height: 100%;
+    }
+    .parallax-container h1{
+        font-weight:400;
+        line-height:50px;
+        font-size:20px !important;
+        padding-top:8%;
+        padding-bottom:8%;
+
+    }
+    #hiddenBar{
+        display:none;
+    }
+    .clientLogos{
+        text-align: center; 
+        width: 100%;
+    }   
+    .childContainer {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .childContainer h1{
+        font-size: 10px;
+    }
+
+    .childContainer h2{
+        font-size: 35px !important;
+
+    }
+
+
+    .childQuote {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+
+
+    }
+    .childQuote h3 {
+        font-size: 18px !important;
+        margin-left: 80px !important;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    .childQuoteBG {
+        background-color: tan;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: white;
+
+    }
+
+    .childParallax  h1{
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5em;
+        font-weight: 700;
+    }
+
+    .center {
+        visibility: hidden;
+    }
+
+    .checkbox{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .checkbox li{
+        background-image:url(http://www.417mag.com/images/417events/checkbox.png);
+
+        background-repeat: no-repeat;
+        background-position: 0px center ; 
+        padding-top: 10px;
+        padding-left:60px;
+        margin-top:50px;
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        background-size: 40px 40px !important;
+    }
+
+
+    .team{
+        font-size: 18px !important;
+        line-height: 1.5em;
+    }
+
+    .team h3{
+        font-size: 15px !important;
+    }
+
+    .team h2 {
+
+        font-size: 35px;
+        text-transform: uppercase;
+
+    }
+    .footerStarted{
+    text-align:center;
+    border-bottom:1px solid rgba(299,299,299,.3);
+    font-size: 20px !important;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+}
+/*********************** end small phone portrait speciffic styles**************************************/
+/*****************************************************************************************/
+
+/***********************med phone landscape speciffic styles**************************************/
+/*****************************************************************************************/
+@media (max-width:667px)and (orientation : landscape){
+     .nav-collapse{
+        box-shadow: 0 0 0;
+        margin-bottom:0px;
+
+        z-index:1000;
+    }
+
+    .navbar .navbar-inner, .navbar .branding{
+        background-color:#fff !important;
+        background-image:none !important;
+    }
+    .navbar{
+        box-shadow: 0 0 0;
+    }
+    .mobileMenu{
+        width:100%;
+        height:100%;
+        background-color:white;
+        text-align:left;
+        display:none;
+        font-size:35px;
+
+    }
+    .mobileMenu ul li{
+        line-height:110%;
+    }
+    video 
+    {
+        width: 100%;
+        /*position:relative;
+        left:0px;
+        top:0px;*/
+        margin:0 auto;
+        z-index:-1000;
+        height: auto;
+        max-height: 100%;
+    }
+    .parallax-container h1{
+        font-weight:400;
+        line-height:50px;
+        font-size:30px !important;
+        padding-top:8%;
+        padding-bottom:8%;
+    }
+    #hiddenBar{
+        display:none;
+    }
+    .clientLogos{
+        text-align: center; 
+        width: 100%;
+    }  
+    .childContainer {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .childContainer h1{
+        font-size: 10px;
+    }
+
+    .childContainer h2{
+        font-size: 35px !important;
+
+    }
+
+
+    .childQuote {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+
+
+    }
+    .childQuote h3 {
+        font-size: 18px !important;
+        margin-left: 80px !important;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    .childQuoteBG {
+        background-color: tan;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: white;
+
+    }
+
+    .childParallax  h1{
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5em;
+        font-weight: 700;
+
+    }
+
+    .center {
+        visibility: hidden;
+    }
+
+    .checkbox{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .checkbox li{
+        background-image:url(http://www.417mag.com/images/417events/checkbox.png);
+
+        background-repeat: no-repeat;
+        background-position: 0px center ; 
+        padding-top: 10px;
+        padding-left:60px;
+        margin-top:50px;
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        background-size: 40px 40px !important;
+    }
+
+
+    .team{
+        font-size: 18px !important;
+        line-height: 1.5em;
+    }
+
+    .team h3{
+        font-size: 15px !important;
+    }
+
+    .team h2 {
+
+        font-size: 35px;
+        text-transform: uppercase;
+
+    }
+    .footerStarted{
+    text-align:center;
+    border-bottom:1px solid rgba(299,299,299,.3);
+    font-size: 30px !important;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+}
+/*********************** end med phone landscape speciffic styles**************************************/
+/*****************************************************************************************/
+
+/*********************** small phone landscape speciffic styles**************************************/
+/*****************************************************************************************/
+@media(max-width:568px)and (orientation : landscape){
+    .navbar{
+        box-shadow: 0 0 0;
+        margin-bottom:0px;
+    }
+    .nav-container{
+        background-image:none;
+        background-color:transparent;
+    }
+
+    .navbar .navbar-inner, .navbar .branding {
+        background-color:#fff;
+        background-image: none;
+
+    }
+    .navbar ul{
+        text-align:center;
+    }
+    .navbar ul li{
+        margin-left:25px;
+        margin-right:25px;
+        margin-top:5px;
+        font-family: 'Oswald', sans-serif;
+
+        text-transform:uppercase;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .menu-item-wrapper a span{
+        color:black ;
+        text-shadow: none;
+    }
+    .mobileMenu{
+        display:none;
+    }
+
+    video 
+    {
+        width: 100%;
+        /*position:relative;
+        left:0px;
+        top:0px;*/
+        margin:0 auto;
+        z-index:-1000;
+        height: auto;
+        max-height: 100%;
+    }
+    .parallax-container h1{
+        font-weight:400;
+        line-height:50px;
+        font-size:30px !important;
+        padding-top:8%;
+        padding-bottom:8%;
+
+    }
+    .clientLogos{
+        text-align: center; 
+        width: 100%;
+    }  
+    .childContainer {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+
+    }
+
+    .childContainer h1{
+        font-size: 10px;
+    }
+
+    .childContainer h2{
+        font-size: 35px !important;
+
+    }
+
+
+    .childQuote {
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+
+
+    }
+    .childQuote h3 {
+        font-size: 18px !important;
+        margin-left: 80px !important;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    .childQuoteBG {
+        background-color: tan;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: white;
+
+    }
+
+    .childParallax  h1{
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5em;
+        font-weight: 700;
+    }
+
+    .center {
+        visibility: hidden;
+    }
+
+    .checkbox{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .checkbox li{
+        background-image:url(http://www.417mag.com/images/417events/checkbox.png);
+
+        background-repeat: no-repeat;
+        background-position: 0px center ; 
+        padding-top: 10px;
+        padding-left:60px;
+        margin-top:50px;
+        font-size: 18px !important;
+        line-height: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        background-size: 40px 40px !important;
+    }
+
+
+    .team{
+        font-size: 18px !important;
+        line-height: 1.5em;
+    }
+
+    .team h3{
+        font-size: 15px !important;
+    }
+
+    .team h2 {
+
+        font-size: 35px;
+        text-transform: uppercase;
+
+    }
+}
+/*********************** end small phone landscape speciffic styles**************************************/
+/*****************************************************************************************/
+
+/*********************** tablet portrait speciffic styles**************************************/
+/*****************************************************************************************/
+@media (min-width:376px)and(max-width: 800px)and (orientation : portrait){
+    .nav-collapse{
+        box-shadow: 0 0 0;
+        margin-bottom:0px;
+
+        z-index:1000;
+    }
+
+    .navbar .navbar-inner, .navbar .branding{
+        background-color:#fff !important;
+        background-image:none !important;
+    }
+    .navbar{
+        box-shadow: 0 0 0;
+    }
+    .mobileMenu{
+        width:100%;
+        height:100%;
+        background-color:white;
+        text-align:left;
+        display:none;
+        font-size:35px;
+
+    }
+    .mobileMenu ul li{
+        line-height:110%;
+    }
+    video 
+    {
+        width: 100%;
+        /*position:relative;
+        left:0px;
+        top:0px;*/
+        margin:0 auto;
+        z-index:-1000;
+        height: auto;
+        max-height: 100%;
+    }
+    .parallax-container h1{
+        font-weight:400;
+        line-height:50px;
+        font-size:50px !important;
+        padding-top:8%;
+        padding-bottom:8%;
+        
+    }
+    #hiddenBar{
+        display:none;
+    }
+    .clientLogos{
+        text-align: center; 
+        width: 100%;
+    }
+    .childQuote h3 {
+        font-size: 30px !important;
+        margin-left: 300px !important;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+     .footer-contact img{
+        max-width: 100px !important;
+    }
+}   
+/***********************end tablet portrait speciffic styles**************************************/
+/*****************************************************************************************/
+
+/*********************** tablet landscape speciffic styles**************************************/
+/*****************************************************************************************/
+@media (min-width:668px)and(max-width:1024px)and (orientation : landscape){
+    .navbar{
+        box-shadow: 0 0 0;
+        margin-bottom:0px;
+    }
+    .nav-container{
+        background-image:none;
+        background-color:transparent;
+    }
+
+    .navbar .navbar-inner, .navbar .branding {
+        background-color:#fff;
+        background-image: none;
+
+    }
+    .navbar ul{
+        text-align:center;
+    }
+    .navbar ul li{
+        margin-left:25px;
+        margin-right:25px;
+        margin-top:5px;
+        font-family: 'Oswald', sans-serif;
+
+        text-transform:uppercase;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .menu-item-wrapper a span{
+        color:black ;
+        text-shadow: none;
+    }
+    .mobileMenu{
+        display:none;
+    }
+
+    video 
+    {
+        width: 100%;
+        /*position:relative;
+        left:0px;
+        top:0px;*/
+        margin:0 auto;
+        z-index:-1000;
+        height: auto;
+        max-height: 100%;
+    }
+    .parallax-container h1{
+        font-weight:400;
+        line-height:50px;
+        font-size:50px !important;
+        padding-top:8%;
+        padding-bottom:8%;
+    }
+    .clientLogos{
+        text-align: center; 
+        width: 100%;
+    }   
+    .footer-contact img{
+        max-width: 175px;
+    }
+}
+/***********************end tablet landscape speciffic styles**************************************/
+/*****************************************************************************************/
+
+/***********************desktop speciffic styles**************************************/
+/*****************************************************************************************/
+@media (min-width:1024px)and (orientation : landscape){
+
+    .navbar{
+        box-shadow: 0 0 0;
+        margin-bottom:0px;
+    }
+    .nav-container{
+        background-image:none;
+        background-color:transparent;
+    }
+
+    .navbar .navbar-inner, .navbar .branding {
+        background-color:#fff;
+        background-image: none;
+
+    }
+    .navbar ul{
+        text-align:center;
+    }
+    .navbar ul li{
+        margin-left:25px;
+        margin-right:25px;
+        margin-top:5px;
+        font-family: 'Oswald', sans-serif;
+
+        text-transform:uppercase;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .menu-item-wrapper a span{
+        color:black ;
+        text-shadow: none;
+    }
+    #mobileMenu{
+        display:none;
+    }
+    video 
+    {
+        width: 1020px;
+        /*position:relative;
+        left:0px;
+        top:0px;*/
+        margin:0 auto;
+        z-index:-1000;
+    }
+    .parallax-container h1{
+        font-weight:400;
+        line-height:50px;
+        font-size:80px !important;
+        padding-top:8%;
+    }
+    .clientLogos{
+        text-align: center; 
+        width: 100%;
+    }   
+
+    .eventHero{
+        height: 500px; 
+    }
+
+
+}   
+/***********************end desktop speciffic styles**************************************/
+/*****************************************************************************************/
+
+/**************** non-size dependent styles **********************************************/
+/*****************************************************************************************/
+.parallaxText{
+    color:#fff;
+
+
+
+
+    padding-top:10%;
+
+
+}
+
+a:hover {text-decoration: none;}
+
+.logo{
+    margin-top:-5px;
+    text-align: center;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+
+.sticky{
+    position:fixed;
+    top:0px;
+    text-align:center;
+    width:1160px;
+}
+.hiddenBar{
+    width:100%; background-color:#fff; position:fixed; top:0px; height:40px;
+    display:none;
+
+    box-shadow: 1px 1px 2px #888888;
+}
+
+
+.mask{
+    overflow:hidden;
+    height:600px;
+    background-color:transparent;
+}
+.dimLight{
+    background-color:rgba(255,255,255,.5);
+}
+
+.dim{
+    background-color:rgba(0,0,0,.5);
+}
+
+
+.parallax-container{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+
+
+
+.bold {
+    font-weight: 700;
+
+}
+
+
+.childContainer {
+    font-size: 30px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.childContainer h1{
+    font-size: 90px;
+}
+
+.childContainer h2{
+    font-size: 50px;
+
+}
+
+.childContainer a{
+    color: #40B3B2;
+
+}
+
+.childContainer a:hover{
+    text-decoration: none;
+}
+.childQuote {
+    font-size: 35px;
+    font-family: al;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+
+}
+.childQuote h3 {
+    font-size: 30px;
+    margin-left: 600px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.childQuoteBG {
+    background-color: tan;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+
+}
+
+.childParallax  h1{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+.center {
+    visibility: hidden;
+}
+
+.checkbox{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.checkbox li{
+    background-image:url(http://www.417mag.com/images/417events/checkbox.png);
+
+    background-repeat: no-repeat;
+    background-position: 0px center ; 
+    padding-top: 10px;
+    padding-left:60px;
+    margin-top:50px;
+    font-size: 30px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-size: 60px 60px;
+}
+
+
+.team{
+    font-size: 25px;
+}
+
+.team h3{
+    font-size: 18px;
+}
+
+.team h2 {
+
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+label {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+legend {
+    font-size: 30px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; 
+}
+input {
+
+}
+
+footer{
+    width:100%;
+    background-color:black;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    line-height: 1.5em;
+    
+}
+
+.footerStarted{
+    text-align:center;
+    border-bottom:1px solid rgba(299,299,299,.3);
+    font-size: 45px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.footerEnded{
+    text-align:center;
+    border-top:1px solid rgba(299,299,299,.3);
+    font-size: 15px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-top:10px;
+}
+
+#footer-main-menu nav h5{
+    display:none;
+}
+
+.footer-contact{
+    margin-top:15px;
+    text-align:center;
+    line-height: 2.0em;
+}
+.footer-contact img{
+    max-width:230px;
+}
+
+.footerHeavy{
+        font-size:20px;
+}
+
+.footer a{
+    color: white;
+}
+.footer a:hover{
+    color: #40B3B2;
+}
+
+footer ul.nav li a:hover{
+    color: #40B3B2 !important;
+    background-color:#000;
+}
+
+#vidBrown{
+    background-color:#E5D3BD; 
+    width:100%; 
+    height:580px;
+    position:absolute; 
+    z-index:-1000;
+}
+
+#vidBlue{
+    background-color:#40B3B2; 
+    width:100%; 
+    height:580px;
+    position:absolute; 
+    z-index:-1000; 
+    display:none;
+}
+
+
+/* fonts */
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+.istok{
+    font-family: 'Istok Web', sans-serif;
+}
+.dancing{
+    font-family: 'Dancing Script', cursive;
+    line-height:4em !important;
+}
+.amatic{
+    font-family: 'Amatic SC', cursive;
+}
+.allura{
+    font-family: 'Allura', cursive;
+}
+.playball{
+    font-family: 'Playball', cursive;
+}
+.vibes{
+    font-family: 'Great Vibes', cursive;
+}
+.openSans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* form */
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(/images/417events/checkbox2.png) ;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(/images/417events/checkbox.png);
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(89, 168, 184, 1);
+
+    border: 1px solid rgba(89, 168, 184, 1);
+}
+
+.submitButton{
+    width:100% !important;
+    background-color:#40B3B2 !important;
+    height:50px !important;
+    background-image:none !important;
+    color:white !important;
+    text-shadow:none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    text-transform: uppercase;
+    font-size:45px !important;
+    font-weight: 700;
+}
+

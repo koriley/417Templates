@@ -1,0 +1,59 @@
+<div class="center childContainer" style="margin-top:25px; margin-bottom:20px;">
+    
+<section class="formSection">
+    <form>
+        <fieldset>
+            <div class="row">
+                <div class="span5">
+
+                    <legend>Client Information </legend> 
+                    <label for="business-name">Business Name</label>
+                    <input class="inputStyle" name="business-name" type="text" /> 
+                    
+   <label for="business-website">Business Website</label>                 
+<input class="inputStyle" name="business-website" type="text" />
+                    <label for="person-first-name">First Name</label> 
+                    <input class="inputStyle" name="person-first-name" type="text" required />
+                    
+                    <label for="person-last-name" >Last Name</label> 
+                    <input class="inputStyle" name="person-last-name" type="text" required/>
+
+                    <label>E-mail</label>
+                    <input class="inputStyle" name="person-email" type="text" required />
+
+                     <label>Phone</label>
+                    <input class="inputStyle" name="person-phone" type="text" required/>
+
+                </div>
+                <div class="span7">
+                    <legend>Event Details</legend>
+
+                    <label style="border-bottom:1px solid #E5E5E5">You may not have all of these answers, or 417 Events might be determining these details, but please give us as much information as you have.</label>
+                    <div style="margin-top:10px; "><label style="font-weight:400;">Check all that apply:</label></div>
+                        <input class="inputStyle" id="new" name="new_event" type="checkbox" value="yes" /><label class=" inline" for="new"> <span></span>New Event </label>
+                    
+                        <input class="inputStyle" id="recurring" name="recurring_event" type="checkbox" value="yes" /><label class=" inline" for="recurring"><span></span>Recurring Event </label> 
+                    
+                        <input class="inputStyle" id="invite" name="invitation_only" type="checkbox" value="yes" /><label class=" inline" for="invite"><span></span>Invitation only (client event) </label>
+                    
+                        <input class="inputStyle" id="paid" name="paid_event" type="checkbox" value="yes" /><label class=" inline" for="paid"><span></span>Paid Event </label> 
+                     <label for="date">Date/Time of year of event</label><input  class="inputStyle" name="date" type="text" />
+                    <label for="budget">Budget</label> <input class="inputStyle" type="text" name="budget" />
+                </div> </div>
+            <div class="row" style="margin-top:25px;">
+                <div class="span12">
+
+                    <legend>Additional Information</legend>
+
+                    <label>Purpose of the event, goals or client ideas:</label>
+                    <textarea name="goals" rows="3" style="width:100%;"></textarea> 
+
+                    <label>Please include any additional information that would be useful for us to know.</label>
+                    <textarea name="additiona-information" rows="3" style="width:100%;"></textarea> 
+                    <div style="text-align:center"><input class="submitButton" type="submit" /></div>
+                </div> </div>
+        </fieldset>
+    </form>
+</section>
+</div>
+

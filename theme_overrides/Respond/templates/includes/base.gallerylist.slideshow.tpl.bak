@@ -1,0 +1,57 @@
+{addjs file="base.js"}
+{addjs file="prototype.js"}
+{addjs file="photoFader.class.js"}
+{addcss file="miniFader.css"}
+{if is_array($module.tagids)}
+    {if $module.operator == "and"}
+        {assign var="tagids" value=" AND "|implode:$module.tagids}
+    {else}
+        {assign var="tagids" value=","|implode:$module.tagids}
+    {/if}
+{else}
+    {if $module.operator == "and"}
+        {assign var="tagids" value=$module.tagids|replace:",":" AND "}
+    {else}
+        {assign var="tagids" value=$module.tagids}
+    {/if}
+{/if}
+{getpagedata id=$module.galleryPageId}{* get the gallery url to use when building links, if provided *}
+{getcontentlist type=gallery tagids=$tagids order=$module.sortOrder max=$module.number assign=items}
+{assign var="tagids" value=""}
+  <div class="photoFader-gallery">
+    <div class="photoFader-contentcontainer">
+      {foreach name="a" from=$items key="key" item="item"}{*section name=images loop=$articles*}
+        {if $module.galleryPageId <> '' && $module.galleryPageId <> 0}
+            {* if a gallery landing page was specified, use that url for the links *}
+          {assign var=itemurl value=$pagedata.url|cat:"index.php/gallery/"|cat:$item.id|cat:"/"}
+        {else}
+            {* no gallery landing page, try to use a page that the gallery is on (default behavior) *}
+            {assign var=itemurl value=$item.url}
+        {/if}
+        {assign var=imageurl value="/galleries/"|cat:$item.id|cat:"/"|cat:$item.image}
+      <div id="miniitem{counter name='miniimage'}" class="photo"><a href="{$itemurl}"><img src="{imagesizer src=$imageurl w=$module.imageWidth h=$module.imageWidth q=$module.imageQuality zc=1}" alt="{$item.title}" /></a></div>
+      <div id="extraminiitem{counter name='miniextra'}" class="content">
+        <h4><a href="{$itemurl}">{$item.title}</a></h4>
+        {if $module.showSubTitle == "true" && $item.subtitle<>''}<p class="subtitle">{$item.subtitle|strip_tags:false}</p>{/if}
+        {if $module.showSummary == "true" && $item.summary<>''}<p class="description">{$item.summary|strip_tags:false}</p>{/if}
+        {if $module.showByLine == "true" && $item.byline<>''}<p class="article-byline">{$item.byline}</p>{/if}
+        {if $module.showPublishedDate == "true"}
+          {if $module.publishedDateFormat <> ''}
+            {assign var=articledateformat value=$module.publishedDateFormat}
+          {else}
+            {assign var=articledateformat value=$config.dateformat}
+          {/if}
+          <p class="article-date">{$item.datecreated|dateformat:$articledateformat}</p>
+        {/if}
+      </div>  
+      {/foreach}
+    </div>
+    <div class="mini-menu-wrapper">
+        <ul class="photoFaderMenu">
+          {counter name='mininumber' start=0 print=false}
+          {section name=links loop=$items}
+          <li><a href="" name="miniitem{counter name='miniitem'}">{counter name='mininumber'}</a></li>
+          {/section}
+        </ul>
+    </div>
+  </div>

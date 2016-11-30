@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 13, 2015, 11:24:26 AM
+    Author     : koriley
+*/
+
+.calListParent{
+    width:100%;
+    height:auto;
+    
+}
+.calListTable{
+    width:100%;
+    padding:5px;
+}
+.calListTitle{
+    font-size:20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serifsans-serif;
+    margin:0;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3em; 
+}
+.calListTitle a{
+    
+    text-decoration: none;
+}
+
+.calListDesc{
+    font-size:16px;
+    line-height: 1.4em;
+    
+}
+
+.calListDate{
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+    margin-top: 4px;
+    margin-bottom: 4px;
+   
+}
+
+.calListReadMore{
+    float:right;
+}
+ 
+.calListTable tr:hover{
+    background-color:#EFEFEF;
+}

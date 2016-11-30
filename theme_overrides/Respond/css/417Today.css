@@ -1,0 +1,52 @@
+/* 
+    Document   : 417Today
+    Created on : Feb 21, 2014, 9:22:34 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.blogTitle a{
+    color:black;
+    font-weight:bold;
+    text-decoration: none;
+    margin-left:10px;
+    word-wrap:normal;
+}
+
+.blogCatandDate{
+    color:#404040;
+    font-weight: normal;
+    word-wrap:normal;
+    margin-left:10px;
+}
+
+.blogLeftImage img{
+    margin-top:50%;
+    max-width:15px;
+    
+}
+
+.blogList{
+    /*list-style-image: url('http://www.417mag.com/images/2014/blogdot.png');*/
+    list-style-type: none;
+
+}
+.blogListItem{
+    
+   /* background-image:url('http://www.417mag.com/images/2014/blogdot.png');
+    background-repeat: no-repeat;
+background-position: 0;
+padding-left: 5px;
+padding-top: 0px;
+    vertical-align: top;
+    width:25px; height:25px;*/
+    display:inline;
+}
+.blogListLI{
+    margin-bottom:10px;
+}
+

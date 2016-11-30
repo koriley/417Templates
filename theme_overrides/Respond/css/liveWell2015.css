@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 8, 2014, 10:35:40 AM
+    Author     : koriley
+*/
+
+.inline li{
+   display:inline-block; 
+}
+
+.mobileInline{
+    list-style-type: none;
+}
+
+.mobileButton{
+    
+}
+
+.topFix{
+    position:fixed;
+    top:0px;
+}
+
+.jumps{
+   
+}
+
+a:link {text-decoration:none; color:#008eb0;}
+a:visited {text-decoration:none; color:#008eb0;}
+a:hover {text-decoration:none; color:#008eb0;}
+a:active {text-decoration:none; color:#008eb0;}
+
+.greyLink a:link {text-decoration:none; color:grey;}
+.greyLink a:visited {text-decoration:none; color:grey;}
+.greyLink a:hover {text-decoration:none; color:grey;}
+.greyLink a:active {text-decoration:none; color:grey;}
+
+p{
+    line-height: 1.3em; 
+    font-size: 18px;
+}
+
+.scheduleHeader{
+    background-color:#a2cc3a;
+    color:#fff;
+    width:100%; height:30px;
+    line-height: 1.5em; 
+    font-size: 20px;
+   text-indent: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+#fashonCarousel{
+        width:100%; height:auto; background-color:#fff;
+   }
+   
+   .carousel-image{
+       width:755px !important;
+        //margin-right:10px;
+    } 
+    
+    
+    /* Large desktop */
+    @media (min-width: 1200px) { 
+    
+    .jumps{
+    padding-top: 420px; margin-top: -40px;
+    }
+    .headerStyle{
+      margin:auto; background-color:#fff; height:380px; position:fixed; top:0px; z-index:1000000  
+    }
+    .maxWidth390{
+        max-width: 385px;
+        padding-right: 7px;
+    }
+   .maxWidth600{
+        max-width: 585px;
+        padding-right: 7px;
+   }
+    }
+     
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) { 
+    .jumps{  padding-top:330px; margin-top: -40px; }
+    
+    .headerStyle{
+      margin:auto; background-color:#fff; height:320px; position:fixed; top:0px; z-index:1000000  
+    }
+    .floatLeft{
+        float: left;
+    }
+     }
+    
+     /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) { 
+    
+        .jumps{  padding-top:220px; margin-top: -40px; }
+    .headerStyle{
+      margin:auto; background-color:#fff; height:185px; position:fixed; top:0px; z-index:1000000  
+        }
+        .phoneDropdown {
+            display:none;
+                    }
+    }
+    
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) {  }    

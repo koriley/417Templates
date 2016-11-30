@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 29, 2014, 10:42:36 AM
+    Author     : koriley
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+
+body{
+    background-color:#fff;
+
+}
+hr {
+    margin: 10px 15px 20px;
+    border: 0;
+    border-top: 1px solid #DADADA;}
+.dancing {font-family: 'Dancing Script', cursive;
+          font-size: 22px;
+          font-color:000;
+}
+h1{
+font-family: 'Open Sans Condensed', sans-serif; 
+font-weight: 700;
+font-size: 40px;
+}
+
+h3.deck{
+    font-family: 'Open Sans Condensed', sans-serif; 
+font-weight: 700;
+font-size: 28px;  
+    
+}
+
+.charity{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+#mainBody{
+    background-color:white;
+}
+
+.visible-phone table td img {
+    width:150px !important;
+    
+}
+.visible-phone table td{
+    height: 250px !important;
+}
+
+.mBVote{
+    background-image: url(/10-Most-Beautiful-2015/Vote1.gif) !important;
+    width: 300px !important; 
+        height: 172px !important; 
+        
+}
+
+.mBVote:hover{
+    background-position:0 0px !important;
+    background-image: url(/10-Most-Beautiful-2015/Vote2.gif) !important;
+}
+
+
+input[type="submit"] {
+    border: 0;
+}
+
+/* portrait devices */
+/*ipad */
+@media (min-width:376px)and(max-width: 800px)and (orientation : portrait){
+    .fbShare{
+        width: 22px; position:absolute; right:52px; top:178px;
+    }
+    .tweet{
+        width: 22px; position:absolute; right:20px; top:178px;
+    }
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+        float: left;
+    }
+}
+/*medium phone*/
+@media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+        float: left;
+    }
+    .dancing {font-family: 'Dancing Script', cursive;
+             
+              font-color:000;
+              line-height: 1em;
+    }
+    .tableCenter{
+        width: 315px;
+        margin: auto;
+    }
+}
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+        float: left;
+    }
+
+}
+
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:1200px)and (orientation : landscape){
+    .fbShare{
+        position:absolute; right:83px; top:282px;
+    }
+    .tweet{
+        position:absolute; right:28px; top:280px
+    }
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+        float: left !important; 
+    }
+}
+/*ipad*/
+@media all and (min-width:668px)and(max-width:1024px)and (orientation : landscape){
+    .fbShare{
+        width: 30px; position:absolute; right:70px; top:239px;
+    }
+    .tweet{
+        width: 30px; position:absolute; right:26px; top:243px;
+    }
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+        float: left;
+    }
+}
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+        float: left;
+    }
+ .tableCenter{
+        width: 400px;
+        margin: auto;
+    }
+    .visible-phone table td img {
+    width:334px !important;
+    
+}
+}
+
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+        float: left;
+    } 
+.tableCenter{
+        width: 300px;
+        margin: auto;
+    }
+    .visible-phone table td img {
+    width:150px !important;
+    
+}
+}
+

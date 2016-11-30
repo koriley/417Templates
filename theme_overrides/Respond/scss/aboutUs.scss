@@ -1,0 +1,401 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 17, 2016, 1:54:13 PM
+    Author     : koriley
+*/
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+$fontOswald: 'Oswald', sans-serif;
+//menu stuff
+$menuMainColor:#000;
+$menuSecondColor:#759AAB;
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    
+    p{
+        margin:0px !important;
+    }
+
+.menuBox{
+    overflow:hidden;
+    margin-top:25px;
+    position:fixed;
+    right:0; bottom:0;
+    background:$menuMainColor;
+    display:none; 
+    z-index:1000;
+
+    .menuItemBox{
+        width:600px;
+        //height:300px; 
+        //background-color:$menuSecondColor;
+        margin:125px auto;
+        display:none;
+        font-family:$fontOswald;
+        ul{
+            list-style: none;
+
+            li{
+                line-height: 100px;
+                font-size:5em;
+                a:link {color: #fff; text-decoration: none; }
+                a:active {color: #fff; text-decoration: none; }
+                a:visited {color: #fff; text-decoration: none; }
+                a:hover {color: #fff; text-decoration: none; }
+                @media screen and (max-width: 700px){
+                    font-size:3em;
+                    line-height: 65px;
+                }
+            }
+        }
+    }
+}
+
+.sectionSubTitle{
+    font-family: $fontOswald;
+    font-weight: bold;
+}
+.sectionTitle{
+    font-family: $fontOswald;
+    font-weight: bold;
+    font-size:25px;
+    margin:10px;
+    @media screen and (max-width: 700px){
+        font-size:20px;
+    }
+}
+//menuButton
+/* -----------------------------------------------------------------------------
+  HAMBURGER ICONS COMPONENT
+  http://callmenick.com/post/animating-css-only-hamburger-menu-icons
+----------------------------------------------------------------------------- */
+
+// vars
+$break-small: 700px;
+$button-width: 96px;                    // The width of the button area
+$button-height: 96px;
+$mobile-button-width: 80px;                    // The width of the button area
+$mobile-button-height: 80px;
+$bar-thickness: 8px;                    // The thickness of the button bars
+$button-pad: 18px;                      // The left/right padding between button area and bars.
+$button-bar-space: 12px;                // The spacing between button bars
+$button-transistion-duration: 0.3s;     // The transition duration
+$buttonBackground:transparent;
+$buttonBar:#434243;
+
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+
+.c-hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: $break-small){
+        width: $mobile-button-width;
+        height: $mobile-button-height;
+    }
+    width: $button-width;
+    height: $button-height;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: 0;
+    cursor: pointer;
+    transition: background $button-transistion-duration;
+    :focus {
+        outline: none;
+        box-sizing: none;
+    }
+    span {
+        display: block;
+        position: absolute;
+        top: ($button-height / 2) - ($bar-thickness / 2);
+        left: $button-pad;
+        right: $button-pad;
+        height: $bar-thickness;
+        background: $buttonBar;
+    }
+}
+
+
+
+
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: $bar-thickness;
+    background-color: $buttonBar;
+    content: "";
+}
+
+.c-hamburger span::before {
+    top: -$bar-thickness - $button-bar-space;
+}
+
+.c-hamburger span::after {
+    bottom: -$bar-thickness - $button-bar-space;
+}
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+
+.c-hamburger--htx {
+    background-color: darken($buttonBackground, 20%);
+}
+
+.c-hamburger--htx span {
+    transition: background 0s $button-transistion-duration;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+    transition-duration: $button-transistion-duration, $button-transistion-duration;
+    transition-delay: $button-transistion-duration, 0s;
+}
+
+.c-hamburger--htx span::before {
+    transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+    transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+
+.c-hamburger--htx.is-active {
+    background-color:$buttonBackground;
+}
+
+.c-hamburger--htx.is-active span {
+    background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+    transition-delay: 0s, $button-transistion-duration;
+}
+
+//flipping cards
+
+
+
+/*
+*   This is for photoPhader
+*/
+
+.show{
+    display:block !important;
+    transition: 1s;
+    left: 0;
+}
+
+.photoPhade{
+    width:100%;
+    position:absolute;
+    top:40px;
+
+    div{
+        display: none;
+
+        img{
+            width:100%;
+        }
+
+    }
+
+}
+
+//this is the flip cards in a flex box
+.deckOfCards{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom:10px;
+    text-align:center;
+//display:none;
+    .card{
+        margin-top:20px;
+        margin-bottom:20px;
+        margin-left:10px;
+        height:200px;
+        @media screen and (max-width: 500px){
+            width:150px !important;
+            height:150px !important;
+            margin-top:5px !important;
+            margin-bottom:5px !important;
+            margin-left:5px !important;
+        }
+
+
+        cursor:pointer;
+        img{
+            @media screen and (max-width: 500px){
+                width:150px;
+                height:150px;
+
+            }
+        }
+    }
+}
+
+
+
+.heroTop{
+   /* width:100%;
+    position:absolute;
+    top:40px;*/
+  // margin-top:-106px;
+}
+
+.carouselLabel{
+    line-height: 2; 
+    font-size: 20px;
+    text-align: center; 
+    position: absolute;
+    bottom:0;
+    width:100%;
+    //background-color:rgba(0, 0, 0, 0.5); 
+    color:white;
+}
+.carousel-image{
+    width:250px;
+    margin-bottom:20px !important;
+    @media screen and (max-width:700px){
+        width:150px !important;
+        height:150px !important;
+        margin-left:3px !important;
+    }
+    img{
+        width:250px;
+        
+        @media screen and (max-width:700px){
+            width:150px !important;
+
+
+        }
+    }
+}
+
+.jobList{
+    list-style: none;
+    margin:10px;
+    li{
+        margin:5px;
+    }
+}
+
+.staffFlex{
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom:10px;
+    .staffMember{
+        @media screen and (max-width: 500px){
+            width:180px;
+
+        }
+        @media screen and (max-width:320px){
+            width:140px;
+
+        }
+        margin-bottom:15px;
+    }
+}
+
+.logoFlex{
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom:10px;
+    .staffMember{
+        width:145.9px;
+        //height:55px;
+        @media screen and (max-width: 500px){
+            width:180px;
+            
+            margin-bottom:25px;
+
+        }
+        @media screen and (max-width:320px){
+            width:140px;
+            margin-bottom:25px;
+
+        }
+        margin-bottom:15px;
+    }
+}
+
+.address{
+    font-family: $fontOswald;
+    line-height:15px;
+    font-size:1em;
+
+    color:#fff;
+    .text{
+        margin-left:20px;
+        margin-bottom:10px;
+    }
+    .fRight{
+        float:right;
+    }
+}
+
+.textBox{
+    @media screen and (max-width: 500px){
+           margin:5px;
+
+        }
+}
+.hamburgerBlock{
+    position: absolute;
+    z-index:2000;
+    right:0;
+}
+body,html {
+  margin:0;
+  padding:0;
+}

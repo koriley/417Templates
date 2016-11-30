@@ -1,0 +1,178 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 3, 2015, 3:51:28 PM
+    Author     : koriley
+*/
+
+.sponsors img{
+    margin:10px;
+}
+
+.dashBottom{
+    border-bottom: 1px dashed black;
+}
+
+/* portrait devices */
+/*ipad */
+@media (min-width:376px)and(max-width: 800px)and (orientation : portrait){
+    .panelist{
+        width:400px !important;
+        margin:auto !important;
+        height:110px;
+        
+    }
+    .panlistChild{
+        float:left !important;
+        margin:15px 15px 15px 10px !important;
+        
+    }
+    .panlistChild img{
+        width:75px;
+        
+    }
+    .sponsors{
+        display:inline; 
+        margin-top:10px;
+        width:500px;
+            margin:auto;
+    }
+    .sponsorsChildLogo{
+        display:inline; 
+        width:150px;
+    }
+    .andyBLink{
+        position:absolute; 
+        right:40px; 
+        top:110px; 
+        width:375px; 
+        height:75px; 
+        border:0px solid red;
+    }
+}
+/*medium phone*/
+@media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+    .painlist{
+       width:300px !important; 
+    }
+    .sponsors{
+        text-align:center;
+    }
+    .sponsorsChildLogo{
+        margin-left:-2px !important;
+    }
+}
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+    .painlist{
+       width:300px !important; 
+    }
+    .sponsors{
+        text-align:center;
+    }
+    .sponsorsChildLogo{
+        margin-left:-2px !important;
+    }
+}
+
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:1200px)and (orientation : landscape){
+    .panelist{
+        width:800px !important;
+        margin:auto !important;
+        height:200px;
+    }
+    .panlistChild{
+        float:left !important;
+        margin:15px !important;
+    }
+    .panlistChild img{
+        max-width:120px;
+    }
+    .sponsors{
+        display:inline; 
+        margin-top:10px;
+    }
+    .sponsorsChildLogo{
+        display:inline; 
+        width:150px;
+    }
+    .container{
+        width:1200px !important;
+    }
+    .headerBackground{
+        width:100%; background-color:#40bcce; height:451px;
+    }
+    .andyBLink{
+        position:absolute; 
+        right:155px; 
+        /*top:355px; */
+        top:200px;
+        width:465px; 
+        height:75px; 
+        border:0px solid red;
+    }
+    .kpmLink{
+        position:absolute; 
+        border:0px solid red;
+        right:800px; 
+        top:375px; 
+        width:300px; 
+        height:55px; 
+        
+    }
+}
+/*ipad*/
+@media all and (min-width:668px)and(max-width:1024px)and (orientation : landscape){
+    .panelist{
+        width:800px !important;
+        margin:auto !important;
+        height:200px;
+    }
+    .panlistChild{
+        float:left !important;
+        margin:15px !important;
+    }
+    .panlistChild img{
+        width:125px;
+    }
+    .sponsors{
+        display:inline; 
+        margin-top:10px;
+    }
+    .sponsorsChildLogo{
+        display:inline; 
+        width:150px;
+    }
+    .andyBLink{
+        position:absolute; 
+        right:120px; 
+        top:150px; 
+        width:375px; 
+        height:75px; 
+        border:0px solid red;
+    }
+    .kpmLink{
+        position:absolute; 
+        border:0px solid red;
+        right:715px; 
+        top:345px; 
+        width:200px; 
+        height:25px; 
+        
+    }
+}
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+    
+}
+
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+    
+}
+

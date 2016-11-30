@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 4, 2015, 9:06:20 AM
+    Author     : koriley
+*/
+
+/* portrait devices */
+/*ipad */
+@media (min-width:500px)and(max-width: 800px)and (orientation : portrait){
+    
+}
+/**Large Phone 6+**/
+@media (min-width:376px)and(max-width: 500px)and (orientation : portrait){
+
+}
+/*medium phone*/
+@media (min-width:321px)and(max-width: 375px)and (orientation : portrait){
+   
+}
+/*small phone*/
+@media (max-width:320px)and (orientation : portrait){
+   
+}
+
+/*Landscape devices*/
+/*desktop*/
+@media (min-width:1200px)and (orientation : landscape){
+    
+}
+/*ipad*/
+@media all and (min-width:780px)and(max-width:1024px)and (orientation : landscape){
+    
+}
+/**Large Phone 6+**/
+@media (min-width:667px)and (max-width:780px)and (orientation : landscape){
+    
+}
+/*Medium Phone*/
+@media (max-width:667px)and (orientation : landscape){
+    
+}
+
+/*small phone*/
+@media(max-width:568px)and (orientation : landscape){
+    
+}
+

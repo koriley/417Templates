@@ -1,0 +1,1 @@
+<img src="/images/fashionation/2016/Fashionation16_Splash1.png" />

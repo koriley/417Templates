@@ -1,0 +1,70 @@
+/* 
+    Document   : favoritesModule
+    Created on : Feb 25, 2014, 4:09:10 PM
+    Author     : hopenoble
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.favImage{
+   text-align: center;
+margin-left: auto;
+}
+.favModContainer {
+   text-align: center; 
+      
+}
+.favModContainer li {
+   text-decoration: none;
+   list-style: none;
+  border-bottom: 1px solid gray;
+  line-height: 30px;
+  Text-transform: uppercase; 
+  
+}
+.favModContainer a {
+    text-decoration:none;
+}
+
+.favoriteHealth {
+   background-image: url('http://417mag.com/images/2014/health2.gif');
+  background-size: 200px 200px;
+}
+
+.favoriteHealth:hover {
+   background-image: url('http://417mag.com/images/2014/health1.gif');
+ background-size: 200px 200px;
+}
+
+.favoriteProfessional {
+   background-image: url('http://417mag.com/images/2014/professional.jpg');
+  background-size: 200px 200px;
+}
+
+.favoriteProfessional:hover {
+   background-image: url('http://417mag.com/images/2014/professional2.jpg');
+ background-size: 200px 200px;
+}
+.favoriteServices {
+   background-image: url('http://417mag.com/images/2014/services.jpg');
+  background-size: 200px 200px;
+}
+
+.favoriteServices:hover {
+   background-image: url('http://417mag.com/images/2014/services2.jpg');
+ background-size: 200px 200px;
+}
+
+.favoriteFamily {
+   background-image: url('http://417mag.com/images/2014/family.jpg');
+  background-size: 200px 200px;
+}
+
+.favoriteFamily:hover {
+   background-image: url('http://417mag.com/images/2014/family2.jpg');
+ background-size: 200px 200px;
+}
