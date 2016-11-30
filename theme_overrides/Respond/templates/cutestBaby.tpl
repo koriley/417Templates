@@ -14,7 +14,7 @@
 </head>
 <body id="{$Page->pagehtmlid}" class="{$Page->pageobject->params.pagehtmlclass}">
     <!--<div class="btn" id="backChange" style="position:fixed; top:0; left:0; z-index:1000000000;">Click here to change background</div>-->
-    {include file="micrositeStickyHeader.tpl"}
+    {*include file="micrositeStickyHeader.tpl"*}
     <div class="screenWidth"></div>
     
 
