@@ -16,9 +16,6 @@ body{
     background-color:white;
 }
 
-input[type="submit"]:hover{
-    background-position: 0 !important;
-}
 
 /* Large desktop */
     @media (min-width: 1200px) { 
@@ -63,3 +60,4 @@ input[type="submit"]:hover{
      
     /* Landscape phones and down */
     @media (max-width: 480px) {  } 
+      

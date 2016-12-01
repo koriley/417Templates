@@ -273,6 +273,7 @@ GA_googleAddSlot("ca-pub-1773708874419999", "gatewayMobile");
     googletag.defineSlot('/6345887/wheres417_skyscraper', [160, 600], 'div-gpt-ad-1479474669376-125').addService(googletag.pubads());
     googletag.defineSlot('/6345887/BestDressedGateway', [600, 400], 'div-gpt-ad-1479474669376-126').addService(googletag.pubads());
      googletag.defineSlot('/6345887/BestDressedGatewayMobile', [300,200], 'div-gpt-ad-1479474669376-127').addService(googletag.pubads());
+     googletag.defineSlot('/6345887/417Tix', [300, 250], 'div-gpt-ad-1475520753140-128').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.pubads().collapseEmptyDivs();
     googletag.enableServices();
@@ -342,12 +343,6 @@ if (typeof jQuery != 'undefined') {
   googletag.cmd = googletag.cmd || [];
 </script>
 
-<script>
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/6345887/417Tix', [300, 250], 'div-gpt-ad-1475520753140-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
-</script>
+
             
         {/literal}

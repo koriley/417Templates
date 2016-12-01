@@ -6,14 +6,14 @@
     <head>
         {include file="2014head.tpl"}
         
-        {addcss file="2016fashionation.css" order="999999999999999999999"}
+        {addcss file="fashionation.css" order="999999999999999999999"}
 {addjs file="jquery-ui-1.10.4.custom.min.js" position="footer"}
         
     </head>
     <body >
-        {include file="micrositeStickyHeader.tpl"}
-        <div class="container-fluid">
-            <div class="row-fluid">
+        {*include file="micrositeStickyHeader.tpl"*}
+        <div class="container">
+            <div class="row">
                 <div class="span12" id="">
 
 
@@ -31,24 +31,7 @@
 {literal}
     <script>
 
-        function galleryToPics() {
-            var screenWidth = jQuery(window).width();
-            if (screenWidth <= 450) {
-                jQuery('.toPics').html('<a href="http://www.417mag.com/417-Magazine/417-Fashionation/Gallery/">pics</a>');
-                jQuery('.menuItem').css('font-size', '12px');
-            } else {
-                jQuery('.toPics').html('<a href="http://www.417mag.com/417-Magazine/417-Fashionation/Gallery/">GALLERY</a>');
-                jQuery('.menuItem').css('font-size', '20px');
-            }
-            //This is to compensate for the black bar size and the page jumps
-            var headHeight = jQuery('.blackBar').height();
-            jQuery('.anchor').css({'height': headHeight});
-        }
-        jQuery(document).ready(function() {
-            //silverPop1();
-
-        });
-
+        
 
 
         jQuery('.menuItem').click(function() {
