@@ -1,0 +1,121 @@
+@import "defines-includes/geobaselistings-defines.less";
+
+#GLOBALS_LESS-START {
+	content: "geobaselistings.less";
+}
+
+.geobase-listings {
+	.clearfix;
+	.search-all, .add-listing {
+		float:right;
+		margin-left:10px;
+		font-weight:bold;
+		font-size:80%;
+		text-transform:uppercase;
+		line-height:2.75em;
+	}
+	.add-listing {
+		margin-top:10px;
+	}
+	ul.listings {
+		list-syle:none;
+		margin:0;
+		padding:0;
+		li.listing {
+			border-bottom:@geobaseListingsItemBorderBottom;
+			padding:@geobaseListingsItemPadding;
+			list-style:none;
+			margin:0;
+			&.featured {
+				background:@geobaseListingsFeaturedBackground;
+				text-shadow:@geobaseListingsFeaturedTextShadow;
+				padding:@geobaseListingsFeaturedPadding;
+				border-bottom:@geobaseListingFeaturedBorderBottom;
+				.listing_header {
+					h4 {
+						font-family:@geobaseListingsFeaturedCompanyNameFontFamily;
+						font-size:@geobaseListingsFeaturedCompanyNameFontSize;
+						a {
+							color:@geobaseListingsFeaturedCompanyNameColor;
+							&:hover {
+								color:@geobaseListingsFeaturedCompanyNameColorHover;
+							}
+						}
+					}
+				}
+			}
+			&.premium {
+				background:@geobaseListingsPremiumBackground;
+				text-shadow:@geobaseListingsPremiumTextShadow;
+				padding:@geobaseListingsPremiumPadding;
+				border-bottom:@geobaseListingPremiumBorderBottom;
+				.listing_header {
+					h4 {
+						font-family:@geobaseListingsPremiumCompanyNameFontFamily;
+						font-size:@geobaseListingsPremiumCompanyNameFontSize;
+						a {
+							color:@geobaseListingsPremiumCompanyNameColor;
+							&:hover {
+								color:@geobaseListingsPremiumCompanyNameColorHover;
+							}
+						}
+					}
+				}
+			}
+			&.free {
+				background:@geobaseListingsFreeBackground;
+				text-shadow:@geobaseListingsFreeTextShadow;
+				padding:@geobaseListingsFreePadding;
+				border-bottom:@geobaseListingFreeBorderBottom;
+				.listing_header {
+					h4 {
+						font-family:@geobaseListingsFreeCompanyNameFontFamily;
+						font-size:@geobaseListingsFreeCompanyNameFontSize;
+						a {
+							color:@geobaseListingsFreeCompanyNameColor;
+							&:hover {
+								color:@geobaseListingsFreeCompanyNameColorHover;
+							}
+						}
+					}
+				}
+			}
+			
+			.listing_header {
+				.clearfix;
+				padding:0 0 8px 0;
+				h4 {
+					margin:0;
+				}
+				.starbox {
+					float:right;
+					margin-left:10px;
+					&.touch-enabled {
+						a:first-child {
+							padding-right:0;
+						}
+					}
+				}
+			}
+			.data {
+				.clearfix;
+				.listing-image {
+					float:right;
+					margin-left:10px;
+					img {
+						.border-radius(@geobaseListingsImageBorderRadius);
+					}
+				}
+			}
+			&:first-child {
+				padding-top:0;
+			}
+		}
+	}
+}
+
+
+
+#GLOBALS_LESS-END {
+	content: "geobaselistings.less";
+}

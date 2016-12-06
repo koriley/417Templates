@@ -1,0 +1,128 @@
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+ 
+#DATEPICKER_LESS-START {
+	content: "datepicker.less";
+}
+
+.datepicker {
+	top: 0;
+	left: 0;
+	padding: 4px;
+	margin-top: 1px;
+	.border-radius(@datapickerBorderRadius);
+	&:before {
+		content: '';
+		display: inline-block;
+		border-left: @datapickerBeforeBorderLeft;
+		border-right: @datapickerBeforeBorderRight;
+		border-bottom: @datapickerBeforeBorderBottom;
+		border-bottom-color: @datapickerBeforeBorderBottomColor;
+		position: absolute;
+		top: -7px;
+		left: 6px;
+	}
+	&:after {
+		content: '';
+		display: inline-block;
+		border-left: @datapickerAfterBorderLeft;
+		border-right: @datapickerAfterBorderRight;
+		border-bottom: @datapickerAfterBorderBottom;
+		position: absolute;
+		top: -6px;
+		left: 7px;
+	}
+
+	&.days div.datepicker-days {
+		display: block;
+	}
+	&.months div.datepicker-months {
+		display: block;
+	}
+	&.years div.datepicker-years {
+		display: block;
+	}
+	table{
+		width: 100%;
+		margin: 0;
+	}
+	td,
+	th{
+		text-align: center;
+		width: 20px;
+		height: 20px;
+		.border-radius(@datapickerBorderRadius);
+	}
+	td {
+		&.day:hover {
+			background: @grayLighter;
+			cursor: pointer;
+		}
+		&.old,
+		&.new {
+			color: @grayLight;
+		}
+		&.active,
+		&.active:hover {
+			.buttonBackground(@primaryButtonBackground, spin(@primaryButtonBackground, 20));
+			color: @datapickerTdActiveHoverColor;
+			text-shadow: @datapickerTdActiveHoverTextShadow;
+		}
+		span {
+			display: block;
+			width: 47px;
+			height: 54px;
+			line-height: @datapickerTdSpanLineHeight;
+			float: left;
+			margin: 2px;
+			cursor: pointer;
+			.border-radius(@datapickerBorderRadius);
+			&:hover {
+				background: @grayLighter;
+			}
+			&.active {
+				.buttonBackground(@primaryButtonBackground, spin(@primaryButtonBackground, 20));
+				color: @datapickerTdActiveColor;
+				text-shadow: @datapickerTdActiveTextShadow;
+			}
+			&.old {
+				color: @grayLight;
+			}
+		}
+	}
+	
+	th.switch {
+		width: 145px;
+	}
+	
+	thead tr:first-child th {
+		cursor: pointer;
+		&:hover{
+			background: @grayLighter;
+		}
+	}
+	/*.dow {
+		border-top: 1px solid #ddd !important;
+	}*/
+}
+.input-append,
+.input-prepend {
+	&.date {
+		.add-on i {
+			display: block;
+			cursor: pointer;
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
+#DATEPICKER_LESS-END {
+	content: "datepicker.less";
+}

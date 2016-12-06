@@ -1,0 +1,53 @@
+.column-3-box {
+
+	margin-bottom:10px;
+
+	background-color:#fff;
+
+	border:solid 1px #bfbfbf;
+
+	}
+
+	
+
+.column-3-box .header {
+
+	background-color:#fff;
+
+	text-align:center;
+
+	padding: 5px;
+
+	}
+
+	
+
+.column-3-box .header h2 {
+
+	color:#808080;
+
+	font-size:8pt;
+
+	font-weight:bold;
+
+	font-family:Trebuchet, Arial, Helvetica, sans-serif;
+
+	letter-spacing:1px;
+
+	background-color:#dfdfdf;
+
+	margin:0px;
+
+	text-transform:uppercase;
+
+	}
+
+	
+
+.column-3-content {
+
+	margin:8px;
+
+	background-color: white;
+
+	}

@@ -1,0 +1,18 @@
+/* CSS Document */
+
+#columns-1-2 {
+	margin-right:10px;
+	float:left;
+	display:inline;
+	width:740px;
+	background-color:#fff;
+	padding:10px;
+	}
+	
+/* column 3 */
+
+#column-3 {
+	float:left;
+	width:180px;
+	display:inline;
+}

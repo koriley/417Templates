@@ -1,0 +1,179 @@
+
+#calendar-submit {
+	background-color:#fff;
+	padding:15px;
+	}
+
+
+#calendar {
+	float:left;
+	width:618px;
+	display:inline;
+	}
+	
+#calendar-body {
+	padding:15px;
+	background:#fff;
+	line-height: 1.7;
+	overflow:hidden;
+	font-size:14px;
+	}
+	
+#calendar-sidebar {
+	float:right;
+	width:347px;
+	display:inline;
+	}
+	
+
+#calendar-search {
+	background-color:#fff;
+	border:solid 5px #fff;
+	padding:10px;
+	margin-bottom:5px;
+	background-image:url(/images/calendar-search-background.gif);
+	line-height:1.5em;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	
+#calendar-search table {
+	width:100%;
+	border-collapse:collapse;
+	}
+	
+#calendar-search table td {
+	padding:8px 0;
+	border-bottom:solid 1px #E1D5AC;
+	}
+	
+#calendar-search table td.last {
+	border-bottom:none;
+	}
+	
+#calendar-search form select, #calendar-search form input {
+	font-size:12px;
+	}
+	
+table#calendar-listings {
+	border-collapse:collapse;
+	width:100%;
+	}
+	
+table#calendar-listings h4 {
+	margin:5px 0;
+	}
+	
+table#calendar-listings h3 {
+	margin-top:5px;
+	}
+	
+	
+table#calendar-listings td {
+	border-top:solid 1px #ccc;
+	}
+	
+p.event-description {
+	line-height:normal;
+	}
+	
+#calendar-edit {
+	padding:10px;
+	background-color:#fff;
+	}
+	
+table.event {
+	border-collapse:collapse;
+	margin:15px 0;
+	width:100%;
+	line-height:normal;
+	}
+	
+table.event h4 {
+	margin-top:0;
+	}
+	
+table.event td, table.event th {
+	vertical-align:top;
+	padding:5px 0;
+	border-bottom:solid 1px #bbb;
+	}
+	
+table.event th {
+	color:#666;
+	text-transform:uppercase;
+	padding:8px;
+	text-align:left;
+	width:25%;
+	}
+	
+table.event table.event-fields {
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.event table.event-fields th, table.event table.event-fields td {
+	border-bottom:none;
+	vertical-align:top;
+	padding:5px 0;
+}
+
+table.event table.event-fields th {
+	padding:5px 5px 5px 0;
+	text-transform:none;
+	color:#000;
+}
+	
+div#calendar-submit table td {
+	border-bottom:solid 1px #ccc;
+	padding:8px;
+	vertical-align:top;
+	}
+	
+div#calendar-submit table th {
+	padding-top:20px;
+	padding-bottom:2px;
+	border-bottom:solid 2px #333;
+	font-size:14px;
+	background-color:#eee;
+	padding-left:5px;
+	text-align:left;
+	}
+	
+select#startday, select#endday {
+	width:60px;
+	}
+	
+form#user {
+	padding:15px;
+	background-color:#fff;
+	}
+	
+p.errors {
+	color:#000;
+	}
+	
+#calendar h1 {
+	font-weight:normal;
+	margin-top:0;
+	margin-bottom:0;
+	line-height:normal;
+	}
+	
+h3 {
+	font-size:14pt;
+	}
+	
+input#search {width:200px;}
+
+p.subcontent {
+	line-height:normal;
+	font-style:italic;
+}
+
+a {
+	color: #6b6b6b;
+	text-decoration: none; 
+   
+}
+/* end calendar styles */
+

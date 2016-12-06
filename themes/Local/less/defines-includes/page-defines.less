@@ -1,0 +1,95 @@
+/*
+ * Defines for global Page files:
+ * 
+ *     page.less
+ * 
+ */
+ 
+ 
+// html editor styles
+@sidebarColor: @secondaryBrandColor;
+@sidebarFontFamily: @serifFontFamily;
+@sidebarFontSize: 180%;
+@sidebarBorder: @thinRule @secondaryBrandColor;
+
+@pullquoteColor: @secondaryBrandColor;
+@pullquoteFontFamily: @serifFontFamily;
+@pullquoteFontSize: 220%;
+@pullquoteBorder: @thinRule @secondaryBrandColor;
+
+@dropCapFontSize: 350%;
+@dropCapLineHeight: 90%;
+@dropCapFontWeight: normal;
+@dropCapFontFamily: @serifFontFamily;
+@dropCapColor: @primaryBrandColor;
+
+// article styles
+@articlePadding:0;
+@articleBottomMargin:0;
+@articleTopBorder:none;
+@articleRightBorder:none;
+@articleBottomBorder:none;
+@articleLeftBorder:none;
+@aricleBorderRadius:none;
+@articleBoxShadow:@moduleBoxShadow;
+@articleFontSize: 16px; // NOTE: This is the base article font size, which affects the size of all other article type elements
+@articleFontFamily: @sansFontFamily;
+@articleTextColor: #000;
+@articleLineHeight: 1.7;
+@articleBackgroundColor: @moduleBackground;
+@articleHeadLineColor: #000;
+@articleHeadLineFontFamily: @sansFontFamily;
+@articleDeckColor: #333;
+@articleDeckFontFamily: @sansFontFamily;
+@articleByLineSize: 90%;
+@articleByLineColor: #000;
+@articleByLineFontFamily:@sansFontFamily;
+@articleByLineLetterSpacing:1px;
+@articleByLineTextTransform:uppercase;
+@articleByLineFontWeight: bold;
+@articleDatePublishedStyle: italic;
+@articleDatePublishedFontSize:90%;
+@articleDatePublishedColor:#666;
+@articleDatePublishedFontFamily:@sansFontFamily;
+@articlePhotoDescriptionColor:#000;
+@articlePhotoDescrptionSize:100%;
+@articlePhotoDescriptionFontWeight:bold;
+@articlePhotoDescriptionFontFamily:@sansFontFamily;
+@articlePhotoDescriptionTextTransform:none;
+@articlePhotoDescriptionLetterSpacing:0;
+@articlePhotoDescriptionLineHeight:1.25;
+@articlePhotoCreditColor:#000;
+@articlePhotoCreditSize:75%;
+@articlePhotoCreditFontWeight:normal;
+@articlePhotoCreditFontFamily:@sansFontFamily;
+@articlePhotoCreditTextTransform:uppercase;
+@articlePhotoCreditLetterSpacing:none;
+@articlePhotoCreditLineHeight:1em;
+@articleArticleFooterFontStyle: italic;
+@articleArticleFooterBorderTop: dashed 1px #999;
+@articleArticleFooterBorderBottom: dashed 1px #999;
+@articlePageBreakColor: lighten(@articleTextColor,25%);
+@articlePageBreakFontStyle: italic;
+@articlePageBreakFontSize: 80%;
+
+@articleHeadLineSize: 350%;
+@articleDeckSize: 200%;
+
+// breakpoint-specific variables
+@articleHeadLineSize768: 300%;
+@articleDeckSize768: 175%;
+
+@articleHeadLineSize480: 250%;
+@articleDeckSize480: 150%;
+
+@articleHeadLineSize320: 200%;
+@articleDeckSize320: 125%;
+
+@articleHeadLineSize240: 175%;
+@articleDeckSize240: 115%;
+
+@pageHeadLineSize: @articleHeadLineSize;
+@pageHeadLineSize768: @articleHeadLineSize768;
+@pageHeadLineSize480: @articleHeadLineSize480;
+@pageHeadLineSize320: @articleHeadLineSize320;
+@pageHeadLineSize240: @articleHeadLineSize240;

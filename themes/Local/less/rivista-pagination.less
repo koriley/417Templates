@@ -1,0 +1,90 @@
+/**
+ *     NOT CURRENTLY USED
+ */
+
+#RIVISTA-PAGINATION_LESS-START {
+	content: "rivista-pagination.less";
+}
+
+.pagination {
+	text-align: @paginationTextAlign;
+	.pagination_first a {
+		float: left;
+	}
+	.pagination_inner_pages a {
+		float: left;
+	}
+	.pagination_last a {
+		float: right;
+		margin-left: -1px;
+		border-left-width: 1px;
+	}
+	ul {
+		max-width: 100%;
+		overflow: hidden;
+		height: 36px;
+	}
+	li.pager_first_ellipses,
+	li.pager_last_ellipses {
+		display:none;
+	}
+}
+
+.disabled.pagination_nextprev a {
+    display:none;
+}
+
+.disabled.pagination_nextprev+li a {
+   border-left-width: 1px;
+}
+
+.disabled.pagination_last+li a {
+   border-left-width: 1px;
+}
+
+
+@media (max-width: 1024px) {
+	.pagination li.edge_page_level2 a {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.pagination li.edge_page_level1 a {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.pagination {
+		margin-left: 0;
+		margin-bottom: @baseLineHeight;
+		list-style: none;
+		text-align: @480paginationTextAlign;
+		a {
+			display: none;
+		}
+	}
+	.disabled.pagination_nextprev a {
+		display:inline-block;
+	}
+	li.pagination_nextprev a {
+		display: inline-block;
+		width: 60px;
+		max-width: 35%;
+	}
+}
+
+@media (max-width: 300px) {
+	li.pagination_nextprev a {
+		display: inline-block;
+		width: auto;
+	}
+	.pagination_nextprev_label {
+		display: none;
+	}
+}
+
+#RIVISTA-PAGINATION_LESS-END {
+	content: "rivista-pagination.less";
+}

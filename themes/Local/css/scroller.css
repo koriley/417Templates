@@ -1,0 +1,15 @@
+#motioncontainer a img{ /*image border color*/
+border: 1px solid #fff;
+display: inline-block;
+padding:10px;
+background:url(/images/scroller-background.gif);
+margin:0 5px;
+}
+
+#motioncontainer a:hover img{ /*image border hover color*/
+border: 1px solid #0099CC;
+}
+
+#motioncontainer a:hover{
+color: red; /* Dummy definition to overcome IE bug */
+}

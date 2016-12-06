@@ -1,0 +1,31 @@
+/*
+ * Less variables for Survey module.
+ * survey.less
+ */
+
+@surveyQuestionFontWeight: bold;
+@surveyQuestionTextAlign: left;
+
+@surveyOptionTextAlign: left;
+@surveyOptionBackgroundColor: #f5f5f5;
+@surveyOptionHoverBackgroundColor: #000000;
+@surveyOptionHoverColor: #FFFFFF;
+@surveyOptionBorderColor: #CCC;
+@surveyOptionBorderStyle: solid;
+@surveyOptionBorderTop: 1px @surveyOptionBorderStyle @surveyOptionBorderColor; 
+@surveyOptionBorderBottom: @surveyOptionBorderTop;
+@surveyOptionBorderLeft: none;
+@surveyOptionBorderRight: none;
+@surveyOptionLineHeight: normal;
+
+@surveyResultsQuestionBorderBottom: 1px solid #999999;
+@surveyResultsOptionLineHeight: @surveyOptionLineHeight;
+
+@surveyResponseTextAlign: right;
+@surveyResponseFontSize: 10px;
+@surveyResponseLineHeight: 20px;
+@surveyResponseBackgroundColor: @surveyOptionBackgroundColor;
+
+@surveyResultPercentageColor: #007fac;
+@surveyResultPercentageShadowColor: darken(@surveyResultPercentageColor, 10%);
+@surveyResultPercentageHighlightColor: lighten(@surveyResultPercentageColor, 10%);

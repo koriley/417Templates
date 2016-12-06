@@ -1,0 +1,191 @@
+/* 
+    Document   : bestOfMobile
+    Created on : Aug 9, 2012, 2:03:53 PM
+    Author     : kevin oriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ body{
+   background-color:#CFCECE;
+}
+.header{
+   padding-top:5px;
+   width:320px;
+   position: fixed;
+   top:0px;
+   z-index:1000;
+   background-color:#CFCECE;
+} 
+
+.sponLogo{
+    padding-top:5px;
+   width:320px;
+   position: fixed;
+   top:85px;
+   z-index:1000;
+   background-color:#CFCECE;
+   margin-bottom:30px;
+   
+}
+.sponLogo img{
+    width:320px;
+}
+.header img{
+    width:320px;
+}
+.menuItem a:link {text-decoration:none; color:white;}
+.menuItem a:visited {text-decoration:none; color:white;}
+.menuItem a:hover {text-decoration:none; color:white;}
+.menuItem a:active {text-decoration:none; color:white;}
+.menuItem{
+    font-size:250%; 
+    font-weight:bold; 
+    color:white;
+    width:305px;
+    margin-top:10px;
+    margin-left:-5px;
+    border: 5px solid #02588e;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:15px;
+    padding-left:15px;
+    padding-bottom:15px;
+    background-color:#0f90cf;
+    -webkit-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset   0px 0px 4px 5px  rgba(0,0,0,0.5);
+    background: -webkit-gradient(linear, left , right, from(#02588e), to(#0f90cf)); 
+    background: -moz-linear-gradient(to right, #02588e, #0f90cf);
+}
+    .mainContent{
+    width:100%;
+    position:absolute;
+    top:197px;
+    
+}
+.inputStyle{
+    /*border: 3px solid #02588e; */
+    border:0;
+    -webkit-box-shadow: 
+        inset 3px 3px 4px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    margin:auto;
+    background: rgba(255,255,255,0.5);
+    width:75%;
+    height:35px;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:25px;
+    font-size:35px;
+    color:black;
+    text-align: center;
+    
+
+}
+.radioStyle{
+  margin-left:10px;
+    width:40px;
+    height:40px;  
+}
+
+.choiceStyle{
+    font-size:20px;
+    padding-bottom:215px;
+}
+
+.formStyle{
+    margin-top:10px;
+    border: 5px solid #02588e;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:5px;
+
+    background-color:#0f90cf;
+    -webkit-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset   0px 0px 4px 5px  rgba(0,0,0,0.5);
+    background: -webkit-gradient(linear, left , right, from(#02588e), to(#0f90cf)); 
+    background: -moz-linear-gradient(to right, #02588e, #0f90cf); 
+    width:320px;
+    margin-left:-5px;
+}
+.titleHeaders{
+    font-size:250%; 
+    font-weight:bold; 
+    color:white;
+    width:305px;
+    margin-top:10px;
+    margin-left:-5px;
+    border: 5px solid #02588e;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:15px;
+    padding-left:15px;
+    padding-bottom:15px;
+    background-color:#0f90cf;
+    -webkit-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset   0px 0px 4px 5px  rgba(0,0,0,0.5);
+    background: -webkit-gradient(linear, left , right, from(#02588e), to(#0f90cf)); 
+    background: -moz-linear-gradient(to right, #02588e, #0f90cf);
+
+}
+
+.tableHeaders{
+    /*background-image:url('/images/bestof/2013/tableBlank.gif');
+    background-repeat:no-repeat;*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dee7ea'); 
+
+   background: -webkit-gradient(linear, left , right, from(#02588e), to(#0f90cf)); 
+   background: -moz-linear-gradient(to right, #02588e, #0f90cf);  */
+    margin-left:auto;
+    margin-right:auto;
+    width:211px;
+    height:30px;
+    color:white;
+    
+    font-size:155%;
+    font-weight:bold;
+    margin-top:25px;
+    text-align:center;
+
+}
+
+
+
+/* 2014 styles */
+#formNav{
+    width:320px;
+    margin-bottom:5px;
+    background-color:#383738;
+}
+#formNav img{
+    width:305px;
+}
+
+
+#bo2014Submit{
+    background-image: url('/images/bestof/2014/BestOf417_vote.png');
+    width:326px;
+    height:154px;
+    border:0;
+    cursor:pointer;
+    background-color:#fff;
+    margin-left:-5px;
+}
+#bo2014Submit:hover{
+    background-image: url('/images/bestof/2014/BestOf417_voteRed.png');
+}

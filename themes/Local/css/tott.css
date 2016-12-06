@@ -1,0 +1,344 @@
+/* Top of the Town module styles */
+
+#gallerycontent1141_21345 a img {max-width: 160px;height: auto;position: relative;margin-right: auto;margin-left: auto;}
+#gallerycontent1141_21345 {width:100%;text-align:center}
+
+.list-container {text-align:center}
+.list-logo img {padding-bottom:10px;max-width:265px;padding-top:10px}
+#cb-caption {font-size:10px;margin-top:8px}
+.tott.tott-offers {
+	line-height:normal;
+}
+
+.tott.tott-offers .offer-column {
+	float:left;
+	width:50%;
+}
+
+.tott.tott-offers .offer-column-wrapper {
+	overflow:hidden;
+}
+
+.tott.tott-offers div.form-row {
+	padding:5px 0;
+	border-top:solid 1px #ccc;
+	min-height:20px;
+	line-height:20px;
+}
+
+.tott.tott-offers div.form-row.last {
+	border-bottom:solid 1px #ccc;
+	margin-bottom:5px;
+}
+
+.tott.tott-offers div.form-row.first {
+	margin-top:5px;
+}
+
+.tott.tott-offers input[type=checkbox] {
+	margin-right:5px;
+}
+
+.tott.tott-offers form label {
+	display:inline-block;
+	width:40%;
+	font-size:11px;
+	text-align:right;
+	padding-right:10px;
+	white-space:nowrap;
+}
+
+.tott.tott-offers p {
+	margin-top:0;
+        font-family:"Times New Roman",Georgia,Serif;
+        font-size:10pt;
+}
+
+.tott.tott-offers p.fineprint {
+	margin-top:0;
+        font-family:"Times New Roman",Georgia,Serif;
+        font-size:10pt;
+}
+
+.tott #ppm_response div {
+	margin-top:10px;
+	border:solid 2px #C00;
+	padding:10px;
+	background:#fff;
+	font-weight:bold;
+	color:#C00;
+	border-radius:5px;
+}
+
+.tott #ppm_response div.thanks {
+	border:solid 2px #069;
+	color:#069;
+}
+
+.tott.tott-listings .search-all {
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+
+.tott.tott-listings .search-all:hover {
+	text-decoration:none;
+}
+
+.tott.tott-listings {
+	position:relative;
+}
+
+.tott.tott-listings ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	border-top:solid 1px #ccc;
+	margin-bottom:35px;
+}
+
+.tott.tott-listings ul li {
+	list-style:none;
+	margin:0;
+	font-size:16px;
+	padding:10px 0 10px 55px;
+	line-height:16px;
+	position:relative;
+	min-height:35px;
+	border-bottom:solid 1px #ccc;
+}
+
+.tott.tott-listings ul li img {
+	vertical-align:middle;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.35);
+	margin:0 10px 10px 0;
+	position:absolute;
+	top:5px;
+	left:0;
+	border:solid 1px #ccc;
+	border-radius:3px;
+}
+
+.tott. tott-form table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.tott. tott-form table td {
+	border-bottom:solid 1px #ccc;
+	padding:5px 0;
+}
+
+.tott .tott-form table {
+	border-top:solid 1px #ccc;
+}
+
+.tott .tott-form table tr.checkboxes {
+	font-size:11px;
+	line-height:normal;
+}
+
+.tott .tott-form .button {
+	margin-top:30px;
+	font-size:18px;
+	height:30px;
+	font-weight:normal;
+}
+
+/* button */
+
+.tott .button {
+	color:#333;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:4px;
+	padding:5px 10px;
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	text-shadow:1px 1px 1px #fff;
+	border:solid 1px #ccc;
+	border-bottom:solid 1px #999;
+	font-family:Arial, Helvetica, sans-serif;
+	display:inline-block;
+	margin-right:5px;
+	margin-left:0;
+	background: #eee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 50%, #eee 51%, #ddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f5f5f5), color-stop(51%,#eee), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+.tott input.button {
+	height:26px;
+}
+
+.tott .button:hover {
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 50%, #e1e1e1 51%, #c5c5c5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#e5e5e5), color-stop(51%,#e1e1e1), color-stop(100%,#c5c5c5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5',GradientType=0 ); /* IE6-9 */
+}
+
+.tott.tott-offers h2, .tott.tott-listings h2, .tott.tott-blogroll h2 {
+	position:relative;
+}
+
+.tott h3 {
+	text-transform:uppercase;
+}
+
+
+.tott .tott-offers {
+	line-height:normal;
+}
+
+
+.flex-video {
+  position: relative;
+  padding-top: 25px !important;
+  padding-bottom: 67.5% !important;
+  height: 0;
+  overflow: hidden;
+  margin-right:0px!important;
+}
+
+.flex-video.widescreen {
+  padding-bottom: 57.25%;
+}
+.flex-video.vimeo {
+  padding-top: 0;
+}
+.flex-video iframe, .flex-video object, .flex-video embed, #playerdisplay iframe, #playerdisplay object, #playerdisplay embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img.tracker-image {
+	display:none;
+	}
+	
+/* enable the styles below to give the modules a distinctive look */
+
+
+.tott {
+	margin-bottom:10px;
+	border-radius:7px;
+	border:solid 1px #ccc;
+	border-bottom:solid 2px #bbb;
+	
+}
+
+.tott .content {
+	padding:20px 10px 10px 10px;
+	background:#fff;
+	border-radius:0 0 6px 6px;
+}
+
+.tott h2  {
+	line-height:24px;
+	border-radius:6px 6px 0 0;
+	background-color:#e5e5e5;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:1px 1px 1px #fff;
+	color:#333;
+	border:solid 1px #fff;
+	border-bottom:solid 1px #bbb;
+	border-right:none;
+	margin:0;
+	padding:8px 30px 8px 15px;
+	position:relative;
+}
+
+.tott h2 img {
+	position:absolute;
+	top:-8px;
+	right:5px;
+}
+
+.tott.tott-listings .content {
+	padding-top:20px;	
+}
+
+.tott .tott-rail .content {
+	padding-top:20px;
+}
+
+.tott .tott-rail h3 {
+	border-bottom:solid 1px #ccc;
+	margin-bottom:10px;
+	padding-bottom:5px;
+}
+
+.tott.tott-listings .content, .tott-offers .content {
+	padding-top:15px;
+}
+
+/* sweepstakes form */
+
+.tott-contest-form table {
+	width:100%;
+	max-width:100% !important;
+	border-collapse:collapse;
+	border-bottom:solid 1px #ccc;
+	margin-bottom:15px;
+}
+
+.tott-contest-form table table {
+	border-bottom:none;
+	margin-bottom:0;
+}
+
+.tott-contest-form table td, .tott-contest-form table th {
+	padding:5px 0;
+	border-bottom:solid 1px #ccc;
+}
+
+.tott-contest-form table tr:last-child > td, .tott-contest-form table tr:last-child > th {
+	border-bottom:none;
+}
+
+.tott-contest-form table th {
+	text-align:left;
+}
+
+.tott-contest-form table input[type=text] {
+	padding:3px;
+	border:solid 1px #999;
+}
+
+.tott-contest-form table input[mandatory=Y] {
+	border:solid 1px #693;
+}
+
+.tott-contest-form .fineprint {
+	font-size:11px;
+}
+
+form div.verify {
+	border-radius:5px;
+	border:solid 1px #ccc;
+	background-color:#f2f2f2;
+	padding:10px;
+	margin:10px 0;
+	font-size:11px;
+}
+
+form div.verify br {
+	display:none;
+}
+
+
+

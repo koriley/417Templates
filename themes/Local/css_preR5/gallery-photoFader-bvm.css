@@ -1,0 +1,86 @@
+/* photoFader menu */
+ 
+form.photoFader {
+	/*height:258px; */
+}
+
+.photoFader-gallery {
+	position:relative;
+	}
+
+.photoFaderMenu {
+	float:right;
+	margin:10px 0 0 0;
+	padding:0;
+	width:35px;
+	font-family:Trebuchet MS, Georgia, Tahoma, "Times New Roman", Times, serif;
+	font-size:7px;
+}
+
+.photoFaderMenu div, #photoFaderMenu div.unselected {
+       position:relative;
+	padding:3px;
+	text-align:center;
+	border:none;
+	margin-bottom:3px;
+	color:#fff;
+       z-index:5
+}
+
+.photoFaderMenu div.selected, .photoFaderMenu div.selected:hover {
+	background:url(/images/bvm/nav-light1.png) left center no-repeat;
+}
+
+.photoFaderMenu div:hover {
+	background:url(/images/bvm/nav-light1.png) left center no-repeat;
+}
+
+.photoFaderMenu div a, .photoFaderMenu div a.unselected {
+	display:inline-block;
+	padding:0px;
+       width: 10px;
+       height: 10px;
+	text-decoration:none;
+	color:#fff;
+	border:solid 1px #fff;
+}
+	
+.photoFaderMenu div a:active, .photoFaderMenu div a:focus, .photoFaderMenu div a.selected, .photoFaderMenu div a.selected:hover {
+	text-decoration:none;
+	color:#fff;
+	outline:none;
+	border:solid 1px #fff;
+       background-color:#fff;
+	}
+	
+.photoFaderMenu div a:hover {
+	text-decoration:none;
+	color:#999;
+	border:solid 1px #fff;
+	}
+
+.photoFader-contentcontainer{
+	height:250px;
+	position:relative;
+	float:left;
+}
+
+.photoFader-contentcontainer div{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	height:250px;
+	}
+	
+.photoFader-contentcontainer div p{
+	margin-top:10px;
+	}
+	
+.photoFader-contentcontainer a {
+	color:#000;
+	}
+
+.photoFader-contentcontainer div#item1 {
+	display:block;
+}

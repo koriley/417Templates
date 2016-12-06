@@ -1,0 +1,653 @@
+/** this is the geaobase stylesheet **/
+
+
+@import url("/core/media/css/tabmenu.css");
+
+.tblItemA
+{
+		background-color: #f5f5f5;
+}
+.tblItemB
+{
+		background-color: #FFFFFF;
+}
+
+#pagetools {
+	margin-bottom:10px;
+	}
+
+.geobase-container {
+	background-color:#fff;
+	padding:0px;
+	margin:0px;
+	}
+
+.geobase-container h1 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	font-size:28pt;
+	text-align:left;
+	background-color:#fff;
+	padding:5px;
+	margin-bottom:10px;
+	margin-top:0;
+}
+
+#geobase {
+	width:310px;
+	border-collapse:collapse;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+	line-height:normal;
+	}
+
+#geobase form {
+	margin:0;
+	}
+
+#geobase a {
+	color:#006699;
+	}
+
+#geobase a img {
+	border:none;
+	}
+
+#geobase h2 {
+	color:#000;
+	font-size:18pt;
+	}
+
+#geobase #search h3, #geobase #featured-listings h3 {
+	padding:3px;
+	text-align:center;
+	margin:0;
+	background-color:#bab7af;
+	color:#fff;
+	font-size:10pt;
+	text-transform:uppercase;
+	border-bottom:solid 1px #73716c;
+	}
+
+#geobase #featured-listings h3 {
+	margin-top:10px;
+}
+
+#geobase #search h4, #geobase #featured-listings h4 {
+	padding:3px;
+	margin:10px 0 0 0;
+	background-color:#E1DFDA;
+	color:#000;
+	font-size:8pt;
+	text-align:left;
+	font-weight:normal;
+	text-transform:uppercase;
+	}
+
+#geobase #premium-listing h3, #geobase #free-listing h3 {
+	background-color:#fff;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:17px;
+	color:#666;
+	font-weight:normal;
+	padding:0;
+	margin:1em 0 .5em 0;
+	}
+
+
+#geobase #premium-listing h4, #geobase #free-listing h4 {
+	background-color:#fff;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:17px;
+	color:#891313;
+	border-bottom:solid 1px #EAEBE6;
+	font-weight:normal;
+	padding:0 0 5px 0;
+	margin:1em 0 .5em 0;
+	}
+
+#geobase h5 {
+	text-align:left;
+	color: #252326;
+	font-size: 14px;
+	line-height: 1.2em;
+	padding: 0px;
+	margin: 0px;
+	border:0px;
+	text-transform:none;
+}
+
+
+#geobase h6 {
+	text-align:left;
+	}
+
+#geobase td {
+	margin:10px;
+	}
+
+#geobase input.button {
+	width:25px;
+}
+
+#geobase .search-form {
+	margin-top:5px;
+	margin-left:5px;
+	}
+	
+#geobase .most-recent {
+	border-top:solid 1px #ccc;
+	border-bottom:solid 1px #ccc;
+	padding:5px;
+	margin-top:5px;
+	line-height:1.75em;
+}
+
+#geobase input.search-field {
+	width:132px;
+	}
+
+#geobase td#search {
+	width:175px;
+	padding:1px;
+	font-size:8pt;
+	line-height:normal;
+	border:solid 1px #ccc;
+	background-color:#fff;
+	vertical-align:top;
+	}
+
+#geobase td#search-results {
+	background-color:#fff;
+	border:solid 1px #c6c6c6;
+	padding:1px;
+	vertical-align:top;
+	}
+
+#geobase td#featured-listings {
+	width:302px;
+	padding:0px;
+	font-size:9pt;
+	background-color:#fff;
+	vertical-align:top;
+	}
+
+#geobase td#featured-listings p {
+	margin:10px 0;
+	}
+
+#geobase td.spacer {
+	width:5px;
+	}
+
+#geobase ul.filter {
+	max-height:20em;
+	height:auto !important;
+  	height:20em;
+	overflow:auto;
+	background-color:#fff;
+	padding:0;
+	margin:0;
+	}
+
+* html #geobase ul.filter {
+   height: expression( this.scrollHeight > 200 ? "200px" : "auto" ); /* sets max-height for IE6 */
+}
+
+#geobase ul.filter li {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-top:solid 1px #fff;
+	border-bottom:solid 1px #ccc;
+	}
+
+#geobase ul.filter a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#F5F4F0;
+	outline:none;
+	}
+
+#geobase ul.filter a:hover {
+	background-color:#e3e2de;
+	text-decoration:none;
+	}
+
+#geobase ul.filter li.mc_category a {
+	background-color:#F5F4F0;
+    padding:0 0 0 3px;
+
+}
+
+#geobase ul.filter li.mc_subcategory a {
+    padding: 3px 3px 3px 10px;
+}
+
+.filterreset {
+	text-align:center;
+        padding:2px;
+        font-weight: bold;
+        border:solid 1px #c6c6c6;
+        background-color:#e3e2de;
+        margin-right:0px;
+        margin-left:0px;
+
+}
+
+/* pager styles */
+
+#geobase .pager, #geobase #pager {
+	font-size:10px;
+	list-style:none;
+	padding:0;
+	margin:5px;
+	line-height:2.75em;
+	}
+
+#geobase .pager li {
+	display:inline;
+	}
+
+#geobase .pager a, #geobase #pager a {
+	padding:2px;
+	border:solid 1px #c6c6c6;
+	text-decoration:none;
+	background-color:#fff;
+	margin-right:0px;
+	margin-left:0px;
+	}
+
+#geobase .pager span, #geobase #pager span {
+	padding:2px;
+	font-weight: bold;
+	border:solid 1px #c6c6c6;
+	background-color:#e3e2de;
+	margin-right:0px;
+	margin-left:0px;
+	}
+
+#geobase .pager a:hover, #geobase #pager a:hover {
+	background-color:#F5F4F0;
+	color:#000;
+	text-decoration:none;
+	}
+
+/* end pager styles */
+
+#geobase table#listings {
+	width:100%;
+	font-size:10pt;
+	line-height:normal;
+	}
+
+#geobase table#listings ul {
+	margin:0;
+	line-height:normal;
+	}
+
+#geobase table#listings h5 {
+	margin-top:0;
+	margin-bottom:5px;
+	font-size:11px;
+	font-family:arial, helvetica, sans serif;
+	}
+
+#geobase table#listings td {
+	padding:10px;
+	vertical-align:top;
+	border-bottom:solid 1px #c6c6c6;
+	}
+
+#geobase table#listings tr {
+	background-color:#fff;
+	}
+
+#geobase table#listings tr:hover {
+	background-color:#f5f5f5;
+	}
+
+#geobase table#listings th {
+	padding:3px 10px;
+	line-height:normal;
+	text-align:left;
+	background-color:#000;
+	color:#fff;
+	font-size:10pt;
+	border-bottom:solid 1px #000;
+	border-left:solid 1px #fff;
+	}
+
+#geobase table#listings th:first-child {
+	border-left:none;
+	}
+
+#geobase table#listings tr.premium, #geobase table#listings tr.portfolio {
+	background-color:#f5f5f5;
+	}
+
+#geobase table#listings tr.premium:hover, #geobase table#listings tr.portfolio:hover{
+	background-color:#ebebeb;
+	}
+	
+#geobase table#listings tr.featured {
+	background-color:#f3f3f3;
+	}
+
+#geobase table#listings tr.featured:hover {
+	background-color:#e1e1e1;
+	}
+
+#geobase table#listings tr.premium td, #geobase table#listings tr.featured td, #geobase table#listings tr.portfolio td {
+	border-top:solid 1px #fff;
+	}
+
+#geobase table#listings td.business-name {
+	width:60px;
+	}
+
+#geobase table#listings td.contact {
+	width:100%;
+	}
+
+#geobase table#listings td.categories {
+	width:33%;
+	}
+
+#geobase ul.featured-listing li {
+	list-style:none;
+	margin:0px 0 0 0;
+	padding:5px;
+	background-color:#eee;
+	border:solid 1px #ccc;
+	font-weight:bold;
+	overflow:auto;
+	}
+
+* html #geobase ul.featured-listing li {
+	zoom:1;
+}
+
+#geobase ul.featured-listing ul li{
+	padding:0;
+	margin:0;
+	margin-left:20px;
+	border:none;
+	font-weight:normal;
+	list-style-image:url(/core/media/images/bullet.gif);
+	overflow:visible;
+	}
+
+#geobase img.tracker {
+	display:none;
+	}
+
+#geobase ul.featured-listing {
+	padding:0;
+	margin:0;
+	}
+
+#geobase ul.featured-listing img {
+	float:right;
+	margin-left:10px;
+	border:solid 2px #fff;
+	}
+
+#geobase ul.featured-listing ul {
+	padding:0;
+	margin:0;
+	margin-top:10px;
+	}
+
+#geobase table#listings li {
+	list-style-image:url(/core/media/images/bullet.gif);
+	padding:0;
+	margin-left:10px;
+	}
+
+#geobase table#listings ul {
+	margin:0 0 0 10px;
+	padding:0;
+	}
+
+#geobase table#listings p {
+	margin:0;
+	margin-bottom:.2em;
+	font-size:11px;
+	tex-align:left;
+	}
+
+#geobase #premium-listing ul,  #geobase #free-listing ul{
+	margin:0;
+	padding:0;
+	list-style-image:url(/core/media/images/bullet.gif);
+	}
+
+#geobase #premium-listing li,  #geobase #free-listing li {
+	margin-left:20px;
+	padding:0;
+}
+
+
+/** listing **/
+
+#geobase td#basic-listing {
+	background-color:#fff;
+	border:solid 1px #ccc;
+	padding:20px;
+	vertical-align:top;
+	}
+
+#geobase td#premium-listing {
+	background-color:#fff;
+	padding:0;
+	vertical-align:top;
+	line-height:normal;
+	}
+
+#geobase tr.premium img {
+	float:left;
+	margin:0 10px 5px 0;
+	}
+
+#geobase td#free-listing {
+	border:solid 1px #C6C6C6;
+	padding:0 10px 10px 10px;
+	line-height:normal;
+	vertical-align:top;
+	}
+
+.field-label {
+	font-weight:bold;
+	}
+
+#geobase div#listing-top h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:24pt;
+	font-weight:normal;
+	margin:0 0 .5em 0;
+	}
+
+#geobase div#listing-top h5 {
+	margin:1em 0;
+	}
+
+#geobase div#listing-top p {
+	border-top:solid 1px #ddd;
+	padding:5px 0;
+	margin-top:0;
+	}
+
+#geobase div.listing ul {
+	border:solid 1px #ccc;
+	background-color:#E9EFF5;
+	padding:10px;
+	margin:0;
+	list-style-image:url(/core/media/images/bullet.gif);
+	}
+
+#geobase div.listing ul li {
+	margin-left:20px;
+	padding:0;
+}
+
+#geobase .fineprint {
+	font-size:75%;
+	}
+
+/** premium listing **/
+
+#geobase #facts {
+	float:right;
+	wdith:240px;
+	padding:10px;
+	background-color:#fff;
+	border:solid 1px #ddd;
+	margin-left:20px;
+	margin-bottom:20px;
+	}
+
+#geobase table#quickfacts {
+	font-size:8pt;
+	border-collapse:collapse;
+	width:300px;
+	margin-top:10px;
+	line-height:normal;
+	}
+
+#geobase table#quickfacts th {
+	padding:5px;
+	background-image:url(/core/media/images/geobase-tab-selected.gif);
+	color:#000;
+	font-size:10pt;
+	text-align:center;
+	}
+
+#geobase table#quickfacts tr {
+	background-color:#eee;
+	}
+
+#geobase table#quickfacts td {
+	padding:10px 7px;
+	vertical-align:top;
+	border-bottom:solid 1px #fff;
+	}
+
+#geobase table#quickfacts td.factname {
+	text-align:right;
+	font-weight:bold;
+	width:100px;
+	border-right:solid 1px #fff;
+	}
+
+#geobase table#essentials {
+	border-collapse:collapse;
+	margin-bottom:20px;
+	border:0;
+	}
+
+#geobase table#essentials td {
+	vertical-align:top;
+	padding:3px;
+	border-bottom:solid 1px #ccc;
+	}
+
+#geobase table#essentials th {
+	vertical-align:top;
+	padding:3px 20px 3px 0;
+	border-bottom:solid 1px #000;
+	font-weight:bold;
+	}
+
+#geobase div#photos {
+	clear:both;
+	}
+
+#geobase div#photos img {
+	margin:0 15px 0 0;
+	float:left;
+	}
+
+#geobase div.image-instance {
+	background-color:#f5f5f5;
+	padding:10px;
+	margin-bottom:10px;
+	border:solid 1px #ddd;
+	overflow:auto;
+	}
+
+* html #geobase div.image-instance {
+	zoom:1;
+}
+
+#geobase div.image-instance p {
+	margin-top:0;
+	}
+
+
+
+/* geobase marketing styles */
+
+.geobase-marketing {
+	line-height:1.75em;
+	padding:5px;
+	}
+
+.geobase-marketing h2 {
+	font-size:16pt;
+	color:#000;
+	border-bottom:solid 1px #ccc;
+	margin-top:10px;
+	padding-bottom:3px;
+	}
+
+.geobase-marketing h3 {
+	font-size:11pt;
+	}
+
+.geobase-marketing a {
+	font-weight:bold;
+	}
+
+.geobase-marketing ul li {
+	list-style-image:url(/core/media/images/bullet.gif);
+	padding:0;
+	line-height:normal;
+	margin-bottom:3px;
+	}
+
+.geobase-marketing textarea {
+	width:100%;
+	}
+
+#map {
+	border:solid 1px #666;
+	}
+
+div.gallery-thumb {
+	float:right;
+	margin-left:15px;
+	margin-bottom:10px;
+	border:solid 1px #ddd;
+	padding:3px;
+	background:#fff;
+	}
+
+div.gallery-thumb p {
+	text-align:center;
+	font-size:10px;
+	margin:5px 0;
+	}
+
+img.tracker-image {
+	display:none;
+	}
+	
+div#listing-data div#address {
+	margin-bottom:15px;
+}
+
+#geobase #price {
+	margin-top:15px;
+}

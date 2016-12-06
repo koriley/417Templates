@@ -1,0 +1,184 @@
+/* 
+    Document   : livingwell
+    Created on : Jan 31, 2013, 8:43:26 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face{
+    font-family:book;
+    src:url('/images/livewell/2013/Gotham-Book.otf');
+}
+root { 
+    display: block;
+}
+#columns-1-2-3{
+    background-color:#bbbdbf;
+}
+body{
+    background-color:#bbbdbf;
+    /*background-color:#fff;*/
+}
+ a:link {color: #a6ce39; text-decoration: none; }      /* unvisited link */
+ a:visited {color: #a6ce39; text-decoration: none;}  /* visited link */
+ a:hover { color: #a6ce39; text-decoration:underline;}  /* mouse over link */
+ a:active {color: #a6ce39; }
+/* right side styles
+ * right-side is the whole side
+ * rightSideModule is the div that needs to surround any module
+ * rightSideModuleMargin adds the margin to the top of each mod, since the module css has margin:auto, this is needed to not kill the centering
+ */
+.right-side{
+    float:right;
+    background-color:transparent; 
+    width:267px; 
+    text-align: center;
+}
+.rightSideModule{
+    
+    width:248px;
+    float:right;
+    
+}
+.rightSideModuleMargin{
+    margin-top:25px;
+}
+
+.rightSideNav{
+    margin-top:10px;
+}
+
+
+
+.righSocialShare{
+    background-color:#C9DA2D;
+    width:100px;
+    height:100px;
+}
+
+/* end right side */
+.left-side{
+    float:left;
+}
+.header{
+    width:697px;
+   
+}
+.header img{
+    width:697px;
+}
+
+.leftContent{
+    width:676px;
+    background-color:#fff;
+    padding:10px;
+    margin-left:1px;
+}
+
+#footer{
+    margin-top:25px;
+}
+
+.shadow{
+     
+    box-shadow: 
+        0px 0px 0px 0px #A3A3A3;
+}
+.topNav{
+    width:690px;
+    height:55px;
+    
+}
+.topNavOverview{
+    float:left;
+    font-family:book;
+    width:119px; height:41px;
+    text-align: center;
+    background-color:#EE4E9B;
+    border-radius:5px 5px 5px 5px;
+    color:white;
+    padding-top:0px;
+    font-size:16px;
+    padding-left:5px;
+    padding-right:5px;
+    line-height: 17px;
+    padding-top:6px;
+}
+.topNavSessions{
+    float:left;
+    margin-left:8px;
+    font-family:book;
+    width:129px; height:41px;
+    text-align: center;
+    background-color:#A4CD39;
+    border-radius:5px 5px 5px 5px;
+    color:white;
+    font-size:16px;
+    line-height: 17px;
+    padding-top:6px;
+}
+.topNavMarket{
+    float:left;
+    margin-left:8px;
+    font-family:book;
+    width:129px; height:33px;
+    text-align: center;
+    background-color:#A3A7AA;
+    border-radius:5px 5px 5px 5px;
+    color:white;
+    font-size:16px;
+    line-height: 17px;
+    padding-top:14px;
+}
+.topNavTickets{
+    float:left;
+    margin-left:8px;
+    font-family:book;
+    width:129px; height:33px;
+    text-align: center;
+    background-color:#EE4E9B;
+    border-radius:5px 5px 5px 5px;
+    color:white;
+    font-size:16px;
+    line-height: 17px;
+    padding-top:14px;
+}
+.topNavFAQ{
+    float:left;
+    margin-left:8px;
+    font-family:book;
+    width:109px; height:41px;
+    text-align: center;
+    background-color:#A4CD39;
+    border-radius:5px 5px 5px 5px;
+    color:white;
+    font-size:16px;
+    line-height: 17px;
+    padding-top:6px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.topNavCenter{
+  padding-bottom:8px;
+   margin:8px 0px 8px 10px;
+   height:47px;
+}
+
+/* market */
+.marketRight-side{
+    
+    height:310px;
+    float:right;
+    background-color:transparent; 
+    width:267px; 
+    text-align: center;
+    overflow:hidden;
+}
+
+.marketLeftContent{
+    width:948px;
+    background-color:#fff;
+    padding:10px;
+    margin-left:1px;
+    clear:both;
+}

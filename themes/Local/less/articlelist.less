@@ -1,0 +1,260 @@
+/** 
+ *	Article Lists
+ * 
+ * Styles for article lists.  Currently including the following templates:
+ * 		base.articlelist.basic.tpl
+ * 		base.articlesummary.tpl
+ * 
+ * 		module.articlelist.basic.tpl
+ * 		module.articlelist.departments.tpl
+ * 		module.articlelist.features.tpl
+ * 		module.articlelist.vertical-blurb.tpl
+ * 		module.articlelist.slideshow.tpl
+ *
+ *		Also includes corresponding gallery lists and contentitem lists.
+ */
+
+#ARTICLELIST_LESS-START {
+	content: "articlelist.less";
+}
+
+.content-item-list,
+.article-list,
+.gallery-list {
+	.btn {
+		float: right;
+	}
+	> h2 .btn {
+		.btn-small;
+		}
+	.articles {
+		h3 {
+			margin-bottom: .25em;
+		}
+		.article-item {
+			.clearfix();
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			border-bottom: @articleListItemBorderBottom;
+		
+			.article-image {
+				float: left; 
+				min-width: 30px;
+				padding-right: 10px;
+			}
+			.article-image img {
+				width: 100%;
+			}
+			
+			.article-content {
+				line-height: 1.2em;
+				h3.article-title,div {
+					margin-bottom: 0.5em;
+					&:last-child {
+						margin-bottom:0;
+					}
+				}
+				h3.article-title {
+					line-height: 1em;
+					margin-top:0;
+					font-size:@articleListTitleSize;
+				}
+			}
+		}
+		.article-item:last-child {
+			border-bottom:none;
+			padding-bottom:0;
+			margin-bottom:0;
+		}
+	}
+}
+
+.content-item-list.features, 
+.article-list.features {
+	> .btn {
+		display:none;  // temporary fix because features button has no data
+	}
+	.articles .article-item:last-child {
+		border-bottom: @articleListItemBorderBottom;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.content-item-list.departments,
+.content-item-list.group,
+.article-list.departments,
+.article-list.group {
+	.articles {
+		.department {
+			border-bottom:@articleListItemBorderBottom;
+			margin-bottom:(@baseLineHeight + 10);
+			> h3 {
+				font-size:150%;
+				line-height:1.75em;
+				border-bottom:@articleListItemBorderBottom;
+				margin-bottom: 10px;
+				a.btn {
+					margin:5px 0;
+				}
+			}
+			.article-item {
+				.article-content h3.article-title {
+					margin-top:0;
+				}
+				&:last-child {
+					padding-bottom:10px;
+				}
+			}
+			&:last-child {
+				border-bottom:none;
+				margin-bottom:0;
+			}
+		}
+	}
+}
+.content-item-list.vertical-blurb .articles .article-item,
+.article-list.vertical-blurb .articles .article-item {
+	.article-image {
+		float: none;
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-bottom: 0.75em;
+	}
+	.article-link-bottom {
+		display: block;
+		float: right;
+	}
+}
+
+
+/*
+ * This displays the article list in a grid, with image
+ * above text.  Some settings are required to make layout
+ * work properly.  Those values that are required are
+ * marked "REQUIRED".
+ * 
+ * Minimal customization has been applied to show what
+ * this can look like.  It is expected that implementation
+ * will customize further.
+ */
+.content-item-list.grid,
+.article-list.grid,
+.gallery-list.grid {
+	padding-bottom:0;
+	.articles {
+		background: @articleListGridArticlesBackground;
+		padding: @articleListGridArticlesPadding;
+		text-align: @articleListGridArticlesTextAlign;
+		clear: both;	/* REQUIRED */
+		overflow: auto;	/* REQUIRED */
+		.article-item {
+			position: relative;
+			float: left;
+			/* box-sizing property allows setting % width of whole slide */
+			.box-sizing(border-box);
+			background: @articleListGridArticleItemBackground;
+			padding: @articleListGridArticleItemPadding;
+			margin: @articleListGridArticleItemMargin;
+			border: @articleListGridArticleItemBorder;
+			border-radius: @articleListGridArticleItemBorderRadius;
+			box-shadow: @articleListGridArticleItemBoxShadow;
+			.article-image {
+				float: none;	/* REQUIRED */
+				padding: 10px;
+				.fixed-picture-block,
+				.data-picture-block {
+				img {
+						text-align: @articleListGridArticleImgAlign;
+					}
+				}
+			}
+			.article-content {
+				/* change position to absolute to move text to bottom of slide */
+				position: @articleListGridArticleContentPosition;
+				bottom: @articleListGridArticleContentPositionBottom;
+				left: @articleListGridArticleContentPositionLeft;
+				margin: @articleListGridArticleContentMargin;
+				padding: @articleListGridArticleContentPadding;
+				.article-title {
+					font-family: @articleListGridArticleContentArticleTitleFontFamily;
+					font-weight: @articleListGridArticleContentArticleTitleFontWeight;
+					font-size: @articleListGridArticleContentArticleTitleFontSize;
+					margin: @articleListGridArticleContentArticleTitleMargin;
+					padding: @articleListGridArticleContentArticleTitlePadding;
+					a {
+						text-decoration:none;
+					}
+				}
+			}
+		}
+
+		/* Generate styles that will set right margin of last slide in row to 0.
+		 * This is so that layout of slides will fit to edges of grid padding.
+		 * This generates styles for up to 20 slides in a row.
+		 */
+		.gridRowsX (@index) when (@index > 0) {
+			(~"&.row_@{index} .article-item:nth-of-type(@{index}n+@{index})") {
+				margin-right: 0px !important;
+			}
+			.gridRowsX(@index - 1);
+		}
+		.gridRowsX (20);	// start generation of 20 styles
+
+	}
+}
+
+.content-item-list.mini-fader,
+.article-list.mini-fader {
+	
+	.photoFader-contentcontainer {
+		position: relative;
+		overflow: hidden;
+
+		.article-item {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			border: none;
+			padding-bottom:0;
+			margin-bottom:0;
+			z-index: 0;	/* set initial value down; current will be bumped up in js */
+
+			.article-image,
+			.article-content {
+				p {
+					margin-bottom:0;
+				}
+			}
+			.article-image.selected,
+			.article-content.selected {
+			}
+		}
+	}
+
+
+	.btn-toolbar {	/* based on twitter bootstrap (bootstrap.css) btn & button definitions */
+		/* text-align: center; */	/* default - left align */
+
+		.btn {
+			float: left;
+		}
+
+		.mini-menu-wrapper {
+			.btn.selected {
+				.btn.active;
+			}
+		}
+
+		.player-controls {
+			/* hiding these for now until we can find a better way to display at smaller break points */
+			display:none; 
+		}
+	}
+
+}
+
+#ARTICLELIST_LESS-END {
+	content: "articlelist.less";
+}

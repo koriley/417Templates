@@ -5,7 +5,7 @@
     {assign var='tagName' value='Best Of Article'}
     {assign var='tagSystemName' value='best-article'}        
 
-{elseif $Page->tags[49]<>'' || $article.tags[49]<>''}
+{elseif $Page->tags[40]<>'' || $article.tags[40]<>''}
     {assign var='tagname' value='Dininng'}
     {assign var='tagSystemName' value='dining'}
     {assign var='nav2' value='-on'}
@@ -88,7 +88,9 @@
     {if $tagSystemName == "people-pics"}
         <!-- peoplePics_leaderboard -->
         {literal}
+            
             <script type='text/javascript'>
+          /*    
                 if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-99' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-99'); });<";
@@ -102,12 +104,28 @@
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                    
-                }
+                }*/
 
+            </script>
+              <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
             </script>
         {/literal}
     {elseif $tagSystemName == "lakesideLiving"}
-        <!-- peoplePics_leaderboard -->
+        <!-- lakesideLiving_leaderboard -->
         {literal}
             <script type='text/javascript'>
                 if (screenWidth >= 1200) {
@@ -125,6 +143,22 @@
                     
                 }
 
+            </script>
+               <script type='text/javascript'>
+             /*   if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }*/
             </script>
         {/literal}
         
@@ -213,6 +247,22 @@
                     
                 }
             </script>
+               <script type='text/javascript'>
+         /*       if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }*/
+            </script>
         {/literal}
 
 
@@ -299,19 +349,35 @@
         <!-- 417_leaderBoard -->
         {literal}
             <script type='text/javascript'>
-                
+             /*   
                 var screenWidth = jQuery(window).width();
                 if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
-                    //googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-87'); });
+                    //googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });
                     
                 }
                 if ((screenWidth >= 770) && (screenWidth <= 1200)) {
                     var ad = "<div id='div-gpt-ad-1479474669376-4' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-4'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }*/
+            </script>
+               <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
@@ -323,7 +389,7 @@
         <!-- calendar_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                if (screenWidth >= 1200) {
+                /*if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-37' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-37'); });<";
                     ad += "/script></div>";
@@ -336,14 +402,33 @@
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
+                }*/
+            </script>
+               <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
                 }
             </script>
+            
+            
         {/literal}
     {elseif $tagSystemName == "shopping"}
         <!-- shopping_leaderboard -->
         {literal}
-            <script type='text/javascript'>
-                if (screenWidth >= 1200) {
+           
+           <script type='text/javascript'>
+              /* if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-112' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-112'); });<";
                     ad += "/script></div>";
@@ -356,6 +441,22 @@
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
+                } */
+            </script>
+             <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
                 }
             </script>
         {/literal}
@@ -364,7 +465,7 @@
         <!-- ec_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                if (screenWidth >= 1200) {
+           /*     if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-54' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-54'); });<";
                     ad += "/script></div>";
@@ -374,6 +475,22 @@
                 if ((screenWidth >= 770) && (screenWidth <= 1200)) {
                     var ad = "<div id='div-gpt-ad-1479474669376-51' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-51'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }*/
+            </script>
+               <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
@@ -403,7 +520,7 @@
         <!-- best_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                if (screenWidth >= 1200) {
+              /*  if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-18' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-18'); });<";
                     ad += "/script></div>";
@@ -416,6 +533,22 @@
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
+                }*/
+            </script>
+               <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
                 }
             </script>
         {/literal}
@@ -423,7 +556,7 @@
         <!-- dining_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                if (screenWidth >= 1200) {
+              /*  if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-49' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-49'); });<";
                     ad += "/script></div>";
@@ -433,6 +566,23 @@
                 if ((screenWidth >= 770) && (screenWidth <= 1200)) {
                     var ad = "<div id='div-gpt-ad-1479474669376-46' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-46'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }*/
+    
+                </script>
+               <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
@@ -464,7 +614,7 @@
             
             <script type='text/javascript'>
 
-
+console.log('here');
                 if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
@@ -487,7 +637,7 @@
         <!-- peoplePics_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                if (screenWidth >= 1200) {
+            /*    if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-73' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-73'); });<";
                     ad += "/script></div>";
@@ -500,8 +650,24 @@
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
-                }
+                }*/
 
+            </script>
+               <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
             </script>
         {/literal}
 
@@ -509,7 +675,7 @@
         <!-- peoplePics_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                if (screenWidth >= 1200) {
+          /*      if (screenWidth >= 1200) {
                     var ad = "<div id='div-gpt-ad-1479474669376-116' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-116'); });<";
                     ad += "/script></div>";
@@ -522,8 +688,24 @@
                     ad += "/script></div>";
                     jQuery(".sponsorship").append(ad);
                     
-                }
+                }*/
 
+            </script>
+               <script type='text/javascript'>
+                if (screenWidth >= 1200) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-8' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-8'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
+                if ((screenWidth >= 770) && (screenWidth <= 1200)) {
+                    var ad = "<div id='div-gpt-ad-1479474669376-3' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-3'); });<";
+                    ad += "/script></div>";
+                    jQuery(".sponsorship").append(ad);
+                    
+                }
             </script>
         {/literal}
 

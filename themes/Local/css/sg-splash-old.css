@@ -1,0 +1,114 @@
+/* photoFader menu */
+
+.sg-splash-bottom-menu {
+	position:relative;
+	background:#fff;
+	}
+
+.sg-splash-bottom-menu .galleryMenu {
+	position:absolute;
+	z-index:800;
+	width:100%;
+	height:35px;
+	bottom:0;
+	left:0;
+	background:url(/core/media/images/black_50.png);
+}
+
+* html .sg-splash-bottom-menu .galleryMenu {
+	background:#fff;
+}
+
+.sg-splash-bottom-menu .galleryMenu div, .sg-splash-bottom-menu .galleryMenu div.unselected {
+	text-align:center;
+	margin:5px 0 5px 5px;
+	float:left;
+}
+
+.sg-splash-bottom-menu .galleryMenu div a {
+	background:#fff;
+	display:block;
+	line-height:25px;
+	padding:0 5px;
+	color:#000;
+}
+
+.sg-splash-bottom-menu .galleryMenu div a:hover {
+	background:#ccc;
+	text-decoration:none;
+	}
+
+.sg-splash-bottom-menu .galleryMenu div a.selected, .sg-splash-bottom-menu .galleryMenu div a.selected:hover {
+	background:#000;
+	color:#fff;
+	}
+
+.sg-splash-bottom-menu .imageContainer {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.sg-splash-bottom-menu .contentContainer a {
+	color:#000;
+	}
+
+.sg-splash-bottom-menu .contentContainer {
+	position:absolute;
+	top:0;
+	right:0;
+	height:238px;
+	padding:10px;
+	width:180px;
+	overflow:auto;
+}
+
+.sg-splash-bottom-menu .contentContainer .caption {
+	font-size:22px;
+	margin-bottom:.25em;
+}
+
+
+.sg-splash-bottom-menu .controls {
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	height:25px;
+}
+
+.sg-splash-bottom-menu .controls a {
+	display:block;
+	float:left;
+	margin-left:5px;
+	line-height:25px;
+	padding:0 10px;
+	color:#000;
+	background-color:#fff;
+}
+
+
+.sg-splash-bottom-menu .controls a:hover {
+	text-decoration:none;
+	background:#ccc;
+}
+
+
+.sg-splash-bottom-menu .controls a.play {
+	width:102px;
+	padding:0 0;
+	text-align:center;
+}
+
+
+.sg-splash-bottom-menu .photo-credit {
+	margin-bottom:10px;
+	text-align:left;
+}
+
+#splash {
+	background:none;
+}
+
+* html #splash .module {
+	margin-bottom:0;
+}

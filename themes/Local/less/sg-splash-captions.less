@@ -1,0 +1,125 @@
+/**
+ * Slideshow Gallery
+ * 
+ * Fluid/Responsive layout
+ * Description/caption data on right
+ * Player controls on bottom
+ * 
+ */
+
+#SG-SPLASH-CAPTIONS_LESS-START {
+	content: "sg-splash-captions.less";
+}
+
+.sg-splash-captions {
+	position: relative;
+	background-color: @slideshowGalleryCaptionBackgroundColor;
+	overflow: hidden;
+
+	.imageContainerSpace {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		float: left;
+	}
+	
+	.imageContainer {
+		position: relative;
+	}
+	
+	 .imageContainer .galleryImage {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;  /* critical parameter for IE8 */
+		height: auto;
+	}
+	 .imageContainer a img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.contentContainerSpace {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		float: right;
+		.contentContainer {
+			padding-left:15px;
+			a {
+				color: @slideshowGalleryCaptionGalleryContentCaptionAtagColor;
+			}
+			.galleryContent {
+				position:absolute;
+				.box-sizing(border-box);
+				.description {
+					
+				}
+				.caption {
+					font-size: @slideshowGalleryCaptionGalleryContentCaptionFontSize;
+					margin-bottom: .25em;
+					line-height:1.1em;
+				}
+				.photo-credit {
+					margin-bottom: .25em;
+					text-align: left;
+					font-weight:bold;
+				}
+			}
+		}
+	}
+	
+	.controls {
+		position: absolute;
+		bottom:0px;
+		right:0px;
+	}
+}
+
+.sg-splash-captions.sg-option-controls {
+	.contentContainerSpace {
+		padding-bottom:40px;
+	}
+}
+
+
+/* Definitions for phone devices */
+@media (max-width: 480px) {
+	.sg-splash-captions {
+		.imageContainerSpace,
+		.contentContainerSpace {
+			display: block;
+			position: relative;
+			clear: both;
+			float: none;
+			width: 100% !important;
+			padding: 0px;
+			margin: 0px;
+		}
+		.contentContainerSpace {
+			height: auto !important;
+			min-height: 0 !important;	/* reset min-height */
+			.contentContainer {
+				padding-top: 5px;
+				padding-left:0;
+			}
+		}
+	
+		.contentContainer .galleryContent {
+			position: relative;
+			display: none;
+		}
+		.contentContainer .galleryContent.selected {
+			display: block;
+		}
+	
+		.controls {
+			display: block !important;
+			height: auto;
+		}
+	}
+}
+
+#SG-SPLASH-CAPTIONS_LESS-END {
+	content: "sg-splash-captions.less";
+}

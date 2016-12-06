@@ -1,0 +1,38 @@
+/* 
+    Document   : fashionation
+    Created on : Jan 21, 2013, 5:02:12 PM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    background-color:#000000;
+}
+
+#columns-fullwidth{
+    margin-left:0px;
+    padding:0px;
+    background: none repeat scroll 0% 0% #000;
+}
+
+.shadow{
+    box-shadow:0px 0px 0px 0px #000;
+    background-color:#000;
+}
+
+iframe{
+    border:0px solid #000;
+    width:1000px;
+}
+#page-body{
+    background-color:#000;
+}
+
+#video{
+    width:560px
+}

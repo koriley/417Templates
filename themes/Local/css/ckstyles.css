@@ -1,0 +1,15 @@
+@import "/themes/Local/css/417-2010.css";
+@import "/themes/Local/css/style.css";
+@import "/core/media/css/fck-addons.css";
+
+body {
+	margin:15px;
+	background-color:#fff;
+	}
+p.by-line {}
+p.photo-credit {}
+div.pullquote {}
+
+p.wfHeader1{
+    color:red;
+}

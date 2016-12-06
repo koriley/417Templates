@@ -1,0 +1,293 @@
+/* account styles */
+
+#account {
+	padding:15px;
+	background-color:#fff;
+	line-height:1.75em;
+	border-top:solid 1px #999;
+	border-left:solid 1px #999;
+	border-bottom:solid 2px #999;
+	border-right:solid 2px #999;
+	margin-left:100px;
+	position:relative;
+	min-height:150px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:normal;
+	}
+	
+* html #account {
+	height:150px;
+	}
+	
+/** account menu (list-based) **/
+	
+div.account-menu {
+	padding:0px;
+	margin:0px;
+	width:100px;
+	position:absolute;
+	left:-100px;
+	top:-1px;
+	}
+
+div.account-menu div {
+	list-style:none;
+	padding:0;
+	margin:0;
+	}
+	
+div.account-menu div a.selected {
+	background-color:#fff;
+	border-left:solid 1px #999;
+	border-top:solid 1px #999;
+	border-bottom:solid 2px #999;
+	border-right:solid 2px #fff;
+	}
+	
+div.account-menu div a.selected:hover {
+	background-color:#fff;
+	border-left:solid 1px #999;
+	border-top:solid 1px #999;
+	border-bottom:solid 2px #999;
+	border-right:solid 2px #fff;
+	}
+	
+div.account-menu div a {
+	display:block;
+	padding:10px 5px;
+	text-decoration:none;
+	font-weight:bold;
+	padding-left:10px;
+	border-right:solid 1px #999;
+	border-left:solid 1px #fff;
+	border-top:solid 1px #fff;
+	border-bottom:solid 1px #fff;
+	}
+	
+div.account-menu div a:hover {
+	text-decoration:none;
+	background-color:#eee;
+	border-top:solid 1px #fff;
+	border-bottom:solid 1px #fff;
+	}
+	
+/** end account menu **/
+	
+#account h2 {
+	color:#000;
+	margin-top:0;
+	font-size:18pt;
+	}
+	
+#columns-fullwidth h1 {
+	padding-bottom:15px;
+	margin-bottom:15px;
+	border-bottom:dotted 1px #ccc;
+	}
+	
+table.account {
+	width:100%;
+	border-collapse:collapse;
+	line-height:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#fff;
+	margin-bottom:10px;
+	}
+	
+table.account td {
+	border-bottom:dotted 1px #ccc;
+	padding:5px;
+	vertical-align:top;
+	}
+	
+table.account a {
+	font-weight:bold;
+	}
+	
+table.account th {
+	background-color:#999;
+	color:#fff;
+	padding:5px;
+	border-left:solid 1px #fff;
+	border-bottom:none;
+	border-top:none;
+	}
+	
+#columns-1-2 p {
+	margin-top:10px;
+	}
+	
+#columns-1-2 a {
+	font-weight:bold;
+	}
+	
+/* edit listing navigation */
+
+table.account-listing-menu {
+	width:100%;
+	text-align:center;
+	border-collapse:collapse;
+	}
+	
+table.account-listing-menu td {
+	border-right:solid 1px #fff;
+	padding:0;
+	}
+
+table.account-listing-menu td a {
+	display:block;
+	color:#fff;
+	font-size:10pt;
+	padding:5px;
+	text-decoration:none;
+	background-color:#999;
+	border-bottom:solid 1px #000;
+	}
+	
+table.account-listing-menu td a:hover {
+  background-color: #666;
+  text-decoration:none;
+}
+
+table.account-listing-menu td a.selected:hover {
+  background-color: #f5f5f5;
+  text-decoration:none;
+}
+
+table.account-listing-menu td a.selected {
+	background-color:#f5f5f5;
+	color:#000;
+	border-bottom:none;
+	border-left:solid 1px #000;
+	border-right:solid 1px #000;
+	border-top:solid 1px #000;
+	}
+	
+div.listing {
+	padding:15px;
+	background-color:#f5f5f5;
+	border-left:solid 1px #000;
+	border-right:solid 1px #000;
+	border-bottom:solid 1px #000;
+	}
+	
+div.basic-listing {
+	padding:0 15px 15px 15px;
+	background-color:#f5f5f5;
+	border:solid 1px #000;
+	}
+	
+div.listing h3 {
+	background-color:#ddd;
+	padding:5px 10px;
+	margin:10px 0;
+	color:#000;
+	}
+	
+/* edit listing */
+
+table.listing-edit {
+	width:100%;
+	border-collapse:collapse;
+	}
+	
+table.listing-edit p {
+	margin-top:1em;
+	margin-bottom:1em;
+	}
+	
+table.listing-edit th {
+	color:#000;
+	padding:30px 0 5px 0;
+	text-align:left;
+	font-size:14pt;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border-bottom:solid 1px #ccc;
+	}
+	
+table.listing-edit td {
+	padding:5px;
+	border-top:dotted 1px #ccc;
+	border-bottom:dotted 1px #ccc;
+	vertical-align:top;
+	}
+	
+table.billing-history {
+	border-collapse:collapse;
+	width:100%;
+	}
+	
+table.billing-history td {
+	padding:5px;
+	}
+	
+table.billing-history tr.rowA td{
+	background-color:#fff;
+	}
+	
+table.billing-history tr.rowB td{
+	background-color:#eee;
+	}
+	
+.listing-url {
+	float:right;
+	position:absolute;
+	top:10px;
+	right:15px;
+	}
+	
+#account .save {
+	margin-top:10px;
+	text-align:center;
+	}
+
+	
+/* forms 
+
+#account textarea, #account input {
+	width:98%;
+	}
+	
+#account input.checkbox {
+	width:auto;
+	}
+	
+#account input.date {
+	width:100px;
+	}
+	
+*/
+	
+#account a {
+	font-weight:bold;
+	}
+	
+#account p {
+margin:1em 0;
+}
+
+#account p.call-to-action {
+	background:#669933;
+	padding:5px;
+	color:#fff;
+	}
+	
+#account p.call-to-action a{
+	color:#fff;
+	}
+
+.listing-edit ul li {
+	margin-bottom:10px;
+	}
+	
+#account ul li {
+	list-style-image:url(/media/images/bullet.gif);
+	padding:0;
+	line-height:normal;
+	margin-bottom:10px;
+	}
+	
+table.toolbar td {
+	border:none;
+	}

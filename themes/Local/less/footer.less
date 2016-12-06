@@ -1,0 +1,75 @@
+footer {
+	#gradient > .vertical(@footerBackgroundColor,@footerBackgroundHighlightColor);
+    padding: 15px 0;
+    border-top: @footerBorderTop;
+    img {
+        vertical-align: middle;
+    }
+    color:@footerTextColor;
+	a {
+		color:@footerLinkColor;
+		&:hover {
+			text-decoration:@footerLinkHoverTextDecoration;
+			color:@footerLinkHoverColor;
+		}
+	}
+	ul.nav {
+		margin-bottom:0;
+		li {
+			a {
+				padding:0 10px;
+				line-height:1.5em;
+				&:hover {
+					color:@footerMenuHoverTextColor;
+					background:@footerMenuHoverBackground;
+				}
+			}
+		}
+	}
+	
+	nav {
+		h5 {
+			color:@footerMenuHeaderColor;
+			margin-top:0;
+			padding:0 10px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+		.container-fluid {
+			.row-fluid {
+	    		> div {
+					padding-right:10px;
+					border-right:@footerMenuSeparator;
+					&:last-child {
+						border-right:none;
+						padding:0 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	footer {
+		.container-fluid {
+			.row-fluid {
+	    		> div {
+					border-bottom:@footerMenuSeparator;
+					padding:15px;
+					&:last-child {
+						border-bottom:none;
+						padding-bottom:0;
+						padding-left:20px;
+					}
+					&:first-child {
+						padding-top:0;
+					}
+				}
+			}
+		}
+	}
+}

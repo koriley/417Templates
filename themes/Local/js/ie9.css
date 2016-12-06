@@ -1,0 +1,11 @@
+.main-menu #main-menu-list-small.main-menu-list .menu-column-2 {
+	border-right:none;
+}
+
+.main-menu #main-menu-list-small.main-menu-list .menu-column-1 > ul {
+	border-left:solid 1px #d3d3d3;
+}
+
+.main-menu #main-menu-list-small.main-menu-list .menu-column > ul {
+	border-top:solid 1px #d3d3d3;
+}

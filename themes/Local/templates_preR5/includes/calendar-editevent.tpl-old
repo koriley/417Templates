@@ -1,0 +1,220 @@
+<script language="javascript" src="/js/calendar.js"></script>
+<style type="text/css">
+<!--
+@import url("/css/calendar.css");
+-->
+</style>
+<div id="calendar-edit">
+<p>To create a new event, complete the form below. Required fields are marked with a <strong>*</strong>.</p>
+
+<form method="post" onsubmit="return autocheck(this)" id="editevent" name="editevent">
+
+<table id="edit-event" cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td valign="top">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<th colspan="2">Event Info</th>
+				</tr>
+				<tr>
+					<td width="125" class="ya_formtable_descrow">Calendar:</td>
+					<td width="353" valign="top" class="ya_formtable_contentrow"><b>{$calendar.title}</b></td>
+				</tr>
+				<tr>
+					<td width="125" class="ya_formtable_descrow">Name of event:*</td>
+					<td width="353" valign="top" class="ya_formtable_contentrow"><input type="text" label="Name of event" name="ops_calendarevent_title" id="ops_calendarevent_title" class="required" value="{$event.title}" size="30" maxlength="150" onblur="requireValue(this)"/></td>
+				</tr>
+				<tr>
+  					<td class="ya_formtable_descrow">Category:*</td>
+  					<td class="ya_formtable_contentrow" valign="top">{picklist name="calendarevent_categoryids[]" id="calendarevent_categoryids" multiple="true" size="5" displayfield="title" keyfield="id" list=$calendar.categories selected=$event.categoryids}</td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow">Description:</td>
+					<td class="ya_formtable_contentrow" valign="top"><textarea class="required" label="Description" onblur="requireValue(this)" name="ops_calendarevent_description" cols="40" rows="4">{$event.description}</textarea></td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow">Cost:</td>
+					<td class="ya_formtable_contentrow" valign="top">$ <input type="text" name="ops_calendarevent_cost" value="{$event.cost}" size="30" maxlength="30" /></td>
+				</tr>
+<tr>
+   <td>Image:</td><td valign="top"><input type="file" name="eventimage" /></td> </tr>			</table>
+			
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+  					<th colspan="2">Event Date/Time </th>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow" nowrap valign=top>Type of event:*</td>
+					<td nowrap valign=top style="text-align:left;">
+						<input type=radio name="params[eventtype]"  label="Type of event" class="required"  onclick="javascript:showEventTypeChoices('once');" id="once" value="once" {if $event.params.eventtype=='once'}checked{/if} >One-time&nbsp;&nbsp;
+						<input type=radio name="params[eventtype]"  label="Type of event" class="required"  onclick="javascript:showEventTypeChoices('recurring');" id="recurring" {if $event.params.eventtype=='recurring'}checked{/if} value="recurring">Recurring
+						<p>
+						<div id="oncediv" style="display:{if $event.params.eventtype=='once'}block{else}none{/if}">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td></td><td>Date</td><td>Time</td></tr>
+								<tr>
+									<td>From:</td><td>{picklist name="params[startmonth]" function="months" selected=$event.params.startmonth} /
+									{picklist name="params[startday]" function="numbers" start="1" end="31" selected=$event.params.startday} /
+									{picklist name="params[startyear]" function="years" selected=$event.params.startyear}	
+									</td><td>
+									{picklist name="params[starthour]" required="false" function="numbers" start="1" end="12" selected=$event.params.starthour} :
+									{picklist name="params[starttime]" required="false" values="00|15|30|45" selected=$event.params.starttime} &nbsp;
+									{picklist name="params[starttimeampm]" required="false" values="AM|PM" selected=$event.params.starttimeampm}
+									</td>
+								</tr>
+								<tr>
+									<td>To:</td>
+									<td>{picklist name="params[endmonth]" required="false" function="months" selected=$event.params.endmonth} /
+									{picklist name="params[endday]" required="false" function="numbers" start="1" end="31"  selected=$event.params.endday} /
+									{picklist name="params[endyear]" required="false" function="years" selected=$event.params.endyear}	
+									</td><td>
+									{picklist name="params[endhour]" required="false" function="numbers" start="1" end="12" selected=$event.params.endhour} :
+									{picklist name="params[endtime]" required="false" values="00|15|30|45" selected=$event.params.endtime} &nbsp;
+									{picklist name="params[endtimeampm]" required="false" values="AM|PM" selected=$event.params.endtimeampm}
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div id="recurringdiv" style="display:{if $event.params.eventtype=='recurring'}block{else}none{/if}">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td valign=top>
+										<input type=radio name="params[recurtype]" value="daily" id="daily" {if $event.params.recurtype=='daily'} checked {/if} onclick="showRecurChoices(this);">Daily<br>
+										<input type=radio name="params[recurtype]" value="weekly" id="weekly" {if $event.params.recurtype=='weekly'} checked {/if} onclick="showRecurChoices(this);">Weekly<br>
+										<input type=radio name="params[recurtype]" value="monthly" id="monthly" {if $event.params.recurtype=='monthly'} checked {/if} onclick="showRecurChoices(this);">Monthly<br>
+										<input type=radio name="params[recurtype]" value="yearly" id="yearly" {if $event.params.recurtype=='yearly'} checked {/if} onclick="showRecurChoices(this);">Yearly
+									</td>
+									<td valign=middle width=1></td>
+									<td valign=top>
+										<div id="dailydiv" style="display:{if $event.params.recurtype=='daily'}block{else}none{/if}">
+											<input type=radio name="params[dailytype]" value="daily" {if $event.params.dailytype=='daily'} checked {/if}>Every <input type="text" size="4" maxlength="2" name="params[ndays]" value="{$event.params.ndays|default:1}"> day(s)<br>
+											<input type=radio name="params[dailytype]" value="weekdays" {if $event.params.dailytype=='weekdays'} checked {/if}>Every weekday
+										</div>
+										<div id="weeklydiv" style="display:{if $event.params.recurtype=='weekly'}block{else}none{/if}">
+											Recur every <input type="text" size="4" name="params[nweeks]" maxlength="2" value="1"> week(s) on:
+											<p>
+											<input type="checkbox" name="params[weekdays][]" value="sun"> Sun&nbsp;
+											<input type="checkbox" name="params[weekdays][]" value="mon"> Mon&nbsp;
+											<input type="checkbox" name="params[weekdays][]" value="tue"> Tue&nbsp;
+											<input type="checkbox" name="params[weekdays][]" value="wed"> Wed&nbsp;<br/>
+											<input type="checkbox" name="params[weekdays][]" value="thu"> Thu&nbsp;
+											<input type="checkbox" name="params[weekdays][]" value="fri"> Fri&nbsp;
+											<input type="checkbox" name="params[weekdays][]" value="sat"> Sat
+											</p>
+										</div>
+										<div id="monthlydiv" style="display:{if $event.params.recurtype=='monthly'}block{else}none{/if}">
+										<input type=radio name="params[recurmonthly]" value="dom" {if $event.params.recurmonthly=='dom'}  checked {/if}>Day <input name="params[dom]" type="text" size="4" maxlength="2" value="{$event.params.dom|default:1}"> of every <input type="text" size="4" maxlength="2" name="params[nmonths]" value="{$event.params.nmonths|default:1}"> month(s)<br>
+										<input type=radio name="params[recurmonthly]" value="nday" {if $event.params.recurmonthly=='nday'} checked {/if} >The {picklist name="params[interval][]" multiple="true" values="first|second|third|fourth" selected=$event.params.interval} {picklist multiple="true"  name="params[weekdays][]" values="Sunday|Monday|Tuesday|Wednesday|Thursday|Friday"  selected=$event.params.weekdays} of {picklist multiple="true" name="params[months][]" function="months"  selected=$event.params.months}
+										</div>
+										<div id="yearlydiv" style="display:{if $event.params.recurtype=='yearly'}block{else}none{/if}">
+										<input type=radio name="params[recuryearly]" value="nday" {if $event.params.recuryearly=='nday'}  checked {/if}>Every <input type=text size=4 maxlength=2 value=1 name="params[day]" value="{$event.params.day}"> day of {picklist function="months" name="params[month]" selected=$event.params.month} <br>
+										<input type=radio name="params[recuryearly]" value="doy" {if $event.params.recuryearly=='doy'}  checked {/if}>The {picklist values="first|second|third|fourth"  name="params[interval]" selected=$event.params.interval} {picklist name="params[weekday]" values="Sunday|Monday|Tuesday|Wednesday|Thursday|Friday" selected=$event.params.weekday} of {picklist name="params[month]" function="months"  selected=$event.params.month}
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div id="recurrangediv" style="display:{if $event.params.eventtype=='recurring'}block{else}none{/if}">
+							Recurring event date range:
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td></td><td>Date</td><td>Time</td>
+								</tr>
+								<tr>
+									<td>From:</td><td>{picklist name="params[rstartmonth]" function="months" selected=$event.params.rstartmonth} /
+									{picklist name="params[rstartday]" function="numbers" start="1" end="31" selected=$event.params.rstartday} /
+									{picklist name="params[rstartyear]" function="years" selected=$event.params.rstartyear}	
+									</td><td>
+									{picklist name="params[rstarthour]" required="true" function="numbers" start="1" end="12" selected=$event.params.rstarthour} :
+									{picklist name="params[rstarttime]" required="true" values="00|15|30|45" selected=$event.params.rstarttime} &nbsp;
+									{picklist name="params[rstarttimeampm]" required="true" values="AM|PM" selected=$event.params.rstarttimeampm}
+									</td>
+								</tr>
+								<tr>
+									<td>To:</td>
+									<td>{picklist name="params[rendmonth]" required="false" function="months" selected=$event.params.rendmonth} /
+									{picklist name="params[rendday]" required="false" function="numbers" start="1" end="31"  selected=$event.params.rendday} /
+									{picklist name="params[rendyear]" required="false" function="years" selected=$event.params.rendyear}	
+									</td>
+									<td>
+									{picklist name="params[rendhour]" required="false" function="numbers" start="1" end="12" selected=$event.params.rendhour} :
+									{picklist name="params[rendtime]" required="false" values="00|15|30|45" selected=$event.params.rendtime} &nbsp;
+									{picklist name="params[rendtimeampm]" required="false" values="AM|PM" selected=$event.params.rendtimeampm}
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+  					<th colspan="2">Event Location</th>
+				</tr>
+<tr>
+<td class="ya_formtable_descrow">Location:</td>
+<td class="ya_formtable_contentrow"><input type="text" name="ops_calendarevent_location" id="ops_calendarevent_location" value="{$event.location}" size="30" maxlength="50" /></td>
+</tr>
+				<tr>
+					<td width="125" class="ya_formtable_descrow">Address 1:</td>
+					<td width="353" valign="top" class="ya_formtable_contentrow"><input type="text" name="ops_calendarevent_address" value="{$event.address}" size="30" maxlength="150" /></td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow">Address 2:</td>
+					<td class="ya_formtable_contentrow" valign="top"><input type="text" name="ops_calendarevent_address2" value="{$event.address2}" size="30" maxlength="150" /></td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow">City:</td>
+					<td class="ya_formtable_contentrow" valign="top"><input type="text" name="ops_calendarevent_city" value="{$event.city}" size="30" maxlength="150" /></td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow">State:</td>
+					<td class="ya_formtable_contentrow" valign="top">{picklist name="ops_calendarevent_state" displayfield="state" keyfield="statecode" table="geo_state" selected=$event.state|default:$config.defaultstatecode}</td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow">ZIP:</td>
+					<td class="ya_formtable_contentrow" valign="top"><input type="text" name="ops_calendarevent_zip" value="{$event.zip}" size="6" maxlength="5" /></td>
+				</tr>
+			</table>
+
+
+
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+				  <th colspan="2">Event Sponsor</th>
+				</tr>
+				<tr>
+					<td width="125" class="ya_formtable_descrow">Sponsor:</td>
+					<td width="353" valign="top" class="ya_formtable_contentrow"><input type="text" name="ops_calendarevent_sponsor" value="{$event.sponsor}" size="30" maxlength="150" /></td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow">Contact name:</td><td class="ya_formtable_contentrow" valign="top"><input type="text" name="ops_calendarevent_contactname" value="{$event.contactname}" size="13" maxlength="50" /></td>
+				</tr>
+<tr>
+<td class="ya_formtable_descrow">Contact email:</td><td class="ya_formtable_contentrow" valign="top"><input type="text" name="params[email]" value="{$event.params.email}" size="13" maxlength="128" /></td>
+</tr> 				
+				<tr>
+					<td class="ya_formtable_descrow">Telephone:</td><td class="ya_formtable_contentrow" valign="top"><input type="text" name="ops_calendarevent_phone" value="{$event.phone}" size="13" maxlength="20" /></td>
+				</tr>
+				<tr>
+					<td class="ya_formtable_descrow" style="border-bottom:none;">URL(like www.domain.com):</td><td class="ya_formtable_contentrow" valign="top" style="border-bottom:none;"><input type="text" name="ops_calendarevent_url" value="{$event.url}" size="30" maxlength="512" /></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td id="ya_formtable_actionrow" valign="top" style="border-bottom:none;">
+			<div align="center">
+				{if $Page->params.itm>0}
+				<input type="submit" name="updateEvent" value="Save Event" id="ya_update_form_formbutton"/>
+				{else}
+				<input type="submit" name="updateEvent" value="Create New Event" id="ya_update_form_formbutton"/>
+				{/if}
+			</div>
+		</td>
+	</tr>
+</table>
+<input type="hidden" name="action" value="save_event">
+</form>
+</div>

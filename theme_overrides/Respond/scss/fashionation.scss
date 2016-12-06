@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 9, 2015, 11:42:49 AM
+    Author     : koriley
+*/
+
+.participants{
+
+}
+
+.menuItem{
+    text-transform: uppercase;
+    font-size:20px;
+
+}
+.menuItem a{color:#333;}
+.menuItem a:hover{text-decoration: none; color:#333;}
+.anchor{
+    visibility: hidden;
+}
+
+.hamburgerMenu{
+    position:relative;
+    right: 10px;
+    top: 10px;
+    float:right;
+    margin-right:50px;
+    cursor:pointer;
+    img{
+        position:fixed;
+        top:10px;
+    }
+
+}
+
+.mainMenu{
+    position:relative;
+    right: 239px;
+    
+    float:right;
+    .menuBox{
+        position:fixed;
+        top:60px;
+        width:240px;
+       // height:100px;
+        background:#000;
+        z-index:2000;
+        display:none;
+        .item{
+            cursor:pointer;
+            border-bottom:1px solid white;
+            width:100%;
+            font-size:1.5em;
+            padding-top:10px;
+            padding-bottom:10px;
+            margin-right:10px;
+            //margin-left:10px;
+            text-transform: capitalize;
+            a:link {color: white; text-decoration: none; }
+            a:active {color: white; text-decoration: none; }
+            a:visited {color: white; text-decoration: none; }
+            a:hover {color: white; text-decoration: none; }
+            a{
+                margin-left:5px;
+            }
+        }
+    }
+}
+.fashionLogo{
+    margin-top:10px;
+    display:inline-block;
+    margin-left:10px;
+
+
+
+    .brandLogo{
+        width: 510px;
+    }
+    .swanLogo{
+        width:200px;
+    }
+    @media screen and (max-width: 500px){
+        display:block;
+        text-align:center;
+        margin-left:0px;
+        .brandLogo{
+            width: 225px;
+        }
+        .swanLogo{
+            width:145px;
+        }
+    }
+}

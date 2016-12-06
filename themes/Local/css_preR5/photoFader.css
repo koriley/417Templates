@@ -1,0 +1,66 @@
+/* photoFader menu */
+
+#photoFaderMenu {
+	float:right;
+	margin:0;
+	padding:0;
+	width:144px;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+#photoFaderMenu div, #photoFaderMenu div.unselected {
+	padding:0 0 0 8px;
+	text-align:left;
+	border:none;
+	background-color:#fff;
+	margin-bottom:3px;
+	color:#666;
+}
+
+#photoFaderMenu div.selected, #photoFaderMenu div.selected:hover {
+	background:url(/images/photoFader_bullet.gif) left center no-repeat;
+}
+
+#photoFaderMenu div:hover {
+	background:url(/images/photoFader_bullet-gray.gif) left center no-repeat;
+}
+
+#photoFaderMenu div a, #photoFaderMenu div a.unselected {
+	display:block;
+	padding:8px;
+	text-decoration:none;
+	color:#666;
+	border:solid 1px #666;
+}
+	
+#photoFaderMenu div a:active, #photoFaderMenu div a:focus, #photoFaderMenu div a.selected, #photoFaderMenu div a.selected:hover {
+	text-decoration:none;
+	color:#700018;
+	outline:none;
+	border:solid 1px #700018;
+	}
+	
+#photoFaderMenu div a:hover {
+	text-decoration:none;
+	color:#666;
+	border:solid 1px #666;
+	background-color:#eee;
+	}
+
+#photoFader-contentcontainer{
+	height:249px;
+	position:relative;
+	float:left;
+}
+
+#photoFader-contentcontainer div{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	}
+	
+#photoFader-contentcontainer div#item1{
+	display:block;
+	}

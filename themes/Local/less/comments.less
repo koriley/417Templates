@@ -1,0 +1,322 @@
+#COMMENTS_LESS-START {
+	content: "comments.less";
+}
+
+.comments-block {
+	box-shadow: @moduleBoxShadow;
+	background-color: @articleBackgroundColor;
+	border-radius: @moduleBorderRadius;
+	margin: 10px 0px;
+	overflow: hidden;
+}
+
+.usercomments {
+	position:relative;
+	margin:0;
+	padding:0;
+	}
+
+.tabmenu {
+	position: relative;
+	
+	li a {
+		cursor: pointer;
+	}
+	
+	.nav-tabs {
+		margin-bottom:0;
+		border-bottom: none;
+		
+		.active > a,
+		.active > a:hover {
+			border:@commentsBorder;
+			border-bottom:solid 1px transparent;
+		}
+		
+		a:hover {
+			border-bottom:@commentsBorder;
+		}
+	}
+}
+
+#geobase #commentFormContainer ul.tabmenu li {
+	margin-left:0px;
+}
+
+.commentFormContainer .tabcontentcontainer{
+	padding: 15px;
+	border: @commentsTabContentContainerBorder;
+
+	.menuitem {
+		cursor: pointer;
+		text-decoration: none;
+		&:hover {
+			color: @commentsTabContentContainerMenuItemHoverColor;
+		}
+	}
+}
+
+.contentdiv {
+	position:relative;
+
+	.emailField {
+		width: 50%;
+		float: left;
+	}
+	.passwordField,
+	.screenNameField {
+		width: 50%;
+		float: right;
+	}
+	h4 {
+		margin-top: 0px;
+	}
+
+}
+	
+/* form elements */
+
+.contentdiv {
+	table {
+		width:100%;
+		border-collapse:collapse;
+		td {
+			width:50%;
+			vertical-align:top;
+		}
+		p {
+			margin-bottom:0;
+		}
+	}
+	label {
+		font-size: @commentsContentDivLabelFontSize;
+	}
+	.check {
+		font-size: @commentsContentDivCheckFontSize;
+	}
+	input {
+		width:75%;
+	}
+}
+
+.comment-errors {
+	font-size: @commentsCommentErrorsFontSize;
+	font-weight: @commentsCommentErrorsFontWeight;
+	margin-top:5px;
+	color: @commentsCommentErrorsColor;
+	font-size: @commentsCommentErrorsFontSize;
+}
+
+
+/* end form elements */
+
+.tabmenu-hidden {
+	display:none;
+	}
+	
+.tabmenu-displayed {
+	display:block;
+}
+
+/* end tabmenu */
+
+/* commenting */
+
+	
+div.comments {
+	margin-top:10px;
+	clear:both;
+	}
+
+.buttondiv{
+	text-align: @commentsButtonDivTextAlign;
+	font-size: @commentsButtonDivFontSize;
+	font-weight: @commentsButtonDivFontWeight;
+	text-transform:@commentsButtonDivTextTransform;
+	font-family: @commentsButtonDivFontFamily;
+}
+
+.commenttools a {
+	
+}
+
+.flagged,.commenttools a.selected {
+	text-align: @commentsFlaggedTextAlign;
+	font-size: @commentsFlaggedFontSize;
+	font-weight: @commentsFlaggedFontWeight;
+	text-transform: @commentsFlaggedTextTransform;
+	font-family: @commentsFlaggedFontFamily;
+	color: @commentsFlaggedColor;
+}
+
+.comment {
+	margin-bottom:10px;
+	border:@commentsCommentBorder;
+	.border-radius(@commentsCommentBorderRadius);
+	.commenttitle {
+		border-bottom:@commentsCommentTitleBorder;
+		padding: 5px 10px;
+		font-weight: @commentsCommentTitleFontWeight;
+		.stats {
+			float:right;
+			text-align: @commentsCommentTitleStatsTextAlign;
+			font-weight: @commentsCommentTitleStatsFontWeight;
+			font-size: @commentsCommentTitleStatsFontSize;
+			text-transform: @commentsCommentTitleStatsTextTransform;
+		}
+		.responseID {
+			border-top: @commentsCommentTitleResponseIDBorderTop;
+			font-family: @commentsCommentTitleResponseIDFontFamily;
+			font-size: @commentsCommentTitleResponseIDFontSize;
+			text-transform: @commentsCommentTitleResponseIDTextTransform;
+		}
+		.commentauthor {
+			font-size: @commentsCommentTitleCommentAuthorFontSize;
+			text-transform: @commentsCommentTitleCommentAuthorTextTransform;
+		}
+	}
+	.commentcontent{
+		padding:10px 10px 5px 10px;
+		line-height: @commentsCommentLineHeight;
+	}
+}
+	
+textarea#commentField {
+	height:200px;
+	padding:10px;
+	border-top: @commentsCommentFieldBorderTop;
+	border-left: @commentsCommentFieldBorderLeft;
+	border-bottom: @commentsCommentFieldBorderBottom;
+	border-right: @commentsCommentFieldBorderRight;
+	margin:10px 0;
+	.box-sizing(border-box);
+	width:100%;
+	background-color: @commentsCommentFieldBackgroundColor;
+	}
+	
+.commentFormContainer {
+	line-height: @commentsCommentFormContainerLineHeight;
+	}
+	
+.commentInputArea {
+	clear: both;
+	padding-top: 15px;
+
+	.postAnonymously {
+		label {
+			float: left;
+			padding-right: 3px;
+		}
+	}
+}
+
+div.verify {
+	border-bottom: @commentsVerifyBorderBottom;
+	margin-bottom:10px;
+	p {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	h6 {
+		margin-top:10px;
+	}
+	span {
+		font-size: @commentsVerifySpanFontSize;
+		color: @commentsVerifySpanColor;
+		font-weight: @commentsVerifySpanFontWeight;
+		font-family: @commentsVerifySpanFontFamily;
+	}
+}
+	
+	
+/* comments pager */
+
+
+.commenttools .commentspager {
+	margin:0;
+	float:right;
+}
+	
+.commenttools .commentsorder {
+	float:left;
+	margin:0;
+}
+	
+.commenttools {
+	margin:10px 0;
+	.clearfix;
+}
+	
+div.commentFormContainer h5.add-comment {
+	margin:1.5em 0;
+}
+	
+a.forgotpw {
+	font-size: @commentsForgotPWFontSize;
+}
+
+
+/******************************************/
+/***** FACEBOOK COMMENTS Definitions *****/
+/******************************************/
+/* Overrides of Facebook styles */
+.fb-comments {
+	width: 100%;
+	/* Note: span and iframe override facebook inline styles */
+	> span {
+		width: 100% !important;
+		> iframe {
+			width: 100% !important;
+		}
+	}
+}
+
+/* Additions for the facebook module */
+module.facebookcomments {
+}
+/***** FACEBOOK COMMENTS Definitions *****/
+
+
+@media (max-width: 480px) {
+	#usercomments {
+		.contentdiv {
+			.emailField,
+			.passwordField,
+			.screenNameField {
+				display: block;
+				vertical-align: top;
+				width: 100%;
+				margin-bottom: 10px;
+				
+				input {
+					width: 95%;
+				}
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+/* Adjust tab width slightly for smaller form factors */
+@media (max-width: 420px) {
+	#usercomments {
+		.tabmenu .nav-tabs > li > a {
+			padding-left: 9px;
+			padding-right: 9px;
+		}
+	}
+}
+@media (max-width: 360px) {
+	#usercomments {
+		.tabmenu .nav-tabs > li > a {
+			padding-left: 6px;
+			padding-right: 6px;
+		}
+	}
+}
+
+#COMMENTS_LESS-END {
+	content: "comments.less";
+}

@@ -1,0 +1,82 @@
+/** 
+ *	Article Slideshow Fullpage
+ */
+
+#FULLPAGEARTICLESLIDESHOW_LESS-START {
+	content: "fullpagearticleslideshow.less";
+}
+
+.article-slideshow-fullpage {
+	.article-slideshow-controls {
+		.controls {
+			.btn {
+				padding:10px 15px;
+				.border-radius(30px);
+				float:none;
+			}
+		}
+		.extra-info {
+			float:right;
+			text-align:right;
+			text-transform:uppercase;
+			.position {
+				margin-bottom:5px;
+				text-transform:none;
+				font-size:120%;
+				color:lighten(@textColor,15%);
+				span {
+					font-weight:bold;
+				}
+			}
+		}
+		h2 {
+			clear:both;
+			padding-top:0.5em;
+			margin-bottom:0;
+		}
+	}
+	.articles {
+		.article-item {
+			.article-image {
+				margin-bottom:10px;
+			}
+		}
+	}
+}
+
+@media (max-width:979px) {
+	.article-slideshow-fullpage {
+		.articles {
+			.span8.respond-container {
+				padding-bottom:10px;
+				border-bottom:@thinRuleLight;
+				margin-bottom:10px;
+				.article-slideshow-controls {
+					border-bottom:@moduleBottomBorder;
+					margin-bottom:@moduleBottomMargin;
+					padding:@modulePadding;
+				}
+			}	
+		}
+	}
+}
+
+/*
+ * These fixes are because CKEditor adds in default inline widths
+ * which are overwritten and become 0px in some cases
+ * This fixes that issue.
+ */
+.right-justify-pic{
+    width: auto !important;
+    max-width: 100%;
+}
+
+.left-justify-pic{
+    width: auto !important;
+    max-width: 100%;
+}
+
+
+#FULLPAGEARTICLESLIDESHOW_LESS-END {
+	content: "fullpagearticleslideshow.less";
+}

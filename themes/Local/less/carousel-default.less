@@ -1,0 +1,169 @@
+
+#CAROUSEL-DEFAULT_LESS-START {
+	content: "carousel-default.less";
+}
+
+.carousel-default {
+	background-color: @carouselDefaultBackgroundColor;
+	margin: 10px 0;
+	
+	.content {
+		position: relative;
+		padding: 0;
+		&.single {		/* second scrollable if multiple items per slide */
+			display: none;
+		}
+		.scrollable {
+			position: relative;
+			overflow: hidden;
+
+			/* .items must be relatively positioned and it should have an extremely */
+			/* large width to accommodate scrollable items. */
+			.items {
+				width: 2000%;
+				position: relative;
+				div.slide {
+					overflow: hidden;
+					display: table-cell;
+					vertical-align: top;
+					div.slide-item {
+						display: table-cell;
+						vertical-align: top;
+						width: 100%;	/* overridden if more than one item per slide */
+						overflow: hidden;
+						background: @carouselDefaultSlideSlideItemBackground;
+						position: relative;
+						div.slide-article-image {
+							display: table-cell;
+							vertical-align: top;
+							> a img {
+								width: 100%;
+							}
+						}
+						div.slide-article-text {
+							display: table-cell;
+							vertical-align: top;
+							> * {
+								padding: 0px 0px 3px 15px;
+							}
+							h4 {
+								font-size: @carouselDefaultSlideSlideItemSlideArticleTextH4FontSize;
+								margin: 0;
+								font-weight: @carouselDefaultSlideSlideItemSlideArticleTextH4FontWeight;
+								a {
+									color: @carouselDefaultSlideSlideItemSlideArticleTextH4AColor;
+								}
+							}
+							p {
+								margin-top: 3px;
+								margin-bottom: 0;
+								&.subtitle {
+									font-size: @carouselDefaultSlideSlideItemSlideArticleTextPSubtitleFontSize;
+									font-weight: @carouselDefaultSlideSlideItemSlideArticleTextPSubtitleFontWeight;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.scrollable .items div.slide.stacked div.slide-item {
+			div.slide-article-image,
+			div.slide-article-text {
+				/* width is set on the element for non-stacked, which must be explicitly overridden */
+				width: 100% !important;
+				display: block;
+			}
+		}
+
+		.carousel-navigation {
+			position: relative;
+			width: 100%;
+			height: 30px;
+			/* be VERY careful about changing left/right margins and padding */
+			margin: 3px 0px 6px 0px;
+			padding: 0px;
+
+			button.prev{
+				float: left;
+			}
+			button.playpause,
+			button.next {
+				float: right;
+			}
+			button.playpause {
+				.pause {
+					display: none;
+				}
+				.play {
+					display: block;
+				}
+				&.playing {
+					.pause {
+						display: block;
+					}
+					.play {
+						display: none;
+					}
+				}
+			}
+			/// you may set a special display here for the button when the slideshow is playing 
+			button.playpause .playing {
+			}
+
+			div.navi {
+				float: left;
+				text-align: @carouselDefaultNaviTextAlign;
+				overflow: hidden;
+				background: @carouselDefaultNaviBackground;
+				height: 30px;
+				margin: 0 auto;
+				a {
+					display:inline-block;
+					cursor: pointer;
+//					width: 15px;	/* will be set dynamically */
+//					height: 15px;	/* will be set dynamically */
+					margin: 0px 2px 0px 2px;	/* margin-top will be set dynamically */
+					max-width: @carouselDefaultNaviAButtonMaxWidth;
+					max-height: @carouselDefaultNaviAButtonMaxHeight;
+					background: @carouselDefaultNaviABackground;
+					border: @carouselDefaultNaviABorder;
+					border-radius: @carouselDefaultNaviABorderRadius;
+					box-shadow: @carouselDefaultNaviABoxShadow;
+					&:hover {
+						background-color: @carouselDefaultNaviAHoverBackgroundColor;
+						border: @carouselDefaultNaviAHoverBorder;
+					}
+					&.active {
+						background: @carouselDefaultNaviAActiveBackgroundColor;
+						border: @carouselDefaultNaviAActiveBorder;
+					}
+				}
+				&.numbered a {
+					max-width: @carouselDefaultNaviANumberedButtonMaxWidth;
+					max-height: @carouselDefaultNaviANumberedButtonMaxHeight;
+//					font-size: 12px;	/* will be set dynamically */
+//					line-height: 24px;	/* will be set dynamically */
+					text-align: @carouselDefaultNaviANumberedTextAlign;
+					color: @carouselDefaultNaviANumberedColor;
+				}
+			}
+		}
+	}
+}
+
+
+/* display-single class added/removed in javascript in response to media query */
+.carousel-default.display-single {
+	.content.multiple {
+		display: none;
+	}
+	.content.single {
+		display: block;
+	}
+}
+
+
+#CAROUSEL-DEFAULT_LESS-END {
+	content: "carousel-default.less";
+}

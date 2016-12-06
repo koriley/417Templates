@@ -1,0 +1,73 @@
+#RESPONSIVE-DETECTION_LESS-START {
+	content: "responsive-detection.less";
+}
+
+#responsive-detection-block {
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	z-index: 999999;
+}
+
+@media only screen and (min-width: 1200px) {
+	#responsive-detection-block {
+		background: rgba(0,255,0, 0.7); /* Semi-transparent green */
+		&:before {
+			content: "Media query min:1200px";
+		}
+	}
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+	#responsive-detection-block {
+		background: rgba(0,128,255, 0.7); /* Semi-transparent blue */
+		&:before {
+			content: "Media query min:980px - max:1199px";
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	#responsive-detection-block {
+		background: rgba(255,0,255, 0.7); /* Semi-transparent magenta */
+		&:before {
+			content: "Media query min:768px - max:979px";
+		}
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	#responsive-detection-block {
+		background: rgba(0,255,255, 0.7); /* Semi-transparent cyan */
+		&:before {
+			content: "Media query min:481px - max:767px";
+		}
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+	#responsive-detection-block {
+		background: rgba(255,255,0, 0.7); /* Semi-transparent yellow */
+		&:before {
+			content: "Media query min:321px - max:480px";
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	#responsive-detection-block {
+		background: rgba(255,0,0, 0.7); /* Semi-transparent red */
+		&:before {
+			content: "Media query max:320px";
+		}
+	}
+}
+
+#RESPONSIVE-DETECTION_LESS-END {
+	content: "responsive-detection.less";
+}

@@ -1,0 +1,88 @@
+/* photoFader menu */
+ 
+form.photoFader {
+	/*height:258px; */
+}
+
+.photoFader-gallery {
+	position:relative;
+	}
+
+.photoFaderMenu {
+	display:inline;
+	margin:0px;
+	padding:0px;
+	width:25px;
+	font-family:Trebuchet MS, Georgia, Tahoma, "Times New Roman", Times, serif;
+	font-size:7px;
+}
+
+.photoFaderMenu div, #photoFaderMenu div.unselected {
+       
+	padding:0px;
+	text-align:center;
+	border:none;
+	color:#fff;
+       
+}
+
+.photoFaderMenu div.selected, .photoFaderMenu div.selected:hover {
+	background-color:#000;
+}
+
+.photoFaderMenu div:hover {
+	background-color:#777;
+
+}
+
+.photoFaderMenu div a, .photoFaderMenu div a.unselected {
+	display:inline-block;
+       float:left;
+       width: 50px;
+       height: 5px;
+	text-decoration:none;
+	color:#fff;
+	border:solid 1px #c4c4c4;
+}
+	
+.photoFaderMenu div a:active, .photoFaderMenu div a:focus, .photoFaderMenu div a.selected, .photoFaderMenu div a.selected:hover {
+	text-decoration:none;
+	color:#000;
+	outline:none;
+	border:solid 1px #333;
+       background-color:#333;
+	}
+	
+.photoFaderMenu div a:hover {
+	text-decoration:none;
+	color:#999;
+	border:solid 1px #fff;
+	}
+
+.photoFader-contentcontainer{
+	height:250px;
+       width:300px;
+	position:relative;
+	
+}
+
+.photoFader-contentcontainer div{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	height:250px;
+       width:300px;
+	}
+	
+.photoFader-contentcontainer div p{
+	margin-top:10px;
+	}
+	
+.photoFader-contentcontainer a {
+	color:#000;
+	}
+
+.photoFader-contentcontainer div#item1 {
+	display:inline;
+}

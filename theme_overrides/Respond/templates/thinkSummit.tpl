@@ -49,7 +49,7 @@
 
         <div class="navMenu" style="">
             <div class="menuItems">
-                <div class="item"><a href="https://417tix.com/events/biz-417-s-think-summit-presented-by-people-centric-consulting-group" target="_blank" class="checkClick">Tickets</a></div>
+                <div class="item"><a onclick="{literal}return ewt.trackLink({name:'tickets',type:'tsclick',link:this});{/literal}" href="https://417tix.com/events/biz-417-s-think-summit-presented-by-people-centric-consulting-group" target="_blank" class="checkClick">Tickets</a></div>
                 <div class="item"><a href="#thinkSpeakers" class="checkClick">Speakers</a></div>
                 <div class="item"><a href="#thinkAgenda" class="checkClick">Agenda</a></div>
                 <div class="item"><a href="#thinkSponsors" class="checkClick">Sponsors</a></div>
@@ -74,8 +74,8 @@
             <div class="row">
                 <div class="container">
                     <div class="footer">
-                        <img style="max-width: 400px;" src="/images/thinkSummit/ThinkSummit-04.png" />
-                        <div class="footText">SEND ME UPDATES!</div>
+                        <img style="max-width: 400px; margin: 30px;" src="/images/thinkSummit/ThinkSummit-04.png" />
+                   <!--  <div class="footText">SEND ME UPDATES!</div>
                        <div class="form">
                         <div class="footInput">
                             
@@ -93,7 +93,7 @@
                         
                         <div class="thank" style="display:none; color: white;">
                             Thanks for submitting
-                        </div>
+                        </div>-->
                         
                     </div>
                 </div>

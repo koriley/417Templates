@@ -109,7 +109,7 @@
 {literal}
     <script>
         jQuery('.dropdown span').html('<img style="width:30px;" src="/images/socialIcons/hamburger3.png" />');
-        
+        jQuery('.dropdown a').css({padding:'0px', background:'transparent', 'box-shadow':'none'});
         jQuery('.deskSearch span').html('').html('<img src="/images/biz417/search.png" />');
     </script> 
 {/literal}

@@ -1,0 +1,19 @@
+/* 
+    Document   : spa
+    Created on : Feb 7, 2013, 8:50:24 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.logoTable img{width:124px;}
+.logoTable td{padding-bottom:25px;}
+
+.header{
+    margin-top:-5px;
+    border-bottom:15px solid #9C205F;
+}

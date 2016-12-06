@@ -1,0 +1,28 @@
+/* 
+    Document   : listParty.css
+    Created on : Jan 25, 2013, 8:29:07 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    background-color:#fff;
+    color:#000;
+}
+
+.page-container{
+    background-color:#fff;
+}
+
+#columns-fullwidth{
+    background-color:#fff;
+}
+#listForm{
+    width:600px;
+    margin:auto;
+}

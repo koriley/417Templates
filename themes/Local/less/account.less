@@ -1,0 +1,1125 @@
+#ACCOUNT_LESS-START {
+	content: "account.less";
+}
+
+.input-hint {
+	.fineprint;
+	padding-left: 6px;
+	margin-top: -4px;
+}
+
+#account {
+	position: relative;
+	background-color: @accountAccountIDBackgroundColor;
+	min-height: 200px;
+	font-family: @accountAccountIDFontFamily;
+	line-height: normal;
+
+	input[type="file"] {
+		margin-bottom: 9px;
+	}
+	h2 {
+		color: @accountAccountIDH2Color;
+		margin-top: 0;
+		font-size: @accountAccountIDH2FontSize;
+	}
+	.save {
+		border-top: @accountSaveBorderTop;
+		margin-top:25px;
+		padding: 6px 0px 0px 18px;
+		.toolbar .toolbar {
+			padding: 3px;
+		}
+	}
+	p {
+		margin:1em 0;
+	}
+	p.call-to-action {
+		background-color: @accountAccountIDCallToActionBackgroundColor;
+		padding: 5px;
+		color: @accountAccountIDCallToActionColor;
+		a {
+			color: @accountAccountIDCallToActionColorA;
+		}
+	}
+	.listing-empty {
+		color: @accountAccountIDListingEmptyColor;
+		background-color: @accountAccountIDListingEmptyBackgroundColor;
+		font-size: @accountAccountIDListingEmptyFontSize;
+		font-weight: @accountAccountIDListingEmptyFontWeight;
+		text-align: @accountAccountIDListingEmptyTextAlign;
+		padding-left: 20px;
+	}
+	.listing-detail p.recurrence {
+			margin: 0px;
+	}
+	#pager {
+		float:none;
+	}
+	.am_title {
+		float: left;
+		margin: 0px 0px 0px 6px;
+	}
+	.am_logout {
+		float: right;
+		margin: 4px 0px 0px 0px;
+	}
+	.am_login {
+		clear: both;
+		margin: 0;
+		padding: 6px 0px 0px 6px;
+	}
+
+	/* account content area */
+	div.account-content {
+		border: @accountAccountIDAccountContentBorder;
+		padding: 3px 12px;
+	}
+
+	/** account menu (list-based) **/
+	div.account-menu {
+		position: relative;
+		padding: 18px 0px 0px 0px;
+		margin: 0px;
+		clear: both;
+		div {
+			list-style:none;
+			padding:0;
+			margin:0;
+		}
+		.nav-tabs {
+			border-bottom: @accountAccountIDAccountMenuBorderBottom;
+			margin-bottom: -1px;
+		}
+		.nav-tabs > .active > a,
+		.nav-tabs > .active > a:hover {
+			border-color: @accountAccountIDAccountContentBorderColor @accountAccountIDAccountContentBorderColor @accountAccountIDAccountMenuNavActiveBottomColor;
+		}
+	}
+}
+
+
+table.header {
+	cell-padding: 0;
+	cell-spacing: 0;
+	border-top: @accountTableHeaderBorderTop;
+	border-left: @accountTableHeaderBorderLeft;
+	border-bottom: @accountTableHeaderBorderBottom;
+	border-right: @accountTableHeaderBorderRight;
+}	
+td.selected {
+	background-color: @accountTdSelectedBackgroundColor;
+}
+
+table.account  {
+	width:100%;
+	border-collapse:collapse;
+	line-height:normal;
+	font-family:@accountTableAccountFontFamily;
+	background-color:@accountTableAccountBackgroundColor;
+	margin-bottom:10px;
+	
+	td {
+		border-bottom:@accountTableAccountTdBorderBottom;
+		padding:5px;
+		vertical-align:top;
+	}
+	
+	a {
+		font-weight:@accountTableAccountAFontWeight;
+	}
+	
+	th {
+		background-color:@accountTableAccountThBackgroundColor;
+		color:@accountTableAccountThColor;
+		padding:5px;
+		border-left:@accountTableAccountThBorderLeft;
+		border-bottom:@accountTableAccountThBorderBottom;
+		border-top:@accountTableAccountThBorderTop;
+	}
+	> tbody > tr {
+		td:first-child {
+			padding-top: 8px;
+		}
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin: -3px 3px 0 10px;
+			&:first-child {
+				margin-left: 0px;
+			}
+		}
+	}
+}
+	
+#columns-1-2 p {
+	margin-top:10px;
+	}
+	
+#columns-1-2 a {
+	font-weight:bold;
+	}
+	
+
+table.account-listing-menu {
+	border-collapse:collapse;
+	width:100%;
+}
+
+table.account-listing-menu td {
+	padding:0;
+	text-align:center;
+	border:@accountTableAccountListingMenuTdBorder;
+	font-weight:@accountTableAccountListingMenuTdFontWeight;
+}
+
+table.account-listing-menu td a {
+	display:block;
+	background-image:@accountTableAccountListingMenuTdABackgroundImage;
+	background-repeat:@accountTableAccountListingMenuTdABackgroundRepeat;
+	border:@accountTableAccountListingMenuTdABorder;
+	line-height:@accountTableAccountListingMenuTdALineHeight;
+}
+
+table.account-listing-menu td span {
+	display:block;
+	background-image:@accountTableAccountListingMenuTdSpanBackgroundImage;
+	background-repeat:@accountTableAccountListingMenuTdSpanBackgroundRepeat;
+	border:@accountTableAccountListingMenuTdSpanBorder;
+	border-bottom:@accountTableAccountListingMenuTdSpanBorderBottom;
+	line-height:@accountTableAccountListingMenuTdSpanLineHeight;
+}
+
+table.account-listing-menu td a:hover {
+	background-image:@accountTableAccountListingMenuTdAHoverBackgroundImage;
+	text-decoration:@accountTableAccountListingMenuTdAHoverTextDecoration;
+	color:@accountTableAccountListingMenuTdAHoverColor;
+}
+	
+table.account-listing-menu td a:active, table.account-listing-menu td a:focus, table.account-listing-menu td a {
+	background-image:@accountTableAccountListingMenuTdAActiveBackgroundImage;
+	outline:@accountTableAccountListingMenuTdAActiveOutline;
+}
+
+.signup-header {
+	padding-left: 12px;
+}
+.signup-div {
+	border: @accountSignupDivBorder;
+	padding-top: 10px;
+
+	ul.signup-menu {
+		font-weight:@accountSignupDivSignupMenuFontWeight;
+		padding: 0px 0px 12px 12px;
+		margin: 0px;
+		li {
+			display: inline-block;
+			color: @accountSignupDivSignupMenuLiColor;
+			font-size: @accountSignupDivSignupMenuLiFontSize;
+			padding: 5px 12px 5px 0;
+			background-color: @accountSignupDivSignupMenuLiBackgroundColor;
+		}
+		li.selected {
+			background-color: @accountSignupDivSignupMenuLiSelectedBackgroundColor;
+			color: @accountSignupDivSignupMenuLiSelectedColor;
+			border-radius: @accountSignupDivSignupMenuLiSelectedBorderRadius;
+			margin-right: 12px;
+			margin-left: 2px;
+			padding-left: 10px;
+		}
+		li.workflow_divider {
+			padding-right: 6px;
+			color: @accountSignupDivSignupMenuLiWorkflowDividerColor;
+		}
+	}
+}
+div.account,
+div.listing {
+	padding: 10px;
+	h3 {
+		background-color:@accountListingH3BackgroundColor;
+		padding:5px 10px;
+		margin:10px 0;
+		color:@accountListingH3Color;
+	}
+	h4 {
+		font-size:@accountListingH4FontSize;
+	}
+	h5 {
+		font-size:@accountListingH5FontSize;
+		color:@accountListingH5Color;
+	}
+	#products .addtocart-button {
+		margin-top: 10px;
+		clear: both;
+	}
+	.listing-edit {
+	}
+	.listing-image {
+		max-width: @accountListingImageSize;
+	}
+	.no-listing-image {
+		color: @accountListingNoImageColor;
+		font-size: @accountListingNoImageFontSize;
+		font-weight: @accountListingNoImageFontWeight;
+		text-align: @accountListingNoImageTextAlign;
+		border: @accountListingNoImageBorderSize solid @accountListingNoImageBorderColor;
+		height: @accountListingImageSize - (@accountListingNoImageBorderSize * 2);
+		line-height: @accountListingImageSize - (@accountListingNoImageBorderSize * 2);
+		width: @accountListingImageSize - (@accountListingNoImageBorderSize * 2);
+		div {
+			.rotate(@accountListingNoImageRotation);
+		}
+	}
+	.listing-example {
+		font-weight: @accountListingListingExampleFontWeight;
+		padding-left: 25px;
+	}
+
+	.section-title {
+		border-bottom: @accountListingSectionTitleBorderBottom;
+		color: @accountListingSectionTitleColor;
+		font-size: @accountListingSectionTitleFontSize;
+		font-weight: @accountListingSectionTitleFontWeight;
+		padding: 30px 0px 3px 0px;
+		text-align: @accountListingSectionTitleTextAlign;
+		margin-bottom: 20px;
+		&.simple-list {
+			margin-bottom: 0px;
+		}
+	}
+	.section-title:first-child {
+		padding-top: 0px;
+	}
+	.section-description {
+		padding: 0px 0px 20px 10px;
+		margin-top: -15px;
+		vertical-align: top;
+		font-size: @accountListingSectionDescriptionFontSize;
+		line-height: @accountListingSectionDescriptionLineHeight;
+	}
+	.section-buttons {
+		margin: 4px 0px 4px 60px;
+		.account-button {
+			padding: 4px 14px;
+		}
+	}
+	.section {
+		display: table;
+		width: 100%;
+		.displaygroup {
+			display: table-row;
+			> label,
+			.display-value {
+				display: table-cell;
+				vertical-align: middle;
+				border-bottom: @accountListingSectionDisplayGroupLabelBorderBottom;
+				padding: 5px 10px;
+			}
+			> label {
+				width: 30%;
+			}
+			.display-value {
+				width: 70%;
+			}
+		}
+		.radio-group {
+			margin-bottom: 9px;
+			label {
+				margin-left: 22px;
+			}
+			input[type="radio"] {
+				margin-left: -22px;
+			}
+			.input-hint {
+				margin-left: 22px;
+			}
+		}
+		&.listing-information > .inputgroup > label {
+			width: 150px;
+		}
+		&.customfields > .inputgroup > label {
+			width: 160px;
+		}
+		&.listing-images > .inputgroup > label {
+			width: 100px;
+		}
+		&.listing-description > .inputgroup > label {
+			width: 100px;
+		}
+		&.listing-quickfacts > .inputgroup > label {
+			width: 120px;
+		}
+		&.listing-metadata > .inputgroup > label {
+			width: 120px;
+		}
+		&.billing-listing-type > .inputgroup > label {
+			width: 120px;
+		}
+		&.billing-change-reorder {
+			 > .inputgroup > label {
+				width: 120px;
+			}
+			.listing-expires {
+				padding-left: 24px;
+			}
+		}
+		&.billing-billing-information {
+			> .inputgroup > label {
+				width: 140px;
+			}
+			#ops_geobasedata_ccexpmonth {
+				margin-right: 6px;
+			}
+		}
+		&.billing-expiration-log > .inputgroup > label {
+			
+		}
+		&.billing-billing-history > .inputgroup > label {
+			
+		}
+		.sub-section {
+			padding-left: 20px;
+			border-bottom: @accountListingSectionSubsectionBorderBottom;
+			.sub-section-title {
+				font-weight: @accountListingSectionSubsectionTitleFontWeight;
+				padding-bottom: 6px;
+			}
+		}
+	}
+	.section-button {
+		margin-top: 10px;
+		&.listing-quickfacts {
+			margin-left: 25px;
+		}
+	}
+
+	.inputgroup,
+	.input-sub-group {
+		display: table-row;
+		> label {
+			display: table-cell;
+			padding-right: 12px;
+			padding-bottom: 9px;
+			vertical-align: middle;
+		}
+		.checkbox-sub-label {
+			font-size: @accountListingInputGroupCheckboxSubLabelFontSize;
+			margin: 0px 0px 9px 20px;
+		}
+		.input-sub-label {
+			font-style: @accountListingInputGroupInputSubLabelFontStyle;
+		}
+		.informelement,
+		input,
+		select,
+		textarea {
+			display: table-cell;
+			margin-bottom: 9px;
+		}
+		select {
+			width: auto;
+			max-width: 220px;
+		}
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin: -3px 6px 0px 0px;
+		}
+		&.multi {
+			> label {
+				vertical-align: top;
+				padding-top: 10px;
+			}
+		}
+		.multi-group {
+			padding: 10px 0 15px;
+		}
+		.vertical-group {
+			display: table-cell;
+			padding-bottom: 15px;
+			input,
+			select,
+			textarea,
+			.informelement {
+				display: block;
+				margin-bottom: 9px;
+			}
+			.informelement:first-child {
+				padding-top: 10px;
+			}
+		}
+		.input-explanation {
+			margin-top: 9px;
+		}
+	}
+	.input-single {
+		margin-bottom: 9px;
+		input[type="radio"],
+		input[type="checkbox"],
+		label {
+			display: inline;
+		}
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin-left: 12px;
+		}
+		input[type="radio"]:first-child,
+		input[type="checkbox"]:first-child {
+			margin-left: 0px;
+		}
+	}
+	.listing-single-line {
+		> * {
+			display: inline !important;
+		}
+	}
+	.account-terms {
+		height:20em;
+		overflow:auto;
+		background-color:@accountListingAccountTermsBackgroundColor;
+		padding:10px;
+		margin:0;
+		border:@accountListingAccountTermsBorder;
+		text-align:@accountListingAccountTermsTextAlign;
+		white-space:@accountListingAccountTermsWhiteSpace;
+		margin-bottom: 9px;
+	}
+	.signup {
+		.existing-customers,
+		.new-customers {
+			width: 50%;
+			h5 {
+				text-align: @accountListingSignupNewCustomersH5TextAlign;
+				text-transform: @accountListingSignupNewCustomersH5TextTransform;
+				background-color: @accountListingSignupNewCustomersH5BackgroundColor;
+				padding: 6px 0px;
+			}
+			> div {
+				clear: both;
+			}
+			.email-address,
+			.password {
+				div:first-child {
+					width: 35%;
+					float: left;
+				}
+			}
+			.login-button {
+				text-align: @accountListingSignupNewCustomersButtonTextAlign;
+				> div {
+					margin-bottom: 15px;
+				}
+			}
+			.reset-button {
+				text-align: @accountListingSignupNewCustomersButtonTextAlign;
+				margin-top: 10px;
+			}
+		}
+		.existing-customers {
+			float: left;
+			> div {
+				margin-bottom: 5px;
+			}
+			> p {
+				margin-bottom: 15px;
+			}
+		}
+		.new-customers {
+			float: right;
+			> div {
+				margin-top: 30px;
+				text-align: @accountListingSignupNewCustomersTextAlign;
+			}
+		}
+	}
+	.facebook-login {
+		clear: both;
+		padding: 10px 5px 0px 5px;
+		margin: 0px;
+	}
+	div.box {
+		background-color: @accountListingBoxBackgroundColor;
+		padding: 10px;
+		border: @accountListingBoxBorder;
+	}
+	
+	.single-listing {
+		border-bottom: @accountListingSingleListingBorderBottom;
+		.accordion-toggle {
+			font-weight: @accountListingSingleListingAccordionToggleFontWeight;
+			background-color: @accountListingSingleListingAccordionToggleBackgroundColor;
+			.single-listing-title {
+				color: @accountListingSingleListingAccordionToggleSingleListingTitleColor;
+				font-size: @accountListingSingleListingAccordionToggleSingleListingTitleFontSize;
+				text-align: @accountListingSingleListingAccordionToggleSingleListingTitleTextAlign;
+				display: table-cell;
+				width: 100%;
+			}
+			.single-listing-title-icon {
+				display: table-cell;
+				width: 12px;
+				height: 12px;
+			}
+			.single-listing-statuses {
+				display: table-cell;
+				white-space: nowrap;
+				padding-left: 32px;
+			}
+			.single-listing-icon {
+				background-image: @accountListingSingleListingAccordionToggleSingleListingIconBackgroundImage;
+				background-position: @accountListingSingleListingAccordionToggleSingleListingIconBackgroundPosition;
+				height: 10px;
+				width: 10px;
+				padding-right: 3px;
+				display: inline-block;
+			}
+			&.open {
+				font-weight: @accountListingSingleListingOpenFontWeight;
+				background-color: @accountListingSingleListingOpenBackgroundColor;
+				margin-bottom: 5px;
+				.single-listing-title {
+					color: @accountListingSingleListingOpenSingleListingTitleColor;
+					font-weight: @accountListingSingleListingOpenSingleListingTitleFontWeight;
+					.single-listing-icon {
+						background-position: @accountListingSingleListingOpenSingleListingTitleIconBackgroundPosition;
+					}
+				}
+			}
+		}
+		.single-listing-details {
+			padding-left: 20px;
+			.listing-group {
+				display: table-row;
+				> label,
+				.listing-detail {
+					display: table-cell;
+					padding-bottom: 9px;
+					vertical-align: middle;
+				}
+				> label {
+					padding-right: 12px;
+				}
+			}
+		}
+	}
+	.single-add-listing,
+	.single-listing-button {
+		.clearfix();	// added to handle listing-button float:right
+		padding: 5px;
+		.listing-button {
+			line-height: @baseLineHeight;
+			float: right;
+		}
+	}
+	.single-add-listing {
+		line-height: @standardButtonHeight;		// to allow for centering text
+		border-bottom: @accountListingSingleAddListingBorderBottom;
+	}
+	.myorders {
+		display: table;
+		width: 100%;
+		> div {
+			display: table-row;
+		}
+		.myorders-entry {
+			display: table-cell;
+			text-align: @accountListingMyOrdersEntryTextAlign;
+			padding: 5px 0px 5px 10px;
+			border-bottom: @accountListingMyOrdersEntryBorderBottom;
+			&:first-child {
+				padding-left: 0px;
+			}
+			&.myorder-id {
+				font-weight: @accountListingMyOrdersMyOrderIdFontWeight;
+			}
+			&.desc {
+				text-align: @accountListingMyOrdersDescTextAlign;
+			}
+			&.price {
+				text-align: @accountListingMyOrdersPriceTextAlign;
+			}
+		}
+		.myorders-head .myorders-entry {
+			font-weight: @accountListingMyOrdersHeadMyOrdersEntryFontWeight;
+			border-bottom: @accountListingMyOrdersHeadMyOrdersEntryBorderBottom;
+		}
+		.myorders-total .myorders-entry {
+			font-weight: @accountListingMyOrdersTotalMyOrdersEntryFontWeight;
+		}
+	}
+	.billing-log {
+		.tblheader,
+		.tblItemA,
+		.tblItemB {
+			display: block;
+			border-bottom: @accountListingBillingLogtblBorderBottom;
+			padding: 5px 0px;
+			width: 100%;
+			> div {
+				display: table-cell;
+			}
+		}
+		.tblheader {
+			border-bottom: @accountListingBillingLogTblHeaderBorderBottom;
+			font-weight: @accountListingBillingLogTblHeaderFontWeight;
+			.billing-log-notes {
+				padding-left: 24px;
+			}
+		}
+		.billing-log-date {
+			text-align: @accountListingBillingLogBaseTextAlign;
+			width: 150px;
+		}
+		.billing-log-amount {
+			text-align: @accountListingBillingLogBaseTextAlign;
+			width: 60px;
+		}
+		.billing-log-status {
+			text-align: @accountListingBillingLogBaseTextAlign;
+			width: 80px;
+		}
+		.billing-log-notes {
+			text-align: @accountListingBillingLogNotesTextAlign;
+			padding-left: 6px;
+		}
+	}
+	.billing-log-empty {
+		font-weight: @accountListingBillingLogEmptyFontWeight;
+		padding-left: 24px;
+		margin-bottom: 9px;
+	}
+	
+	.listing-warning {
+		font-weight: @accountListingListingWarningFontWeight;
+		color: @accountListingListingWarningColor;
+	}
+
+	div.listing-report {
+		.listing-report-title {
+			padding-bottom: 6px;
+		}
+		.listing-report-group {
+			select {
+				float: left;
+				margin-right: 12px;
+			}
+			.toolbar {
+				float: left;
+			}
+		}
+	}
+	.listing-report-none {
+		font-weight: @accountListingListingReportNoneFontWeight;
+		padding-left: 15px;
+	}
+	
+
+	table.results-report {
+		width: 100%;
+		border-collapse: collapse;
+		line-height: @accountListingResultsReportLineHeight;
+		font-family: @accountListingResultsReportFontFamily;
+		background-color: @accountListingResultsReportBackgroundColor;
+		margin-bottom: 10px;
+
+		th {
+			padding: 5px;
+			border-bottom: @accountListingResultsReportThBorderBottom;
+		}
+		td {
+			padding: 5px;
+			border-bottom:@accountListingResultsReportTdBorderBottom;
+			vertical-align:top;
+		}
+		.results-report-name {
+			text-align: @accountListingResultsReportNameTextAlign;
+		}
+		th.results-report-name {
+			padding-left: 15px;
+		}
+		.results-report-value {
+			text-align: @accountListingResultsReportValueTextAlign;
+		}
+	}
+	.portfolio-items {
+		.portfolio-item {
+			display: block;
+			padding: 4px;
+			a {
+				padding-left: 4px;
+			}
+		}
+		.portfolio-buttons {
+			clear: both;
+			margin-top: 12px;
+			.toolbar:first-child {
+			float: left;
+			margin-right: 3px;
+			}
+		}
+	}
+
+}  /* end div.account, div.listing */
+
+
+div.basic-listing {
+	padding:0 15px 15px 15px;
+	background-color:@accountBasicListingBackgroundColor;
+	border:@accountBasicListingBorder;
+	}
+	
+	
+div.product-description {
+	margin-bottom:10px;
+	}
+
+
+td.box {
+   background-color:@accountTdBoxBackgroundColor;
+   padding:10px;
+   border:@accountTdBoxBorder;
+}
+
+img.productimage {
+	float:right;
+	margin-left:15px;
+	margin-bottom:5px;
+	border:@accountProductImageBorder;
+	}
+	
+/* edit listing */
+
+table.listing-edit {
+	width:100%;
+	border-collapse:collapse;
+	
+	p {
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+
+	th {
+		color:@accountTableListingEditThColor;
+		padding:30px 0 5px 0;
+		text-align:@accountTableListingEditThTextAlign;
+		font-size:@accountTableListingEditThFontSize;
+		font-weight:@accountTableListingEditThFontWeight;
+		font-family:@accountTableListingEditThFontFamily;
+		border-bottom:@accountTableListingEditThBorderBottom;
+	}
+	input[type="file"] {
+		margin-bottom: 9px;
+	}
+
+	> tbody > tr {
+		> td {
+			padding:5px;
+			border-top:@accountTableListingEditTbodyTrTdBorderTop;
+			border-bottom:@accountTableListingEditTbodyTrTdBorderBottom;
+			vertical-align:top;
+		}
+		td.listing-edit-explanation {
+			padding: 15px 10px;
+		}
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin: -3px 3px 0 10px;
+			&:first-child {
+				margin-left: 0px;
+			}
+		}
+	}
+}
+
+
+table.billing-history {
+	border-collapse:collapse;
+	width:100%;
+	}
+	
+table.billing-history td {
+	padding:5px;
+	}
+	
+table.billing-history tr.rowA td{
+	background-color:@accountTableBillingHistoryRowABackgroundColor;
+	}
+	
+table.billing-history tr.rowB td{
+	background-color:@accountTableBillingHistoryRowBBackgroundColor;
+	}
+	
+.listing-url {
+	float:right;
+}
+
+
+.listing-edit ul li {
+	margin-bottom:10px;
+	}
+	
+	
+table.toolbar td {
+	border:@accountTableToolbarTdBorder;
+	}
+	
+/** signup process **/
+
+#signup {
+	font-family: @accountSignupFontFamily;
+	h2 {
+		color:@accountSignupH2Color;
+		font-size:@accountSignupH2FontSize;
+	}
+}
+	
+
+table.signup {
+	width:100%;
+
+	th {
+		text-align:@accountTableSignupThTextAlign;
+		background-color:@accountTableSignupThBackgroundColor;
+		padding:5px;
+		text-transform:@accountTableSignupThTextTransform;
+		width:50%;
+	}
+	td{
+		text-align:@accountTableSignupTdTextAlign;
+		background-color:@accountTableSignupTdBackgroundColor;
+	}
+	table td {
+		text-align:@accountTableSignupTableTdTextAlign;
+		padding:5px;
+	}
+}
+
+
+/* miscellaneous */
+.count {
+	font-size:@accountCountFontSize;
+}
+
+
+/* Adjust page for small listings */
+@media (max-width: 767px) {
+	#account .am_logout {
+		margin-right: 6px;
+	}
+	.signup-div {
+		.signup-header {
+			margin: 0px 10px;
+		}
+		ul.signup-menu {
+			padding: 0px 18px 12px 18px;
+			li {
+				display: block;
+				padding-left: 10px;
+			}
+			li.selected {
+				margin: 0px;
+			}
+			li.workflow_divider {
+				display: none;
+			}
+		}
+	}
+	div.listing,
+	div.account {
+		div.box {
+			.productimage {
+				float: none;
+				margin-left: 0px;
+			}
+		}
+		#signup {
+		}
+		.signup {
+			.existing-customers,
+			.new-customers {
+				.email-address,
+				.password {
+					div:first-child {
+						width: auto;
+						float: none;
+					}
+				}
+			}
+		}
+		.single-listing .accordion-toggle .single-listing-statuses {
+			display: none;
+		}
+	}
+}
+
+
+/* Adjust page for smallest devices */
+@media (max-width: 480px) {
+	.signup-div {
+		.signup-header {
+			margin: 0px 3px;
+		}
+	}
+	div.account,
+	div.listing {
+		padding: 0px 5px;
+		border: 0px;
+		div.box {
+			margin: 10px 0px;
+			.productimage {
+			}
+		}
+		.signup {
+			.existing-customers,
+			.new-customers {
+				float: none;
+				width: auto;
+			}
+			.new-customers {
+				padding-top: 15px;
+				> div {
+					margin-top: 15px;
+				}
+			}
+		}
+		.inputgroup,
+		.input-sub-group,
+		.section .displaygroup {
+			display: block;
+			margin-left: 6px;
+			> label {
+				display: block;
+				margin: 0px 0px 0px -6px;
+				padding: 0px 0px 3px 0px;
+				font-weight: @account480ListingInputGroupLabelFontWeight;
+				width: auto;
+			}
+			.informelement,
+			input,
+			select,
+			textarea,
+			display-value {
+				display: block;
+				margin-bottom: 9px;
+				width: auto;
+			}
+			input[type="radio"],
+			input[type="checkbox"] {
+				display: inline-block
+			}
+		}
+		.section .displaygroup {
+			> label,
+			.display-value {
+				width: auto;
+				border: @account480ListingDisplayGroupBorder;
+				display: block;
+			}
+			.display-value {
+				padding: 0px 0px 10px 5px;
+			}
+		}
+		.billing-log {
+			.tblheader {
+				.billing-log-notes {
+					display: none;
+				}
+				.billing-log-date {
+					width: 100px;
+				}
+			}
+			.tblItemA,
+			.tblItemB {
+				.billing-log-notes {
+					display: block;
+					padding: 12px 0px 6px 0px;
+				}
+				.billing-log-date {
+					width: 100px;
+				}
+			}
+		}
+		.billing-log-empty {
+			padding-bottom: 9px;
+		}
+		div.listing-report {
+			.listing-report-group {
+				select,
+				.toolbar {
+					float: none;
+					margin-right: 0px;
+				}
+			}
+		}
+
+		table.account {
+			width: 100%;
+		}
+		#myaccount {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+	
+		#account {
+			margin: 0px;
+			border-width: @account480AccountBorderWidth;
+			h2 {
+				font-size: @account480AccountH2FontSize;
+				line-height: @account480AccountH2LineHeight;
+				padding-top: 6px;
+			}
+			h3 {
+				font-size: @account480AccountH3FontSize;
+				line-height: @account480AccountH3LineHeight;
+			}
+			table td {
+				width: auto;
+			}
+			table > tbody > tr > td:first-child {
+				font-weight: @account480AccountTableTdFirstChildFontWeight;
+			}
+			div.account-menu {
+				.nav-tabs > li > a {
+					padding-left: 6px;
+					padding-right: 6px;
+				}
+			}
+		}
+	
+		#myaccount table.account > tbody > tr,
+		#account table.listing-edit > tbody > tr,
+		table.listing-edit > tbody > tr,
+		table.listing-report > tbody > tr {
+			border-bottom: @account480ListingEditTbodyTrBorderBottom;
+			display: block;
+			> td {
+				display: block;
+				border: @account480ListingEditTbodyTrTdBorder;
+				padding-left: 6px;
+				&:first-child {
+					padding-bottom: 0px;
+					padding-left: 0px;
+					font-weight: @account480ListingEditTbodyTrTdFirstChildFontWeight;
+				}
+				&.listing-edit-explanation {
+					font-weight: @account480ListingEditTbodyTrTdListingEditExplanationFontWeight;
+				}
+			}
+		}
+	
+		table.results-report {
+			td {
+				font-weight: @account480ListingResultsReportFontWeight;
+			}
+		}
+
+	}
+
+
+
+}
+
+
+#ACCOUNT_LESS-END {
+	content: "account.less";
+}

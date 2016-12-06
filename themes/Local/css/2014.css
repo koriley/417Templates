@@ -1,0 +1,61 @@
+/* 
+    Document   : 2014-fullResponsive.css
+    Created on : Oct 15, 2013, 9:56:38 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    
+}
+
+.centered{
+    max-width:970px;
+    float:none;
+    margin: 0 auto;
+    text-align:center;
+}
+
+/* header stuff */
+.topFullBarBlack{
+    background-color:#020202;
+    position:absolute;
+    left:0px;
+    right:0px;
+    height:155px;
+    top:0px;
+    width:100%;
+}
+.topFullBarRed{
+    background-color:#cd263e;
+    position:absolute;
+    left:0px;
+    right:0px;
+    height:45px;
+    top:155px;
+    width:100%;
+}
+
+.centerNav{
+    width:940px;
+    margin:auto;
+}
+
+/*bootstrap nav fixes */
+.nav li a{
+    padding:10px 15px;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+/*-------------------- */
+/*--------------*/

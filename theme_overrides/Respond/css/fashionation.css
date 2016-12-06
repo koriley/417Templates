@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 9, 2015, 11:42:49 AM
+    Author     : koriley
+*/
+.menuItem {
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.menuItem a {
+  color: #333; }
+
+.menuItem a:hover {
+  text-decoration: none;
+  color: #333; }
+
+.anchor {
+  visibility: hidden; }
+
+.hamburgerMenu {
+  position: relative;
+  right: 10px;
+  top: 10px;
+  float: right;
+  margin-right: 50px;
+  cursor: pointer; }
+  .hamburgerMenu img {
+    position: fixed;
+    top: 10px; }
+
+.mainMenu {
+  position: relative;
+  right: 239px;
+  float: right; }
+  .mainMenu .menuBox {
+    position: fixed;
+    top: 60px;
+    width: 240px;
+    background: #000;
+    z-index: 2000;
+    display: none; }
+    .mainMenu .menuBox .item {
+      cursor: pointer;
+      border-bottom: 1px solid white;
+      width: 100%;
+      font-size: 1.5em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 10px;
+      text-transform: capitalize; }
+      .mainMenu .menuBox .item a:link {
+        color: white;
+        text-decoration: none; }
+      .mainMenu .menuBox .item a:active {
+        color: white;
+        text-decoration: none; }
+      .mainMenu .menuBox .item a:visited {
+        color: white;
+        text-decoration: none; }
+      .mainMenu .menuBox .item a:hover {
+        color: white;
+        text-decoration: none; }
+      .mainMenu .menuBox .item a {
+        margin-left: 5px; }
+
+.fashionLogo {
+  margin-top: 10px;
+  display: inline-block;
+  margin-left: 10px; }
+  .fashionLogo .brandLogo {
+    width: 510px; }
+  .fashionLogo .swanLogo {
+    width: 200px; }
+  @media screen and (max-width: 500px) {
+    .fashionLogo {
+      display: block;
+      text-align: center;
+      margin-left: 0px; }
+      .fashionLogo .brandLogo {
+        width: 225px; }
+      .fashionLogo .swanLogo {
+        width: 145px; } }
+
+/*# sourceMappingURL=fashionation.css.map */

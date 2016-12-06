@@ -1,0 +1,51 @@
+/* CSS Document */
+
+#columns-1-2 {
+	background-color: #fff;
+	}
+
+/* column 1 */
+
+
+#column-1 {
+	width:196px;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	padding-right: 10px;	
+	padding-left: 10px;	
+	}
+	
+.header-box {
+	border-bottom:solid 1px #70744E;
+	padding:0;
+	background-color:#B6BC96;
+	width: 100%;
+	margin-bottom: 15px;
+}
+	
+.header-box .headline h2 {
+	color: #808548;
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS;
+	font-size: 28px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+
+
+/* column 2 */
+
+#column-2 {
+	width:526px;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	padding-right: 10px;	
+	padding-left: 5px;	
+	}
+	
+.isssueperiod {
+	text-align:left;
+	margin-bottom:4px;
+	}

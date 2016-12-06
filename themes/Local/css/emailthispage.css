@@ -1,0 +1,47 @@
+/* CSS Document */
+
+body {
+	margin:10px;
+	background:#fff;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	}
+	
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:18pt;
+	font-weight:normal;
+	color:#000;
+	margin-bottom:.25em;
+	margin-top:.25em;
+	}
+	
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	font-weight:bold;
+	color:#000;
+	margin-bottom:.25em;
+	margin-top:.25em;
+	}
+
+.information {
+	background:#eee;
+	}
+	
+table {
+	border-collapse:collapse;
+	}
+	
+tr {
+	border-bottom:solid 1px #fff;
+	}
+	
+.error {
+	color:#CC0000;
+	}
+	
+.footer {
+	font-size: 8pt;
+	}

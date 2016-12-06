@@ -1,0 +1,147 @@
+/** restaurants styles **/
+
+#restaurant {
+	margin:0;
+	}
+
+#restaurant-search {
+	background-color:#ddd;
+	width:100%;
+	}
+
+#restaurant-search .cell {
+	margin:5px;
+	}
+
+#restaurant-search-table {
+	margin:0;
+	}
+
+#restaurant-search-table .header {
+	background-color:#3399CC;
+	color:#fff;
+	font-weight:bold;
+	}
+	
+#restaurant-search-table a.sort {
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#restaurants-search-table a.sort:link {
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#restaurant-search-table a.sort:hover {
+	color:#fff;
+	}
+
+#restaurant-search-table .rowA {
+	background-color:#fff;
+	}
+
+#restaurant-search-table .rowB {
+	background-color:#ddd;
+	}
+	
+#restaurant-search-table .city {
+	border-left:solid 1px #fff;
+	border-right:solid 1px #fff;
+	}
+
+#restaurant-search-table .restaurant-name {
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+
+#restaurant-footer {
+	margin:0;
+	width:100%;
+	}
+
+#restaurant-footer h4 {
+	font-weight:bold;
+	font-size:11pt;
+	}
+
+#restaurant-footer a {
+	padding:3px;
+	background-color:#f5f5f5;
+	margin-bottom:1px;
+	width:100%;
+	float:left;
+	clear:both;
+	margin-left:0px;
+	margin-right:0px;
+	}
+	
+#restaurant-footer a:link {
+	background-color:#f5f5f5;
+	width:100%;
+	float:left;
+	clear:both;
+	margin-left:0px;
+	margin-right:0px;
+	}
+	
+#restaurant-footer a:visited {
+	background-color:#f5f5f5;
+	}
+
+#restaurant-footer a:hover {
+	background-color:#3399CC;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#restaurant-footer a:active {
+	background-color:#3399CC;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#restaurant-details {
+	float:left;
+	}
+	
+#restaurant-details .rule {
+	background-color:#fff;
+	}
+	
+#restaurant-details h2 {
+	font-size:16pt;
+	color:#000;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin:15px;
+	}
+#restaurant-tab .tab-left {
+	background-image:url(/media/images/tab-left.gif);
+	}
+#restaurant-tab .tab-right {
+	background-image:url(/media/images/tab-right.gif);
+	}
+#restaurant-tab .tab-center {
+	background-color:#F2F0E6;
+	}
+#restaurant-details .listing-info {
+	background-color:#F2F0E6;
+	float:left;
+	padding:15px;
+	}
+	
+#restaurant-details-table {
+	margin-top:10px;
+	}
+#restaurant-details-table .data {
+	padding:5px;
+	}
+#restaurant-details-table td.data-title {
+	text-align:right;
+	font-weight:bold;
+	padding:5px;
+	width:140px;
+	}
+#database-details-table .rule {
+	background-color:#fff;
+	}

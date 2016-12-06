@@ -1,0 +1,51 @@
+#FTS-SEARCH_LESS-START {
+	content: "fts-search.less";
+}
+
+#sitesearch_results {
+	
+	.table {
+		width:100%;
+	}
+	
+	.info {
+		.clearfix;
+	}
+	
+	.search_results_header {
+		font-size:125%;
+		padding:5px 0;
+	}
+	
+	.no_results {
+		padding: 10px 0;
+	}
+	.search_results_total, .search_term {
+		font-weight: @ftsSearchSearchResultsTotalFontWeight;
+	}
+	
+	.search_results_sort {
+		float:right;
+		margin-left:15px;
+	}
+}
+
+@media (max-width: 767px) {
+	#sitesearch_results {
+		.relevancy {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	#sitesearch_results {
+		.index {
+			display: none;
+		}
+	}
+}
+
+#FTS-SEARCH_LESS-END {
+	content: "fts-search.less";
+}

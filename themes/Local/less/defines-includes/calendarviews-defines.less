@@ -1,0 +1,84 @@
+/*
+ * Defines for Calendar Views less files
+ * 
+ *     calendarviews.less
+ * 
+ */
+ 
+ 
+// weekly calendar view
+@weeklyCalendarBackground:@white;
+@weeklyCalendarHeadBorderColor: hsl(@secondaryBrandHue,@secondaryBrandSaturation,20%);
+@weeklyCalendarHeadBackground: hsl(@secondaryBrandHue,@secondaryBrandSaturation,80%);
+@weeklyCalendarHeadColor: hsl(@secondaryBrandHue,@secondaryBrandSaturation,30%);
+@weeklyCalendarHeadHoverBackground: hsl(@secondaryBrandHue,@secondaryBrandSaturation,75%);
+@weeklyCalendarHeadHoverColor: hsl(@secondaryBrandHue,@secondaryBrandSaturation,20%);
+@weeklyCalendarHeadActiveColor: @weeklyCalendarHeadBorderColor;
+@weeklyCalendarEventTitleBackground: lighten(@weeklyCalendarHeadBackground,15%);
+@weeklyCalendarEventTitleHoverBackground: lighten(@weeklyCalendarHeadBackground,10%);
+@weeklyCalendarEventBorder: @thinRule @weeklyCalendarHeadBackground;
+@weeklyCalendarH3FontWeight: bold;
+@weeklyCalendarH3LineHeight: 1em;
+@weeklyCalendarNavTabsTextAlign: center;
+@weeklyCalendarNavTabsFontWeight: bold;
+@weeklyCalendarNavTabsALineHeight: 1em;
+@weeklyCalendarWrapperNavTabsTextAlign: center;
+@weeklyCalendarWrapperNavTabsBorderBottom: none;
+@weeklyCalendarWrapperNavTabsHoverBorderBottom: @weeklyCalendarWrapperNavTabsABorderBottom;
+@weeklyCalendarWrapperNavTabsActiveBorderBottom: solid 1px transparent;
+@weeklyCalendarWrapperNavTabsActiveHoverBorderBottom: @weeklyCalendarWrapperNavTabsActiveBorderBottom;
+@weeklyCalendarWrapperTabContentTextAlign: left;
+@weeklyCalendarWrapperTabContentBorderRadius: 4px;
+@weeklyCalendarWrapperTabContentOpenCaretOpacity: 1;
+@weeklyCalendarWrapperTabContentEventTimeFontWeight: normal;
+@weeklyCalendarWrapperTabContentCaretOpacity: 0.5;
+@weeklyCalendarWrapperTabContentNoEventsTextAlign: center;
+
+// monthly calendar view
+@monthlyCalendarControlsTextAlign: center;
+@monthlyCalendarH3FontWeight: bold;
+@monthlyCalendarH3TextAlign: center;
+@monthlyCalendarH3LineHeight: 1em;
+@monthlyCalendarCellSpacing:2px;
+@monthlyCalendarCellSpacingColor:transparent;
+
+// header
+@monthlyCalendarHeadBorderRadius: 5px;
+@monthlyCalendarHeadColor: #fff;
+@monthlyCalendarHeadBackground: hsl(@secondaryBrandHue,@secondaryBrandSaturation,20%);
+@monthlyCalendarHeadTextAlign: center;
+@monthlyCalendarHeadFontWeight: bold;
+@monthlyCalendarHeadLineHeight: 2em;
+
+// event days
+@monthlyCalendarEventDayBorder: none;
+@monthlyCalendarEventDayColor: @linkColor;
+@monthlyCalendarEventDayBackground: hsl(@secondaryBrandHue,@secondaryBrandSaturation,90%);
+@monthlyCalendarEventDayHoverColor: @linkColorHover;
+@monthlyCalendarEventDayHoverBackground: hsl(@secondaryBrandHue,@secondaryBrandSaturation,95%);
+@monthlyCalendarEventDayHoverBorder: none;
+@monthlyCalendarMiniViewTextAlign: center;
+@monthlyCalendarMiniViewSpanLineHeight: 2em;
+
+// no event days
+@monthlyCalendarNoEventDayBorder: none;
+@monthlyCalendarNoEventDayColor: @textColor;
+@monthlyCalendarNoEventDayBackground: #fff;
+// current event days
+@monthlyCalendarCurrentEventDayBorder: none;
+@monthlyCalendarCurrentEventDayColor: #fff;
+@monthlyCalendarCurrentEventDayBackground: hsl(@secondaryBrandHue,@primaryBrandSaturation,50%);
+@monthlyCalendarCurrentEventDayHoverColor: #fff;
+@monthlyCalendarCurrentEventDayHoverBackground: hsl(@secondaryBrandHue,@primaryBrandSaturation,40%);
+@monthlyCalendarCurrentEventDayHoverBorder: none;
+// monthly day event list
+@monthlyCalendarEventTitleBackground: lighten(@monthlyCalendarEventDayBackground,5%);
+@monthlyCalendarEventTitleHoverBackground: @monthlyCalendarEventDayBackground;
+@monthlyCalendarEventBorder: @thinRule darken(@monthlyCalendarEventDayBackground,10%);
+@monthlyCalendarEventBorderRadius: 4px;
+@monthlyCalendarEventEventTimeFontWeight: normal;
+@monthlyCalendarEventCaretOpacity: 0.5;
+
+@eventsListLastChildBorderBottom: none;
+@searchFormLabelLineHeight: 30px;
+@480searchFormLabelLineHeight: normal;

@@ -1,0 +1,259 @@
+/**
+ * Slideshow Gallery
+ * 
+ * Fluid/Responsive layout
+ * Menu on the bottom, with smaller navigation elements
+ * 
+ */
+ 
+#SG-MINI-BOTTOM-MENU_LESS-START {
+	content: "sg-mini-bottom-menu.less";
+}
+
+.sg-mini-bottom-menu {
+	position: relative;
+	background-color: @slideshowGalleryMiniBottomBackgroundColor;
+	overflow: hidden;
+	.pagination {
+		ul {
+			display:block;
+		}
+	}
+	width:100%;
+
+	.imageContainerSpace {
+		position: relative;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	.imageContainer {
+		position: relative;
+	}
+	
+	.imageContainer .galleryImage {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;  /* critical parameter for IE8 */
+		height: auto;
+	}
+	.imageContainer a img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.galleryMenuSpace {
+		position: absolute;
+	/* enable if IE6 - IE8 support is required */
+	/*	background: url("/core/media/images/black_50.png") repeat scroll 0 0 transparent; */
+		background-color: @slideshowGalleryMiniBottomGalleryMenuSpaceIE;	// must come before non-IE version
+		background-color: @slideshowGalleryMiniBottomGalleryMenuSpace;
+		padding: 5px 5px 0 0;
+		margin: 0px;
+		min-height: 0px !important;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	}
+	
+	.galleryMenu {
+		text-align: center;
+		height: auto;
+		width: auto;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation,
+	.galleryMenu .galleryMenuItem {
+		cursor: pointer;
+		float: left;
+		display: block;
+		margin-left:5px;
+		margin-bottom:5px;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation.previous {
+		font-weight:bold;
+	}
+	.galleryMenuSpace .galleryMenuNavigation.next {
+		font-weight:bold;
+	}
+	
+	/* Note: fixed width is required to calculate number of visible menu items in javascript */
+	.galleryMenuSpace .galleryMenuNavigation .galleryMenuItemInner,
+	.galleryMenu .galleryMenuItem .galleryMenuItemInner {
+		line-height: 30px;
+		height: 30px;
+		width: 30px;
+		padding: 0;
+		text-align:center;
+		display:block;
+		color: @slideshowGalleryMiniBottomGalleryMenuItemInnerColor;
+		background-color: @slideshowGalleryMiniBottomGalleryMenuItemInnerBackgroundColor;
+		border:none;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation .galleryMenuItemInner:hover,
+	.galleryMenu .galleryMenuItem .galleryMenuItemInner:hover {
+		background-color: @slideshowGalleryMiniBottomGalleryMenuItemInnerHoverBackgroundColor;	
+		text-decoration: none;
+		color: @black;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner,
+	.galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner:hover,
+	.galleryMenu .galleryMenuItem.selected .galleryMenuItemInner,
+	.galleryMenu .galleryMenuItem.selected .galleryMenuItemInner:hover {
+		background-color: @slideshowGalleryMiniBottomGalleryMenuItemInnerSelectedBackgroundColor;
+		color: @slideshowGalleryMiniBottomGalleryMenuItemInnerSelectedColor;
+	}
+	
+	.contentContainerSpace {
+		min-height:0 !important;
+		padding-top:10px;
+		.contentContainer {
+			position: absolute;
+			right: 0px;
+			min-height:0 !important;
+			width:100%;
+			overflow: hidden;
+			a {
+				color: @slideshowGalleryMiniBottomContentContainerAtagColor;
+			}
+			.galleryContent {
+				position:absolute;
+				.box-sizing(border-box);
+				.description {
+					
+				}
+				.caption {
+					font-size: @slideshowGalleryMiniBottomContentContainerCaptionFontSize;
+					margin-bottom: .25em;
+					line-height:1.1em;
+				}
+				.photo-credit {
+					margin-bottom: .25em;
+					text-align: left;
+					font-weight:bold;
+				}
+			}
+		}
+	}
+	
+	.controls {
+		position: absolute;
+		bottom:5px;
+		right:5px;
+	}
+}
+
+/* Additional styles for different parameter settings */
+
+.sg-mini-bottom-menu.sg-option-menu {
+	padding-bottom:45px;
+}
+
+
+
+// For when there is controls, and captions, but no menu
+
+.sg-mini-bottom-menu.sg-option-controls.sg-option-captions,
+.sg-mini-bottom-menu.sg-option-controls.sg-option-photocredits,
+.sg-mini-bottom-menu.sg-option-controls.sg-option-descriptions {
+	padding-bottom:45px;
+	.controls {
+		right:0;
+	}
+}
+
+// For when there is numerical menu and controls
+
+.sg-mini-bottom-menu.sg-option-menu.sg-option-controls {
+	.galleryMenuSpace {
+		padding-right:130px;
+	}
+	.controls {
+		button {
+			height:30px;
+			border:none;
+			margin-right:2px;
+			#gradient > .vertical(lighten(@slideshowGalleryMiniBottomGalleryMenuSpace,7%), darken(@slideshowGalleryMiniBottomGalleryMenuSpace,7%));
+			&:last-child {
+				margin-right:0;
+			}
+			&:hover {
+				#gradient > .vertical(lighten(@slideshowGalleryMiniBottomGalleryMenuSpace,10%), darken(@slideshowGalleryMiniBottomGalleryMenuSpace,7%));
+				background-position:0 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 979px) {
+	.sg-mini-bottom-menu,
+	.sg-mini-bottom-menu.sg-option-menu,
+	.sg-mini-bottom-menu.sg-option-menu.sg-option-controls {
+		padding-bottom:50px;
+		/* Note: fixed width is required to calculate number of visible menu items in javascript */
+		.galleryMenuSpace .galleryMenuNavigation .galleryMenuItemInner,
+		.galleryMenu .galleryMenuItem .galleryMenuItemInner {
+			line-height: 35px;
+			height: 35px;
+			width: 35px;
+		}
+	}
+	
+	// For when there is numerical menu and controls
+	.sg-mini-bottom-menu.sg-option-controls, .sg-mini-bottom-menu.sg-option-menu.sg-option-controls {
+		.controls {
+			button {
+				height:35px;
+			}
+		}
+	}
+}
+
+@media (max-width: 319px) {
+	.sg-mini-bottom-menu.sg-option-menu.sg-option-controls {
+		padding-bottom:90px;
+		.galleryMenuSpace {
+			padding-right:5px;
+			padding-bottom:40px;
+		}
+	}
+}
+
+
+
+@media (min-width: 980px) {
+	// For when there is numerical menu and controls
+	.sg-mini-bottom-menu,
+	.sg-mini-bottom-menu.sg-option-menu,
+	.sg-smini-bottom-menu.sg-option-menu.sg-option-controls {
+		padding-bottom:35px !important;
+		.galleryMenuSpace .galleryMenuNavigation .galleryMenuItemInner,
+		.galleryMenu .galleryMenuItem .galleryMenuItemInner {
+			line-height: 20px;
+			height: 20px;
+			width: 20px;
+		}
+	}
+			
+	.sg-mini-bottom-menu.sg-option-controls, .sg-mini-bottom-menu.sg-option-menu.sg-option-controls {
+		.controls {
+			bottom:2px;
+			button {
+				height:20px;
+				padding-top:0;
+				padding-bottom:0;
+				i {
+					margin-top:0;
+				}
+			}
+		}
+	}
+}
+
+#SG-MINI-BOTTOM-MENU_LESS-END {
+	content: "sg-mini-bottom-menu.less";
+}

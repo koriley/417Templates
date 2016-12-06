@@ -1,0 +1,44 @@
+.starbox {
+	direction: rtl;
+	text-align: left;
+	overflow: hidden;
+	line-height: 0px;
+	font-size: 0px;
+}
+
+.starbox a {
+	background-image: url("/core/media/themes/Respond/images/respond-icons.png");
+	background-position: -24px -1px;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	outline: none;
+	direction: ltr;
+	height: 22px;
+	width: 22px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 0px;
+	font-size: 0px;
+}
+
+.starbox a:hover,
+.starbox a:hover ~ a,
+.starbox a:hover:before,
+.starbox a:hover ~ a:before,
+.starbox a.marked,
+.starbox a.usermarked {
+	background-position: -24px -24px;
+}
+
+.starbox.touch-enabled a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* gallery-lightbox.less overrides */
+
+#lightbox-image-details {
+	color:#fff;
+	background:url(/core/media/images/black_80.png);
+}

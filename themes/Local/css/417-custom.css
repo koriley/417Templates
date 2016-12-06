@@ -1,0 +1,96 @@
+img.new-header {
+        position: relative;
+        top: -206px;
+        right: 48px;
+        z-index: 999;
+        
+}
+
+img.ds-header {
+        position: relative;
+        top: -349px;
+        z-index: 999;
+        
+}
+
+#breadcrumb {
+    /*
+     * I get that this is mostly for TOTT, but it is messing up my flagship templates, so I have taken out what
+     * was messing it up, as you can see below - Kevin O'Riley
+     */
+    
+        /*margin-top: 40px !important;*/
+        padding-left:20px;
+        padding-top:15px;
+        /*width:950px !important;*/
+}
+
+#breadcrumb-tott {
+        padding: 0 10px;
+        line-height: 42px;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        background-color: white;
+        border-bottom: solid 1px #AAA;
+}
+
+#page-body.tott-body {background: #003869;}
+#columns-fullwidth.tott-fw {background:#003869; margin-top: -234px;}
+#columns-fullwidth.tott-fw-ds {background:#6B939F; margin-top: -234px;}
+/*.fbcomments {padding:15px !important;}*/
+.pagetools-tott {background: #fff !important; padding-left: 20px; padding-right:20px;}
+
+img.tott-header-logo {
+        position: relative;
+        
+        left: 21px;
+        z-index: 1000;
+}
+
+.tott-body {
+        margin-top:0px !important;
+}
+
+.tott h2 {
+        background: #E5E5E5 url('../images/SpringfieldBest_MODULE.png') !important;
+        text-shadow: none !important;
+        color: white !important;
+}
+
+.ds h2 {
+        background: #998D7D url('../images/ds-module.png') !important;
+       
+}
+
+.tott-geobase .geobase {
+        padding-top: 60px !important;
+}
+
+.tott-geobase .geobase .search-form {
+        margin-top: 60px !important;
+}
+        
+.tott h2 img {
+        top:-13px !important;
+}
+
+.tott-ds h2 img {
+        top:-13px !important;
+}
+
+#page-container{
+    background-color:transparent;
+}
+
+h2.blog-header a {
+background-color: white;
+display: inline-block;
+font-size: 34px;
+padding: 10px 5px;
+min-height: 40px;
+max-width: 70%;
+margin: auto;
+line-height: 34px;
+text-align: center;
+}

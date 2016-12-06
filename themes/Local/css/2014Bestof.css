@@ -1,0 +1,444 @@
+/* 
+    Document   : bestOf
+    Created on : Aug 6, 2012, 3:29:53 PM
+    Author     : Kevin O'Riley'
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*@font-face {
+        font-family: memphis;
+        src: url('/fonts/Optical Fiber.ttf');
+}*/
+body { 
+    background-color:#CFCECE;
+}
+#subButton{
+    width:163px;
+    height:163px;
+    border:0;
+    background-color:transparent;
+    background-image:url('/images/bestof/2013/vote-button.png');
+    background-repeat: no-repeat;
+    
+    
+
+}
+#subButton:hover{
+    background-image:url('/images/bestof/2013/vote-button2.png');
+    cursor:pointer;
+}
+.buttonStyle{
+    width:143px;
+    margin:auto;
+    margin-top:10px;
+    float:left;
+}
+.submitTable{
+    width:430px;
+    margin-top:10px;
+    /*margin-left:250px;*/
+    float:left;
+    padding-top:5px;
+
+
+}
+
+.submitTable textarea{
+    width:135px;
+    height:110px;
+    
+}
+
+.submitContainer{
+    width:660px;
+    margin-top:10px;
+    border: 5px solid #a11c20;
+    height:330px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:5px;
+    padding-left:10px;
+    padding-bottom:5px;
+    color:white;
+    background-color:#a11c20;
+    -webkit-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset   0px 0px 4px 5px  rgba(0,0,0,0.5);
+    background: -webkit-gradient(linear, left , right, from(#ec2028), to(#a11c20)); 
+    background: -moz-linear-gradient(to right, #ec2028, #a11c20); 
+}
+
+
+.verify{
+    font-size:100%; 
+    font-weight:bold;
+    /*color:white;*/
+    width:100%;
+    margin-top:25px
+
+}
+.verify input{
+    /*margin:auto;
+    border:0;
+    -webkit-box-shadow: 
+        inset 3px 3px 4px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    padding-left: 15px;
+    background: rgba(255,255,255,0.5);
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:25px;
+    width:25px;
+    height:35px;*/
+}
+#footer{
+    background-color:transparent;
+    color:black;
+    border: 5px solid #333333;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:5px;
+    padding-left:-5px;
+    background-color:#333333;
+    -webkit-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset   0px 0px 4px 5px  rgba(0,0,0,0.5);
+
+}
+
+.right-side{
+    width:281px;
+    float:right;
+    
+    margin-bottom:10px;
+    margin:auto;
+    margin-top:10px;
+    
+}
+.left-side{
+    clear:both;
+    width:677px;
+    float:left;
+    
+}
+
+.rightSide{
+    width:279px;
+    border:0;
+    margin-bottom:10px;
+    
+    padding-bottom:10px;
+    padding-top:10px;
+    background-color:#fff;
+    border:1px solid #333333;
+    border-top:0px;
+    text-align: center;
+}
+
+.rightSideHeader{
+    
+}
+
+.nav{
+    margin:0px;
+    padding:0px;
+    margin-top:10px;
+
+}
+
+.clock{
+    background-color:transparent;
+}
+/* nav buttons */
+.food{
+    background-image:url('/images/bestof/2013/tab-food+drink.png');
+    background-repeat:no-repeat;
+    width:166px;
+    height:43px;
+}
+
+.food:hover{
+    background-image:url('/images/bestof/2013/tab-food+drinkShadow.gif');
+    background-repeat:no-repeat;
+}
+.people{
+    background-image:url('/images/bestof/2013/tab-people.png');
+    background-repeat:no-repeat;
+    width:112px;
+    height:43px;
+}
+
+.people:hover{
+    background-image:url('/images/bestof/2013/tab-peopleShadow.gif');
+    background-repeat:no-repeat;
+}
+.places{
+    background-image:url('/images/bestof/2013/tab-places.png');
+    background-repeat:no-repeat;
+    width:121px;
+    height:43px;
+}
+
+.places:hover{
+    background-image:url('/images/bestof/2013/tab-placesShadow.gif');
+    background-repeat:no-repeat;
+}
+.shopping{
+    background-image:url('/images/bestof/2013/tab-shopping.png');
+    background-repeat:no-repeat;
+    width:134px;
+    height:43px;
+}
+
+.shopping:hover{
+    background-image:url('/images/bestof/2013/tab-shoppingShadow.gif');
+    background-repeat:no-repeat;
+}
+.services{
+    background-image:url('/images/bestof/2013/tab-services.png');
+    background-repeat:no-repeat;
+    width:154px;
+    height:43px;
+}
+
+.services:hover{
+    background-image:url('/images/bestof/2013/tab-servicesShadow.gif');
+    background-repeat:no-repeat;
+}
+/*/////////////////////////////////////////////////////////////////////*/
+.foodWebHeader{
+    width:677px;
+    height:75px;
+    background-image:url('/images/bestof/2013/form-food+drink.gif');
+    background-repeat:no-repeat;
+
+}
+
+
+
+.formStyle{
+
+    width:670px;
+    margin-top:10px;
+    border: 5px solid #02588e;
+    padding-bottom:10px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:5px;
+
+    background-color:#0f90cf;
+    -webkit-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset   0px 0px 4px 5px  rgba(0,0,0,0.5);
+   /* background: -webkit-gradient(linear, left , right, from(#02588e), to(#0f90cf)); 
+    background: -moz-linear-gradient(to right, #02588e, #0f90cf);   */
+
+}
+
+.formStyle a:link {text-decoration:none; color:#EA2227;}
+.formStyle a:visited {text-decoration:none; color:#EA2227;}
+.formStyle a:hover {text-decoration:none; color:#EA2227;}
+.formStyle a:active {text-decoration:none; color:#EA2227;}
+
+.inputStyle{
+    /*border: 3px solid #02588e; */
+    border:0;
+    -webkit-box-shadow: 
+        inset 3px 3px 4px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    padding-left: 15px;
+    background: rgba(255,255,255,0.5);
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:25px;
+    width:250px;
+    height:35px;
+
+
+}
+
+.radioStyle{
+   margin-left:10px;
+    width:40px;
+    height:40px;
+
+
+}
+.choiceStyle{
+    font-size:15px;
+}
+.shadow{
+    background-color:transparent;
+    box-shadow:0px 0px 0px 0px #02588e;
+}
+.custAdSize{
+    background-color:transparent;
+}
+
+.inputStyle2{
+    /*border: 3px solid #02588e; */
+    border:0;
+    -webkit-box-shadow: 
+        inset 3px 3px 4px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset 3px 3px 4px  rgba(0,0,0,0.5); 
+    padding-left: 15px;
+    background: rgba(255,255,255,0.5);
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:25px;
+
+
+
+}
+
+.titleHeaders{
+    font-size:250%; 
+    font-weight:bold; 
+    color:white;
+    width:654px;
+    margin-top:10px;
+
+    border: 5px solid #02588e;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:15px;
+    padding-left:15px;
+    padding-bottom:15px;
+    background-color:#0f90cf;
+    -webkit-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 
+        inset   0px 0px 4px 5px rgba(0,0,0,0.5); 
+    box-shadow: 
+        inset   0px 0px 4px 5px  rgba(0,0,0,0.5);
+    background: -webkit-gradient(linear, left , right, from(#02588e), to(#0f90cf)); 
+    background: -moz-linear-gradient(to right, #02588e, #0f90cf);
+
+}
+.tableHeaders{
+    /*background-image:url('/images/bestof/2013/tableBlank.gif');
+    background-repeat:no-repeat;*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dee7ea'); 
+
+   background: -webkit-gradient(linear, left , right, from(#02588e), to(#0f90cf)); 
+   background: -moz-linear-gradient(to right, #02588e, #0f90cf);  */
+    width:251px;
+    height:30px;
+    color:white;
+    padding-left:10px;
+    font-size:30px;
+    font-weight:bold;
+    margin-top:5px;
+
+}
+/* archive stuff */
+.module-box{
+    background-color:transparent;
+    border:0;
+    margin:0;
+    padding:0;
+}
+.boxcontent{
+    background-color:transparent;
+    border:0; 
+
+}
+table.articles{
+    background-color:transparent;
+}
+
+/********************************************/
+.mainContent{
+    margin-top:5px;
+    width:655px;
+    padding:10px;
+    background-color:#fff;
+
+
+
+}
+.headerSocial{
+    width:247px;
+    height:335px;
+    padding:0px;
+    margin:0px;
+    float:right;
+
+}
+
+.headerSocialInside{
+    width:247px;
+    margin-top:230px;
+
+}
+.header{
+    float:left;
+    padding:0px;
+    margin:0px;
+}
+
+.fbcomments{
+
+    width:675px;
+    background-color:#fff;
+    float:left;
+
+
+}
+
+#clock{
+    color:#e82429;
+    background-color:#333333;
+    margin-top:25px;
+   
+    text-align: center;
+   
+}
+#formNav{
+    margin-left:-10px;
+    width:677px;
+    height:75px;
+    background-color:#383738;
+    
+}
+
+#outterSubmit{
+    width:677px;
+    margin-left:-10px;
+    text-align: center;
+}
+#bo2014Submit{
+    background-image: url('/images/bestof/2014/BestOf417_vote.png');
+    width:326px;
+    height:154px;
+    border:0;
+    cursor:pointer;
+    background-color:#fff;
+}
+#bo2014Submit:hover{
+    background-image: url('/images/bestof/2014/BestOf417_voteRed.png');
+}
+#centerMe{
+    width:670px;
+    text-align: center;
+    margin:auto;
+   
+}

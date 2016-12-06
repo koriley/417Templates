@@ -1,0 +1,54 @@
+#ARTICLEARCHIVE_LESS-START {
+	content: "articlearchive.less";
+}
+
+.article-archive {
+	.media {
+		padding-bottom:10px;
+		border-bottom:@articleListItemBorderBottom;
+		.issue {
+			font-size:120%;
+		}
+		.media-body {
+			.media-heading {
+				font-size:@articleListTitleSize;
+			}
+		}
+	}
+	.article-archive-header {
+		.pull-left {
+			width:75px;
+			display:block;
+			height:30px;
+		}
+		h3 {
+			margin:0;
+		}
+		&.media {
+			padding-bottom:0;
+		}
+	}
+	.pagination {
+		text-align:center;
+	}
+}
+
+@media (max-width: 480px) {
+	.article-archive {
+		.article-archive-header {
+			display:none;
+		}
+		.media {
+			.pull-left {
+				float:left;
+			}
+			.pull-right {
+				margin-left:0;
+			}
+		}
+	}
+}
+
+#ARTICLEARCHIVE_LESS-END {
+	content: "articlearchive.less";
+}

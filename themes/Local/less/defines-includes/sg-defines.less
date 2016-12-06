@@ -1,0 +1,51 @@
+/*
+ * Defines for slideshow gallery less files:
+ * 
+ *     sg-mini-bottom-menu.less
+ *     sg-splash-bottom-menu.less
+ *     sg-splash-captions.less
+ *     sg-splash-right-menu.less
+ * 
+ */
+// sg-mini-bottom-menu.less
+@slideshowGalleryMiniBottomBackgroundColor: #FFFFFF;
+@slideshowGalleryMiniBottomGalleryMenuSpace: hsl(@primaryBrandHue,@primaryBrandSaturation,25%);
+@slideshowGalleryMiniBottomGalleryMenuSpaceIE: hsl(@primaryBrandHue,@primaryBrandSaturation,25%);	/* no alpha support (IE6-8) */
+@slideshowGalleryMiniBottomGalleryMenuItemInnerHoverBackgroundColor: lighten(@primaryBrandColor,20%);
+@slideshowGalleryMiniBottomGalleryMenuItemInnerSelectedBackgroundColor: @primaryBrandColor; 
+@slideshowGalleryMiniBottomGalleryMenuItemInnerSelectedColor: #FFFFFF;
+@slideshowGalleryMiniBottomGalleryMenuItemInnerColor: @linkColor;
+@slideshowGalleryMiniBottomGalleryMenuItemInnerBackgroundColor: #FFFFFF;
+@slideshowGalleryMiniBottomContentContainerAtagColor: @linkColor;
+@slideshowGalleryMiniBottomContentContainerCaptionFontSize: 22px;
+
+// sg-splash-bottom-menu.less
+@slideshowGalleryBottomBackgroundColor: #FFFFFF;
+@slideshowGalleryBottomGalleryMenuSpace: hsl(@primaryBrandHue,@primaryBrandSaturation,25%);
+@slideshowGalleryBottomGalleryMenuSpaceIE: hsl(@primaryBrandHue,@primaryBrandSaturation,25%);	/* no alpha support (IE6-8) */
+@slideshowGalleryBottomGalleryMenuItemInnerHoverBackgroundColor: lighten(@primaryBrandColor,20%);
+@slideshowGalleryBottomGalleryMenuItemInnerSelectedBackgroundColor: @primaryBrandColor; 
+@slideshowGalleryBottomGalleryMenuItemInnerSelectedColor: #FFFFFF;
+@slideshowGalleryBottomGalleryMenuItemInnerColor: @linkColor;
+@slideshowGalleryBottomGalleryMenuItemInnerBackgroundColor: #FFFFFF;
+@slideshowGalleryBottomContentContainerAtagColor: @linkColor;
+@slideshowGalleryBottomContentContainerCaptionFontSize: 22px;
+
+// sg-splash-captions.less
+@slideshowGalleryCaptionBackgroundColor: #FFFFFF;
+@slideshowGalleryCaptionGalleryContentCaptionFontSize: 22px;
+@slideshowGalleryCaptionGalleryContentCaptionAtagColor: @linkColor;
+
+
+// sg-splash-right-menu.less
+@slideshowGalleryRightBackgroundColor: #FFFFFF;
+@slideshowGalleryRightMenuItemBackground: url(/core/media/images/photoFader_bullet.png) left center no-repeat;
+@slideshowGalleryRightMenuItemBorderRadius:3px;
+@slideshowGalleryRightMenuItemColor: lighten(desaturate(@linkColor,10%),10%);
+@slideshowGalleryRightMenuItemBackgroundColor: #fff;
+@slideshowGalleryRightMenuItemHoverColor: @linkColor;
+@slideshowGalleryRightMenuItemHoverBackgroundColor: #fff;
+@slideshowGalleryRightMenuItemSelectedColor: darken(@linkColor,10%);
+@slideshowGalleryRightMenuItemSelectedBackgroundColor: #fff;
+@slideshowGalleryRightContentContainerAtagColor: @linkColor;
+@slideshowGalleryRightContentContainerCaptionFontSize: 22px;

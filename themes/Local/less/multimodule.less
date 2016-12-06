@@ -1,0 +1,52 @@
+/*
+ * Less file for multimodule.tpl variants, including:
+ * 
+ *     multimodule.tabbed.tpl
+ * 
+ */
+#MULTIMODULE_LESS-START {
+	content: "multimodule.less";
+}
+
+.multimodule.mm-tabbed {
+	position: relative;
+	overflow: hidden;
+	.module-content {
+		position: relative;
+		left: 0%;
+		> .tab-pane {
+			float: left;
+		}
+		> .tab-pane.active {
+		}
+	}
+	.nav-tabs {
+		width: 200%;		/* required for correct tab width calculations */
+		max-width: 200%;	/* required for correct tab width calculations */
+	}
+	.nav-tabs li {
+		float: left;
+	}
+	.nav-tabs li a {
+		cursor: pointer;
+		padding-left: @multimoduletabbedNavTabsLiAPaddingLeft;
+		padding-right: @multimoduletabbedNavTabsLiAPaddingRight;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.nav-tabs li.active a {
+		cursor: default;
+	}
+}
+
+@media (max-width: 767px) {
+	/* handle included modules turning on their bottom border; turn off our bottom border */
+	.multimodule {
+		border-bottom: none;
+	}
+}
+
+
+#MULTIMODULE_LESS-END {
+	content: "multimodule.less";
+}

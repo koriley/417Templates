@@ -1,0 +1,55 @@
+/* CSS Document */
+
+#columns-1-2 {
+	background-color: #fff;
+	/*width:790px;*/
+       width:640px;
+	}
+
+/* column 1 */
+
+
+#column-1 {
+	width:196px;
+	padding: 10px;
+	border:0px;
+	}
+	
+.header-box h6{
+	border-bottom:solid 1px #70744E;
+	font-size:18pt;
+	padding-left: 15px;
+	width: 95%;
+	margin-bottom: 15px;
+}
+	
+
+
+/* column 2 */
+#column-2 {
+	width:400px;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	padding-right: 10px;	
+	padding-left: 5px;	
+	border-left:1px solid #dbdbdb;
+	}
+
+	
+.isssueperiod {
+	text-align:left;
+	margin-bottom:4px;
+	}
+
+/* column 3 */
+
+#column-3 {
+       float: left;
+       /*width: 185px;*/
+        width: 320px;
+	display: inline;
+}
+
+#page-body{
+	margin-top:5px;
+}

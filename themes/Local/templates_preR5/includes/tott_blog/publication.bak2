@@ -1,0 +1,60 @@
+{blogdata publicationid=$publication.id}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><PAGETITLE></title>
+<meta name="robots" content="all" />
+<meta name="Description" content="{$Page->description|default:$issue.description|default:$publication.description|escape}" />
+<meta name="Keywords" content="{$Page->keywords|default:$issue.keywords|default:$publication.keywords|escape}" />
+{addcss file="style.css"}
+{addcss file="index.css"}
+{addcss file="blogs.css"}
+{include file="oas_head.tpl"}
+</head>
+<body>
+<!-- core -->
+<div id="page-container">
+	{include file="top.tpl"}
+	<div id="page-body">
+		<div id="columns">
+			{include file="breadcrumb.tpl"}
+			<div id="article">
+				<div id="article-body">
+					<div class="blog-header">{if $blogdata.tagline<>''}<h6>{$blogdata.tagline}</h6>{/if}<a href="{$publication.url}">{if $blogdata.headerimage<>''}<img src="{$blogdata.headerimage}" alt="{$blogdata.title}" />{else}{$blogdata.title}{/if}</a></div>
+					{if $pagecontent<>''}{$pagecontent}{/if}
+					<table class="articles" id="archive">
+						{getarticles tagids=$blogdata.tagids what="article" order="ops_article.datepublished desc" max=99999}
+						{section name="a" loop=$articles max=$blogdata.params.maxarticlesperpage start=$si}
+						<tr class="article-item">
+							{if $articles[a].image<>''}<td class="article-image"><a href="{$articles[a].url}"><img src="{imagesizer src=$articles[a].url|cat:$articles[a].image w=74 q=100}" border="0" width="74" alt="{$articles[a].title}" /></a></td>
+							<td class="article-content">{else}<td class="article-content" colspan="2">{/if}
+							<h4>{$articles[a].datepublished|date_format:"%D"}</h4>
+							<h3><a href="{$articles[a].url}">{$articles[a].title}</a></h3>
+							<p>
+								{if $articles[a].summary<>''}
+									{$articles[a].summary|strip_tags:false}	
+								{else}
+									{$articles[a].body|strip_tags:false|truncate:800}
+								{/if}		
+							</p>
+							<p class="blog-footnotes">Posted at {$articles[a].datepublished|date_format:"%I:%M %p"} | <a href="{$articles[a].url}">Permalink</a>{if istrue($articles[a].iscommentenabled)} | <span class="comments"><a href="{$articles[a].url}index.php#comments">Comments{if $articles[a].comments > 0}:&nbsp;{$articles[a].comments}{/if}</a></span>{/if}</p>
+							</td>
+						</tr>
+						{/section}																
+					</table>
+					{pager data=$articles rowsperpage=$blogdata.params.maxarticlesperpage}	
+					{loadModules position="middle"}	
+				</div>
+			</div>
+			<div id="column-3">
+				{loadModules position="right"}
+				{include file="sidebar.tpl"}
+			</div>
+		{loadModules position="bottom"}
+		</div>
+	</div>
+{include file="footer.tpl"}
+</div>
+</body>
+</html>

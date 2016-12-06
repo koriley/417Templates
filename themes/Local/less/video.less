@@ -1,0 +1,139 @@
+.channel {
+}
+
+.video {
+	margin-bottom:10px;
+}
+
+.video-data {
+	margin-top:10px;
+}
+
+.video-detail {
+	margin-left:150px;
+}
+	
+.channellist {
+	margin-top: 3px;
+	padding: 10px;
+	background-color: @videoChannellistBackgroundColor;
+}
+	
+.channel-list {
+}
+	
+.channel-item {
+	background-color: @videoChannelItemBackgroundColor;
+	margin:0 5px 5px 0;
+	padding:10px;
+	border-left: @videoChannelItemBorderLeft;
+	border-top: @videoChannelItemBorderTop;
+	border-bottom: @videoChannelItemBorderBottom;
+	border-right: @videoChannelItemBorderRight;
+	overflow:auto;
+}
+	
+.channel-item:hover {
+	background-color: @videoChannelItemHoverBackgroundColor;
+}
+	
+.channel-thumbnail {
+	width:130px;
+	float:left;
+}
+
+.channel-detail {
+	margin-left:150px;
+}
+
+.showall {
+	text-transform: @videoShowallTextTransform;
+	font-size: @videoShowallFontSize;
+	font-weight: @videoShowallFontWeight;
+	padding: @videoShowallPadding;
+	background-color: @videoShowallBackgroundColor;
+}
+
+.showall a {
+	outline:none;
+}
+	
+.video-description {
+	margin-top:10px;
+}
+
+.videoplayer,
+.video-data,
+.video-title {
+	text-align:center;
+}
+
+.channel-label {
+	border-bottom: @videoChannelLabelBorderBottom;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+.video-list {
+	.video-toggle-icon {
+		background-image: @videoVideoListVideoToggleIconBackgroundImage;
+		background-position: @videoVideoListVideoToggleIconBackgroundPosition;
+		display: inline-block;
+		height: 10px;
+		padding-right: 9px;
+		width: 10px;
+	}
+	.open .video-toggle-icon {
+		background-position: @videoVideoListVideoToggleIconOpenBackgroundPosition;
+	}
+	.accordion-toggle {
+		padding: 3px 0px 3px 9px;
+		background-color: @videoVideoListAccordionToggleBackgroundColor;
+		border-bottom: @videoVideoListAccordionToggleBorderBottom;
+		&.open {
+			background-color: @videoVideoListAccordionToggleOpenBackgroundColor;
+			font-weight: @videoVideoListAccordionToggleOpenFontWeight;
+		}
+	}
+}
+
+.video-item {
+	padding: 10px;
+	border-bottom: @videoVideoItemBorderBottom;
+	width: 100%;
+	overflow: auto;
+}
+
+.video-thumbnail {
+	margin:0 15px 5px 0;
+	float:left;
+}
+
+.click-to-view {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: @videoClickToViewBorder;
+	background-color: @videoClickToViewBackgroundColor;
+	border-radius: @videoClickToViewBorderRadius;
+	margin: 3px;
+
+	&.textThumbnail {
+		padding-top: 30%;
+		font-size: @videoClickToViewTextThumbnailFontSize;
+		font-weight: @videoClickToViewTextThumbnailFontWeight;
+	}
+	&.videoThumbnail {
+		img {
+			visibility: hidden;		/* initial setting */
+			max-height: 100%;
+		}
+	}
+
+	&:hover {
+		background-color: @videoClickToViewHoverBackgroundColor;
+		text-decoration: @videoClickToViewHoverTextDecoration;
+	}
+}

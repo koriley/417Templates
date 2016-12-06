@@ -1,0 +1,64 @@
+#page-container {
+	width:1470px;
+	/*overflow-x:hidden;*/
+        position:relative;
+       
+	}
+.page-container{
+      
+	width:967px;
+	margin:0 auto;
+	position:relative;
+        z-index:2;
+        top:0px;
+        
+        }
+        
+#fullWall{
+          width:1470px;
+          height:700px;
+          position:fixed;
+          top:40px;
+          z-index: 1;
+         
+        }
+body{
+     /*background-image:url('http://417mag.com/images/ko/adsizer.png');*/
+     background-repeat:no-repeat;
+     
+     /*overflow-x:hidden;*/
+     background-attachment:fixed;
+     font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	background:  url(/images/shadow.png) center repeat-y;
+	background-color:#c2d1d7;
+	margin: 0;
+     
+        }
+        
+        .adSpace{
+            width:100%;
+            
+        }
+        .adLinkLeft{
+            width:250px;
+            margin-top:40px;
+            height:1400px;
+            float:left;
+            
+            
+        }
+        .adLinkRight{
+            width:250px;
+            margin-top:40px;
+            height:1400px;
+            float:right;
+            
+            
+            
+        }
+        .mid{
+            width:970px;
+            height:100%;
+            
+        }

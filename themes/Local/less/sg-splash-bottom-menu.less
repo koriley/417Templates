@@ -1,0 +1,243 @@
+/**
+ * Slideshow Gallery
+ * 
+ * Fluid/Responsive layout
+ * Menu on the bottom.
+ * 
+ */
+ 
+#SG-SPLASH-BOTTOM-MENU_LESS-START {
+	content: "sg-splash-bottom-menu.less";
+}
+
+.sg-splash-bottom-menu {
+	position: relative;
+	background-color: @slideshowGalleryBottomBackgroundColor;
+	overflow: hidden;
+	.pagination {
+		ul {
+			display:block;
+		}
+	}
+	width:100%;
+
+	.imageContainerSpace {
+		position: relative;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	.imageContainer {
+		position: relative;
+	}
+	
+	.imageContainer .galleryImage {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;  /* critical parameter for IE8 */
+		height: auto;
+	}
+	.imageContainer a img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.galleryMenuSpace {
+		position: absolute;
+	/* enable if IE6 - IE8 support is required */
+	/*	background: url("/core/media/images/black_50.png") repeat scroll 0 0 transparent; */
+		background-color: @slideshowGalleryBottomGalleryMenuSpaceIE;	// must come before non-IE version
+		background-color: @slideshowGalleryBottomGalleryMenuSpace;
+		padding: 5px 5px 0 0;
+		margin: 0px;
+		min-height: 0px !important;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	}
+	
+	.galleryMenu {
+		text-align: center;
+		height: auto;
+		width: auto;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation,
+	.galleryMenu .galleryMenuItem {
+		cursor: pointer;
+		float: left;
+		display: block;
+		margin-left:5px;
+		margin-bottom:5px;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation.previous {
+		font-weight:bold;
+	}
+	.galleryMenuSpace .galleryMenuNavigation.next {
+		font-weight:bold;
+	}
+	
+	/* Note: fixed width is required to calculate number of visible menu items in javascript */
+	.galleryMenuSpace .galleryMenuNavigation .galleryMenuItemInner,
+	.galleryMenu .galleryMenuItem .galleryMenuItemInner {
+		line-height: 30px;
+		height: 30px;
+		width: 30px;
+		padding: 0;
+		text-align:center;
+		display:block;
+		color: @slideshowGalleryBottomGalleryMenuItemInnerColor;
+		background-color: @slideshowGalleryBottomGalleryMenuItemInnerBackgroundColor;
+		border:none;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation .galleryMenuItemInner:hover,
+	.galleryMenu .galleryMenuItem .galleryMenuItemInner:hover {
+		background-color: @slideshowGalleryBottomGalleryMenuItemInnerHoverBackgroundColor;	
+		text-decoration: none;
+		color: @black;
+	}
+	
+	.galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner,
+	.galleryMenuSpace .galleryMenuNavigation.selected .galleryMenuItemInner:hover,
+	.galleryMenu .galleryMenuItem.selected .galleryMenuItemInner,
+	.galleryMenu .galleryMenuItem.selected .galleryMenuItemInner:hover {
+		background-color: @slideshowGalleryBottomGalleryMenuItemInnerSelectedBackgroundColor;
+		color: @slideshowGalleryBottomGalleryMenuItemInnerSelectedColor;
+	}
+	
+	.contentContainerSpace {
+		min-height:0 !important;
+		padding-top:10px;
+		.contentContainer {
+			position: absolute;
+			right: 0px;
+			min-height:0 !important;
+			width:100%;
+			overflow: hidden;
+			a {
+				color: @slideshowGalleryBottomContentContainerAtagColor;
+			}
+			.galleryContent {
+				position:absolute;
+				.box-sizing(border-box);
+				.description {
+					
+				}
+				.caption {
+					font-size: @slideshowGalleryBottomContentContainerCaptionFontSize;
+					margin-bottom: .25em;
+					line-height:1.1em;
+				}
+				.photo-credit {
+					margin-bottom: .25em;
+					text-align: left;
+					font-weight:bold;
+				}
+			}
+		}
+	}
+	
+	.controls {
+		position: absolute;
+		bottom:5px;
+		right:5px;
+	}
+	
+	
+}
+
+/* Additional styles for different parameter settings */
+
+.sg-splash-bottom-menu.sg-option-menu {
+	padding-bottom:45px;
+}
+
+
+
+// For when there is controls, and captions, but no menu
+
+.sg-splash-bottom-menu.sg-option-controls.sg-option-captions,
+.sg-splash-bottom-menu.sg-option-controls.sg-option-photocredits,
+.sg-splash-bottom-menu.sg-option-controls.sg-option-descriptions
+	{
+	padding-bottom:45px;
+	.controls {
+		bottom:0;
+		right:0;
+	}
+}
+
+.sg-splash-bottom-menu.sg-option-controls.sg-option-captions.sg-option-menu,
+.sg-splash-bottom-menu.sg-option-controls.sg-option-photocredits.sg-option-menu,
+.sg-splash-bottom-menu.sg-option-controls.sg-option-descriptions.sg-option-menu
+{
+	.controls {
+		bottom:5px;
+		right:5px;
+	}
+}
+
+// For when there is numerical menu and controls
+
+.sg-splash-bottom-menu.sg-option-menu.sg-option-controls {
+	.galleryMenuSpace {
+		padding-right:130px;
+	}
+	.controls {
+		button {
+			height:30px;
+			border:none;
+			margin-right:2px;
+			#gradient > .vertical(lighten(@slideshowGalleryBottomGalleryMenuSpace,7%), darken(@slideshowGalleryBottomGalleryMenuSpace,7%));
+			&:last-child {
+				margin-right:0;
+			}
+			&:hover {
+				#gradient > .vertical(lighten(@slideshowGalleryBottomGalleryMenuSpace,10%), darken(@slideshowGalleryBottomGalleryMenuSpace,7%));
+				background-position:0 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 979px) {
+	.sg-splash-bottom-menu,
+	.sg-splash-bottom-menu.sg-option-menu,
+	.sg-splash-bottom-menu.sg-option-menu.sg-option-controls	 {
+		padding-bottom:50px;
+		/* Note: fixed width is required to calculate number of visible menu items in javascript */
+		.galleryMenuSpace .galleryMenuNavigation .galleryMenuItemInner,
+		.galleryMenu .galleryMenuItem .galleryMenuItemInner {
+			line-height: 35px;
+			height: 35px;
+			width: 35px;
+		}
+	}
+	
+	// For when there is numerical menu and controls
+	.sg-splash-bottom-menu.sg-option-controls, .sg-splash-bottom-menu.sg-option-menu.sg-option-controls {
+		.controls {
+			button {
+				height:35px;
+			}
+		}
+	}
+}
+
+@media (max-width: 319px) {
+	.sg-splash-bottom-menu.sg-option-menu.sg-option-controls {
+		padding-bottom:90px;
+		.galleryMenuSpace {
+			padding-right:5px;
+			padding-bottom:40px;
+		}
+	}
+}
+
+
+#SG-SPLASH-BOTTOM-MENU_LESS-END {
+	content: "sg-splash-bottom-menu.less";
+}

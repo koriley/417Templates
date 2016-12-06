@@ -1,0 +1,388 @@
+#HEADER_LESS-START {
+	content: "header.less";
+}
+
+/*
+ * NOTE: .navbar styles defined here generate the basic look and feel
+ *       for the header.  More specific styles that apply to the
+ *       navbar in rivista are defined in navigation.less
+ * 
+ *       In addition, note that @navbarMenuXXX defines are included
+ *       in navigation-defines.less
+ * 
+ */
+.navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
+	border: @headerInnerBorder;
+	background: @headerInnerBackground;
+	.box-shadow(none);
+	border-radius:@headerBorderRadius;
+}
+
+.navbar {
+	border-radius: @headerBorderRadius;
+	box-shadow:@headerDropShadow;
+	color: @headerTextColor;
+	text-shadow: @headerTextShadow;
+	position: relative;
+	z-index: 99999; // set to high value to go on top of everything
+	margin-bottom:@moduleBottomMargin;
+	.navbar-inner,
+	.branding {
+		#gradient > .vertical(@headerBackgroundHighlight, @headerBackground);
+	}
+}
+
+
+a.logo {
+	padding: 5px;
+	display:block;
+	img {
+	    height: auto;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+}
+
+#weather-menu-item {
+    display: none;
+}
+
+#collapsed-search-btn {
+    display: none;
+}
+
+#collapsed-search-btn.open {
+	> span {
+		i.icon-search {
+			background-image:url(@navbarIconsPath);
+			background-position:0px -40px;
+		}
+		i.icon-search:hover {
+			background-position:0px -60px;
+		}
+	}
+}
+
+#sitesearch {
+    padding: 0;
+    overflow:hidden;
+    #searchform {
+		overflow:hidden;
+    	float:right;
+	}
+    form {
+        margin-bottom: 0;
+        border-bottom: 0 none;
+        border-top: 0 none;
+    }
+
+    .btn {
+        margin-top: 0;
+    }
+
+    > div {
+        border-collapse: collapse;
+    }
+
+    form div {
+        display: inline;
+        float: left;
+        padding-right: 5px;
+        text-align: center;
+    }
+    
+    form div:last-child {
+    	padding-right:0;
+	}
+
+    form select {
+        float: left;
+        width: auto;
+    }
+
+    form select , form input , form button {
+        max-width: 200px;
+    }
+}
+
+#weather {
+    float: right;
+    a.weather-image {
+    	display: inline-block;
+    	img {
+			border-radius:3px;
+    		width: 30px;
+    		height:30px;
+		}
+    }
+    a:hover {
+    	text-decoration:none;
+	}
+}
+
+.weather-misc span {
+    vertical-align: middle;
+}
+
+.weather-misc {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.weather-divider {
+    padding: 0 10px;
+}
+
+@media (max-width: 979px) {
+
+	.navbar {
+		overflow:hidden;
+	}
+
+    #weather {
+        max-height: none;
+        height: auto;
+    	padding:0;
+    	width:10%;
+    	margin-left:20px;
+    }
+
+    .weather-misc {
+        display: none;
+    }
+
+    #sitesearch {
+        max-height: none;
+        height: auto;
+        display: block;
+        width: 50%;
+    	padding: 0;
+    	z-index:1001;
+    	#searchform {
+    		float:none;
+		}
+        form {
+            .box-shadow(none);
+            float: right;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    #sitesearch.collapse.in #searchform {
+        display: block;
+    }
+    
+    #collapsed-search-btn {
+        display: none;
+    }
+    
+	.logo-wrapper {
+        display: block;
+        float: none ! important;
+        margin: 0;
+        width: auto ! important;
+    }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+	#sitesearch {
+		position:relative;
+		margin-right:10px;
+		margin-top:-35px;
+		min-width:280px;
+		float: right;
+		input.search-query {
+    		background: @768siteSearchSearchQueryBackground;
+			border: @768siteSearchSearchQueryBorder;
+			border-top: @768siteSearchSearchQueryBorderTop;
+			border-left: @768siteSearchSearchQueryBorderLeft;
+			.box-shadow(@768siteSearchSearchQueryBoxShadow);
+			color:@navbarMenuColor;
+		}
+		button.btn {
+			#gradient > .vertical(lighten(@navbarMenuBackgroundHighlight,3%), darken(@navbarMenuBackground,3%));	
+			i {
+				.icon-white;
+			}
+		}
+		.btn:hover, .btn:active, .btn.active {
+			#gradient > .vertical(lighten(@navbarMenuBackgroundHighlight,6%), @navbarMenuBackground);
+			background-position:0 0;
+		}
+		
+	}
+	.collapsed-menus-wrapper {
+		margin-left:10px;
+	}
+}
+
+@media (min-width: 980px) {
+	.logo-wrapper {
+		position:absolute;
+		top:@logoTop;
+		bottom:@logoBottom;
+		left:@logoLeft;
+		right:@logoRight;
+		a.logo {
+			padding:0;
+			img {
+				display:inline;
+			}
+		}
+	}
+
+	div.branding {
+		height:@980brandingHeight;
+    }
+    
+    #sitesearch {
+    	position:absolute;
+        top:@searchTop;
+    	bottom:@searchBottom;
+    	left:@searchLeft;
+        right:@searchRight;
+    	overflow:hidden;
+    	max-height:auto;
+    	border:@980searchBoxBorder;
+    	border-radius:@980searchBoxBorderRadius;
+    	box-shadow:@980searchBoxDropShadow;
+    	background:@980searchBoxBackground;
+    	> div {
+    		padding:5px 10px;
+		}
+		> #weather {
+			border-left:@980searchBoxBorder;
+		    min-height:32px;
+			padding-top:7px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+    #sitesearch {
+        clear: none;
+        display: block ! important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #collapsed-search-btn {
+        display: block;
+    	width:20%;
+       	right:0;
+       	float:right;
+        padding:0;
+    }
+
+    #sitesearch.collapse {
+        height: 0px;
+        width: auto;
+        background-color:@navbarDropDownBackground;
+    	#searchform {
+    		display:none;
+		}
+    }
+
+    #sitesearch.collapse.in {
+        width: 100%;
+    	position:relative;
+    	margin-top:-1px;
+    	border-top:@navbarDropDownBorder;
+    	z-index:999;
+        #searchform {
+    		margin:10px;
+    		width:auto;
+			.search-query-wrapper {
+				width:90%;
+    			padding:0 10px 0 0;
+    			box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    -webkit-box-sizing: border-box;
+    			input.search-query {
+    				box-sizing: border-box;
+			    	-moz-box-sizing: border-box;
+			    	-webkit-box-sizing: border-box;
+    				width:100%;
+    				height:30px;
+    				max-width:100%;
+				}
+			}
+			.search-button-wrapper {
+				width:10%;
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    -webkit-box-sizing: border-box;
+				button {
+					width:100%;
+				}
+			}
+        }
+    }
+
+    #sitesearch {
+    	
+       .btn  {
+            position: relative;
+            float: right;
+        }
+
+        form {
+            .box-shadow(none);
+        	width:100%;
+        }
+    }
+    
+    #collapsed-search-btn i {
+        position: relative;
+    }
+
+    #weather {
+       display:none;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    #weather {
+        display: none;
+    }
+
+    #weather-menu-item {
+        display: block;
+    }
+
+	#sitesearch.collapse {
+		left: 0px;
+		padding: 0px;
+	}
+	
+	#sitesearch.collapse.in #searchform div.search-button-wrapper {
+		width:20%;
+	}
+	#sitesearch.collapse.in #searchform div.search-query-wrapper {
+		width:80%;
+	}
+	
+}
+
+@media (max-width: 320px) {
+    #sitesearch form:last-child {
+        margin-right: 0px;
+    }
+
+    #sitesearch .btn , #collapsed-search-btn i {
+        top: 0;
+    }
+
+}
+
+#HEADER_LESS-END {
+	content: "header.less";
+}

@@ -1,0 +1,98 @@
+/* Survey module styles. */
+
+#SURVEY_LESS-START {
+	content: "survey.less";
+}
+
+.poll {
+	margin-bottom: 10px;
+
+	h3 {
+		margin-bottom:15px;
+	}
+	
+	.survey-question {
+		font-weight: @surveyQuestionFontWeight;
+		text-align: @surveyQuestionTextAlign;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+	
+	.option {
+		padding: 5px;
+		vertical-align: top;
+		white-space: nowrap;
+		border-top: @surveyOptionBorderTop;
+		background-color: @surveyOptionBackgroundColor;
+		text-align: @surveyOptionTextAlign;
+	}
+	
+	.option:last-of-type {
+		border-bottom: @surveyOptionBorderBottom;
+	}
+	
+	.option input[type="radio"] {
+		margin-right: 5px;
+		vertical-align: top;
+	}
+}
+
+.survey-form .option:hover, .option:active {
+	color: @surveyOptionHoverColor;
+	background-color: @surveyOptionHoverBackgroundColor;	
+}
+
+.results {
+
+	margin-bottom: 20px;
+	
+	.survey-question {
+		border-bottom: @surveyResultsQuestionBorderBottom;
+	}
+
+	.option {
+		vertical-align:top;
+		line-height: @surveyResultsOptionLineHeight;
+		
+		background:#fff;
+		padding: 10px 0 2px 0px;
+		border: none;
+	}
+	
+	.answer {
+		padding-right: 2px;
+		background: @surveyResponseBackgroundColor;
+	}
+	
+	div.percentage {
+		.box-sizing(border-box);
+		background: @surveyResultPercentageColor;
+		border-bottom:solid 2px @surveyResultPercentageShadowColor;
+		border-right:solid 2px @surveyResultPercentageShadowColor;
+		border-top:solid 2px @surveyResultPercentageHighlightColor;
+		border-left:solid 2px @surveyResultPercentageHighlightColor;
+		height: @surveyResponseLineHeight;
+		float: left;
+	}
+
+	span.responses {
+		display: block;
+		font-size: @surveyResponseFontSize;
+		line-height: @surveyResponseLineHeight;
+		text-align: @surveyResponseTextAlign;
+	}
+}
+
+@media (max-width: 979px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+
+}
+
+#SURVEY_LESS-START {
+	content: "survey.less";
+}

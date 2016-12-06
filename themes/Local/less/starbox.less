@@ -1,0 +1,50 @@
+#STARBOX_LESS-START {
+	content: "starbox.less";
+}
+
+.starbox {
+	direction: @starboxBaseDirection;
+	text-align: @starboxBaseTextAlign;
+	overflow: hidden;
+
+	a {
+		display: inline-block;
+		position: relative;
+		font-size: @starboxFontSize;
+		width: @starboxWidth;
+		text-decoration: @starboxTextDecoration;
+		color: @starboxColor;
+		direction: @starboxDirection;
+	}
+
+	a.marked {
+		color: @starboxMarkedColor;
+	}
+	a.usermarked {
+		color: @starboxUsermarkedColor;
+	}
+	a:hover,
+	a:hover ~ a {
+		color: @starboxHoverColor;
+	}
+	a:hover:before,
+	a:hover ~ a:before {
+		color: @starboxHoverColor;
+	}
+
+	.ajaxspinner {
+		display: none;
+		float: none;
+		position: relative;
+		bottom: 3px;
+	}
+}
+
+.starbox.touch-enabled a {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#STARBOX_LESS-END {
+	content: "starbox.less";
+}

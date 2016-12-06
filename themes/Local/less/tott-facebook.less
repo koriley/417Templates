@@ -1,0 +1,120 @@
+#TOTT-FACEBOOK_LESS-START {
+	content: "tott-facebook.less";
+}
+
+.tott-facebook {
+	.content {
+		padding:15px 10px 10px 10px;
+		h3 {
+			line-height:1.1em;
+		}
+		div.listings {
+			.clearfix;
+			padding-bottom:40px;
+			position:relative;
+			div.client {
+				float:left;
+				margin:0 1% 1% 0;
+				min-height:200px;
+				.box-sizing(border-box);
+				padding:5px;
+				text-align:center;
+				background-color:#fff;
+				.border-radius(5px);
+				box-shadow:1px 1px 5px 0 rgba(0,0,0,0.5);
+				overflow:hidden;
+				h4 {
+					padding-top:5px;
+					font-weight:bold;
+					font-size:12px;
+					line-height:14px;
+					margin-top:0px;
+				}
+				img.thumb {
+					.border-radius(3px);
+				}
+				&:hover {
+					box-shadow:2px 2px 5px 0 rgba(0,0,0,0.75);
+				}
+			}
+			.search-all {
+				position:absolute;
+				right:0;
+				bottom:5px;
+			}
+			.pagination {
+				position:absolute;
+				left:0;
+				bottom:0;
+				padding-right:150px;
+				margin:0;
+			}
+		}
+	}
+}
+
+/* thumbnail grid */
+
+@media (min-width: 980px) {
+	.tott-facebook {
+		div.content {
+			div.listings {
+				div.client {
+					width:11.625%;
+					&:nth-of-type(8n+8) {
+						margin-right:0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.tott-facebook {
+		div.content {
+			div.listings {
+				div.client {
+					width:13.428%;
+					&:nth-of-type(7n+7) {
+						margin-right:0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.tott-facebook {
+		div.content {
+			div.listings {
+				div.client {
+					width:15.833%;
+					&:nth-of-type(6n+6) {
+						margin-right:0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media  (max-width: 479px) {
+	.tott-facebook {
+		div.content {
+			div.listings {
+				div.client {
+					width:19.2%;
+					&:nth-of-type(5n+5) {
+						margin-right:0;
+					}
+				}
+			}
+		}
+	}
+}
+
+#TOTT-FACEBOOK_LESS-END {
+	content: "tott-facebook.less";
+}

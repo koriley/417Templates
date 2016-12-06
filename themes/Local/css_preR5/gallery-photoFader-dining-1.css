@@ -1,0 +1,84 @@
+/* photoFader menu */
+ 
+form.photoFader {
+	/*height:258px; */
+}
+
+.photoFader-gallery {
+       padding-left:15px;
+	position:relative;
+	}
+
+.photoFaderMenu {
+	float:right;
+	margin:0px 10px 0 0;
+	padding:0;
+	width:35px;
+	font-family:Trebuchet MS, Georgia, Tahoma, "Times New Roman", Times, serif;
+	font-size:14px;
+}
+
+.photoFaderMenu div, #photoFaderMenu div.unselected {
+	padding:0 0 0 8px;
+	text-align:left;
+	border:none;
+	margin-bottom:3px;
+	color:#433804;
+}
+
+.photoFaderMenu div.selected, .photoFaderMenu div.selected:hover {
+	background:url(/images/re/photoFader_bullet_bride.gif) left center no-repeat;
+}
+
+.photoFaderMenu div:hover {
+	background:url(/images/photoFader_bullet-gray.gif) left center no-repeat;
+}
+
+.photoFaderMenu div a, .photoFaderMenu div a.unselected {
+	display:block;
+	padding:8px;
+	text-decoration:none;
+	color:#999;
+	border:solid 1px #999;
+	background-color:#fff;
+}
+	
+.photoFaderMenu div a:active, .photoFaderMenu div a:focus, .photoFaderMenu div a.selected, .photoFaderMenu div a.selected:hover {
+	text-decoration:none;
+	color:#93c6df;
+	outline:none;
+	border:solid 1px #93c6df;
+	}
+	
+.photoFaderMenu div a:hover {
+	text-decoration:none;
+	color:#999;
+	border:solid 1px #999;
+	background-color:#f4f4f4;
+	}
+
+.photoFader-contentcontainer{
+	height:250px;
+	position:relative;
+	float:left;
+}
+
+.photoFader-contentcontainer div{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	height:250px;
+	}
+	
+.photoFader-contentcontainer div p{
+	margin-top:10px;
+	}
+	
+.photoFader-contentcontainer a {
+	color:#000;
+	}
+
+.photoFader-contentcontainer div#item1 {
+	display:block;
+}

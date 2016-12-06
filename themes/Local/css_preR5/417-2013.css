@@ -1,0 +1,443 @@
+/* 
+    Document   : 417-2013.css
+    Created on : Oct 12, 2012, 8:32:53 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+@font-face {
+	font-family: Chap;
+	src: url('/fonts/Chaparral.otf');
+}
+
+@font-face{
+    font-family: hell;
+    src:url('/fonts/HelveticaNeueLTStd-BdCn.otf');
+}
+
+body{
+    /*background-color:#fff;*/
+    background-color:#fff;
+}
+iframe{
+    border:1px solid #7c7c7c;
+    padding-right:2px;
+}
+#site-tabs{
+	
+	padding-top:4px;
+       padding-right:10px;
+	display:inline;
+        
+        
+}
+
+#site-tabs a img{
+	border:0px;
+	
+        
+
+}
+root { 
+    display: block;
+}
+.page-container{
+    
+    
+}
+
+.shadow{
+    -webkit-box-shadow: 
+        0px 0px 15px 4px #A3A3A3;
+    -moz-box-shadow: 
+        0px 0px 15px 4px #A3A3A3; 
+    box-shadow: 
+        0px 10px 15px 4px #A3A3A3;
+    background-color:#fff;
+}
+#page-container{
+    
+    
+}
+
+#columns-1-2{
+    width:660px;
+    /*background-color:#fff;*/
+}
+
+#column-3{
+    float:right;
+    /*background-color:#fff;*/
+    /*margin-right:2px;*/
+}
+/* module css */
+.module-box{
+    border:0;
+    clear:both;
+    background-color:#fff;
+    margin-bottom:5px;
+}
+/*end module css*/
+.socialBar{
+    background-color:#000;
+    width:100%;
+    height:34px;
+    text-align: center;
+    margin:0 auto;
+   position:absolute;
+   
+    top:0px;
+          
+}
+
+.socialCont{
+    width:970px;
+    height:34px;
+    background-color:#000;
+    text-align: center;
+   position:relative;
+   z-index:12;
+   
+    
+}
+
+.socialCont td{
+    padding-left:2px;
+    
+}
+
+.socialButt img{
+    height:24px;
+}
+
+#topbanner{
+    background-color:#fff;
+}
+
+.navContainer{
+    width:970px;
+    height:50px;
+    background-color:#000;
+    list-style: none;
+}
+
+.navContainer a:link {color:#FFf; }      /* unvisited link */
+.navContainer a:visited {color:#fff; }  /* visited link */
+.navContainer a:hover {color:#fff; text-decoration: underline;}  /* mouse over link */
+.navContainer a:active {color:#fff; }  /* selected link */ 
+
+.subscribeImage{
+    float:right;
+    padding-top:46px;
+    
+    
+}
+.subscribeImage img{
+    width:250px;
+}
+.logo{
+  /*width:25%;
+    margin:0px auto;*/
+  float:left;
+  padding-top:35px;
+  padding-left:15px;
+}
+
+.navHome{
+    height:50px;
+    width:50px;
+    border-right:1px solid #000;
+    background-color:#220000;
+    float:left;
+}
+
+.homeText{
+    width:40px;
+    margin:0px auto;
+    padding-top:30px;
+    color:#fff;
+    font-size: 20pt;
+    
+}
+
+.navFavorites{
+   height:50px;
+    width:205px;
+    border-right:1px solid #000;
+    background-color:#000;
+    float:left; 
+}
+.navBest{
+   height:50px;
+    width:135px;
+    border-right:1px solid #fff;
+    background-color:#000;
+    float:left; 
+}
+
+.navDining{
+   height:50px;
+    width:200px;
+    border-right:1px solid #fff;
+    background-color:#000;
+    float:left; 
+}
+
+.navShopping{
+   height:50px;
+    width:228px;
+    border-right:1px solid #fff;
+    background-color:#000;
+    float:left; 
+}
+
+.centerShoppingNav{
+    padding-left:20px;
+}
+
+.navGoDo{
+   height:50px;
+    width:194px;
+    border-right:1px solid #fff;
+    background-color:#000;
+    float:left; 
+}
+.navTitle{
+    color:#fff;
+    padding-left:3px;
+    font-size:15pt;
+    font-family: hell, sans-serif;
+    font-weight:bold;
+}
+
+.navMenu{
+    color:#fff;
+    font-size:10pt;
+    padding-top:6px;
+    font-weight:bold;
+    
+}
+
+.navMenu a:link {color:#FFf; }      /* unvisited link */
+.navMenu a:visited {color:#fff; }  /* visited link */
+.navMenu a:hover { color:#000; text-decoration:none; background-color:#fff; }  /* mouse over link */
+.navMenu a:active {color:#000; }  /* selected link */ 
+
+
+
+.custAdSize{
+    background-color:#fff;
+    width:720px;
+    height:94px;
+    color:#fff;
+    padding-top:10px;
+    margin:auto;
+}
+
+/*blog stuff */
+
+.blog-title{
+    font-size:12pt;
+    padding:0px;
+    padding-left:4px;
+}
+.blogContent{
+    border:4px solid #000;
+}
+
+#blog417EatsTD{
+    padding:15px; margin:5px; width:200px; height:307px; background-color:#EFEFEF;
+}
+
+#blog417EatsTD a:link {color: rgb(0, 153, 205); }      /* unvisited link */
+#blog417EatsTD a:visited {color: rgb(0, 153, 205); }  /* visited link */
+#blog417EatsTD a:hover { color: rgb(0, 153, 205);  }  /* mouse over link */
+#blog417EatsTD a:active {color: rgb(0, 153, 205); }  /* selected link */ 
+
+#blog417EatsTD h4{
+    font-family: Georgia,"Times New Roman",Times,serif;
+font-size: 12pt;
+color: rgb(102, 102, 102);
+line-height: 1.1em;
+}
+/* drop menu */
+#dropImage{
+    float:left;
+    margin:5px;
+    -webkit-box-shadow: 
+        2px 2px 2px #A3A3A3;
+    -moz-box-shadow: 
+        2px 2px 2px #A3A3A3; 
+    box-shadow: 
+        2px 2px 2px #A3A3A3;
+}
+/* JS disabled styles */  
+.no-js nav li:hover ul { display:block; }  
+/* base nav styles */  
+nav { font-size:10pt; font-weight:bold;   }  
+nav ul { padding:0; margin:0; }  
+nav li { position:relative; float:left; list-style-type:none; }  
+nav ul:after { content:"."; height:0; clear:both; visibility:hidden; }  
+nav li a { border-left:0px solid #999; border-right:0px solid #222; color:#eee; text-decoration:none; }  
+nav li a:focus { outline:none; text-decoration:none; }  
+nav li:first-child a { border-left:none; }  
+nav li.last a { border-right:none; }  
+nav a span { display:block; float:right; margin-left:5px; }  
+nav ul ul { margin-left:5px; 
+            display:none;  
+            position:absolute; 
+            left:0; 
+            background:#000; 
+            color:#fff; 
+            width:230px; 
+            z-index:10;
+             
+
+}  
+nav ul ul li { float:none; margin-left:5px;}  
+nav ul ul a { border-left:none; border-right:none; font-size:9pt; display:block;}  
+nav ul ul a:hover { background-color:#555; } 
+
+
+.instagram-placeholder{
+    width:298px;
+    /*border: 2px solid black;*/
+    margin-bottom:5px;
+     box-shadow: 
+        0px 2px 2px 2px #A3A3A3;
+   
+}
+/* Kayes instagram stuff, on shopping page */
+.instagram-image{
+    width:248px;
+    margin-left:22px;
+    margin-top:10px;
+    border:4px solid black;
+}
+.caption{
+    width:280px;
+    height:60px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    margin-top:5px;
+    padding-bottom:5px;
+    clear: both;
+}
+.instaSocial iframe{
+    height:25px;
+    width:280px;
+    border:5px solid black;
+}
+.instaSocial{
+    margin-top:5px;
+    margin-left:3px;
+    visibility: visible;
+}
+.pintrestButton{
+    float:left;
+    margin-right:3px;
+}
+.pintrestButton img{
+    height:20px;
+}
+.tweetButton img{
+    height:20px;
+}
+.fb-like{
+    float:left;
+    margin-right:3px;
+}
+/*end instagram styles */
+
+/* pinterest stuff */
+.pinhover{
+    width:40px;
+    height:20px;
+    position:absolute;
+    top:0px;
+    
+    z-index: 200;
+    
+}
+.imgContainer{
+    
+   position:relative;
+    
+}
+
+#article iframe{
+    border:0;
+}
+
+.image-container1{
+    float:left;
+    margin-right:5px;
+}
+/* end penterest style*/
+
+/*popup styles */
+
+#popupWindow{
+    box-shadow: 
+        0px 2px 2px 2px #A3A3A3;
+    border-radius: 5px 5px 5px 5px;
+    padding:0px;
+}
+#popupWindow2{
+    box-shadow: 
+        0px 2px 2px 2px #A3A3A3;
+    border-radius: 5px 5px 5px 5px;
+    padding:0px;
+}
+#popupWindow3{
+    box-shadow: 
+        0px 2px 2px 2px #A3A3A3;
+    border-radius: 5px 5px 5px 5px;
+    padding:0px;
+}
+#popupWindow4{
+    box-shadow: 
+        0px 2px 2px 2px #A3A3A3;
+    border-radius: 5px 5px 5px 5px;
+    padding:0px;
+}
+
+.fbShare{
+   line-height:1.3em;
+   padding:0px;
+   margin:0px;
+   padding-right:2px;
+   width:49px;
+   float:left;
+   margin-right:5px;
+    border-radius: 5px 5px 5px 5px;
+        height:19px;
+}
+
+
+.sShare{
+    height:21px;
+    width:300px;
+}
+.sShare iframe{border:0;}
+
+/* Pencile Banner */
+.PencilBanner{
+    background-color:transparent; 
+    width:970px; height:24px; 
+    position:fixed; 
+    bottom:0px; 
+    z-index:1000;
+    
+}
+
+.most-viewed{
+    border:1px solid #EBEBEB;
+}
+.most-viewed h2{
+    color:transparent;
+    background-image: url('/images/elements/most-read.gif');
+}

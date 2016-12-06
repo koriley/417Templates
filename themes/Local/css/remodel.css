@@ -1,0 +1,76 @@
+/* 
+    Document   : remodel
+    Created on : Jun 4, 2013, 9:48:51 AM
+    Author     : koriley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face{
+    font-family:serfia;
+    src:url('http://417mag.com/fonts/Serifa_Bold_BT.ttf');
+}
+root { 
+    display: block;
+}
+.custAdSize{
+    background-color: transparent;
+}
+body{
+    background-color:#d4d1ca;
+}
+.shadow{
+    background-color:transparent;
+    box-shadow:0 0 0 0;
+}
+#mainContent{
+    width:970px;
+    margin:auto;
+    
+}
+
+.header{
+    width:970px;
+    margin-top:10px;
+    
+}
+.nav{
+    width:970px; height:50px;
+    
+    margin-top:10px;
+    margin-bottom:15px;
+}
+.nav img{
+    margin-left:2px;
+    
+}
+
+.leftContent{
+    float:left;
+    background-color:#fff;
+    width:637px;
+    padding:10px;
+    
+}
+
+.rightContent{
+    float:right;
+    background-color:#fff;
+    width:300px;
+}
+.fbcomments{
+    background-color:#fff;
+    width:657px;
+    margin-top:10px;
+    
+}
+#copyHead{
+    font-family:serfia;
+    color:#b42836;
+    font-size: 25px;
+    font-weight: bolder;
+}
+ a:link {color:#1a8686; text-decoration: none; }      /* unvisited link */
+ a:visited {color:#1a8686; text-decoration: none;}  /* visited link */
+ a:hover { color:#1a8686; text-decoration: none;  }  /* mouse over link */
+ a:active {color:#1a8686; }
+

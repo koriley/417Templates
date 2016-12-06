@@ -1,0 +1,61 @@
+/*** structure ***/
+
+#columns-1-2 {
+	float:right; 
+	display:inline;
+	width:643px;
+       border-right:0px;      
+	}
+	
+/* column 1 */
+
+#column-1 {
+	float:left;
+	width:315px;
+	display:inline;
+	border-right:0px;
+	background-color:#cbcbcb;
+	margin-left:5px;
+	padding: 0px;
+	text-align:center;
+	}
+
+/* column 2 */
+
+#column-2 {
+	float:left;
+	width:315px;
+	display:inline;
+	clear:both;     
+	background-color:#cbcbcb;  
+	text-align:center;
+	}
+	
+/* column 3 */
+
+#column-3 {
+	float:right;
+	width:315px;
+	display:inline;
+	margin-right:5px;
+	background-color:#cbcbcb; 
+	text-align:center;
+}
+	
+/* layout changes */
+#page-body{
+	background-color:#cbcbcb;
+	background-image: url('/images/elements/landing-bg2.jpg');
+	background repeat: repeat-y;	
+	padding-top:0px;
+}
+
+#subnav-container {
+	width:970px; 
+	background-color:#cbcbcb;
+	height:20px;
+	padding-bottom:7px;
+	border:0px;
+}
+
+

@@ -1,0 +1,80 @@
+/**
+ * The standard set of rivista less files that is loaded on each page load.
+ * 
+ * Note that some modules may load their own less files, separately
+ * from this base set, especially when the module allows selection of
+ * stylesheets from within the module definition in the admin interface.
+ * These less files will be compiled into the total set of styles after
+ * all of the includes in this file.
+ * 
+ * NOTE: custom_styles.less will be loaded after all other less files (see head.tpl)
+ * 
+ */
+ 
+/* Basic Bootstrap variable definitions */
+@import "../src/twitter-bootstrap-3b3dd3a/less/bootstrap.less";
+
+/* Overrides of standard bootstrap variables and defines for responsive.less */
+@import "rivista_variables.less";
+@import "custom_variables.less"; // blank include for customer overrides
+
+/* Bootstrap variable definitions for responsive designs */
+@import "../src/twitter-bootstrap-3b3dd3a/less/responsive.less";
+
+/* NOTE: these two files are re-included, as responsive.less reloads variables.less */
+/* Overrides of standard bootstrap variables */
+@import "rivista_variables.less";
+@import "custom_variables.less"; // blank include for customer overrides
+
+/* rivista variables */
+@import "rivista-defines.less";  /* commonly overridden style definitions for rivista */
+@import "custom-defines.less";  /* customer overrides of variables defined in rivista-defines.less */
+
+/* styles to support page and base module templates */
+@import "globals.less"; 			// globals
+@import "page.less"; 				// page templates
+@import "header.less";				// header and branding
+@import "footer.less";
+@import "navigation.less";			// header nav
+@import "modal.less";
+
+/* styles to support third-party packages */
+@import "datepicker.less";
+@import "timepicker.less";
+
+
+/* placeholder less file to separate stylesheet into two parts */
+@import "stylesheetdivider.less";
+
+/* module specific styles */
+@import "account.less";
+@import "ads.less";
+@import "articlelist.less";
+@import "articlearchive.less";
+@import "automaticmenu.less";
+@import "blogroll.less";
+@import "calendareditevent.less";
+@import "calendarviews.less";
+@import "cde.less";
+@import "comments.less";
+@import "fts_search.less";
+@import "fullpagearticleslideshow.less";
+@import "gallery.less";
+@import "geobasefilters.less";
+@import "issuearchive.less";
+@import "module.calendar.less";
+@import "multimodule.less";
+@import "populararticles.less";
+@import "related-articles.less";
+@import "recentcomments.less";
+@import "shadowbox-image.less";
+@import "starbox.less";
+@import "store.less";
+@import "survey.less";
+@import "tott-facebook.less";
+@import "tott-modules.less";
+@import "video.less";
+
+/* styles to support a responsive detection bar for debugging */
+@import "responsive-detection.less";
+

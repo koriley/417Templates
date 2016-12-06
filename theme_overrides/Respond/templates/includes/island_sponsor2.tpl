@@ -5,7 +5,7 @@
     {assign var='tagName' value='Best Of Article'}
     {assign var='tagSystemName' value='best-article'}        
 
-{elseif $Page->tags[49]<>'' || $article.tags[49]<>''}
+{elseif $Page->tags[40]<>'' || $article.tags[40]<>''}
     {assign var='tagname' value='Dininng'}
     {assign var='tagSystemName' value='dining'}
     {assign var='nav2' value='-on'}
@@ -62,8 +62,15 @@
         <!-- peoplePics_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                 var ad = "<div id='div-gpt-ad-1479474669376-98' >\n\
+                 /*var ad = "<div id='div-gpt-ad-1479474669376-98' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-98'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);*/
+                
+            </script>
+               <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
                 
@@ -101,14 +108,19 @@ var ad = "<div id='div-gpt-ad-1479474669376-81' >\n\
         <!-- peoplePics_leaderboard -->
         {literal}
             <script type='text/javascript'>
-               var ad = "<div id='div-gpt-ad-1479474669376-72' >\n\
+               /*var ad = "<div id='div-gpt-ad-1479474669376-72' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-72'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-                   // GA_googleFillSlot("healthIsland");
+                   // GA_googleFillSlot("healthIsland");*/
+                                       </script>
+                                         
+                                       <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
                 
-               
-
             </script>
         {/literal}
 
@@ -116,11 +128,18 @@ var ad = "<div id='div-gpt-ad-1479474669376-81' >\n\
         <!-- wheres417_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+           /*     var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-               // GA_googleFillSlot("wheres417_island");
+               // GA_googleFillSlot("wheres417_island");*/
+            </script>
+               <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
 
@@ -128,11 +147,18 @@ var ad = "<div id='div-gpt-ad-1479474669376-81' >\n\
         <!-- wheres417_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+                /*var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-               // GA_googleFillSlot("ettieEatsIsland");
+               // GA_googleFillSlot("ettieEatsIsland");*/
+            </script>
+               <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
 
@@ -141,55 +167,90 @@ var ad = "<div id='div-gpt-ad-1479474669376-81' >\n\
         <!-- 417_leaderBoard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+               /* var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-                //GA_googleFillSlot("417_island");
+                //GA_googleFillSlot("417_island");*/
+            </script>
+               <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
     {elseif $tagSystemName == "homepageSponsorship"}
         <!-- 417_leaderBoard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+          /*      var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-                /GA_googleFillSlot("417_island");
+                /GA_googleFillSlot("417_island");*/
+            </script>
+               <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
     {elseif $tagSystemName == "best-of"}
         <!-- best_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+               /* var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-                //GA_googleFillSlot("best_island");
+                //GA_googleFillSlot("best_island");*/
+            </script>
+              <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
     {elseif $tagSystemName == "calendar"}
         <!-- calendar_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
-            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
+              /*  var ad = "<div id='div-gpt-ad-1479474669376-36' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-36'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-               // GA_googleFillSlot("calendar_island");
+               // GA_googleFillSlot("calendar_island");*/
+            </script>
+              <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
     {elseif $tagSystemName == "shopping"}
         <!-- shopping_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+               /* var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-               // GA_googleFillSlot("shopping_island");
+               // GA_googleFillSlot("shopping_island");*/
+            </script>
+              <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
 
@@ -197,11 +258,18 @@ var ad = "<div id='div-gpt-ad-1479474669376-81' >\n\
         <!-- ec_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+                /*var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-                //GA_googleFillSlot("ec_island");
+                //GA_googleFillSlot("ec_island");*/
+            </script>
+              <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
     {elseif $publication.url=='/417-Home/'}
@@ -224,24 +292,39 @@ var ad = "<div id='div-gpt-ad-1479474669376-81' >\n\
                     jQuery(".islandSponsorship2").append(ad);
               //  GA_googleFillSlot("bestOfArticle_island");
             </script>
+             
+            <script type='text/javascript'>
+                 /* var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);*/
+                
+            </script>
         {/literal}
     {elseif $tagSystemName == "dining"}
         <!-- dining_leaderboard -->
         {literal}
             <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
+               /* var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
             <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
-               // GA_googleFillSlot("dining_island");
+               // GA_googleFillSlot("dining_island");*/
+            </script>
+              <script type='text/javascript'>
+                 var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
+                    ad += "/script></div>";
+                    jQuery(".islandSponsorship2").append(ad);
+                
             </script>
         {/literal}
      {elseif $tagSystemName == ""}
         <!-- 417_leaderBoard -->
         {literal}
            <script type='text/javascript'>
-                var ad = "<div id='div-gpt-ad-1479474669376-122' >\n\
-            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-122'); });<";
+                var ad = "<div id='div-gpt-ad-1479474669376-7' >\n\
+            <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1479474669376-7'); });<";
                     ad += "/script></div>";
                     jQuery(".islandSponsorship2").append(ad);
                 //GA_googleFillSlot("417_island");

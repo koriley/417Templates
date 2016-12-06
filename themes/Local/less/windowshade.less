@@ -1,0 +1,23 @@
+/* Styles associated wtih windowShade.js */
+#WINDOWSHADE_LESS-START {
+	content: "windowshade.less";
+}
+
+.window-shade {
+	.window-shade-icon {
+		background-image: url(@navbarIconsPath);
+		background-position: -30px -50px;
+		height: 10px;
+		width: 10px;
+		padding-right: 3px;
+		display: inline-block;
+	}
+	&.opened {
+		.window-shade-icon {
+			background-position: -30px -60px;
+		}	}
+}
+
+#WINDOWSHADE_LESS-END {
+	content: "windowshade.less";
+}

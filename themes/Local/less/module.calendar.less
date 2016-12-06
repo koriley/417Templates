@@ -1,0 +1,250 @@
+#MODAL_CALENDAR_LESS-START {
+	content: "modal.calendar.less";
+}
+
+.search-filter {
+	
+	.content {
+		padding-top:10px;
+	}
+	
+    .input-append .add-on {
+        vertical-align: top;
+    }
+    .input-append, .input-prepend {
+    	margin-bottom:0;
+	}
+    
+    form {
+       margin-bottom:0;
+    }
+    .control-group {
+    	padding-bottom:5px;
+    	border-bottom:@thinRuleVeryLight;
+    	.clearfix();
+    	> div {
+    		float:left;
+		}
+		.control-label {
+			width:25%;
+			label {
+				line-height:30px;
+			}
+		}
+		.controls {
+			width:75%;
+		}
+		select {
+			width:100%;
+			margin-bottom:0;
+		}
+	}
+	.controls {
+		.clearfix();
+		button[type=submit] {
+			float:right;
+		}
+	}
+
+}
+.calendar-links {
+	&.module {
+		padding-bottom:0;
+	}
+}
+.toolbar .toolbar .toolbar {
+    .btn
+}
+.toolbar #save {
+    .btn-primary
+}
+.toolbar .toolbar {
+    display: inline-block;
+}
+.calendar-sidebar ul {
+    list-style: none;
+}
+
+.calendar-results {
+	
+}
+
+//make datepicker "days" big enough to be usable touch targets on phone/tablets.
+.datepicker .day {
+    height: 34px;
+    width: 34px;
+}
+
+#event {
+//	display: table;
+	.control-group {
+//		display: table-row;
+		label,
+		div {
+//			display: table-cell;
+		}
+	}
+}
+
+
+@media (max-width: 480px) , (max-height: 480px) {
+    .modal {
+        z-index: 100000;
+        height: 100%;
+        width: 100%;
+        .border-radius(0);
+        box-shadow:none;
+        margin: 0;
+        .background-clip(0);
+        top: 0;
+        left: 0;
+        .modal-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            .btn { margin-right: 1em;}
+        }
+
+    }
+
+}
+
+//try to fit the modal datepicker on horizontal smartphones
+@media (max-height: 320px) {
+    .datepicker .day { padding: 2px; height: 30px;}
+    .modal-datepicker .modal-footer { display:none; }
+
+    .datepicker .dow { display: none;}
+
+}
+/* This is an irregular breakpoint, but my testing indicates it's about where x,having the
+    filter form as the right column starts to break down.
+*/
+/*
+@media (max-width: 850px) {
+    .calendar-sidebar {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+    .row-fluid .calendar-results, .row-fluid .calendar-detail {
+        width: 100%;
+    }
+}
+*/
+
+.bootstrap-timepicker.dropdown-menu.open {
+        position: absolute;
+}
+
+
+/* search results */
+.calendar-results, .calendar-detail {
+	h2 {
+		line-height:1em;
+	}
+	padding-right:1%;
+	border-right:@thinRuleLight;
+	.event-listing {
+		padding:10px 0;
+		border-bottom:@thinRuleLight;
+		&:first-child {
+			padding-top:0;
+		}
+		&:last-child {
+			border-bottom:0;
+			padding-bottom:0;
+		}
+		.event-date {
+			.delta();
+		}
+		.recurrence {
+			font-style:italic;
+			font-weight:bold;
+		}
+	}
+	.module {
+		&:last-child {
+			border-bottom:none;
+			padding-bottom:0;
+			margin-bottom:0;
+		}
+	}
+	.pagination {
+		border-top:@thinRuleVeryLight;
+		border-bottom:@thinRuleVeryLight;
+		padding:10px 0;
+		&:last-child {
+			margin-bottom:0;
+		}
+	}
+}
+
+
+
+.calendar-detail {
+	.calendar-body {
+		.event {
+			h2 {
+				
+			}
+			h3 {
+				border-bottom:@thinRuleLight;
+			}
+			.event-description {
+				
+				.clearfix();
+				.thumbnail {
+					overflow:hidden;
+					margin:0 0 5px 0;
+					p {
+						margin:5px 0;
+						font-weight:bold;
+						line-height:normal;
+						max-width:100%;
+					}
+					&.floated {
+						float:left;
+						margin:0 15px 5px 0;
+					}
+				}
+			}
+			.event-location {
+				.btn {
+					float:right;
+				}
+			}
+			p.subcontent {
+				margin-top:15px;
+				border-top:@thinRuleLight;
+				padding-top:15px;
+				font-style:italic;
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width:979px) {
+	.row-fluid .calendar-detail, .row-fluid .calendar-results {
+		width:59%;
+	}
+	.row-fluid .calendar-sidebar {
+		margin-left:1%;
+		width:40%;
+	}
+}
+
+@media (max-width: 767px) {
+	.calendar-results, .calendar-detail {
+		padding-right:0;
+		border-right:none;
+	}
+	#calendar-search {
+		form {
+			padding:10px 0;
+		}
+	}
+}
+
+#MODAL_CALENDAR_LESS-START {
+	content: "modal.calendar.less";
+}

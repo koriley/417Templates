@@ -1,0 +1,135 @@
+/**
+ * Place all common less definitions and includes here for rivista-specific
+ * style definitions.  This is mostly used to define appearance variables
+ * that we might expect to be overridden by the customer.
+ * 
+ *  This included overrides for commonly changed variables such as:
+ * 		font
+ * 		border
+ * 		border-radius
+ * 		color
+ * 		background-color
+ * 		opacity
+ * 
+ *  *  The customer can change these values by localizing custom-defines.less.
+ * 
+ */
+
+
+/* GLOBAL DEFINES - START */
+/* 
+ * These are defines that may be used by other -defines.less files
+ * and therefore, must come before those files are included.
+ * 
+ * These also include defines that may be used by many regular
+ * .less files.
+ * 
+ */
+ 
+// Define header relationship styles, based on style definitions in type.less
+.alpha {h1}
+.beta {h2}
+.gamma {h3}
+.delta {h4}
+.epsilon {h5}
+.zeta {h6}
+
+// brand color
+@primaryBrandHue: 0;
+@primaryBrandSaturation: 0%;
+@primaryBrandLightness: 50%;
+@primaryBrandColor: hsl(@primaryBrandHue,@primaryBrandSaturation,@primaryBrandLightness);
+
+@secondaryBrandHue: 0;
+@secondaryBrandSaturation: 0%;
+@secondaryBrandLightness: 50%;
+@secondaryBrandColor: hsl(@secondaryBrandHue,@secondaryBrandSaturation,@secondaryBrandLightness);
+
+@linkColor:	darken(@primaryBrandColor,20%);
+
+// respond navbar icons
+@navbarIconsPath: "/core/media/themes/Respond/images/respond-icons.png";
+
+// standard calculated values
+@standardButtonHeight: 30px;	// total height of a standard button
+
+// rules
+@heavyRule: solid 4px;
+@mediumRule: solid 2px;
+@thinRule: solid 1px;
+@ruleColor: #808080;
+
+@heavyRuleNormal: @heavyRule @ruleColor;
+@heavyRuleDark: @heavyRule darken(@ruleColor,15%);
+@heavyRuleVeryDark: @heavyRule darken(@ruleColor,30%);
+@heavyRuleLight: @heavyRule lighten(@ruleColor,15%);
+@heavyRuleVeryLight: @heavyRule lighten(@ruleColor,30%);
+@heavyRuleWhite: @heavyRule @white;
+@heavyRuleBlack: @heavyRule @black;
+
+@mediumRuleNormal: @mediumRule @ruleColor;
+@mediumRuleDark: @mediumRule darken(@ruleColor,10%);
+@mediumRuleVeryDark: @mediumRule darken(@ruleColor,30%);
+@mediumRuleLight: @mediumRule lighten(@ruleColor,15%);
+@mediumRuleVeryLight: @mediumRule lighten(@ruleColor,30%);
+@mediumRuleWhite: @mediumRule @white;
+@mediumRuleBlack: @mediumRule @black;
+
+@thinRuleNormal: @thinRule @ruleColor;
+@thinRuleDark: @thinRule darken(@ruleColor,15%);
+@thinRuleVeryDark: @thinRule darken(@ruleColor,30%);
+@thinRuleLight: @thinRule lighten(@ruleColor,15%);
+@thinRuleVeryLight: @thinRule lighten(@ruleColor,30%);
+@thinRuleVeryVeryLight: @thinRule lighten(@ruleColor,35%);
+@thinRuleWhite: @thinRule @white;
+@thinRuleBlack: @thinRule @black;
+
+// modules
+@moduleBackground: hsl(@secondaryBrandHue,@secondaryBrandSaturation,100%);
+@moduleBorderRadius: 0px;
+@moduleTopBorder:none;
+@moduleRightBorder:none;
+@moduleBottomBorder:@thinRuleLight;
+@moduleLeftBorder:none;
+@moduleBoxShadow: none;
+@moduleBottomMargin: @baseLineHeight/2;
+@modulePadding:0 0 (@baseLineHeight/2) 0;
+@moduleHeaderColor: @headingsColor;
+@moduleHeaderFontSize: 180%;
+@moduleHeaderMargin: 0 0 .75em 0;
+@moduleHeaderLineHeight: 1em;
+@moduleHeaderFont: @headingsFontFamily;
+@moduleFontWeight: @headingsFontWeight;
+@moduleHeaderBottomBorder: none;
+
+/* GLOBAL DEFINES - END */
+
+
+/* Defines for individual less files. */
+@import "defines-includes/account-defines.less";
+@import "defines-includes/ads-defines.less";
+@import "defines-includes/articlearchive-defines.less";
+@import "defines-includes/articlelist-defines.less";
+@import "defines-includes/blogroll-defines.less";
+@import "defines-includes/calendarviews-defines.less";
+@import "defines-includes/carousel-defines.less";
+@import "defines-includes/comments-defines.less";
+@import "defines-includes/datepicker-defines.less";
+@import "defines-includes/feedreader-defines.less";
+@import "defines-includes/footer-defines.less";
+@import "defines-includes/fts-search-defines.less";
+@import "defines-includes/gallery-defines.less";
+@import "defines-includes/geobase-defines.less";
+@import "defines-includes/geobasefilters-defines.less";
+@import "defines-includes/globals-defines.less";
+@import "defines-includes/header-defines.less";
+@import "defines-includes/issuearchive-defines.less";
+@import "defines-includes/multimodule-defines.less";
+@import "defines-includes/navigation-defines.less";
+@import "defines-includes/page-defines.less";
+@import "defines-includes/sg-defines.less";
+@import "defines-includes/starbox-defines.less";
+@import "defines-includes/store-defines.less";
+@import "defines-includes/timepicker-defines.less";
+@import "defines-includes/video-defines.less";
+@import "defines-includes/survey-defines.less";

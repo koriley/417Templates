@@ -1,0 +1,59 @@
+/*** structure ***/
+
+#columns-1-2 {
+	float:right; 
+	display:inline;
+	width:780px;
+       border-right:0px;
+      
+	}
+	
+/* column 1 */
+
+#column-1 {
+	float:left;
+	width:170px;
+	display:inline;
+	border-right:0px;
+	background-color:#fff;
+	margin-left:5px;
+	padding: 0px 5px;
+	}
+
+/* column 2 */
+
+#column-2 {
+	float:left;
+	width:458px;
+	display:inline;
+	border: 1px solid #b9b9b9;
+	clear:both;     
+	background-color:#fff;  
+	}
+	
+/* column 3 */
+
+#column-3 {
+	float:right;
+	width:310px;
+	display:inline;
+	margin-right:5px;
+}
+	
+/* layout changes */
+#page-body{
+	background-color:#cbcbcb;
+	background-image: url('/images/elements/landing-bg.jpg');
+	background repeat: repeat-y;	
+	padding-top:0px;
+}
+
+#subnav-container {
+	width:970px; 
+	background-color:#cbcbcb;
+	height:20px;
+	padding-bottom:7px;
+	border:0px;
+}
+
+

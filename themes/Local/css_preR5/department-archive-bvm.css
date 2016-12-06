@@ -1,0 +1,33 @@
+/* CSS Document */
+
+#columns-1-2 {
+	background:#fff;
+	padding:0px;
+	width:600px;
+	display:inline;
+	margin-bottom:0px;
+	}
+	
+#column-1 {
+	padding:10px;
+	width:600px;
+	display:inline;
+	}
+
+#column-3 {
+	padding:10px;
+	width:315px;
+	display:inline;
+	}
+h6.large, h6.large a {
+	font-size:14pt;
+	margin:0;
+	padding:0;
+	color: #626262;	
+	text-transform:uppercase;
+}
+
+.large a:hover {
+	text-decoration:none;
+	color:#000;
+	}

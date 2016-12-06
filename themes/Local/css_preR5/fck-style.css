@@ -1,0 +1,8 @@
+@import "/css/417-2010.css";
+@import "/css/style.css";
+@import "/core/media/css/fck-addons.css";
+
+body {
+	margin:15px;
+	background-color:#fff;
+	}

@@ -1,0 +1,137 @@
+
+
+/* photoFader menu */
+
+form.photoFader {
+	
+	}
+
+.photoFader-gallery {
+	min-height:259px;
+	position:relative;
+	background:#fff;
+	margin-bottom:5px;
+	}
+	
+* html .photoFader-gallery {
+	height:259px;
+	}
+
+.photoFaderMenu {
+	margin-left:417px;
+	padding-bottom:36px;
+	width:207px;
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	position:relative;
+	line-height:18px;
+	display:none;
+}
+
+.photoFaderMenu div, #photoFaderMenu div.unselected {
+	padding:0 0 0 19px;
+	text-align:left;
+	border:none;
+	color:#5b4d3e;
+}
+
+.photoFaderMenu div.selected, .photoFaderMenu div.selected:hover {
+	background:url(/images/photoFader_bullet.gif) left center no-repeat;
+}
+
+.photoFaderMenu div:hover {
+	background:url(/images/photoFader_bullet-gray.gif) left center no-repeat;
+}
+
+.photoFaderMenu div a, .photoFaderMenu div a.unselected {
+	display:block;
+	padding:8px 0;
+	text-decoration:none;
+	color:#727270;
+	background-color:#fff;
+	border-bottom:solid 1px #dbdbdb;
+}
+
+.photoFaderMenu div:first-child a {
+	border-top:solid 1px #dbdbdb;
+	}
+	
+.photoFaderMenu div a:active, .photoFaderMenu div a:focus, .photoFaderMenu div a.selected, .photoFaderMenu div a.selected:hover {
+	text-decoration:none;
+	color:#893126;
+	outline:none;
+	}
+	
+.photoFaderMenu div a:hover {
+	text-decoration:none;
+	color:#727270;
+	background-color:#fff;
+	}
+
+.photoFader-contentcontainer{
+	/* height:266px; */
+}
+
+.photoFader-contentcontainer div.photo {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	height:250px;
+	}
+	
+.photoFader-contentcontainer div p{
+	margin-top:10px;
+	}
+	
+.photoFader-contentcontainer a {
+	color:#000;
+	}
+
+.photoFader-contentcontainer div#item1 {
+	display:inline;
+}
+
+.photoFader-gallery .controls {
+	position:absolute;
+	top:18px;
+	right:16px;
+	}
+	
+.photoFader-gallery .controls a {
+	display:block;
+	text-align:center;
+	line-height:26px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#b1b1b1;
+	outline:none;
+	background:#fff;
+	border:solid 1px #b1b1b1;
+	}
+	
+.photoFader-gallery .controls a:hover {
+	text-decoration:none;
+	background:#f5f5f5;
+	color:#000;
+	border:solid 1px #000;
+}
+
+
+
+.photoFader-gallery .controls .previous {
+	width:36px;
+	height:26px;
+	margin-right:3px;
+	}
+	
+.photoFader-gallery .controls .next {
+	width:36px;
+	height:26px;
+	}
+	
+.photoFader-gallery .controls .play {
+	width:60px;
+	height:26px;
+	margin-right:3px;
+	}

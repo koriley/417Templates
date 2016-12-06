@@ -1,0 +1,39 @@
+#MODAL_LESS-START {
+	content: "modal.less";
+}
+
+.modal {
+	&.fullscreen {
+        height: 100%;
+        width: 100%;
+        .border-radius(0);
+        .box-shadow(0);
+        margin: 0;
+        .background-clip(0);
+        top: 0;
+        left: 0;
+        .modal-footer {
+        	position: fixed;
+       		bottom: 0;
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.modal-header {
+			padding-right:60px;
+			.close {
+				margin:0;
+				position:absolute;
+				top:0;
+				right:0;
+				padding:12px 20px 18px 20px;
+				max-height:48px;
+				.box-sizing(border-box);
+			}
+		}
+    }
+}
+
+#MODAL_LESS-END {
+	content: "modal.less";
+}

@@ -12,6 +12,7 @@
         {include file="biz417Top.tpl"}
         <div id="articleContainer" class="page-container container-fluid">
             {include file="breadcrumb.tpl"}
+            {loadModules position="top"}
             <div class="row-fluid">
                 <div class="columns-container two-columns">
                     <div class="column-middle respond-container span8">

@@ -1,0 +1,247 @@
+/** 
+ *	Calendar Edit Event templates
+ * 
+ * 
+ */
+
+#CALENDAREDITEVENT_LESS-START {
+	content: "calendareditevent.less";
+}
+
+form#event {
+	.calendar-title {
+		h3.controls {
+			margin-top: 0px;
+			padding-top: 0px;
+			line-height: 40px;
+		}
+		label.control-label {
+			line-height: 40px;	// line-height of h3.controls tag
+			padding: 0px;
+		}
+	}
+	.control-group {
+		.controls {
+			#cke_ops_calendarevent_description {
+				width: 310px;
+			}
+			padding-top: 5px;
+			.input-grouping {
+				display: inline-block;
+				&:last-child {
+					label {
+						padding-right: 0px;
+					}
+				}
+			}
+			input[type=radio],
+			input[type=checkbox] {
+				display: inline-block;
+				margin: 0px;
+			}
+			label.checkbox {
+				display: inline-block;
+				padding-left: 6px;
+				padding-right: 16px;
+			}
+			label.radio {
+				display: inline-block;
+				padding-left: 0px;
+				padding-right: 16px;
+			}
+		}
+
+		#recurringdiv,
+		#dailydiv,
+		#weeklydiv,
+		#monthlydiv,
+		#yearlydiv {
+			padding-left: 20px;
+			input {
+				width: auto;
+			}
+			input[type="text"] {
+				margin-left: 5px;
+				width: 25px;
+			}
+			select {
+				margin-left: 5px;
+				width: auto;
+			}
+			.row-entry {
+				margin-bottom: 10px;
+				.input-grouping {
+					padding-bottom: 5px;
+				}
+			}
+			.input-grouping {
+				label {
+					padding-right: 0px;
+				}
+			}
+		}
+		#recurringdiv {
+			.controls.recurring-selection{
+				.input-grouping {
+					padding-left: 15px;
+					&:first-child {
+						padding-left: 0px;
+					}
+				}
+			}
+		}
+		#dailydiv {
+			.input-grouping {
+				display: block;
+			}
+		}
+		#weeklydiv {
+			.row-entry.weeklydays {
+				.input-grouping {
+					padding-left: 15px;
+				}
+			}
+		}
+		#monthlydiv {
+			.row-entry {
+				&.monthly_recurnday {
+					div {
+						display: inline-block;
+						padding-left: 20px;
+					}
+					.input-grouping {
+						padding-left: 15px;
+						&:first-child {
+							padding-left: 0px;
+						}
+					}
+				}
+				&.monthly_weekdays,
+				&.monthly_months {
+					.input-grouping {
+						padding-left: 15px;
+					}
+				}
+			}
+			p {
+				padding-left: 10px;
+			}
+		}
+		#yearlydiv {
+		}
+	}
+}
+
+.calendar-custom-fields {
+	display: table;
+	.calendar-custom-admin-start {
+		display: table-cell;
+		height: 1px; 
+		text-align: right; 
+		white-space: nowrap;
+	}
+	.calendar-custom-admin-end {
+		display: table-cell; 
+		vertical-align: top;
+	}
+	.calendar-custom-frmLabel {
+		display: table-cell;
+		width: 110px;
+		white-space: nowrap;
+	}
+	calendar-custom-frmData {
+		display: table-cell; 
+		vertical-align: top;
+	}
+	
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	form#event {
+		.control-group {
+			.control-label {
+				width: 100px;
+			}
+			.controls {
+				margin-left: 115px;
+			}
+		}
+	}
+}
+
+/* non-standard size; tighten recurring input fields */
+@media (max-width: 640px) {
+	form#event {
+		.control-group {
+			#dailydiv {
+				.input-group {
+					display: block;
+				}
+			}
+			#yearlydiv {
+				.input-group {
+					display: block;
+					margin-left: 30px;
+					margin-bottom: 5px;
+					&:first-child {
+						margin-left: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	form#event {
+		.control-group {
+			.controls {
+				#cke_ops_calendarevent_description {
+					width: 280px;
+				}
+			}
+			.controls.recurrence {
+				padding-left: 15px;
+			}
+			#recurringdiv {
+				padding-left: 35px;
+			}
+			&.calendarevent_categoryids {
+				.controls {
+					div {
+						padding-left: 10px;
+						.input-grouping {
+							display: block;
+						}
+					}
+				}
+			}
+			&
+		}
+	}
+}
+
+/* non-standard size; tighten things up just a little more */
+@media (max-width: 380px) {
+	form#event {
+		.control-group {
+			.controls {
+				#cke_ops_calendarevent_description {
+					padding: 0px;
+				}
+			}
+			#recurringdiv {
+				.controls.recurring-selection {
+					.radio {
+//						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+#CALENDAREDITEVENT_LESS-END {
+	content: "calendareditevent.less";
+}
+

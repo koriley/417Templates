@@ -1,0 +1,33 @@
+/* gallery styles */
+
+#gallery {
+	width:100%;
+	border-collapse:collapse;
+	margin-right:20px;
+	}
+	
+#gallery td.image {
+	border:solid 5px #fff;
+	padding:10px;
+	background-color: #efefef;
+	text-align:center;
+	width:50%;
+	vertical-align:top;
+	}
+	
+#gallery td.gallery-pager {
+	text-align:center;
+	}
+	
+#gallery td.image:hover {
+	background-color: #dedede;
+	}
+	
+#gallery .image-title {
+	font-weight:bold;
+	margin-top:5px;
+	}
+	
+#gallery .description {
+	margin-top:5px;
+	}

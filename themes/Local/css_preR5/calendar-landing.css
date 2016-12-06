@@ -1,0 +1,44 @@
+/*** structure ***/
+
+#columns-1-2 {
+     
+	}
+	
+/* column 1 */
+
+#column-1 {
+
+	}
+
+/* column 2 */
+
+#column-2 {
+	width:357px;
+	margin: 0px 5px;
+	}
+	
+/* column 3 */
+
+#column-3 {
+	display:inline;
+}
+	
+/* layout changes */
+#page-body{
+	background-color:#cbcbcb;	
+	padding-top:0px;
+}
+
+#subnav-container {
+	width:970px; 
+	background-color:#cbcbcb;
+	height:20px;
+	padding-bottom:7px;
+	border:0px;
+}
+
+a {
+	color: #6b6b6b;
+	text-decoration: none; 
+   
+}

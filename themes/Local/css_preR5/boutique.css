@@ -1,0 +1,229 @@
+/* 
+    Document   : boutique
+    Created on : Aug 15, 2012, 11:46:33 AM
+    Author     : Kevin O'Riley'
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+    background-color:#f2f2f2;
+}
+.module-left{
+    
+     position:relative;
+     z-index:5;
+     margin-top:10px;
+     background-color:#fff;
+}
+
+.rightSide{
+    
+     width:300px;
+     
+     margin-left:auto !important;
+}
+
+.module-right{
+    
+     position:relative;
+     z-index:5;
+     margin-top:10px;
+     background-color:#fff;
+}
+
+.terms{
+   margin-bottom:5px;
+  width:340px;
+  border:0;
+height: 130px;
+background-color:#D6D6D6;
+padding-left:15px;
+/*font-family:"Times New Roman",Times,serif;
+font-style:italic;*/
+
+overflow-x:auto;
+    
+}
+
+.tabBar{
+    margin-top:5px;
+    
+    
+}
+
+.header{
+    margin-top:10px;
+}
+#page-container {
+	width:970px;
+	margin:auto;
+        
+	}
+        
+ .left-side{
+    width:353px;
+    float:left;
+    margin-top:10px;
+}
+
+.right-side{
+    width:577px;
+    float:right;
+    background-color:#fff;
+    color:#000;
+    margin-top:10px;
+    padding-left:10px;
+    margin-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    
+}
+
+.savingsPass{
+    width:353px;
+    
+}
+
+.submit{
+    border:0;
+    background-color:transparent;
+    background-image:url('/images/boutiqueWeek/2012/submit.gif');
+    background-repeat: no-repeat;
+    width:352px;
+    height:53px;
+    cursor: pointer;
+}
+
+.signHeader1{
+    background-image:url('/images/boutiqueWeek/2013/Sign-up-header-1_BEFORE.gif');
+    background-repeat:no-repeat;
+    width:353px;
+    height:176px; 
+    cursor: pointer;
+    
+}
+.signHeader2{
+    background-image:url('/images/boutiqueWeek/2013/Sign-up-header-2_BEFORE.gif');
+    background-repeat:no-repeat;
+    width:353px;
+    height:176px;
+    cursor:pointer;
+    
+}
+.shopTalk1{
+    background-image:url('/images/boutiqueWeek/2012/shop-talk-1.gif');
+    background-repeat:no-repeat;
+    width:352px;
+    height:86px; 
+    cursor: pointer;
+    
+}
+
+.shopTalk2{
+    background-image:url('/images/boutiqueWeek/2012/shop-talk-2.gif');
+    background-repeat:no-repeat;
+    width:352px;
+    height:86px; 
+    cursor: pointer;
+    
+}
+.pink{
+  margin-bottom:5px;
+  width:75px;
+  border:0;
+height: 40px;
+background-color:#F3A1B8;
+padding-left:15px;
+padding-top:15px;
+/*font-family:"Times New Roman",Times,serif;
+font-style:italic;*/
+font-weight:bold;
+float:left;
+}
+.grey{
+    background-color:#D6D6D6;
+    margin-bottom:5px;
+  width:250px;
+  border:0;
+height: 53px;
+float:left;
+padding-left:15px;
+/*font-family:"Times New Roman",Times,serif;
+font-style:italic;*/
+font-weight:bold;
+}
+
+.pinkBox{
+    margin-bottom:5px;
+  
+background-color:#F3A1B8;
+padding:15px;
+/*font-family:"Times New Roman",Times,serif;
+font-style:italic;*/
+font-weight:bold;
+    
+}
+
+.home{
+    background-image:url('/images/boutiqueWeek/2012/tab-home.gif');
+    background-repeat:no-repeat;
+    width:170px;
+    height:54px;
+}
+
+.home:hover{
+    background-image:url('/images/boutiqueWeek/2012/tab-home-shadow.png');
+    background-repeat:no-repeat;
+}
+.events{
+    background-image:url('/images/boutiqueWeek/2012/tab-events.gif');
+    background-repeat:no-repeat;
+    width:196px;
+    height:54px;
+}
+
+.events:hover{
+    background-image:url('/images/boutiqueWeek/2012/tab-events-shadow.png');
+    background-repeat:no-repeat;
+}
+.map{
+    background-image:url('/images/boutiqueWeek/2012/tab-map.gif');
+    background-repeat:no-repeat;
+    width:143px;
+    height:54px;
+}
+
+.map:hover{
+    background-image:url('/images/boutiqueWeek/2012/tab-map-shadow.png');
+    background-repeat:no-repeat;
+}
+.giveaway{
+    background-image:url('/images/boutiqueWeek/2012/tab-giveaway.gif');
+    background-repeat:no-repeat;
+    width:450px;
+    height:54px;
+}
+
+.giveaway:hover{
+    background-image:url('/images/boutiqueWeek/2012/tab-giveaway-shadow.png');
+    background-repeat:no-repeat;
+}
+
+#footer{
+ background-color:#9E1F64;
+}
+
+.fbcomments{
+
+    width:567px;
+    float:right;
+    background-color:#fff;
+    color:#000;
+    margin-top:10px;
+    padding-left:10px;
+    margin-left:20px;
+    padding-right:10px;
+    padding-top:10px;
+    
+
+}

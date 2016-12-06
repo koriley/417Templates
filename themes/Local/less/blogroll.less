@@ -1,0 +1,139 @@
+/** 
+ *	Blog Rolls
+ * 
+ * Styles for blog rolls.  Currently including the following templates:
+ * 		module.publicationblog.blogrollfixed.tpl
+ * 		module.publicationblog.blogrollrotating.tpl
+ * 		module.publicationblog.blogrollsingle.tpl
+ * 
+ */
+
+#BLOGROLL_LESS-START {
+	content: "blogroll.less";
+}
+
+
+// put the blog header in global scope, so it can be accessed by any template.
+.blog-header {
+		margin-bottom:25px;
+	
+		h3.blog-title {
+			position: relative;
+			line-height:1.1em;
+			margin:0;
+			text-align: @blogRollBlogTitleTextAlign;
+	
+			hr.background-line {
+				position: absolute;
+				margin: 0px;
+				padding: 0px;
+				border-bottom: @blogRollBlogTitleBackgroundLineBorderBottom;
+				border-top: @blogRollBlogTitleBackgroundLineBorderTop;
+				width: 100%;
+				left: 0px;
+				top: 50%;
+			}
+	
+			a {
+				position: relative;
+				display: inline-block;
+				background: @moduleBackground;
+				padding: 0 15px;
+				margin: 0 15px;
+			}
+	
+			&.blog-title-text {
+				padding: 0px;
+				font-size: @blogRollHeaderTitleFontSize;
+				line-height: @blogRollBlogTitleTitleTextLineHeight;
+				text-align: @blogRollBlogTitleTitleTextTextAlign;
+				a {
+					color: @blogRollBlogTitleTitleTextAColor;
+				}
+				a:hover {
+					color: @blogRollBlogTitleTitleTextAHoverColor;
+					text-decoration: @blogRollBlogTitleTitleTextAHoverTextDecoration;
+					}
+			}
+	
+			&.blog-title-image {
+			}
+		}
+
+		h6 {
+			text-align: @blogRollH6TextAlign;
+			line-height: @blogRollH6LineHeight;
+			margin-top:0.5em;
+			color: @blogRollH6Color;
+		}
+}
+
+.blog-roll {
+	
+	h2 {
+		padding-bottom: 10px;
+		border-bottom: @blogRollH2BorderBottom;
+		margin-bottom: 10px;
+	}
+	
+	.blog-entry {
+		.clearfix();
+		margin-top:10px;
+		border-bottom: @blogRollBlogEntryBorderBottom;
+	
+		h3 {
+			line-height: @blogRollBlogEntryH3LineHeight;
+			margin-bottom: 0.25em;
+			margin-top:0;
+			font-size:@articleListTitleSize;
+		}
+	
+		.btn {
+		}
+
+		a img {
+			width: 30%;
+		}
+	
+		.article-item {
+			.article-image {
+				float: left;
+				min-width: 30px;
+				padding-right: 10px;
+			}
+			.article-image img {
+				width: 100%;
+			}
+			.article-content h3.article-title {
+				.gamma;
+				line-height: @blogRollBlogEntryArticleContentArticleTitleLineHeight;
+				margin-bottom: 0.25em !important;
+			}
+		}
+	}
+	
+	.blog-entry:last-child {
+		border-bottom: @blogRollBlogEntryLastChildBorderBottom;
+	}
+
+	&.single .blog-entry .posted {
+		display: none;
+	}
+	
+	&.rotating .blog-entry {
+		border-bottom: @blogRollRotatingBlogEntryBorderBottom;
+	}
+	
+	.blog-block {
+		margin-bottom:1.5em;
+		}
+	.blog-block:last-child {
+		margin-bottom:0;
+		}
+
+}
+
+
+#BLOGROLL_LESS-END {
+	content: "blogroll.less";
+}

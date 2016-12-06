@@ -1,0 +1,46 @@
+
+	
+/*** structure ***/
+
+#columns-1-2 {
+	float:left;
+	display:inline;
+	width:815px;
+	}
+	
+
+
+/* column 1 */
+
+#column-1 {
+	float:left;
+	width:484px;
+	display:inline;
+	border-right:1px dotted #000;
+	}
+
+
+/* column 2 */
+
+#column-2 {
+	float:right;
+	width:320px;
+	display:inline;
+	border-left:none;
+	margin: 10px 5px;
+	}
+	
+/* column 3 */
+
+#column-3 {
+	float:left;
+	width:180px;
+	display:inline;
+	margin:0px;
+}
+	
+#column-all{
+        float:left;
+        width:984px;
+        display:inline;
+}

@@ -1,0 +1,145 @@
+#customdata {
+	margin:0;
+	}
+
+#customdata-search {
+	background-color:#ddd;
+	width:100%;
+	}
+
+#customdata-search .cell {
+	margin:5px;
+	}
+
+#customdata-search-table {
+	margin:0px 0px 10px 0px;
+	}
+
+#customdata-search-table .header {
+	background-color:#3399CC;
+	color:#fff;
+	font-weight:bold;
+	}
+	
+#customdata-search-table a.sort {
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#customdatas-search-table a.sort:link {
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#customdata-search-table a.sort:hover {
+	color:#fff;
+	}
+
+#customdata-search-table .rowA {
+	background-color:#fff;
+	}
+
+#customdata-search-table .rowB {
+	background-color:#ddd;
+	}
+	
+#customdata-search-table .city {
+	border-left:solid 1px #fff;
+	border-right:solid 1px #fff;
+	}
+
+#customdata-search-table .customdata-name {
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+
+#customdata-footer {
+	margin:0;
+	width:100%;
+	}
+
+#customdata-footer h4 {
+	font-weight:bold;
+	font-size:11pt;
+	}
+
+#customdata-footer a {
+	padding:3px;
+	background-color:#f5f5f5;
+	margin-bottom:1px;
+	width:100%;
+	float:left;
+	clear:both;
+	margin-left:0px;
+	margin-right:0px;
+	}
+	
+#customdata-footer a:link {
+	background-color:#f5f5f5;
+	width:100%;
+	float:left;
+	clear:both;
+	margin-left:0px;
+	margin-right:0px;
+	}
+	
+#customdata-footer a:visited {
+	background-color:#f5f5f5;
+	}
+
+#customdata-footer a:hover {
+	background-color:#3399CC;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#customdata-footer a:active {
+	background-color:#3399CC;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#customdata-details {
+	float:left;
+	}
+	
+#customdata-details .rule {
+	background-color:#fff;
+	}
+	
+#customdata-details h2 {
+	font-size:16pt;
+	color:#000;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin:15px;
+	}
+#customdata-tab .tab-left {
+	background-image:url(/media/images/tab-left.gif);
+	}
+#customdata-tab .tab-right {
+	background-image:url(/media/images/tab-right.gif);
+	}
+#customdata-tab .tab-center {
+	background-color:#F2F0E6;
+	}
+#customdata-details .listing-info {
+	background-color:#F2F0E6;
+	float:left;
+	padding:15px;
+	}
+	
+#customdata-details-table {
+	margin-top:10px;
+	}
+#customdata-details-table .data {
+	padding:5px;
+	}
+#customdata-details-table td.data-title {
+	text-align:right;
+	font-weight:bold;
+	padding:5px;
+	width:120px;
+	}
+#database-details-table .rule {
+	background-color:#fff;
+	}

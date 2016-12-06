@@ -1,0 +1,494 @@
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+
+#GALLERY_LESS-START {
+	content: "gallery.less"
+}
+
+
+/****************************************/
+/***** Lightbox Gallery Definitions *****/
+/****************************************/
+
+
+.lightbox-gallery {
+	> .lightbox_gallery {
+		.gallery-pager {
+			text-align:center;
+		}
+		> .thumbnails {
+			> .row-fluid {
+				border-bottom:none;
+				padding-bottom:0;
+				margin-bottom:15px;
+				&:last-child {
+					margin-bottom:0;
+				}
+				> div {
+					width:49.5%;
+					margin-left:1%;
+					&:first-child {
+						margin-left:0;
+					}
+					> .row-fluid {
+						border-bottom:none;
+						padding-bottom:0;
+						margin-bottom:0;
+						> .image {
+							width:30%;
+							margin-left:4%;
+							&:first-child {
+								margin-left:0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.lightbox-gallery {
+		> .lightbox_gallery {
+			.gallery-pager {
+				text-align:center;
+			}
+			> .thumbnails {
+				> .row-fluid {
+					border-bottom:none;
+					padding-bottom:0;
+					margin-bottom:15px;
+					&:last-child {
+						margin-bottom:0;
+					}
+					> div {
+						width:49.5%;
+						margin-left:1%;
+						&:first-child {
+							margin-left:0;
+						}
+						> .row-fluid {
+							border-bottom:none;
+							padding-bottom:0;
+							margin-bottom:0;
+							> .image {
+								width:30%;
+								margin-left:4%;
+								&:first-child {
+									margin-left:0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+@media (max-width: 767px) {
+	.lightbox-gallery {
+		.lightbox_gallery {
+			.thumbnails {
+				.row-fluid {
+					margin-bottom:0;
+					> div {
+						width:100%;
+						margin-left:0;
+						float:none;
+						.row-fluid {
+							&:first-child {
+								margin-bottom:15px;
+							}
+							.image {
+								float:left;
+								margin-left:2%;
+								width:32%;
+								&:first-child {
+									margin-left:0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/****************************************/
+/***** Lightbox Display Definitions *****/
+/****************************************/
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10010;
+	width: 100%;
+	height: 100%;
+}
+
+#jquery-lightbox-background {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	z-index: 10011;
+	left: 0px;
+	top: 0px;
+}
+
+#jquery-lightbox {
+	position: relative;
+	text-align: center;
+	line-height: 1.4em;
+	margin: 0px auto;
+	background-color: @jqueryLightboxBackgroundColor;
+	font-size: 13px;
+	.border-radius(@jqueryLightboxBorderRadius);
+}
+
+@media (max-width: 480px) {
+	#jquery-lightbox {
+		.border-radius(0);
+	}
+}
+
+
+/**************************************/
+/***** Lightbox Image Definitions *****/
+/**************************************/
+#jquery-lightbox a img {
+	border: none;
+}
+
+#lightbox-container-image-box {
+	position: relative;
+	background-color: @jqueryLightboxImageBackgroundColor;
+	margin: 0 auto;
+	.border-radius(@jqueryLightboxBorderRadius);
+}
+
+#lightbox-container-image {
+	padding: 10px;
+}
+#lightbox-container-image img {
+	position: relative;
+	top: 0px;
+	max-width: 100%;
+	max-height: 100%
+}
+#lightbox-loading {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	.progress {
+		width:30%;
+		margin:auto;
+		.bar {
+			width:100%;
+			#gradient > .striped(@jqueryLightboxLoadingBarColor);
+		}
+	}
+}
+
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav {
+	left: 0;
+}
+#lightbox-nav a {
+	outline: none;
+}
+#lightbox-nav-btnPrev,
+#lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+
+/* REMOVED
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+*/
+#lightbox-container-image-data {
+	padding: 0 0 10px 0; 
+	color: @jqueryLightboxImageDataColor;
+	overflow: hidden;
+}
+
+
+/**********************************************/
+/***** Lightbox Image Details Definitions *****/
+/**********************************************/
+#lightbox-image-details {
+	text-align: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	bottom: 53px;
+	left: 10px;
+	right: 10px;
+	padding:0;
+	background: @jqueryLightboxImageDetailsBackground;
+	color: @jqueryLightboxImageDetailsColor;
+	display: none;
+	.border-radius(3px);
+	max-height: 60%;
+	div {
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:10px;
+		&:last-child {
+			padding-bottom:10px;
+		}
+	}
+}
+#lightbox-image-details-caption {
+	font-weight: @jqueryLightboxImageDetailsCaptionFontWeight;
+	font-size: @jqueryLightboxImageDetailsCaptionFontSize;
+	overflow: hidden;
+}
+#lightbox-image-details-description {
+	overflow: hidden;
+}
+#lightbox-image-details-photo-credit {
+	font-style: @jqueryLightboxImageDetailsPhotocreditFontStyle;
+	overflow: hidden;
+}
+
+
+/*******************************************/
+/***** Lightbox Navigation Definitions *****/
+/*******************************************/
+#lightbox-secNav {
+	position: relative;
+	border-top: @jqueryLightboxSecNavBorderTop;
+	text-align: center;
+	height: 42px;
+}
+#lightbox-secNav #lightbox-nav-bottom {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+#lightbox-secNav #lightbox-nav-caption {
+	.btn;
+	position:absolute;
+	left:100px;
+	top:5px;
+}
+#lightbox-secNav #lightbox-image-details-currentNumber {
+	position: absolute;
+	right: 60px;
+	height: 42px;
+	line-height: 42px;
+}
+#lightbox-secNav #lightbox-secNav-btnClose {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.grayed-out {
+	cursor: default;
+	opacity: @jqueryLightboxGrayedOutOpacity;
+	-moz-opacity: @jqueryLightboxGrayedOutOpacity;
+	filter: @jqueryLightboxGrayedOutOpacityIE;
+}
+
+
+
+/*****************************************/
+/***** Gallery Slideshow Definitions *****/
+/*****************************************/
+/* gallery styles */
+.gallery-slideshow {
+	.slideshow-slide {
+		text-align: @gallerySlideshowSlideTextAlign;
+		.slideshow-slide-title {
+			font-weight:@gallerySlideshowSlideTitleFontWeight;
+			margin-top:5px;
+		}
+		.slideshow-slide-image {
+			text-align: @gallerySlideshowImageTextAlign;
+			position: relative;
+			.slideshow-slide-image-image-wrapper {
+				margin: 0px 35px;
+			}
+			.slideshow-slide-image-image {
+				border: 0px;
+			}
+			.slideshow-slide-image-left,
+			.slideshow-slide-image-right {
+				position: absolute;
+				top: 0px;
+				height: 100%;
+				width: 35px;
+				cursor: pointer;
+				.btn {
+					position: absolute;
+					top: 45%;
+					width: 30px;
+					padding: 4px 0px;
+				}
+			}
+			.slideshow-slide-image-left,
+			.slideshow-slide-image-left .btn {
+				left: 0px;
+			}
+			.slideshow-slide-image-right,
+			.slideshow-slide-image-right .btn {
+				right: 0px;
+			}
+		}
+		.slideshow-description,
+		.thumbnail-link {
+			display: block;
+		}
+		.facebook-like {
+			text-align: @gallerySlideshowFacebookLikeTextAlign;
+			iframe.facebook {
+				border: @gallerySlideshowFacebookLikeBorder;
+				overflow: hidden;
+				height: 30px; 
+			}
+		}
+		&.firstSlide {
+			.slideshow-slide-image-left {
+				visibility: hidden;
+			}
+		}
+		&.lastSlide {
+			.slideshow-slide-image-right {
+				visibility: hidden;
+			}
+		}
+	}
+	.slideshow-slide-pager {
+		display: inline-table;
+		height: 75px;
+		margin: 10px 0px;
+		vertical-align: middle;
+		.slideshow-pager-controls {
+			display: table-cell;
+			height: 75px;
+			vertical-align: middle;
+			.btn {
+				width: 30px;
+				margin: 0px 5px;
+				padding: 4px 0px;
+			}
+		}
+		.slideshow-slide-pageritems {
+			display: inline-table;
+			border-collapse: separate;
+			border-spacing: 5px 0px;
+		}
+		.slideshow-slide-pageritem {
+			display: table-cell;
+			cursor: pointer;
+			padding: 3px;
+			border: @gallerySlideshowSlidePagerPagerItemBorder;
+			img {
+				display: inline-block;
+			}
+			&.current {
+				background-color: @gallerySlideshowSlidePagerPagerItemCurrentBackgroundColor;
+				color: @gallerySlideshowSlidePagerPagerItemCurrentColor;
+				cursor: default;
+			}
+			.slideshow-slide-pageritem-number {
+				font-size: @gallerySlideshowSlidePagerPagerItemNumberFontSize;
+			}
+		}
+		&.first-page {
+			.previous-page {
+				.opacity(@gallerySlideshowSlidePagerFirstPreviousPageOpacity);
+				cursor: @gallerySlideshowSlidePagerFirstPreviousPageCursor;
+			}
+		}
+		&.last-page {
+			.next-page {
+				.opacity(@gallerySlideshowSlidePagerLastNextPageOpacity);
+				cursor: @gallerySlideshowSlidePagerLastNextPageCursor;
+			}
+		}
+	}
+	.slideshow-gallery-pager {
+		font-family: @gallerySlideshowGalleryPagerFontFamily;
+		font-size: @gallerySlideshowGalleryPagerFontSize;
+		.slideshow-thumbnail-pageritems {
+			li {
+				cursor: pointer;
+				&.disabled,
+				&.active {
+					cursor: default;
+				}
+			}
+		}
+		a.pageritem {
+			position: static;
+		}
+	}
+	.slideshow-thumbnails {
+		clear: both;
+		.slideshow-thumbnail {
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			.slideshow-thumbnail-image {
+				border: 0px;
+			}
+		}
+	}
+
+
+}
+
+
+
+#GALLERY_LESS-END {
+	content: "gallery.less"
+}

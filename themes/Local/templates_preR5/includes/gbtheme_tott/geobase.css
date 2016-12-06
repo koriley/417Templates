@@ -1,0 +1,1476 @@
+/************************/
+/**** search results ****/
+/************************/
+
+/* column layout */
+
+
+.tott-geobase .geobase {
+	padding:15px;
+	background-color:#f1f1f1;
+	position:relative;
+	border-radius:0 0 10px 10px;
+	overflow:visible;
+	text-shadow:1px 1px 1px rgb(255,255,255);
+}
+
+.tott-geobase .geobase > h1 {
+	margin-top:0;
+}
+
+
+.tott-geobase .geobase-search-results {
+	line-height:normal;
+}
+
+.tott-geobase .geobase-search-results #pager {
+	line-height:2.5em;
+	font-size:10px;
+	padding:0 0;
+	margin:0 0;
+}
+
+.tott-geobase .geobase-search-results .filtercolumn {
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.tott-geobase .geobase-search-results .resultscolumn {
+	float:left;
+	width:66%;
+}
+
+.tott-geobase .geobase-search-results .mapcolumn {
+	float:right;
+	width:33%;
+	position:relative;
+}
+
+.tott-geobase #map {
+	height:300px;
+	margin-bottom:15px;
+	font-size:12px;
+	line-height:normal;
+	border:solid 1px #ccc;
+}
+
+/* search form */
+
+
+.tott-geobase .geobase .search-form {
+	border-top:solid 1px #ccc;
+	padding:0 0 0 300px;
+	font-size:11px;
+}
+
+.tott-geobase .geobase .search-form div {
+	padding:5px 0;
+	border-bottom:solid 1px #ccc;
+}
+
+.tott-geobase .geobase .search-form {
+	position:absolute;
+	border:none;
+	top:20px;
+	right:15px;
+	font-size:24px;
+	line-height:24px;
+}
+
+.tott-geobase .geobase .search-form .search-field {
+	height:18px;
+	width:394px;
+	position:absolute;
+	right:83px;
+	top:0;
+	font-size:14px;
+	padding:3px;
+	border:solid 1px #ccc;
+}
+
+.tott-geobase .geobase .search-form .button {
+	position:absolute;
+	top:0px;
+	right:0;
+}
+
+.tott-geobase .geobase .button, .tott-geobase a.pageritem:link, .geobase-search-results a.pageritem:visited, .geobase-search-results span.pageritem {
+	color:#333;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:4px;
+	padding:5px 10px;
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	text-shadow:1px 1px 1px #fff;
+	border:solid 1px #ccc;
+	border-bottom:solid 1px #999;
+	font-family:Arial, Helvetica, sans-serif;
+	display:inline-block;
+	margin-right:5px;
+	margin-left:0px;
+}
+
+.tott-geobase .geobase input.button {
+	height:26px;
+}
+
+.tott-geobase .geobase-search-results a.pageritem:link, .geobase-search-results a.pageritem:visited, .geobase-search-results span.pageritem {
+	font-weight:normal;	
+}
+
+.tott-geobase .geobase-search-results span.pageritem {
+	cursor:default;
+	border:solid 1px #bbb;
+	background:#fff;
+}
+
+
+.tott-geobase .geobase .button, .geobase-search-results a.pageritem:link, .geobase-search-results a.pageritem {
+	background: #eee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 50%, #eee 51%, #ddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f5f5f5), color-stop(51%,#eee), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.tott-geobase .geobase .button:hover, .geobase-search-results a.pageritem:hover {
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 50%, #e1e1e1 51%, #c5c5c5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#e5e5e5), color-stop(51%,#e1e1e1), color-stop(100%,#c5c5c5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5',GradientType=0 ); /* IE6-9 */
+}
+
+.tott-geobase .geobase .search-mode {
+	padding:5px 0;
+	border-top:solid 1px #ccc;
+	margin-top:5px;
+}
+
+.tott-geobase .geobase .search-mode h5 {
+	margin-bottom:5px;
+	margin-top:0;
+	font-family:inherit;
+	font-weight:inherit;
+	font-size:inherit;
+	color:inherit;
+}
+
+.tott-geobase .geobase .search-mode label {
+	margin-left:5px;
+	margin-right:10px;
+}
+
+/* filters */
+
+.tott-geobase p.filterreset {
+	font-size:11px;
+	margin-top:5px;
+}
+
+.tott-geobase .geobase .filterrow {
+	font-size:11px;
+	border-top:solid 1px #ccc;
+	border-bottom:solid 1px #ccc;
+	padding:10px 0;
+	margin-bottom:10px;
+	min-height:28px;
+	position:relative;
+}
+
+.tott-geobase .geobase .filterrow h2 {
+	margin-bottom:10px;
+}
+
+.tott-geobase div.filter-buttons {
+	position:absolute;
+	z-index:100;
+	right:0px;
+	top:10px;
+	white-space:nowrap;
+}
+
+.tott-geobase span.select-filters {
+	line-height:24px;
+	padding:0 10px;
+	display:inline-block;
+}
+
+.tott-geobase a.remove-filters {
+	text-decoration:none;
+	line-height:24px;
+	padding:0 10px;
+	display:inline-block;
+	margin-right:10px;
+}
+
+.tott-geobase div#filter-panel {
+	position:absolute;
+	display:none;
+	top:-5px;
+	right:-10px;
+	z-index:99;
+	background:#fff;
+	border:solid 1px #999;
+	box-shadow:3px 3px 7px rgba(0,0,0,0.35);
+	padding:10px 10px 10px 10px;
+	border-radius:5px;
+	width:600px;
+}
+
+.tott-geobase div#filter-panel .alphapager {
+	border-bottom:solid 1px #ccc;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	padding-top:35px;
+}
+
+.tott-geobase div#filter-panel select {
+	margin-bottom:10px;	
+}
+
+.tott-geobase .geobase .filterrow h3 {
+	color:#000;
+}
+
+.tott-geobase .geobase-filters h4 {
+	background-color:#00a3ba;
+	color:#fff;
+	margin:0;
+	padding:3px 5px;
+	margin-top:5px;
+	text-transform:uppercase;
+	font-size:12px;
+	border-radius:3px 3px 0 0;
+}
+
+.tott-geobase .geobase-filters ul {
+	overflow:auto;
+	max-height:300px;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.tott-geobase .geobase-filters ul li {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-bottom:solid 1px #666;
+	border-top:solid 1px #fff;
+}
+
+.tott-geobase .geobase-filters ul li a {
+	display:block;
+	padding:2px 5px;
+	background-color:#ddd;
+	color:#333;
+	font-size:11px;
+}
+
+.tott-geobase .geobase-filters ul li a:hover {
+	background-color:#eee;
+	color:#000;
+	text-decoration:none;
+}
+
+/* alpha pager */
+
+.tott-geobase .geobase-search-results .alphapager {
+	
+}
+
+.tott-geobase .geobase-search-results .alphapager p {
+	margin:0 0 5px 0;
+	font-size:10px;
+}
+
+.tott-geobase .geobase-search-results .alphapager ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	font-size:10px;
+	line-height:15px;
+}
+
+.tott-geobase .geobase-search-results .alphapager ul li {
+	list-style:none;
+	padding:0;
+	margin:0 0 2px 0;
+	display:inline-block;
+}
+
+.tott-geobase .geobase-search-results .alphapager ul li a, .geobase-search-results .alphapager ul li span {
+	display:inline-block;
+	border:solid 1px #ccc;
+	background-color:#eee;
+	padding:2px;
+	width:12px;
+	text-align:center;
+}
+
+.tott-geobase .geobase-search-results .alphapager ul li a:hover {
+	text-decoration:none;
+	background-color:#fff;
+}
+
+/* search results list */
+
+.tott-geobase .geobase-search-results .listings div.results-header {
+	overflow:hidden;
+	border-bottom:solid 1px #333;
+}
+
+.tott-geobase .geobase-search-results .listings div.listing {
+	overflow:hidden;
+	border-bottom:solid 1px #ccc;
+}
+
+.tott-geobase .geobase-search-results .listings div.results-header > div, .geobase-search-results .listings div.listing > div {
+	display:inline-block;
+	float:left;
+}
+
+.tott-geobase .geobase-search-results .listings div.listing div.business-name, .geobase-search-results .listings div.listing div.contact, .geobase-search-results .listings div.business-name_header, .geobase-search-results .listings div.contact_header {
+	width:40%;	
+}
+
+.tott-geobase .geobase-search-results .listings div.listing div.categories, .geobase-search-results .listings div.categories_header {
+	width:20%;	
+}
+
+.tott-geobase .geobase-search-results .listings div.results-header > div div, .geobase-search-results .listings div.listing > div div, .geobase-search-results .listings div.listing ul {
+	padding:5px;
+}
+
+.tott-geobase .geobase-search-results .listings div.listing div.categories ul {
+	padding:5px;
+	margin:0;
+	padding-left:15px;
+	list-style:none;
+	overflow:hidden;
+}
+
+.tott-geobase .geobase-search-results .listings div.listing div.categories ul li {
+	list-style:none;
+	float:left;
+	margin-right:5px;
+}
+
+.tott-geobase .geobase-search-results .listings div.listing div.categories ul li label {
+	display:none;
+}
+
+.tott-geobase .geobase-search-results .listings div.listing div.categories ul li .bestof {
+	height:32px;
+	width:32px;
+	display:inline-block;
+	background-image:url(http://strongerorg.com/Images/Look_2010_10/Matches_Trophy_icon.png);
+	background-repeat:no-repeat;
+}
+
+.tott-geobase .geobase-search-results .listings div.listing div.categories ul li .togo {
+	height:32px;
+	width:32px;
+	display:inline-block;
+	background-image:url(http://png-5.findicons.com/files/icons/1588/farm_fresh_web/32/cup_go.png);
+	background-repeat:no-repeat;
+}
+
+.tott-geobase .geobase-search-results .listings div.results-header {
+	font-weight:bold;
+}
+
+.tott-geobase .geobase-search-results .listings div.featured {
+	background-color:#f3e68e;
+}
+
+.tott-geobase .geobase-search-results .listings div.featured:hover {
+	background-color:#e1d795;
+}
+
+.tott-geobase .geobase-search-results .listings div.premium {
+	background-color:#f5efc7;
+}
+
+.tott-geobase .geobase-search-results .listings div.premium:hover {
+	background-color:#ebdfb5;
+}
+
+/* essential information */
+
+
+/* quickfacts */
+
+
+.tott-geobase .listing div.quickfacts ul, .listing div.quickfacts li {
+	margin:0;
+	padding:0;
+	line-height:1.2em;
+}
+
+.tott-geobase .listing div.quickfacts ul {
+	padding-left:15px;
+	margin-bottom:10px;
+}
+
+.tott-geobase .listing div.quickfacts div.quickfact {
+	border-bottom:solid 1px #ccc;
+	line-height:1.2em;
+	margin-bottom:0;
+	font-size:11px;
+	overflow:hidden;
+	padding:10px;
+}
+
+.tott-geobase .listing div.quickfacts div.quickfact:last-child {
+	border-bottom:none;	
+}
+
+.tott-geobase .listing div.quickfacts div.quickfact span.qfi {
+	width:65%;
+	display:inline-block;
+	vertical-align:top;
+	float:right;
+}
+
+.tott-geobase .listing div.quickfacts div.quickfact span.qfit {
+	vertical-align:top;
+	text-align:left;
+	width:30%;
+	display:inline-block;
+	font-weight:bold;
+	float:left;
+}
+
+.tott-geobase .listing div.quickfacts div.quickfact span p {
+	display:inline-block;
+	margin:0 0 10px 0;
+	word-wrap: break-word;
+    max-width:100%;
+}
+
+
+.tott-geobase .listing .categories, 
+.tott-geobase .listing .essential-information, 
+.tott-geobase .listing .custom-fields, 
+.tott-geobase .listing .description,
+.tott-geobase .listing #outer-ratings,
+.tott-geobase .listing .recommendations {
+	margin-bottom:15px;
+}
+
+.tott-geobase div.photos div.image-instance {
+	border-bottom:solid 1px #ccc;
+	margin-top:15px;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+.tott-geobase div.photos div.image-instance:last-child {
+	border-bottom:none;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+.tott-geobase div.photos div.image-instance img {
+	float:left;
+	margin:0 10px 10px 0;
+}
+
+.tott-geobase div.custom-fields > div {
+	padding:10px 0;
+	border-bottom:solid 1px #ccc;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+.tott-geobase .listing .tabs {
+	border-collapse:collapse;
+	width:100%;
+}
+
+.tott-geobase .listing .tabs .tab {
+	cursor:pointer;
+	background:url("/core/media/images/geobase-tab.gif");
+	line-height:30px;
+	text-align:center;
+	width:50%;
+	border:solid 1px #ccc;
+}
+
+.tott-geobase .listing .tabs .selected {
+	background:url("/core/media/images/geobase-tab-selected.gif");
+	border-bottom:solid 1px #fff;
+}
+
+.tott-geobase .listing .tabs .tab:hover {
+	background:url("/core/media/images/geobase-tab-selected.gif");
+}
+
+.tott-geobase .listing .panels {
+	border:solid 1px #ccc;
+	padding:10px;
+	background-color:#fff;
+	border-top:none;
+	border-radius:0 0 10px 10px;
+	overflow:hidden;
+}
+
+.tott-geobase div.image-map {
+	overflow:hidden;
+	margin-bottom:35px;
+}
+
+.tott-geobase div.listing div.free {
+	padding:15px;
+	border:solid 1px #ccc;
+	border-radius:0 0 10px 10px;
+	overflow:hidden;
+}
+
+/* featured listings callout */
+
+.tott-geobase .geobase-search-results ul.featured-listing li {
+	list-style:none;
+	margin:5px 0 0 0;
+	padding:5px;
+	background-color:#eee;
+	border:solid 1px #ccc;
+	font-weight:bold;
+	overflow:auto;
+	}
+
+.tott-geobase .geobase-search-results ul.featured-listing ul li{
+	padding:0;
+	margin:0;
+	margin-left:20px;
+	border:none;
+	font-weight:normal;
+	list-style-image:url(/core/media/images/bullet.gif);
+	overflow:visible;
+	}
+
+.tott-geobase .geobase img.tracker {
+	display:none;
+	}
+
+.tott-geobase .geobase-search-results ul.featured-listing {
+	padding:0;
+	margin:0;
+	}
+
+.tott-geobase .geobase-search-results ul.featured-listing img {
+	float:right;
+	margin-left:10px;
+	border:solid 2px #fff;
+	}
+
+.tott-geobase .geobase-search-results ul.featured-listing ul {
+	padding:0;
+	margin:0;
+	margin-top:10px;
+	}
+
+.tott-geobase p.add-a-listing {
+	margin:10px 0;
+}
+
+/* listing column layout */
+
+.tott-geobase div.geobase-listing-header {
+	position:relative;
+}
+
+.tott-geobase div.listing {
+	text-shadow:1px 1px 1px #fff;
+	
+}
+
+.tott-geobase div.listing div.columns {
+	overflow:hidden;
+	margin-bottom:15px;
+}
+
+.tott-geobase div.listing div.column-1 {
+	float:left;
+	overflow:hidden;
+	width:66%;
+}
+
+.tott-geobase div.listing div.column-2 {
+	float:right;
+	overflow:hidden;
+	width:33%;
+}
+
+.tott-geobase div.listing div.column-2 > div {
+	margin-bottom:15px;
+}
+
+.tott-geobase div.listing div.column-2 > div:last-child {
+	margin-bottom:0;
+}
+
+.tott-geobase div.listing div.essential-information {
+	float:right;
+	margin-left:30px;
+	padding-top:50px;
+}
+
+.tott-geobase div.listing div.column-1 div.recommendations-wrapper div.content h2, div.essential-information h2 {
+	display:none;
+}
+
+.tott-geobase .geobase div.comments {
+	margin-top:0;
+}
+
+.tott-geobase .geobase div.commentFormContainer h5.add-comment {
+	margin-top:0;
+}
+
+.tott-geobase .geobase h1 {
+	font-size:50px;
+	text-shadow:2px 2px 2px #fff;
+}
+
+
+.tott-geobase .listing .essential-information div.essential-item {
+	font-size:11px;
+}
+
+.tott-geobase .listing .essential-information div.essential-item span {
+	white-space:nowrap;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.tott-geobase .listing .essential-information div.essential-item span.eit {
+	width:90px;
+	margin-right:10px;
+	font-weight:bold;
+}
+
+.tott-geobase .listing .essential-information div.essential-item span.ei {
+	width:195px;
+}
+
+.tott-geobase div#outer-ratings {
+	font-size:10px;
+}
+
+.tott-geobase div#outer-ratings h4 {
+	display:none;	 
+}
+
+.tott-geobase div.listing div.columns div.column-1 div.content {
+	padding:15px;
+}
+
+.tott-geobase div.listing div.column-1 > div, .tott-geobase div.listings {
+	border-radius:7px;
+	border:solid 1px #ccc;
+	border-bottom:none;
+	margin-bottom:15px;
+	text-shadow:none;
+	background-color:#fff;
+	position:relative;
+	border-bottom:solid 2px #bbb;
+}
+
+.tott-geobase div.listings {
+	padding:15px;
+}
+
+.tott-geobase div.listing div.column-1 div.cf_gallery {
+	padding-bottom:3px;
+}
+
+.tott-geobase div.listing div.column-1 > div > h2, .tott-geobase div.listing div.column-2 > div > h2, div.listings h2 {
+	line-height:30px;
+	border-radius:6px 6px 0 0;
+	background-color:#e5e5e5;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:1px 1px 1px #fff;
+	color:#333;
+	border:solid 1px #fff;
+	border-bottom:solid 1px #bbb;
+	border-right:none;
+	margin:0;
+	padding:0 14px 0 15px;
+}
+
+.tott-geobase div.quickfact {
+	background:#fff;
+}
+
+.tott-geobase div.quickfact:last-child {
+	border-radius:0 0 6px 6px
+}
+
+.tott-geobase div.listing div.column-1 > div:last-child {
+	margin-bottom:0;	
+}
+
+.tott-geobase a.return {
+	font-size:12px;
+	display:inline-block;
+	position:absolute;
+	top:-10px;
+	right:0px;
+	z-index:1000;
+	color:#fff;
+	text-shadow:none;
+	margin-right:0;
+}
+
+.tott-geobase a.return:hover {
+	text-decoration:none;
+}
+
+.tott-geobase span.field-label {
+	display:none;
+}
+
+.tott-geobase div.cf_gallery {
+	overflow:hidden;
+}
+	
+
+/* gallery */
+
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 10011; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#lightbox_outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#lightbox_imageContainer{ padding: 10px; }
+
+#lightbox_loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#lightbox_hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#lightbox_imageContainer>#lightbox_hoverNav{ left: 0;}
+#lightbox_hoverNav a{ outline: none;}
+
+#lightbox_prevLink, #lightbox_nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#lightbox_prevLink { left: 0; float: left;}
+#lightbox_nextLink { right: 0; float: right;}
+#lightbox_prevLink:hover, #lightbox_prevLink:visited:hover { background: url(/core/media/images/prevlabel.gif) left 15% no-repeat; }
+#lightbox_nextLink:hover, #lightbox_nextLink:visited:hover { background: url(/core/media/images/nextlabel.gif) right 15% no-repeat; }
+
+#lightbox_imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#lightbox_imageData{	padding:0 10px; color: #666; }
+#lightbox_imageData #lightbox_imageDetails{ width: 70%; float: left; text-align: left; }	
+#lightbox_imageData #lightbox_caption{ font-weight: bold;	}
+#lightbox_imageData #lightbox_numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#lightbox_imageData #lightbox_bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#lightbox_overlay{ position: absolute; top: 0; left: 0; z-index: 10010; width: 100%; height: 500px; background-color: #000; }
+
+#lightbox_gallery div.content {
+	overflow:hidden;
+	padding-bottom:0;
+	}
+	
+/* jQuery lightbox */
+
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10010;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10011;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding:0 0 10px 0; 
+	color: #666;
+	overflow:hidden;
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left;
+	line-height:1.4;
+}
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	float:right;
+}
+
+#lightbox-image-details-description {padding:3px 0 0 0;}
+#lightbox-image-details-photo-credit {padding:3px 0 0 0; font-style:italic;}
+
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	clear:right;
+	margin:3px 0 0 0;
+}
+
+	
+.tott-geobase .geobase img {
+	vertical-align:middle;
+}
+	
+#lightbox_gallery div.gallery-images {
+	float:left;
+	margin:0 2.5% 2.5% 0;
+	display:block;
+	width:18%;
+	}
+	
+#lightbox_gallery div.content > div:nth-child(5n+5) {
+	margin-right:0;
+}
+
+#lightbox_gallery a {
+}
+	
+#lightbox_gallery a img {
+	border-radius:5px;
+	box-shadow:2px 2px 5px 0 rgba(0,0,0,0.5);
+	max-width:100%;
+}
+	
+#lightbox_gallery div.gallery-images a:nth-child(5n+1) {
+	
+}
+
+#lightbox_gallery a:hover img {
+	box-shadow:2px 2px 5px 0 rgba(0,0,0,0.75);
+	
+	}
+
+#lightbox_gallery #pager .pageritem {display:block; float:left; margin:0; padding:5px 10px; border:none; background:none; color:#DDD;}
+#lightbox_gallery #pager a.pageritem:hover {background:#333; color:#FFF;}
+
+.tott-geobase div.stars > div > div > div:nth-child(1), .tott-geobase div.stars > div > div > div:nth-child(2), .tott-geobase div.stars > div > div > div:nth-child(3), .tott-geobase div.stars > div > div > div:nth-child(4),.tott-geobase div.stars > div > div > div:nth-child(5) {
+	background-image:url(/templates/includes/gbtheme_tott/starbox_star.png) !important;	
+}
+
+.tott-geobase div.listing div.column-1 div.recommendations-wrapper {
+	background:#fff;
+	margin-bottom:5px;
+}
+
+/* search results */
+
+.tott-geobase div.listings {
+	margin-bottom:15px;
+	padding-bottom:0;
+	overflow:hidden;
+	position:static;
+}
+
+.tott-geobase div.listings h2 {
+	padding:0 14px 0 15px;
+}
+
+.tott-geobase div.listings div.client {
+	float:left;
+	margin:0 2% 2% 0;
+	padding:0;
+	padding-top:5px;
+	text-align:center;
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow:1px 1px 5px 0 rgba(0,0,0,0.5);
+	width:23.5%;
+	height:178px;
+	overflow:hidden;
+}
+
+.tott-geobase div.listings div.client:nth-of-type(4n+4) {
+	margin-right:0;
+}
+
+.tott-geobase div.listings div.client h4 {
+	padding-top:5px;
+	font-weight:bold;
+	font-size:12px;
+	padding:0 10px;
+}
+
+.tott-geobase div.listings div.client img.thumb {
+	border-radius:5px;
+	max-width:90%;
+}
+
+.tott-geobase div.listings div.client:hover {
+	box-shadow:2px 2px 5px 0 rgba(0,0,0,0.75);
+}
+
+.tott-geobase div.listings div.client div.screenshot {
+	position:absolute;
+	width:387px;
+	height:375px;
+	background-image:url(/templates/includes/gbtheme_tott/screenshot_bg.png);
+	background-repeat:no-repeat;
+	opacity:0;
+	display:none;
+	z-index:9999;
+	padding:13px 0px 0 1px
+}
+
+.tott-geobase div.listings div.client div.screenshot img {
+	border-radius:4px;
+}
+
+.tott-geobase div.clear {
+	clear:both;
+}
+
+.tott-geobase .module, .tott-geobase .tott-offers, .tott-geobase .quickfacts {
+	border-radius:7px;
+	border:solid 1px #ccc;
+	border-bottom:solid 2px #bbb;
+}
+
+.tott-geobase .tott-offers {
+	line-height:normal;
+}
+
+
+.tott-geobase .tott-offers h2, .tott-geobase .tott-listings h2, .tott-geobase .geobase .tott-offers h2, .tott-geobase .tott-blogroll h2 {
+	position:relative;
+}
+
+.tott-geobase .tott-offers .offer-column {
+	float:left;
+	width:50%;
+}
+
+.tott-geobase .tott-offers .offer-column-wrapper {
+	overflow:hidden;
+}
+
+.tott-geobase .tott-offers div.form-row {
+	padding:5px 0;
+	border-top:solid 1px #ccc;
+	min-height:20px;
+	line-height:20px;
+}
+
+.tott-geobase .tott-offers div.form-row.last {
+	border-bottom:solid 1px #ccc;
+	margin-bottom:5px;
+}
+
+.tott-geobase .tott-offers div.form-row.first {
+	margin-top:5px;
+}
+
+.tott-geobase .tott-offers input[type=checkbox] {
+	margin-right:5px;
+}
+
+.tott-geobase .tott-offers form label {
+	display:inline-block;
+	width:40%;
+	font-size:11px;
+	text-align:right;
+	padding-right:10px;
+}
+
+.tott-geobase .tott-offers p {
+	margin-top:0;
+}
+
+.tott-geobase .tott-offers p.fineprint {
+	margin-top:0;
+}
+
+.tott-geobase #ppm_response div {
+	margin-top:10px;
+	border:solid 2px #C00;
+	padding:10px;
+	background:#fff;
+	font-weight:bold;
+	color:#C00;
+	border-radius:5px;
+}
+
+.tott-geobase #ppm_response div.thanks {
+	border:solid 2px #069;
+	color:#069;
+}
+
+
+.tott-geobase .tott-listings .search-all {
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+
+.tott-geobase .tott-listings .search-all:hover {
+	text-decoration:none;
+}
+
+.tott-geobase .tott-listings {
+	position:relative;
+}
+
+
+.tott-geobase .tott-listings .content, .tott-geobase .tott-offers .content {
+	padding:10px;
+	background:#fff;
+	border-radius:0 0 6px 6px;
+}
+
+.tott-geobase .tott-listings ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	border-top:solid 1px #ccc;
+	margin-bottom:35px;
+}
+
+.tott-geobase .tott-listings ul li {
+	list-style:none;
+	margin:0;
+	font-size:16px;
+	padding:10px 0 10px 55px;
+	line-height:16px;
+	position:relative;
+	min-height:35px;
+	border-bottom:solid 1px #ccc;
+}
+
+.tott-geobase .tott-listings ul li img {
+	vertical-align:middle;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.35);
+	margin:0 10px 10px 0;
+	position:absolute;
+	top:5px;
+	left:0;
+	border:solid 1px #ccc;
+	border-radius:3px;
+}
+
+.tott-geobase .tott-form table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.tott-geobase .tott-form table td {
+	border-bottom:solid 1px #ccc;
+	padding:5px 0;
+}
+
+.tott-geobase .tott-form table {
+	border-top:solid 1px #ccc;
+}
+
+.tott-geobase .tott-form table tr.checkboxes {
+	font-size:11px;
+	line-height:normal;
+}
+
+.tott-geobase .tott-form .button {
+	margin-top:30px;
+	font-size:18px;
+	height:30px;
+	font-weight:normal;
+}
+
+/* button */
+
+.tott-geobase .button {
+	color:#333;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:4px;
+	padding:5px 10px;
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	text-shadow:1px 1px 1px #fff;
+	border:solid 1px #ccc;
+	border-bottom:solid 1px #999;
+	font-family:Arial, Helvetica, sans-serif;
+	display:inline-block;
+	margin-right:5px;
+	margin-left:0;
+	background: #eee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 50%, #eee 51%, #ddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f5f5f5), color-stop(51%,#eee), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+.tott-geobase input.button {
+	height:26px;
+}
+
+.tott-geobase .button:hover {
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 50%, #e1e1e1 51%, #c5c5c5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#e5e5e5), color-stop(51%,#e1e1e1), color-stop(100%,#c5c5c5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5',GradientType=0 ); /* IE6-9 */
+}
+
+.tott-geobase .tott-rail h3 {
+	border-bottom:solid 1px #ccc;
+	margin-bottom:10px;
+	padding-bottom:5px;
+}
+
+.tott-geobase .tott-rail .content {
+	padding-top:20px;
+}
+
+/* TOTT Modules */
+
+.tott-geobase .tott-offers {
+	line-height:normal;
+}
+
+.tott-geobase .tott-offers .offer-column {
+	float:left;
+	width:50%;
+}
+
+.tott-geobase .tott-offers .offer-column-wrapper {
+	overflow:hidden;
+}
+
+.tott-geobase .tott-offers div.form-row {
+	padding:5px 0;
+	border-top:solid 1px #ccc;
+	min-height:20px;
+	line-height:20px;
+}
+
+.tott-geobase .tott-offers div.form-row.last {
+	border-bottom:solid 1px #ccc;
+	margin-bottom:5px;
+}
+
+.tott-geobase .tott-offers div.form-row.first {
+	margin-top:5px;
+}
+
+.tott-geobase .tott-offers input[type=checkbox] {
+	margin-right:5px;
+}
+
+.tott-geobase .tott-offers form label {
+	display:inline-block;
+	width:40%;
+	font-size:11px;
+	text-align:right;
+	padding-right:10px;
+	white-space:nowrap;
+}
+
+.tott-geobase .tott-offers p {
+	margin-top:0;
+}
+
+.tott-geobase .tott-offers p.fineprint {
+	margin-top:0;
+}
+
+.tott-geobase #ppm_response div {
+	margin-top:10px;
+	border:solid 2px #C00;
+	padding:10px;
+	background:#fff;
+	font-weight:bold;
+	color:#C00;
+	border-radius:5px;
+}
+
+.tott-geobase #ppm_response div.thanks {
+	border:solid 2px #069;
+	color:#069;
+}
+
+
+.tott-geobase .tott-listings .search-all {
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+
+.tott-geobase .tott-listings .search-all:hover {
+	text-decoration:none;
+}
+
+.tott-geobase .tott-listings {
+	position:relative;
+}
+
+.tott-geobase .tott-listings .content, .tott-offers .content {
+	padding-top:15px;
+}
+
+.tott-geobase .tott-listings ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	border-top:solid 1px #ccc;
+	margin-bottom:35px;
+}
+
+.tott-geobase .tott-listings ul li {
+	list-style:none;
+	margin:0;
+	font-size:16px;
+	padding:10px 0 10px 55px;
+	line-height:16px;
+	position:relative;
+	min-height:35px;
+	border-bottom:solid 1px #ccc;
+}
+
+.tott-geobase .tott-listings ul li img {
+	vertical-align:middle;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.35);
+	margin:0 10px 10px 0;
+	position:absolute;
+	top:5px;
+	left:0;
+	border:solid 1px #ccc;
+	border-radius:3px;
+}
+
+.tott-geobase .tott-form table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.tott-geobase .tott-form table td {
+	border-bottom:solid 1px #ccc;
+	padding:5px 0;
+}
+
+.tott-geobase .tott-form table {
+	border-top:solid 1px #ccc;
+}
+
+.tott-geobase .tott-form table tr.checkboxes {
+	font-size:11px;
+	line-height:normal;
+}
+
+.tott-geobase .tott-form .button {
+	margin-top:30px;
+	font-size:18px;
+	height:30px;
+	font-weight:normal;
+}
+
+/* button */
+
+.tott-geobase .button {
+	color:#333;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:4px;
+	padding:5px 10px;
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	text-shadow:1px 1px 1px #fff;
+	border:solid 1px #ccc;
+	border-bottom:solid 1px #999;
+	font-family:Arial, Helvetica, sans-serif;
+	display:inline-block;
+	margin-right:5px;
+	margin-left:0;
+	background: #eee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 50%, #eee 51%, #ddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f5f5f5), color-stop(51%,#eee), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#f5f5f5 50%,#eee 51%,#ddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+.tott-geobase input.button {
+	height:26px;
+}
+
+.tott-geobase .button:hover {
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 50%, #e1e1e1 51%, #c5c5c5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#e5e5e5), color-stop(51%,#e1e1e1), color-stop(100%,#c5c5c5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 50%,#e1e1e1 51%,#c5c5c5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5c5c5',GradientType=0 ); /* IE6-9 */
+}
+
+.tott-geobase .tott-rail h3 {
+	border-bottom:solid 1px #ccc;
+	margin-bottom:10px;
+	padding-bottom:5px;
+}
+
+.tott-geobase .tott-rail .content {
+	padding-top:20px;
+}
+
+.tott-geobase .tott {
+	margin-bottom:10px;
+}
+
+.tott-geobase .tott .content {
+	padding:10px;
+	background:#fff;
+}
+/*
+.tott-geobase .tott h2 {
+	line-height:30px;
+	background-color:#67aba0;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:-1px -1px 1px rgba(0,0,0,0.35);
+	color:#fff;
+	margin:0;
+	padding:0 14px 0 15px;
+	text-transform:uppercase;
+}
+
+.tott-geobase .tott h2 img {
+	position:absolute;
+	top:0;
+	left:0;
+}
+*/
+.tott-geobase .tott h3 {
+	text-transform:uppercase;
+}
+
+
+.tott-geobase .tott-offers {
+	line-height:normal;
+}
+
+
+.tott-geobase .tott-offers h2, .tott-listings h2, .geobase .tott-offers h2, .tott-blogroll h2 {
+	position:relative;
+}
+
+.tott-geobase .flex-video, .tott-geobase #playerdisplay {
+  position: relative;
+  padding-top: 25px !important;
+  padding-bottom: 67.5% !important;
+  height: 0;
+  overflow: hidden;
+}
+
+.tott-geobase .flex-video.widescreen {
+  padding-bottom: 57.25%;
+}
+.tott-geobase .flex-video.vimeo {
+  padding-top: 0;
+}
+.tott-geobase .flex-video iframe, .tott-geobase .flex-video object, .tott-geobase .flex-video embed, .tott-geobase #playerdisplay iframe, .tott-geobase #playerdisplay object, .tott-geobase #playerdisplay embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tott-geobase .tott-listings  p {
+	overflow:hidden;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.tott-geobase .tott-listings  p  img {
+	float:left;
+	margin-right:10px;
+	margin-bottom:3px;
+	vertical-align:middle;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.35);
+}

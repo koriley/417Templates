@@ -1,0 +1,145 @@
+/*
+ * Defines for Navbar files:
+ * 
+ *     navigation.less
+ * 
+ */
+
+// navbar menu
+@navbarMenuTopBorder: none;
+@navbarMenuHoverColor: #fff;
+@navbarMenuPrimaryMenuFontsize: 120%;
+@navbarMenuColor: lighten(@primaryBrandColor,50%);
+@navbarMenuTextShadow: -1px -1px 1px rgba(0,0,0,0.5);
+@navbarMenuBackground: desaturate(darken(@primaryBrandColor,25%),20%);
+@navbarMenuBackgroundHighlight: lighten(@navbarMenuBackground,20%);
+@navbarMenuBorderRadius:0;
+@navbarMenuDropShadow:@headerDropShadow;
+
+// navbar dropdowns
+@navbarDropDownBackground: lighten(@navbarMenuBackgroundHighlight,40%);
+@navbarDropDownBorder: none;
+@navbarDropDownBoxShadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+@navbarDropDownItemColor: darken(@primaryBrandColor,35%);
+@navbarDropDownItemHoverColor: darken(@primaryBrandColor,100%);
+@navbarDropDownTextShadow: 1px 1px 1px rgba(255,255,255,0.75);
+@navbarDropDownHoverTextShadow: 1px 1px 1px rgba(255,255,255,0.75);
+@navbarDropDownItemBackground: desaturate(lighten(@primaryBrandColor,45%),20%);
+@navbarDropDownItemHoverBackground: desaturate(lighten(@primaryBrandColor,80%),40%);
+@navbarDropDownItemSeparator: @thinRule @navbarDropDownBackground;
+
+// dropped menus
+@navbarDroppedMenuBackground: desaturate(lighten(@primaryBrandColor,15%),35%);
+@navbarDroppedMenuTextShadow: 1px 1px 1px rgba(255,255,255,0.75);
+@navbarDroppedMenuHoverTextShadow: 1px 1px 1px rgba(255,255,255,0.75);
+@navbarDroppedMenuBorder: solid 1px lighten(@navbarDroppedMenuBackground,20%);
+@navbarDroppedMenuItemBackground: @navbarDroppedMenuBackground;
+@navbarDroppedMenuItemColor: darken(@primaryBrandColor,35%);
+@navbarDroppedMenuItemHoverBackground: @navbarDroppedMenuItemBackground;
+@navbarDroppedMenuItemHoverColor: darken(@primaryBrandColor,100%);
+@navbarDroppedMenuItemLeftSeparator: solid 1px lighten(@navbarDroppedMenuItemBackground,10%);
+@navbarDroppedMenuItemRightSeparator: solid 1px darken(@navbarDroppedMenuItemBackground,10%);
+@navbarDroppedMenuItemLineHeight: 1.25em;
+@navbarDroppedMenuItemPadding: 0 15px;
+@navbarDroppedMenuItemTextAlign: center;
+@navbarDroppedMenuItemWrapperBorderTop: solid 1px lighten(@navbarDroppedMenuBackground,25%);
+
+// eyebrow menu
+@eyebrowMenuColor: @linkColor;
+@eyebrowMenuHover: @linkColorHover;
+@eyebrowMenuTextShadow: @navbarTextShadow;
+@eyebrowMenuTextDecoration: none;
+
+@navbarNavTextAlign: center;
+@navbarNavMenuItemWrapperBackground: none;
+@navbarNavMenuItemWrapperBorderBottom: none;
+@navbarNavMenuItemWrapperBorderTop: solid 1px transparent;
+
+@navbarMenuItemWrapperTextShadow: @navbarMenuTextShadow;
+@navbarNavMenuItemWrapperFocusBackgroundColor: rgba(255,255,255,0.1);
+@navbarNavMenuItemWrapperFocusBorderTop: solid 1px rgba(255,255,255,0.1);
+@navbarDroppedMenuItemWrapperTextDecoration: none;
+
+// Third-level menu nav.
+@thirdLevelMenuPrimaryMenuFontsize: @navbarMenuPrimaryMenuFontsize;
+@thirdLevelMenuBorderRadius: @navbarMenuBorderRadius;
+@thirdLevelMenuTextShadow: @navbarMenuTextShadow;
+@thirdLevelMenuNavTextAlign: @navbarNavTextAlign;
+@thirdLevelMenuColor: @navbarMenuColor;
+@thirdLevelMenuBackground: @navbarMenuBackground; 
+@thirdLevelMenuBackgroundHighlight: lighten(@thirdLevelMenuBackground,20%);
+@thirdLevelNavMenuItemWrapperBackground: @navbarNavMenuItemWrapperBackground;
+@thirdLevelNavMenuItemWrapperBorderBottom: @navbarNavMenuItemWrapperBorderBottom;
+@thirdLevelNavMenuItemWrapperBorderTop: @navbarNavMenuItemWrapperBorderTop;
+
+// third-level navbar dropdowns
+@thirdLevelDropDownBackground: lighten(@thirdLevelMenuBackgroundHighlight,40%);
+@thirdLevelDropDownBorder: @navbarDropDownBorder;
+@thirdLevelDropDownBoxShadow: @navbarDropDownBoxShadow; 
+@thirdLevelDropDownItemColor: @navbarDropDownItemColor;
+@thirdLevelDropDownItemHoverColor: @navbarDropDownItemHoverColor;
+@thirdLevelDropDownTextShadow: @navbarDropDownTextShadow;
+@thirdLevelDropDownHoverTextShadow: @navbarDropDownHoverTextShadow;
+@thirdLevelDropDownItemBackground: @navbarDropDownItemBackground;
+@thirdLevelDropDownItemHoverBackground: @navbarDropDownItemHoverBackground;
+@thirdLevelDropDownItemSeparator: @thinRule @navbarDropDownBackground;
+
+// third-level dropped menus
+@thirdLevelDroppedMenuBackground: @navbarDroppedMenuBackground;
+@thirdLevelDroppedMenuTextShadow: @navbarDroppedMenuTextShadow;
+@thirdLevelDroppedMenuHoverTextShadow: @navbarDroppedMenuHoverTextShadow;
+@thirdLevelDroppedMenuBorder: solid 1px lighten(@navbarDroppedMenuBackground,20%); //@navbarDroppedMenuBorder;
+@thirdLevelDroppedMenuItemBackground: @navbarDroppedMenuItemBackground;
+@thirdLevelDroppedMenuItemColor: @navbarDroppedMenuItemColor;
+@thirdLevelDroppedMenuItemHoverBackground: @navbarDroppedMenuItemHoverBackground;
+@thirdLevelDroppedMenuItemHoverColor: @navbarDroppedMenuItemHoverColor;
+@thirdLevelDroppedMenuItemLeftSeparator: @navbarDroppedMenuItemLeftSeparator;
+@thirdLevelDroppedMenuItemRightSeparator: @navbarDroppedMenuItemRightSeparator;
+@thirdLevelDroppedMenuItemLineHeight: @navbarDroppedMenuItemLineHeight;
+@thirdLevelDroppedMenuItemPadding: @navbarDroppedMenuItemPadding;
+@thirdLevelDroppedMenuItemTextAlign: @navbarDroppedMenuItemTextAlign;
+@thirdLevelDroppedMenuItemWrapperBorderTop: @navbarDroppedMenuItemWrapperBorderTop;
+
+@979navbarNavCollapseDropdownMenuFontWeight: normal;
+@979mainMenuMenuColumnBorderBottom: none;
+@979mainMenuMenuColumnButtonOpenBackground: lighten(@navbarDropDownItemHoverBackground,2%);
+@979mainMenuMenuColumnMenuItemWrapperTextAlign: left;
+@979mainMenuMenuColumnMenuItemWrapperTextShadow: none;
+@979mainMenuMenuColumnMenuItemWrapperBorderRadius: 0;
+@979mainMenuMenuColumnMenuItemWrapperBorder: none;
+@979eyebrowMenuListBorderBottom: none;
+@979eyebrowMenuListBorderRight: none;
+@979eyebrowMenuListAFontWeight: normal;
+@979eyebrowMenuListATextAlign: left;
+@979eyebrowMenuListATextShadow: none;
+@979eyebrowMenuListABorderRadius: 0;
+@979eyebrowMenuListABorder: none;
+@979navbarMenuCollapsedTextAlign: center;
+@979navbarCollapsedMenuWrapperButtonLineHeight: 36px;
+@979navbarCollapsedMenuWrapperButtonBorderTop: solid 1px transparent;
+@979navbarCollapsedMenuWrapperButtonBorderBottom: solid 1px transparent;
+@979navbarCollapsedMenuWrapperMenuCollapsedBackground: transparent;
+@979navbarCollapsedMenuWrapperMenuCollapsedOpenBorderTop: solid 1px lighten(@navbarDropDownBackground,25%);
+@979navbarCollapsedMenuWrapperMenuCollapsedOpenBorderBottom: solid 1px @navbarDropDownBackground;
+@979thirdLevelMenuNavCollapseDropdownMenuFontWeight: @979navbarNavCollapseDropdownMenuFontWeight;
+@979thirdLevelMenuMenuColumnBorderBottom: @979mainMenuMenuColumnBorderBottom;
+@979thirdLevelMenuMenuColumnButtonOpenBackground: @979mainMenuMenuColumnButtonOpenBackground;
+@979thirdLevelMenuMenuColumnMenuItemWrapperTextAlign: @979mainMenuMenuColumnMenuItemWrapperTextAlign;
+@979thirdLevelMenuMenuColumnMenuItemWrapperTextShadow: @979mainMenuMenuColumnMenuItemWrapperTextShadow;
+@979thirdLevelMenuMenuColumnMenuItemWrapperBorderRadius: 979mainMenuMenuColumnMenuItemWrapperBorderRadius;
+@979thirdLevelMenuMenuColumnMenuItemWrapperBorder: @979mainMenuMenuColumnMenuItemWrapperBorder; 
+
+@980eyebrowMenuListTextAlign: right;
+@980eyebrowMenuListBorder: none;
+@980eyebrowMenuListBorderRadius: 0;
+@980navbarNavLineHeight: 19px;
+
+@480eyebrowMenuListBorderRight: none;
+@480eyebrowMenuListBorderLeft: none;
+@480eyebrowEyebrowListBorderTop: none;
+@480mainMenuMenuColumnBorderBottom: none;
+@480mainMenuMenuColumnUlBorderRight: none;
+@480mainMenuMenuColumn2BorderTop: none;
+@480thirdLevelMenuMenuColumnBorderBottom: @480mainMenuMenuColumnBorderBottom;
+@480thirdLevelMenuMenuColumnUlBorderRight: @480mainMenuMenuColumnUlBorderRight;
+@480thirdLevelMenuMenuColumn2BorderTop: @480mainMenuMenuColumn2BorderTop;
